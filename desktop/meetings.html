@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="intelTelInput/js/intlTelInput.min.js"></script>
+  <link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/page-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/css.css" />
+  <title>Alumlynk</title>
+
+  <style type="text/css">
+    .profileImgBgSmall {
+      background-image: url("./images/img04.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 78px;
+      display: flex;
+      position: relative;
+    }
+
+    .profileImgBgSmall>div {
+      position: absolute;
+      top: 8px;
+      display: flex;
+    }
+
+    .profileImgBgSmall div img {
+      border: 2px solid #fff;
+    }
+
+    .rounded-custom {
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fixed bg-white mb-5 bottom-shadow">
+    <div class="d-flex bg-white px-2 py-18 w-100 justify-content-between">
+      <div class="col-sm p-1 tiny-m mobi">
+        <div class="text-center logo-toggle">
+          <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+        </div>
+      </div>
+      <div class="d-flex">
+        <a href="index.html" class="my-auto logo-toggle">
+          <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
+        </a>
+        <!-- <a href="#" class="my-auto logo-toggle mobi">
+          <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
+        </a> -->
+      </div>
+      <div class="d-flex col-sm-6 mobile-bottom">
+        <div class="col-sm p-1 tiny-m border">
+          <a href="friends-page.html" class="text-dark font-weight-bold">
+            <div class="text-center">
+              <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
+            </div>
+            <p class="xm-font text-center mb-0 text-dark bold">Alumni</p>
+          </a>
+        </div>
+        <div class="col-sm p-1 tiny-m border active-tab border">
+          <a href="index.html" class="text-dark font-weight-bold text-success">
+            <div class="text-center">
+              <img src="./images/svg000-friends-white.svg" width="30" class="my-auto" />
+            </div>
+            <p class="xm-font text-center mb-0 text-center text-white">Network</p>
+          </a>
+        </div>
+        <div class="col-sm p-1 tiny-m border">
+          <a href="posts-page.html" class="text-dark font-weight-bold text-center">
+            <div class="text-center">
+              <img src="./images/svg000-home.svg" width="30" class="my-auto" />
+            </div>
+            <p class="xm-font text-center mb-0">Posts</p>
+          </a>
+        </div>
+        <div class="col-sm p-1 tiny-m border">
+          <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
+            <div class="text-center">
+              <img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
+            </div>
+            <p class="xm-font text-center mb-0">Mentors</p>
+          </a>
+        </div>
+        <div class="col-sm p-1 tiny-m border">
+          <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
+            <div class="text-center">
+              <img src="./images/svg000-message.svg" width="30" class="my-auto" />
+              <div class="icon-value-nav"><small><strong>0</strong></small></div>
+            </div>
+            <p class="xm-font text-center mb-0">Messages</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="d-flex col-lg-2 col-sm-6">
+        <div class="col-sm p-1 tiny-m">
+          <a href="search-page.html" class="text-dark font-weight-bold">
+            <div class="text-center">
+              <i class="fa fa-search fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm p-1 tiny-m">
+          <a href="./calendar.html" class="text-dark font-weight-bold">
+            <div class="text-center">
+              <i class="fa fa-calendar fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm p-1 tiny-m">
+          <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
+            <div class="text-center">
+              <i class="fa fa-bell fa-sm text-center text-dark my-auto  bg-gray-light p-2 rounded-circle"></i>
+              <div class="icon-value-nav-bell"><small><strong>0</strong></small></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm p-1 tiny-m desk">
+          <div class="text-center menu-toggle">
+            <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex mt-92">
+    <div class="sibar-left border-right">
+      <div class="d-flex flex-column">
+        <div class="text-center pt-3">
+          <img src="./images//scott.jpg" alt="" class="rounded-circle" width="60" height="60">
+          <h5><strong>Scott Holley</strong></h5>
+          <p class="mb-0 text-secondary">City, State</p>
+          <p class="text-secondary">Proctor Class of 1998</p>
+        </div>
+        <ul class="list-unstyled px-3 border w-75 mx-auto br-5 mb-2 py-2">
+          <li class="lg-font"> <a href="./friends-page.html">Alumni Directory</a></li>
+          <li class="lg-font"> <a href="./index.html">Alumni Network</a></li>
+          <li class="lg-font"> <a href="alumni-mentoring.html">Alumni Mentors</a></li>
+        </ul>
+        <ul class="list-unstyled px-3 border w-75 mx-auto br-5 mb-2 py-2">
+          <li class="lg-font"> <a href="calendar.html">Meeting Calendar</a></li>
+          <li class="lg-font"> <a href="meetings.html" class="d-flex justify-content-between"><span>Meetings
+              </span><span>(xx)</span></a></li>
+          <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Meeting Requests
+              </span><span>(xx)</span></a></li>
+          <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Connection Requests
+              </span><span>(xx)</span></a></li>
+          <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Mentor Requests
+              </span><span>(xx)</span></a></li>
+        </ul>
+
+        <ul class="list-unstyled px-3 border w-75 mx-auto br-5 mb-2 py-2">
+          <li class="lg-font"> <a href="./class-notes.html">Class Notes</a></li>
+          <li class="lg-font"> <a href="./alumni-events.html">Alumni Events</a></li>
+          <li class="lg-font"> <a href="#">Reunion Information</a></li>
+          <li class="lg-font"> <a href="#">Shop Swag Online</a></li>
+          <li class="lg-font"> <a href="#" class="support-">Support (School Name)</a></li>
+        </ul>
+
+        <ul class="list-unstyled px-3 border w-75 mx-auto br-5 mb-2 py-2">
+          <!-- <li class="lg-font"> <a href="./alumni-connection-requests.html"> Alumni Connection Requests
+                (xxx)</a></li> -->
+          <!-- <li class="lg-font"> <a href="contact-list-all.html">Messages</a></li> -->
+          <li class="lg-font"> <a href="#">My Profile</a></li>
+          <li class="lg-font"> <a href="#">My Posts</a></li>
+          <li class="lg-font"> <a href="#">Following</a></li>
+          <li class="lg-font"> <a href="#">Followers</a></li>
+          <li class="lg-font"> <a href="#">Bookmarks</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-content border-right">
+
+      <div class="donation-form d-none">
+        <div class="d-flex p-2 maroon-border-bottom m-2">
+          <button class="btn btn-sm btn-outline-secondary my-auto donationback">Back</button>
+          <label class="mx-auto">Donation</label>
+        </div>
+        <div class="p-3">
+          <label for="">Gift amount: </label>
+          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+            <p class="mb-0">Lorem ipsum dolor sit amet,</p>
+            <p class="mb-0"><strong>$10,000</strong></p>
+          </button>
+          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+            <p class="mb-0">accusamus ea placeat.</p>
+            <p class="mb-0"><strong>$10,000</strong></p>
+          </button>
+          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+            <p class="mb-0">accusamus ea placeat.</p>
+            <p class="mb-0"><strong>$10,000</strong></p>
+          </button>
+          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+            <p class="mb-0">Lorem ipsum</p>
+            <p class="mb-0"><strong>$10,000</strong></p>
+          </button>
+          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+            <p class="mb-0 ml-auto"><strong>$10,000</strong></p>
+          </button>
+          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+            <p class="mb-0 ml-auto"><strong>$10,000</strong></p>
+          </button>
+          <div class="d-flex border rounded">
+            <label for="" class="text-secondary py-2 pl-3">Other</label>
+            <input type="text" name="" id="" class="m-3 w-50 p-2" placeholder="$">
+          </div>
+        </div>
+
+        <div class="d-flex px-2 maroon-border-bottom m-2">
+          <label>Gift preference</label>
+        </div>
+        <div class="d-flex flex-column px-3">
+          <label for="">Online designition</label>
+          <input class="form-control form-control-sm" type="text" placeholder="">
+        </div>
+        <div class="d-flex flex-column p-3">
+          <label for="">Gift Instructions</label>
+          <input class="form-control form-control-sm" type="text" placeholder="">
+        </div>
+
+        <div class="d-flex px-2 maroon-border-bottom m-2">
+          <label>Tribute Gift</label>
+        </div>
+        <div class="form-check mx-3">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            the gift is Lorem ipsum dolor sit amet consectetur
+          </label>
+        </div>
+
+        <div class="d-flex px-2 maroon-border-bottom m-2">
+          <label>Recurring Gift</label>
+        </div>
+
+        <div class="form-check mx-3">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
+          <label class="form-check-label" for="defaultCheck1">
+            Make this a monthly gift
+          </label>
+        </div>
+
+        <div class="d-flex mx-3">
+          Give <select class="custom-select mr-sm-2 w-25 mx-1" id="inlineFormCustomSelect">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          to
+          <select class="custom-select mr-sm-2 w-25 mx-1" id="inlineFormCustomSelect">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="d-flex mx-3">
+          <label for="">your first gift will occur on 12/12/1212</label>
+        </div>
+
+        <div class="d-flex px-2 maroon-border-bottom m-2">
+          <label>Billing Address</label>
+        </div>
+        <div class="form-check mx-3 mb-3">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Make this gift on behalf of an organization
+          </label>
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            lorem Ipsum
+          </label>
+          <input type="email" class="form-control form-control-sm mb-2" id="colFormLabelSm" placeholder="">
+          <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            Email
+          </label>
+          <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            Phone
+          </label>
+          <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            Country
+          </label>
+          <select class="custom-select" id="inlineFormCustomSelect">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            City
+          </label>
+          <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            Lorem ipsum
+          </label>
+          <div class="d-flex">
+            <select class="custom-select m-1" id="inlineFormCustomSelect">
+              <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <input type="text">
+          </div>
+        </div>
+
+        <div class="form-check mx-3 mb-3">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Lorem, ipsum dolor sit amet consectetur
+          </label>
+        </div>
+
+        <div class="d-flex px-2 maroon-border-bottom m-2">
+          <label>Payment Details</label>
+        </div>
+
+        <div class="d-flex flex-column mx-3">
+          <label for="">Payment methods</label>
+          <div class="d-flex">
+            <button class="btn btn-sm btn-primary w-25 mr-3">Debit card</button> <button
+              class="btn btn-sm btn-outline-secondary w-25">Credit card </button>
+          </div>
+        </div>
+
+        <p class="text-danger mx-3 mt-3">Payment processed by lorem ipsum</p>
+
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            Credit card name
+          </label>
+          <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            Card number
+          </label>
+          <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+        </div>
+
+        <div class="d-flex mb-3">
+          <img src="./images/cards.png" alt="" class="w-75 mx-auto">
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            Expirydate
+          </label>
+          <div class="d-flex">
+            <select class="custom-select m-1" id="inlineFormCustomSelect">
+              <option selected>Month</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <select class="custom-select m-1" id="inlineFormCustomSelect">
+              <option selected>Year</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+
+          </div>
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            CC:
+          </label>
+          <input type="tel" class="form-control form-control-sm w-25" id="colFormLabelSm" placeholder="">
+        </div>
+
+        <div class="d-flex mb-3">
+          <button class="btn btn-danger text-white w-75 mx-auto"><strong>Give Now</strong></button>
+        </div>
+
+      </div>
+
+      <div class="mt-2 main-view">
+        <div class="mx-1 mb-3 bg-white padding-main-4 mainDisplay">
+            <div class="p-2 bg-light mb-2">
+              <div class="d-flex">
+                <h3 class="p-2 mx-auto"><strong>My Sport Meetings</strong></h3>
+              </div>
+
+              <div class="d-flex flex-column w-75 mx-auto">
+                <div class="d-flex mb-3">
+                  <div class="col-sm pl-0">
+                    <button class="btn btn-sm btn-success br-5 w-100 current-meetups"
+                      onclick="currentMeetups()">Current Sport Meet Ups</button>
+                  </div>
+                  <div class="col-sm px-0">
+                    <button class="btn btn-sm btn-secondary w-100 br-5 past-meetups" onclick="pastMeetups()">Past
+                      Sport Meet Ups</button>
+                  </div>
+                  
+                </div>
+                
+                <div class="d-flex mb-3">
+                  <div class="quick-search col-sm pl-0">
+                    <div class="d-flex">
+                      <div class="col-sm d-flex p-0 w-100">
+                        <input name="" id="" class="form-control w-100 rounded-left" placeholder="Quick search" />
+                        
+                      <div class="text-white bg-secondary d-flex px-3 br-5 rounded-right">
+                        <i class="fa fa-search fa-lg my-auto"></i>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm p-0 w-100">
+                    <button class="btn btn-sm btn-secondary w-100 br-5 advanced-search-btn"
+                      onclick="advancedSearch()">Advanced Search</button>
+                  </div>
+                </div>
+              </div>
+              <div class="advanced-search w-75 p-2 rounded mx-auto d-none">
+                <div class="d-flex flex-wrap justify-content-between">
+                  <div class="d-flex w-33">
+                    <div class="w-100">
+                      <p class="pb-0 mt-3 mb-2 text-success mx-auto"><strong>Select a sport</strong></p>
+                      <div class="d-flex w-100">
+                        <div>
+                          <img src="./images/svg/App Logo-01.svg" alt="" width="30">
+                        </div>
+                        <div class="search-container">
+                          <input type="text" class="form-control search-input" placeholder="Enter Sport">
+                          <div class="search-dropdown">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ml-1 w-33 p-0 mobi">
+                      <p class="mt-3 mb-2 text-success mx-auto">
+                        <strong><i class="fa fa-calendar-o mr-1"></i>Select by Date</strong>
+                      </p>
+                      <div class="d-flex mx-auto">
+                        <div class="col-sm pl-0 pr-1">
+                          <select name="" id="" class="form-control">
+                            <option>Year</option>
+                          </select>
+                        </div>
+                        <div class="col-sm px-1">
+                          <select name="" id="" class="form-control">
+                            <option>Month</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex w-60">
+                    <div class="p-0 w-100">
+                      <p class="mt-3 mb-2 text-success mx-auto">
+                        <strong><i class="fa fa-map-marker mr-1"></i>Select a Location</strong>
+                      </p>
+                      <div class="d-flex mx-auto">
+                        <div class="col-sm pl-0 pr-1">
+                          <select name="" id="" class="form-control">
+                            <option>Country</option>
+                          </select>
+                        </div>
+                        <div class="col-sm px-1">
+                          <select name="" id="" class="form-control">
+                            <option>State</option>
+                          </select>
+                        </div>
+                        <div class="col-sm px-1">
+                          <select name="" id="" class="form-control">
+                            <option>City</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-wrap mb-2 justify-content-between">
+                  <div class="w-33 p-0 desk">
+                    <p class="mt-3 mb-2 text-success mx-auto">
+                      <strong><i class="fa fa-calendar-o mr-1"></i>Select by Date</strong>
+                    </p>
+                    <div class="d-flex mx-auto">
+                      <div class="col-sm pl-0 pr-1">
+                        <select name="" id="" class="form-control">
+                          <option>Year</option>
+                        </select>
+                      </div>
+                      <div class="col-sm px-1">
+                        <select name="" id="" class="form-control">
+                          <option>Month</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mb-4">
+                  <button class="btn btn-sm btn-success br-5 w-100 mx-auto search-button">Search</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-dark text-white p-2">
+              March 2020
+            </div>
+            <div class="mobi">
+              <div class="d-flex">
+                <div class="text-center">
+                  <h3 class="m-0 text-dark-"><strong>MAR</strong></h3>
+                  <h1 class="m-0 text-success"><strong>22</strong></h1>
+                </div>
+                <p class="mx-auto text-dark- my-auto"><strong>Sport Name</strong></p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between my-1">
+              <div class="col-sm bg-light text-center py-2 event-date p-0 desk">
+                <h3 class="m-0 text-dark-"><strong>MAR</strong></h3>
+                <h1 class="m-0 text-success"><strong>22</strong></h1>
+                <p class="my-1 text-dark-"><strong>Sport Name</strong></p>
+              </div>
+              <div class="col-sm py-2 text-center px-0">
+                <img src="./images/scott.jpg" alt="" width="40" class="rounded-circle">
+                <p class="mb-0 text-primary">Scott Holley</p>
+                <p class="mb-0">(City), (State)</p>
+              </div>
+              <div class="col-sm py-2 text-center px-0">
+                <i class="fa fa-calendar fa-2x"></i>
+                <!-- <p class="my-1 text-dark-"><strong>Sport Name</strong></p> -->
+                <p class="mb-0 text-dark- my-1"><small>Monday, March 22</small></p>
+                <p class="mb-0 text-dark-"><small>3:30 to 4:30pm</small></p>
+              </div>
+              <div class="col-sm py-2 text-center px-0">
+                <i class="fa fa-map-marker fa-2x text-success"></i>
+                <p class="my-1 text-dark-"><strong>Sport Place Name</strong></p>
+                <p class="mb-0 text-dark-"><small>(123 Maint St)</small></p>
+                <p class="mb-0 text-dark-"><small>(City), (State)</small></p>
+              </div>
+              <div class="col-sm py-2 text-center px-0">
+                <img src="./images/open-book.png" alt="" width="35">
+                <p class="mb-0"><small>(Title)</small></p>
+                <p class="mb-0"><small>Description: Lorem ipsum</small></p>
+              </div>
+              <div class="col-sm py-2 text-center px-0">
+                <p class="mb-0">Status</p>
+                <button class="btn btn-sm btn-success br-5 w-100 my-1">Confirmed</button>
+                <button class="btn btn-sm btn-default br-5 w-100 my-1">Reschedule</button>
+                <button class="btn btn-sm btn-default text-danger br-5 w-100 my-1">Cancel</button>
+              </div>
+            </div>
+
+            <div class="bg-dark text-white p-2">
+              April 2020
+            </div>
+            <div class="mobi">
+              <div class="d-flex">
+                <div class="text-center">
+                  <h3 class="m-0 text-dark-"><strong>April</strong></h3>
+                  <h1 class="m-0 text-success"><strong>15</strong></h1>
+                </div>
+                <p class="mx-auto text-dark- my-auto"><strong>Sport Name</strong></p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between my-1">
+              <div class="col-sm bg-light text-center py-2 event-date p-0 desk">
+                <h3 class="m-0 text-dark-"><strong>APRIL</strong></h3>
+                <h1 class="m-0 text-success"><strong>15</strong></h1>
+                <p class="my-1 text-dark-"><strong>Sport Name</strong></p>
+              </div>
+              <div class="col-sm py-2 text-center px-0">
+                <img src="./images/scott.jpg" alt="" width="40" class="rounded-circle">
+                <p class="mb-0 text-primary">Scott Holley</p>
+                <p class="mb-0">(City), (State)</p>
+              </div>
+              <div class="col-sm py-2 text-center px-0">
+                <i class="fa fa-calendar fa-2x"></i>
+                <!-- <p class="my-1 text-dark-"><strong>Sport Name</strong></p> -->
+                <p class="mb-0 text-dark- my-1"><small>Monday, March 22</small></p>
+                <p class="mb-0 text-dark-"><small>3:30 to 4:30pm</small></p>
+              </div>
+              <div class="col-sm py-2 text-center px-0">
+                <i class="fa fa-map-marker fa-2x text-success"></i>
+                <p class="my-1 text-dark-"><strong>Sport Place Name</strong></p>
+                <p class="mb-0 text-dark-"><small>(123 Maint St)</small></p>
+                <p class="mb-0 text-dark-"><small>(City), (State)</small></p>
+              </div>
+              <div class="col-sm py-2 text-center px-0">
+                <img src="./images/open-book.png" alt="" width="35">
+                <p class="mb-0"><small>(Title)</small></p>
+                <p class="mb-0"><small>Description: Lorem ipsum</small></p>
+              </div>
+              <div class="col-sm py-2 text-center px-0">
+                <p class="mb-0">Status</p>
+                <button class="btn btn-sm btn-success br-5 w-100 my-1">Confirmed</button>
+                <button class="btn btn-sm btn-default br-5 w-100 my-1">Reschedule</button>
+                <button class="btn btn-sm btn-default text-danger br-5 w-100 my-1">Cancel</button>
+              </div>
+            </div>
+
+
+            <div class="search-button-show d-none">
+              <div class="d-flex my-3 mx-auto justify-content-center">
+                <p class="my-auto text-success mr-2">
+                  <strong>
+                    <i class="fa fa-filter mr-1"></i>
+                    Select Any Preferences For Finding Event Partners
+                  </strong>
+                </p>
+                <button class="btn btn-sm bg-success text-white border-0 br-5 px-5 br-5 displayFilters">
+                  Select</button>
+
+                <button class="btn btn-sm wLHeader text-white px-5 br-5 hideFilters d-none">
+                  Hide filters</button>
+              </div>
+
+              <div class="d-none fitersWrapper">
+                <div class="mt-3 mobi">
+                  <div class="pt-3 pb-1 bg-white px-4 w-75 mx-auto">
+                    <div class="border border-secondary br-20 p-0 filtersContainer">
+                      <div class="d-flex ml-4 mt-neg-15">
+                        <div class="text-center px-3 bg-light br-10 py-0 btn">
+                          (XX) Filters <i class="fa fa-filter"></i>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-wrap p-1">
+                        <span class="w-100 px-1 skillFilterContainer">
+                          <div class="d-flex">
+                            <span class="mr-1">
+                              <img src="./images/Skill-black-02.svg" width="40" alt="" />
+                            </span>
+                            <div class="w-100">
+                              <div class="btn-group w-100 mr-1 mb-1">
+                                <button type="button"
+                                  class="btn btn-default border-grey bg-white w-100 text-dark p-0 skillText">
+                                  Skill Level
+                                </button>
+                                <button type="button"
+                                  class="btn wLHeader dropdown-toggle text-white dropdown-toggle-split"
+                                  data-toggle="dropdown">
+                                  <span class="caret"></span>
+                                </button>
+                                <div class="dropdown-menu px-0 left">
+                                  <ul class="px-0 skillLevelsOptions">
+                                    <li class="dropdown-item px-2" onclick="setskillText('Beginner')">
+                                      <input type="checkbox">
+                                      Beginner
+                                    </li>
+                                    <li class="dropdown-item px-2" onclick="setskillText('Intermediate')">
+                                      <input type="checkbox">
+                                      Intermediate
+                                    </li>
+                                    <li class="dropdown-item px-2" onclick="setskillText('Advanced')">
+                                      <input type="checkbox">
+                                      Advanced
+                                    </li>
+                                    <li class="dropdown-item px-2" onclick="setskillText('Expert')">
+                                      <input type="checkbox">
+                                      Expert
+                                    </li>
+                                    <li class="dropdown-item px-2" onclick="setskillText('Coach')">
+                                      <input type="checkbox">
+                                      Coach
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="w-100 px-1 skillFilterContainer">
+                          <div class="d-flex">
+                            <span class="mr-1">
+                              <img src="./images/svg000-maps.svg" width="40" alt="" />
+                            </span>
+                            <div class="w-100">
+                              <div class="btn-group w-100 mr-1 mb-1">
+                                <button type="button"
+                                  class="btn btn-default border-grey bg-white w-100 text-dark p-0 selectedDistance">
+                                  Distance
+                                </button>
+                                <button type="button"
+                                  class="btn wLHeader dropdown-toggle text-white dropdown-toggle-split"
+                                  data-toggle="dropdown">
+                                  <span class="caret"></span>
+                                </button>
+                                <div class="dropdown-menu px-0 left">
+                                  <ul class="px-0 skillLevelsOptions">
+                                    <li class="dropdown-item px-2" onclick="setSlectedDistance('1 Mile')">
+                                      <input type="checkbox">
+                                      1 Mile
+                                    </li>
+                                    <li class="dropdown-item px-2" onclick="setSlectedDistance('5 Miles')">
+                                      <input type="checkbox">
+                                      5 Miles
+                                    </li>
+                                    <li class="dropdown-item px-2" onclick="setSlectedDistance('10 Miles')">
+                                      <input type="checkbox">
+                                      10 Miles
+                                    </li>
+                                    <li class="dropdown-item px-2" onclick="setSlectedDistance('20 Miles')">
+                                      <input type="checkbox">
+                                      20 Miles
+                                    </li>
+                                    <li class="dropdown-item px-2" onclick="setSlectedDistance('50 Miles')">
+                                      <input type="checkbox">
+                                      50 Miles
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="w-100 px-1 connectFilterContainer">
+                          <div class="d-flex">
+                            <span class="mx-2">
+                              <img src="./images/svg000-connect.svg" width="30" alt="" />
+                            </span>
+                            <div class="w-100">
+                              <div class="btn-group w-100 mr-1 mb-1">
+                                <button type="button"
+                                  class="btn btn-default border-grey bg-white w-100 text-dark p-0 selectedConnections">
+                                  Connection
+                                </button>
+                                <button type="button"
+                                  class="btn wLHeader dropdown-toggle text-white dropdown-toggle-split btnConnectFilterMatches"
+                                  data-toggle="dropdown">
+                                  <span class="caret"></span>
+                                </button>
+                                <div class="dropdown-menu px-0 left">
+                                  <ul class="px-0 connectionsOptions">
+                                    <li class="dropdown-item px-2"
+                                      onclick="setSelectedConnections('Social Members')">
+                                      <input type="checkbox"> Social Members
+                                    </li>
+                                    <li class="dropdown-item px-2"
+                                      onclick="setSelectedConnections('Social Friends')">
+                                      <input type="checkbox"> Social Friends
+                                    </li>
+                                    <li class="dropdown-item px-2"
+                                      onclick="setSelectedConnections('Social Mutual Friends')">
+                                      <input type="checkbox"> Social Mutual Friends
+                                    </li>
+                                    <li class="dropdown-item px-2"
+                                      onclick="setSelectedConnections('(colleges name)')">
+                                      <input type="checkbox"> (colleges name)
+                                    </li>
+                                    <li class="dropdown-item px-2"
+                                      onclick="setSelectedConnections('(high schools name)')">
+                                      <input type="checkbox"> (high schools name)
+                                    </li>
+                                    <li class="dropdown-item px-2"
+                                      onclick="setSelectedConnections(' (gyms name)')">
+                                      <input type="checkbox"> (gyms name)
+                                    </li>
+                                    <li class="dropdown-item px-2"
+                                      onclick="setSelectedConnections('(golf clubs name)')">
+                                      <input type="checkbox"> (golf clubs name)
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="w-100 px-1 ageFilterContainer">
+                          <div class="d-flex">
+                            <span class="mr-1">
+                              <img src="./images/Age-black.svg" width="40" alt="" />
+                            </span>
+                            <div class="w-100">
+                              <div class="btn-group w-100 mr-1 mb-1">
+                                <button type="button"
+                                  class="btn btn-default border-grey bg-white w-100 text-dark p-0 w-100 preferredAgeRangeText">
+                                  Age
+                                </button>
+                                <button type="button"
+                                  class="btn wLHeader dropdown-toggle text-white dropdown-toggle-split"
+                                  data-toggle="dropdown">
+                                  <span class="caret"></span>
+                                </button>
+                                <div class="dropdown-menu px-0 left w-50">
+                                  <ul class="px-0 handcapDropdown_">
+                                    <div class="text-center">
+                                      <div>Select Age Range</div>
+                                      <div>or Add Below</div>
+                                    </div>
+                                    <div class="d-flex w-100 p-3">
+                                      <span class="w-50"><input type="text" class="form-control"></span>
+                                      <div class="px-3">to</div>
+                                      <span class="w-50"><input type="text" class="form-control"></span>
+                                    </div>
+                                    <div class="pt-2 px-4">
+                                      <div class="px-1 text-dark">
+                                        <a tabIndex="-1" class="text-dark" onclick="setAgesText('13-16')">
+                                          <div class="form-check customFormCheck">
+                                            <input id="5" type="checkbox">
+                                            <label for="">
+                                              <span>13 - 16</span>
+                                            </label>
+                                          </div>
+                                        </a>
+                                      </div>
+                                      <div class="px-1 text-dark">
+                                        <a tabIndex="-1" class="text-dark" onclick="setAgesText('17-23')">
+                                          <div class="form-check customFormCheck">
+                                            <input id="6-12" type="checkbox">
+                                            <label for="">
+                                              <span>17 - 23</span>
+                                            </label>
+                                          </div>
+                                        </a>
+                                      </div>
+                                      <div class="px-1 text-dark">
+                                        <a tabIndex="-1" class="text-dark" onclick="setAgesText('24-30')">
+                                          <div class="form-check customFormCheck">
+                                            <input id="13-20" type="checkbox">
+                                            <label for="">
+                                              <span>24 - 30</span>
+                                            </label>
+                                          </div>
+                                        </a>
+                                      </div>
+                                      <div class="px-1 text-dark">
+                                        <a tabIndex="-1" class="text-dark" onclick="setAgesText('31-40')">
+                                          <div class="form-check customFormCheck">
+                                            <input id="21-28" type="checkbox">
+                                            <label for="">
+                                              <span>31 - 40</span>
+                                            </label>
+                                          </div>
+                                        </a>
+                                      </div>
+                                      <div class="px-1 text-dark">
+                                        <a tabIndex="-1" class="text-dark" onclick="setAgesText('41-50')">
+                                          <div class="form-check customFormCheck">
+                                            <input id="21-28" type="checkbox">
+                                            <label for="">
+                                              <span>41 - 50</span>
+                                            </label>
+                                          </div>
+                                        </a>
+                                      </div>
+                                      <div class="px-1 text-dark">
+                                        <a tabIndex="-1" class="text-dark" onclick="setAgesText('51-60')">
+                                          <div class="form-check customFormCheck">
+                                            <input id="21-28" type="checkbox">
+                                            <label for="">
+                                              <span>51 - 60</span>
+                                            </label>
+                                          </div>
+                                        </a>
+                                      </div>
+                                      <div class="px-1 text-dark">
+                                        <a tabIndex="-1" class="text-dark" onclick="setAgesText('61-70')">
+                                          <div class="form-check customFormCheck">
+                                            <input id="21-28" type="checkbox">
+                                            <label for="">
+                                              <span>61 - 70</span>
+                                            </label>
+                                          </div>
+                                        </a>
+                                      </div>
+                                      <div class="px-1 text-dark">
+                                        <a tabIndex="-1" class="text-dark" onclick="setAgesText('70>')">
+                                          <div class="form-check customFormCheck">
+                                            <input id="21-28" type="checkbox">
+                                            <label for="">
+                                              <span>Over 70</span>
+                                            </label>
+                                          </div>
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                      <button class="btn btn-success" onclick="confirmAgesText()">
+                                        Confirm
+                                      </button>
+                                    </div>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="w-100 px-1 genderFilterContainer">
+                          <div class="d-flex">
+                            <span class="mr-1">
+                              <img src="./images/Gender-black-02.svg" width="40" alt="" />
+                            </span>
+                            <div class="w-100">
+                              <div class="btn-group w-100 mr-1 mb-1">
+                                <button type="button"
+                                  class="btn btn-default border-grey bg-white w-100 text-dark p-0 w-100 selectedGender">
+                                  Gender
+                                </button>
+                                <button type="button"
+                                  class="btn wLHeader dropdown-toggle text-white dropdown-toggle-split"
+                                  data-toggle="dropdown">
+                                  <span class="caret"></span>
+                                </button>
+                                <div class="dropdown-menu px-0 left">
+                                  <ul class="px-0 genderOptions">
+                                    <li class="dropdown-item px-2" onclick="setGender('Men Only')">
+                                      <input type="checkbox"> Men Only
+                                    </li>
+                                    <li class="dropdown-item px-2" onclick="setGender('Female Only')">
+                                      <input type="checkbox"> Female Only
+                                    </li>
+                                    <li class="dropdown-item px-2" onclick="setGender('Both')">
+                                      <input type="checkbox"> Both
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="w-100 px-1 relationshipFilterContainer">
+                          <div class="d-flex">
+                            <span class="mr-1">
+                              <img src="./images/Relationship-black-02.svg" width="40" alt="" />
+                            </span>
+                            <div class="w-100">
+                              <div class="btn-group w-100 mr-1 mb-1">
+                                <button type="button"
+                                  class="btn btn-default border-grey bg-white w-100 text-dark p-0 w-100 selectedStatus">
+                                  Status
+                                </button>
+                                <button type="button"
+                                  class="btn wLHeader dropdown-toggle text-white dropdown-toggle-split"
+                                  data-toggle="dropdown">
+                                  <span class="caret"></span>
+                                </button>
+                                <div class="dropdown-menu px-0 left">
+                                  <ul class="px-0 relationOptions">
+                                    <li class="dropdown-item px-2" onclick="setStatus('Any status')">
+                                      <input type="checkbox"> Any status
+                                    </li>
+                                    <li class="dropdown-item px-2" onclick="setStatus('Single')">
+                                      <input type="checkbox"> Single
+                                    </li>
+                                    <li class="dropdown-item px-2" onclick="setStatus('Married')">
+                                      <input type="checkbox"> Married
+                                    </li>
+                                    <li class="dropdown-item px-2" onclick="setStatus('Divorced')">
+                                      <input type="checkbox"> Divorced
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="skipFilters">
+                      <div class="d-flex">
+                        <span class="w-50 px-2">
+                          <div class="bg-secondary text-center text-white w-100 py-1" onclick="showFilters()">
+                            Apply Filters <i class="fa fa-filter"></i>
+                          </div>
+                        </span>
+                        <span class="w-50 px-2">
+                          <div class="bg-success text-center text-white w-100 py-1">
+                            XX Results
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- <div class="appliedFiltersWrap">
+                      <div class="d-flex justify-content-center p-1">
+                        <button class="border-0 br-5 btn-light text-white wLHeader px-5 py-2 w-75"
+                          onclick="showAppliedFilters()">
+                          Apply Filters
+                        </button>
+                      </div>
+                    </div>
+                
+                    <div class="d-flex p-2 w-75 m-auto">
+                      <button class="border-0 br-5 text-secondary py-2 px-3 matches-btn w-100">
+                        Matches (xx)
+                      </button>
+                    </div> -->
+
+                    <span class="w-100 p-1 border rounded justify-content-between d-none rank">
+                      <img src="./images/svg000-calendar.svg" width="30" height="30" alt="" />
+                      <span class="my-auto"><small> Rank Results By My Availability
+                        </small> </span>
+                      <button class="btn btn-success font-weight-bold rounded py-0"
+                        data-target="#sportAvailalbilityModal" data-toggle="modal">
+                        View
+                      </button>
+                    </span>
+                  </div>
+
+                  <div class="searchesContainer my-3 px-5 d-none">
+                    <div class="border border-secondary br-20 p-2 bg-white rounded">
+                      <div class="d-flex justify-content-center mt-neg-20">
+                        <div class="text-center px-3 bg-secondary text-white br-20 py-1 btn">
+                          Select Filters <i class="fa fa-filter"></i>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-wrap">
+                        <span class="w-50 p-1">
+                          <div class="d-flex">
+                            <span class="mr-1">
+                              <img src="./images/svg/svg000-maps.svg" width="30" alt="" />
+                            </span>
+                            <div class="w-100">
+                              <select name="" id="" class="form-control border br-20">
+                                <option value="">Distance</option>
+                                <option value="">1 KM</option>
+                                <option value="">2 KM</option>
+                              </select>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="w-50 p-1">
+                          <div class="d-flex">
+                            <span class="mr-1">
+                              <img src="./images/svg/svg000-connect.svg" width="30" alt="" />
+                            </span>
+                            <div class="w-100">
+                              <select name="" id="" class="form-control border br-20">
+                                <option value="">Connection</option>
+                                <option value=""> All Sport Social Members</option>
+                                <option value="">All Sport Social Mutual Friends</option>
+                                <option value="">(My colleges name)</option>
+                                <option value="">(My high schools name)</option>
+                                <option value="">(My gyms name)</option>
+                                <option value="">(My golf clubs name)</option>
+                              </select>
+
+                            </div>
+                          </div>
+                        </span>
+                        <span class="w-50 p-1">
+                          <div class="d-flex">
+                            <span class="mr-1">
+                              <img src="./images/svg/Skill-black-02.svg" width="30" alt="" />
+                            </span>
+                            <div class="w-100">
+                              <select name="" id="" class="form-control border br-20">
+                                <option value="">Skill Level</option>
+                                <option value="">Beginner</option>
+                                <option value="">Intermediate</option>
+                                <option value="">Advanced</option>
+                                <option value="">Expert</option>
+                                <option value="">Coach</option>
+                              </select>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="w-50 p-1">
+                          <div class="d-flex">
+                            <span class="mr-1">
+                              <img src="./images/svg/Gender-black-02.svg" width="30" alt="" />
+                            </span>
+                            <div class="w-100">
+                              <select name="" id="" class="form-control border br-20">
+                                <option value="">Gender</option>
+                                <option value="">Men Only</option>
+                                <option value="">Female Only</option>
+                              </select>
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="py-2 d-flex">
+                      <span class="w-75">
+                        <div class="btn btn-success">
+                          (Sport Name) Friends (XXXX)
+                        </div>
+                      </span>
+                      <span class="w-25 px-1">
+                        <div class="btn-group rounded w-100 mx-auto" role="group">
+                          <button type="button"
+                            class="btn btn-secondary_ btn-secondary w-33 getListViewButton"
+                            onclick="getListView()">
+                            <i class="fa fa-list-ul"></i>
+                          </button>
+                          <button type="button" class="btn btn-info w-33 getPictureViewButton"
+                            onclick="getPictureView()">
+                            <i class="fa fa-circle-thin"></i>
+                          </button>
+                          <button type="button" class="btn btn-secondary w-33 getTileViewButton"
+                            onclick="getTileView()">
+                            <i class="fa fa-square"></i>
+                          </button>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="availability-filter d-none">
+                    <div class="d-flex w-100 my-1 py-2 px-3">
+                      <img src="./images/svg/svg000-calendar.svg" width="25" height="25" alt=""
+                        class="mr-2 my-0" />
+                      <span class="w-100 p-1 border rounded d-flex justify-content-between">
+                        <span> Rank Results By My Availability </span>
+                        <button class="btn btn-success font-weight-bold rounded py-0"
+                          data-target="#sportAvailalbilityIndividualSportModal" data-toggle="modal">
+                          View
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fitersWrapper mt-3 d-none desk">
+                <div class="d-flex flex-wrap mb-4">
+                  <div class="w-33 px-1 mb-2 text-center skillFilterContainer">
+                    <label for="" class="mb-0"><strong>Skill Level</strong></label>
+                    <div class="d-flex">
+                      <div class="btn-group w-100 drop">
+                        <button type="button"
+                          class="btn btn-default border-grey text-secondary bg-white w-100 p-0 skillText">
+                          Select
+                        </button>
+                        <button type="button"
+                          class="btn bg-dark- dropdown-toggle text-white dropdown-toggle-split"
+                          data-toggle="dropdown">
+                          <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu px-0 left">
+                          <ul class="px-0 skillLevelsOptions">
+                            <li class="dropdown-item px-2" onclick="setskillText('Beginner')">
+                              <input type="checkbox">
+                              Beginner
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setskillText('Intermediate')">
+                              <input id="2" type="checkbox">
+                              Intermediate
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setskillText('Advanced')">
+                              <input id="3" type="checkbox">
+                              Advanced
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setskillText('Expert')">
+                              <input id="4" type="checkbox">
+                              Expert
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setskillText('Coach')">
+                              <input id="5" type="checkbox">
+                              Coach
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w-33 px-1 mb-2 text-center">
+                    <label for="" class="mb-0"><strong>Distance</strong></label>
+                    <div class="d-flex">
+                      <div class="btn-group w-100 drop">
+                        <button type="button"
+                          class="btn btn-default border-grey bg-white text-secondary w-100 p-0 selectedDistance">
+                          Select
+                        </button>
+                        <button type="button"
+                          class="btn bg-dark- dropdown-toggle text-white dropdown-toggle-split"
+                          data-toggle="dropdown">
+                          <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu px-0 left">
+                          <ul class="px-0 skillLevelsOptions">
+                            <li class="dropdown-item px-2" onclick="setSlectedDistance('1 Mile')">
+                              <input type="checkbox">
+                              1 Mile
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setSlectedDistance('5 Miles')">
+                              <input type="checkbox">
+                              5 Miles
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setSlectedDistance('10 Miles')">
+                              <input type="checkbox">
+                              10 Miles
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setSlectedDistance('20 Miles')">
+                              <input type="checkbox">
+                              20 Miles
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setSlectedDistance('50 Miles')">
+                              <input type="checkbox">
+                              50 Miles
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w-33 px-1 mb-2 text-center">
+                    <label for="" class="mb-0"><strong>Connections</strong></label>
+                    <div class="d-flex">
+                      <div class="btn-group w-100 drop">
+                        <button type="button"
+                          class="btn btn-default border-grey bg-white w-100 text-secondary p-0 selectedConnections">
+                          Select
+                        </button>
+                        <button type="button"
+                          class="btn bg-dark- dropdown-toggle text-white dropdown-toggle-split"
+                          data-toggle="dropdown">
+                          <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu px-0 left">
+                          <ul class="px-0 connectionsOptions">
+                            <li class="dropdown-item px-2"
+                              onclick="setSelectedConnections('Only My Sport Contacts')">
+                              <input type="checkbox"> Only My Sport Contacts
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setSelectedConnections('My Gym')">
+                              <input type="checkbox"> My Gym
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setSelectedConnections('My Sport Clubs')">
+                              <input type="checkbox"> My Sport Clubs
+                            </li>
+                            <li class="dropdown-item px-2"
+                              onclick="setSelectedConnections('My Sport Leagues')">
+                              <input type="checkbox"> My Sport Leagues
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setSelectedConnections('My Colleges')">
+                              <input type="checkbox"> My Colleges
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setSelectedConnections('My High School')">
+                              <input type="checkbox">My High School
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setSelectedConnections('My Work')">
+                              <input type="checkbox"> My Work
+                            </li>
+                            <li class="dropdown-item px-2"
+                              onclick="setSelectedConnections('Mutual Connections')">
+                              <input type="checkbox"> Mutual Connections
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w-33 px-1 mb-2 text-center">
+                    <label for="" class="mb-0"><strong>Age</strong></label>
+                    <div class="d-flex">
+                      <div class="btn-group w-100 drop">
+                        <button type="button"
+                          class="btn btn-default border-grey bg-white w-100 text-secondary p-0 preferredAgeRangeText">
+                          Select
+                        </button>
+                        <button type="button"
+                          class="btn bg-dark- dropdown-toggle text-white dropdown-toggle-split"
+                          data-toggle="dropdown">
+                          <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu px-0 left">
+                          <div class="text-center">
+                            <div>Select Age Range</div>
+                            <div>or Add Below</div>
+                          </div>
+                          <div class="d-flex w-100 p-3">
+                            <span class="w-50"><input type="text" class="form-control"></span>
+                            <div class="px-3">to</div>
+                            <span class="w-50"><input type="text" class="form-control"></span>
+                          </div>
+                          <div class="pt-2 px-4">
+                            <div class="px-1 text-dark">
+                              <a tabIndex="-1" class="text-dark" onclick="setAgesText('13-16')">
+                                <div class="form-check customFormCheck">
+                                  <input id="5" type="checkbox">
+                                  <label for="">
+                                    <span>13 - 16</span>
+                                  </label>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="px-1 text-dark">
+                              <a tabIndex="-1" class="text-dark" onclick="setAgesText('17-23')">
+                                <div class="form-check customFormCheck">
+                                  <input id="6-12" type="checkbox">
+                                  <label for="">
+                                    <span>17 - 23</span>
+                                  </label>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="px-1 text-dark">
+                              <a tabIndex="-1" class="text-dark" onclick="setAgesText('24-30')">
+                                <div class="form-check customFormCheck">
+                                  <input id="13-20" type="checkbox">
+                                  <label for="">
+                                    <span>24 - 30</span>
+                                  </label>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="px-1 text-dark">
+                              <a tabIndex="-1" class="text-dark" onclick="setAgesText('31-40')">
+                                <div class="form-check customFormCheck">
+                                  <input id="21-28" type="checkbox">
+                                  <label for="">
+                                    <span>31 - 40</span>
+                                  </label>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="px-1 text-dark">
+                              <a tabIndex="-1" class="text-dark" onclick="setAgesText('41-50')">
+                                <div class="form-check customFormCheck">
+                                  <input id="21-28" type="checkbox">
+                                  <label for="">
+                                    <span>41 - 50</span>
+                                  </label>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="px-1 text-dark">
+                              <a tabIndex="-1" class="text-dark" onclick="setAgesText('51-60')">
+                                <div class="form-check customFormCheck">
+                                  <input id="21-28" type="checkbox">
+                                  <label for="">
+                                    <span>51 - 60</span>
+                                  </label>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="px-1 text-dark">
+                              <a tabIndex="-1" class="text-dark" onclick="setAgesText('61-70')">
+                                <div class="form-check customFormCheck">
+                                  <input id="21-28" type="checkbox">
+                                  <label for="">
+                                    <span>61 - 70</span>
+                                  </label>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="px-1 text-dark">
+                              <a tabIndex="-1" class="text-dark" onclick="setAgesText('70>')">
+                                <div class="form-check customFormCheck">
+                                  <input id="21-28" type="checkbox">
+                                  <label for="">
+                                    <span>Over 70</span>
+                                  </label>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center">
+                            <button class="btn btn-success" onclick="confirmAgesText()">
+                              Confirm
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w-33 px-1 mb-2 text-center">
+                    <label for="" class="mb-0"><strong>Gender</strong></label>
+                    <div class="d-flex">
+                      <div class="btn-group w-100 drop">
+                        <button type="button"
+                          class="btn btn-default border-grey bg-white w-100 text-secondary p-0 selectedGender">
+                          Select
+                        </button>
+                        <button type="button"
+                          class="btn bg-dark- dropdown-toggle text-white dropdown-toggle-split"
+                          data-toggle="dropdown">
+                          <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu px-0 left">
+                          <ul class="px-0 genderOptions">
+                            <li class="dropdown-item px-2" onclick="setGender('Men Only')">
+                              <input type="checkbox"> Men Only
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setGender('Female Only')">
+                              <input type="checkbox"> Female Only
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setGender('Both')">
+                              <input type="checkbox"> Both
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w-33 px-1 mb-2 text-center">
+                    <label for="" class="mb-0"><strong>Status</strong></label>
+                    <div class="d-flex">
+                      <div class="btn-group w-100 drop">
+                        <button type="button"
+                          class="btn btn-default border-grey bg-white w-100 text-secondary p-0 selectedStatus">
+                          Select
+                        </button>
+                        <button type="button"
+                          class="btn bg-dark- dropdown-toggle text-white dropdown-toggle-split"
+                          data-toggle="dropdown">
+                          <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu px-0 left">
+                          <ul class="px-0 relationOptions">
+                            <li class="dropdown-item px-2" onclick="setStatus('Any status')">
+                              <input type="checkbox"> Any status
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setStatus('Single')">
+                              <input type="checkbox"> Single
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setStatus('Married')">
+                              <input type="checkbox"> Married
+                            </li>
+                            <li class="dropdown-item px-2" onclick="setStatus('Divorced')">
+                              <input type="checkbox"> Divorced
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between w-75 mx-auto">
+                <div class="bg-some-blue text-white w-50 br-5 p-1 my-auto text-center" data-toggle="modal"
+                  data-target="#exampleModalCenter"><small>Post a Event Partner Invite</small>
+                </div>
+                <p class="pb-0 my-auto text-secondary"><strong> Showing xx of xx result</strong></p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="sibar-right">
+      <div class="border rounded p-5 mb-3">Message Box</div>
+      <div class="border rounded p-5">Message Box</div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="location" tabindex="-1" role="dialog" aria-labelledby="location" aria-hidden="true"
+    data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content modal-body p-0">
+        <div class="bg-white p-2 m-auto border-2 w-100 d-flex flex-column">
+          <label class="text-secondary">
+            <i class="fa fa-map-marker-alt fa-lg mr-2"></i><span class="text-success"><strong>Current
+                location or add a
+                city</strong></span>
+          </label>
+
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Address">
+          </div>
+          <div class="form-group">
+            <div class="col p-0 pr-1">
+              <input type="text" class="form-control" placeholder="City">
+            </div>
+          </div>
+          <div id="map"></div>
+
+          <div class="d-flex justify-content-end mt-4">
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <!-- add an api key to the link -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="./js/actions.js"></script>
+
+  <script>
+    function toggleOpenInviteCard() {
+      $(".open-invite-card").toggle();
+      $(".open-availability-card").hide();
+    }
+    function toggleOpenAvailabilityCard() {
+      $(".open-availability-card").toggle();
+      $(".open-invite-card").hide();
+    }
+    $(".btnConnect").click(function () {
+      $(this).children("small").html("Pending");
+      $(this).removeClass("btn-outline-info").addClass("btn-info");
+    });
+    function toggleOpenInviteCard() {
+      $(".open-invite-card").toggle();
+    }
+
+    var input = document.getElementById("sportValue");
+    var optionsVal = document.getElementById("sportList");
+    var arr = getSportsListStatic();
+    //   var locationFilterWrap = $(".locationFilterWrap");
+    // var filterSkillWrap = $(".filterSkillWrap");
+    // optionsVal.classList.add("d-none");
+
+    // input.addEventListener("keyup", show);
+    // optionsVal.onclick = function () {
+    //   optionsVal.style.display = "block";
+    //   console.log(this);
+    //   setVal(this);
+    //   filterSkillWrap.removeClass("d-block").addClass("d-none");
+    // locationFilterWrap.removeClass("d-none").addClass("d-block");
+    // };
+
+    //Use this function to replace potential characters that could break the regex
+    RegExp.escape = function (s) {
+      return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&");
+    };
+    //shows the list
+    function show() {
+      filterSkillWrap.removeClass("d-block").addClass("d-none");
+      // locationFilterWrap.removeClass("d-block").addClass("d-none");
+      var dropdown = document.getElementById("dropdown");
+      dropdown.style.display = "none";
+      optionsVal.options.length = 0;
+
+      if (input.value) {
+        optionsVal.classList.remove("d-none");
+        dropdown.style.display = "block";
+        optionsVal.size = 3;
+        var textSport = input.value;
+
+        for (var i = 0; i < arr.length; i++) {
+          var testableRegExp = new RegExp(RegExp.escape(textSport), "i");
+          if (arr[i].match(testableRegExp)) {
+            addValue(arr[i], arr[i]);
+          }
+        }
+        var size = dropdown.children[0].children;
+        if (size.length > 0) {
+          var defaultSize = 35;
+          if (size.length < 10) {
+            defaultSize *= size.length;
+          } else {
+            defaultSize *= 10;
+          }
+          dropdown.children[0].style.height = defaultSize + "px";
+        }
+      }
+    }
+
+    function showTennisSearchFilters() {
+      $(".golfSearchFilters").toggle()
+      $(".nameSearch").hide()
+    }
+
+
+
+    function getListView() {
+      $(".listWrapPeople").removeClass("d-none");
+      $(".tilesWrapPeople").addClass("d-none");
+      $(".pictureWrapPeople").addClass("d-none");
+    }
+
+    function getPictureView() {
+      $(".listWrapPeople").addClass("d-none");
+      $(".tilesWrapPeople").addClass("d-none");
+      $(".pictureWrapPeople").removeClass("d-none");
+    }
+
+    function getTileView() {
+      $(".listWrapPeople").addClass("d-none");
+      $(".tilesWrapPeople").removeClass("d-none");
+      $(".pictureWrapPeople").addClass("d-none");
+    }
+
+    // function showNamesSearch() {
+    //   $(".nameSearch").toggle();
+    //   $(".golfSearchFilters").hide()
+    // }
+
+    // function hideNamesSearch() {
+    //   $(".nameSearch").toggle();
+    // }
+
+    function setSportValue(value) {
+      $(".buttonSearchContainer").removeClass("d-none").addClass("d-block");
+      // $(".searchResultsMatches").prop("disabled", false);
+      // $(".searchResultsMatches")
+      //   .removeClass("btn-secondary")
+      //   .addClass("btn-success");
+      $(".sport-name").text(value)
+      $("#golfer_tile").addClass("bg-success")
+      return (document.getElementById("sportValue").value = value);
+    }
+
+    // Dynamic skill Checkbox select
+    let skillArr = [];
+    function setskillText(level) {
+      if (skillArr.includes(level)) {
+        skillArr = skillArr.filter(elem => elem !== level)
+        if (skillArr.length < 1) {
+          $(".skillText").html("Select")
+        } else {
+          $(".skillText").html(skillArr.join(", "))
+        }
+      } else {
+        skillArr.push(level)
+        if (skillArr.length < 1) {
+          $(".skillText").html("Select")
+        } else {
+          $(".skillText").html(skillArr.join(", "))
+        }
+      }
+    }
+
+    // setSlectedDistance
+    let distances = [];
+    function setSlectedDistance(distance) {
+      if (distances.includes(distance)) {
+        distances = distances.filter(elem => elem !== distance)
+        if (distances.length < 1) {
+          $(".selectedDistance").html("Select")
+        } else {
+          $(".selectedDistance").html(distances.join(", "))
+        }
+      } else {
+        distances.push(distance)
+        if (distances.length < 1) {
+          $(".selectedDistance").html("Select")
+        } else {
+          $(".selectedDistance").html(distances.join(", "))
+        }
+      }
+    }
+
+    // setSelectedConnections
+    let connections = [];
+    function setSelectedConnections(connection) {
+      if (connections.includes(connection)) {
+        connections = connections.filter(elem => elem !== connection)
+        if (connections.length < 1) {
+          $(".selectedConnections").html("Select")
+        } else {
+          $(".selectedConnections").html(connections.join(", "))
+        }
+      } else {
+        connections.push(connection)
+        if (connections.length < 1) {
+          $(".selectedConnections").html("Select")
+        } else {
+          $(".selectedConnections").html(connections.join(", "))
+        }
+      }
+    }
+
+    // Dynamic Ages Checkbox select
+    let agesArr = []
+    function setAgesText(age) {
+      if (agesArr.includes(age)) {
+        agesArr = agesArr.filter(elem => elem !== age)
+        if (agesArr.length < 1) {
+          $(".preferredAgeRangeText").html("Select")
+        } else {
+          $(".preferredAgeRangeText").html(agesArr.join(", "))
+        }
+      } else {
+        agesArr.push(age)
+        if (agesArr.length < 1) {
+          $(".preferredAgeRangeText").html("Select")
+        } else {
+          $(".preferredAgeRangeText").html(agesArr.join(", "))
+        }
+      }
+    }
+
+    // setGender
+    let selectedGender = []
+    function setGender(gender) {
+      if (selectedGender.includes(gender)) {
+        selectedGender = selectedGender.filter(elem => elem !== gender)
+        if (selectedGender.length < 1) {
+          $(".selectedGender").html("Select")
+        } else {
+          $(".selectedGender").html(selectedGender.join(", "))
+        }
+      } else {
+        selectedGender.push(gender)
+        if (selectedGender.length < 1) {
+          $(".selectedGender").html("Select")
+        } else {
+          $(".selectedGender").html(selectedGender.join(", "))
+        }
+      }
+    }
+
+    // setStatus
+    let selectedStatus = []
+    function setStatus(status) {
+      if (selectedStatus.includes(status)) {
+        selectedStatus = selectedStatus.filter(elem => elem !== status)
+        if (selectedStatus.length < 1) {
+          $(".selectedStatus").html("Select")
+        } else {
+          $(".selectedStatus").html(selectedStatus.join(", "))
+        }
+      } else {
+        selectedStatus.push(status)
+        if (selectedStatus.length < 1) {
+          $(".selectedStatus").html("Select")
+        } else {
+          $(".selectedStatus").html(selectedStatus.join(", "))
+        }
+      }
+    }
+    // Todo: check this function
+    function showAppliedFilters() {
+      $(".appliedFilters").show();
+      $(".filter-checkbox").hide();
+      $(".btnAppliedFilters").hide();
+      $(".distanceDropDownText").hide();
+      $(".connectionDropDownText").hide();
+      $(".ageDropDownText").hide();
+      $(".skillDropDownText").hide();
+      $(".genderDropDownText").hide();
+      $(".relationshipDropDownText").hide();
+      $(".distanceDropDown").show();
+      $(".connectionDropDown").show();
+      $(".ageDropDown").show();
+      $(".skillDropDown").show();
+      $(".genderDropDown").show();
+      $(".relationshipDropDown").show();
+      // $(".filtersMain").hide();
+      $(".appliedFiltersCount").show();
+      $(".appliedFiltersWrap").hide();
+      $(".places-filters").addClass("d-flex");
+      $(".place-location-search").removeClass("px-4");
+      $(".fitness-search").removeClass("px-4");
+      $(".availability-filter").show();
+      $(".matchesCountContainer").removeClass("d-block").addClass("d-none");
+      $(".matches-btn").addClass("wLHeader")
+      $(".matches-btn").removeClass("text-secondary").addClass("text-white");
+      $(".rank").removeClass("d-none").addClass("d-flex");
+
+      if (selectedFilters.indexOf("DISTANCE") < 0) {
+        $(".distanceFilterContainer").hide();
+      }
+      if (selectedFilters.indexOf("AGE") < 0) {
+        $(".ageFilterContainer").hide();
+      }
+      if (selectedFilters.indexOf("RELATIONSHIP") < 0) {
+        $(".relationshipFilterContainer").hide();
+      }
+      if (selectedFilters.indexOf("SKILL") < 0) {
+        $(".skillFilterContainer").hide();
+      }
+      if (selectedFilters.indexOf("CONNECT") < 0) {
+        $(".connectFilterContainer").hide();
+      }
+      if (selectedFilters.indexOf("GENDER") < 0) {
+        $(".genderFilterContainer").hide();
+      }
+    }
+
+    $("[data-toggle=popover]").popover({
+      html: true,
+      content: function () {
+        return $('#popover-content').html();
+      }
+    });
+
+    function quickSearch() {
+      $(".quick-search").removeClass("d-none").addClass("d-block")
+      $(".advanced-search").removeClass("d-block").addClass("d-none")
+      $(".quick-search-btn").removeClass("btn-secondary").addClass("btn-success text-white")
+      $(".advanced-search-btn").removeClass("btn-success text-white").addClass("btn-secondary")
+
+    }
+
+    function advancedSearch() {
+      $(".advanced-search").removeClass("d-none").addClass("d-block")
+      $(".quick-search").removeClass("d-block").addClass("d-none")
+      $(".quick-search-btn").removeClass("btn-success text-white").addClass("btn-secondary")
+      $(".advanced-search-btn").removeClass("btn-secondary").addClass("btn-success text-white")
+    }
+
+    function currentMeetups() {
+      $(".current-meetups").removeClass("btn-secondary").addClass("btn-success")
+      $(".past-meetups").removeClass("btn-success").addClass("btn-secondary")
+    }
+
+    function pastMeetups() {
+      $(".current-meetups").removeClass("btn-success").addClass("btn-secondary")
+      $(".past-meetups").removeClass("btn-secondary").addClass("btn-success")
+    }
+  </script>
+</body>
+
+</html>

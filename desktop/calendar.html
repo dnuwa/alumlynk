@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="intelTelInput/js/intlTelInput.min.js"></script>
+  <link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/page-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/css.css" />
+  <link rel="stylesheet" href="./css/calendar.css">
+  <title>Alumlynk</title>
+
+  <style type="text/css">
+    .profileImgBgSmall {
+      background-image: url("./images/img04.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 78px;
+      display: flex;
+      position: relative;
+    }
+
+    .profileImgBgSmall>div {
+      position: absolute;
+      top: 8px;
+      display: flex;
+    }
+
+    .profileImgBgSmall div img {
+      border: 2px solid #fff;
+    }
+
+    .rounded-custom {
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fixed bg-white mb-5 bottom-shadow">
+    <div class="d-flex bg-white px-2 py-18 w-100 justify-content-between">
+      <div class="col-sm p-1 tiny-m mobi">
+        <div class="text-center logo-toggle">
+          <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+        </div>
+      </div>
+      <div class="d-flex">
+        <a href="index.html" class="my-auto logo-toggle">
+          <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
+        </a>
+        <!-- <a href="#" class="my-auto logo-toggle mobi">
+          <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
+        </a> -->
+      </div>
+      <div class="d-flex col-sm-6 mobile-bottom">
+        <div class="col-sm p-1 tiny-m border">
+          <a href="friends-page.html" class="text-dark font-weight-bold">
+            <div class="text-center">
+              <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
+            </div>
+            <p class="xm-font text-center mb-0 text-dark bold">Alumni</p>
+          </a>
+        </div>
+        <div class="col-sm p-1 tiny-m border">
+          <a href="index.html" class="text-dark font-weight-bold text-success">
+            <div class="text-center">
+              <img src="./images/svg000-friends.svg" width="30" class="my-auto" />
+            </div>
+            <p class="xm-font text-center mb-0 text-dark bold">Network</p>
+          </a>
+        </div>
+        <div class="col-sm p-1 tiny-m border">
+          <a href="posts-page.html" class="text-dark font-weight-bold text-center">
+            <div class="text-center">
+              <img src="./images/svg000-home.svg" width="30" class="my-auto" />
+            </div>
+            <p class="xm-font text-center mb-0">Posts</p>
+          </a>
+        </div>
+        <div class="col-sm p-1 tiny-m border">
+          <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
+            <div class="text-center">
+              <img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
+            </div>
+            <p class="xm-font text-center mb-0">Mentors</p>
+          </a>
+        </div>
+        <div class="col-sm p-1 tiny-m border">
+          <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
+            <div class="text-center">
+              <img src="./images/svg000-message.svg" width="30" class="my-auto" />
+              <div class="icon-value-nav"><small><strong>0</strong></small></div>
+            </div>
+            <p class="xm-font text-center mb-0">Messages</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="d-flex col-lg-2 col-sm-6">
+        <div class="col-sm p-1 tiny-m">
+          <a href="search-page.html" class="text-dark font-weight-bold">
+            <div class="text-center">
+              <i class="fa fa-search fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm p-1 tiny-m">
+          <a href="./calendar.html" class="text-dark font-weight-bold">
+            <div class="text-center">
+              <i class="fa fa-calendar fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm p-1 tiny-m">
+          <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
+            <div class="text-center">
+              <i class="fa fa-bell fa-sm text-center text-dark my-auto  bg-gray-light p-2 rounded-circle"></i>
+              <div class="icon-value-nav-bell"><small><strong>0</strong></small></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm p-1 tiny-m desk">
+          <div class="text-center menu-toggle">
+            <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex mt-92">
+    <div class="sibar-left border-right">
+      <div class="d-flex flex-column">
+        <div class="text-center pt-3">
+          <img src="./images//scott.jpg" alt="" class="rounded-circle" width="60" height="60">
+          <h5><strong>Scott Holley</strong></h5>
+          <p class="mb-0 text-secondary">City, State</p>
+          <p class="text-secondary">Proctor Class of 1998</p>
+        </div>
+        <ul class="list-unstyled px-3 border w-75 mx-auto br-5 mb-2 py-2">
+          <li class="lg-font"> <a href="./friends-page.html">Alumni Directory</a></li>
+          <li class="lg-font"> <a href="./index.html">Alumni Network</a></li>
+          <li class="lg-font"> <a href="alumni-mentoring.html">Alumni Mentors</a></li>
+        </ul>
+        <ul class="list-unstyled px-3 border w-75 mx-auto br-5 mb-2 py-2">
+          <li class="lg-font"> <a href="calendar.html">Meeting Calendar</a></li>
+          <li class="lg-font"> <a href="meetings.html" class="d-flex justify-content-between"><span>Meetings
+              </span><span>(xx)</span></a></li>
+          <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Meeting Requests
+              </span><span>(xx)</span></a></li>
+          <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Connection Requests
+              </span><span>(xx)</span></a></li>
+          <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Mentor Requests
+              </span><span>(xx)</span></a></li>
+        </ul>
+
+        <ul class="list-unstyled px-3 border w-75 mx-auto br-5 mb-2 py-2">
+          <li class="lg-font"> <a href="./class-notes.html">Class Notes</a></li>
+          <li class="lg-font"> <a href="./alumni-events.html">Alumni Events</a></li>
+          <li class="lg-font"> <a href="#">Reunion Information</a></li>
+          <li class="lg-font"> <a href="#">Shop Swag Online</a></li>
+          <li class="lg-font"> <a href="#" class="support-">Support (School Name)</a></li>
+        </ul>
+
+        <ul class="list-unstyled px-3 border w-75 mx-auto br-5 mb-2 py-2">
+          <!-- <li class="lg-font"> <a href="./alumni-connection-requests.html"> Alumni Connection Requests
+                (xxx)</a></li> -->
+          <!-- <li class="lg-font"> <a href="contact-list-all.html">Messages</a></li> -->
+          <li class="lg-font"> <a href="#">My Profile</a></li>
+          <li class="lg-font"> <a href="#">My Posts</a></li>
+          <li class="lg-font"> <a href="#">Following</a></li>
+          <li class="lg-font"> <a href="#">Followers</a></li>
+          <li class="lg-font"> <a href="#">Bookmarks</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-content border-right">
+
+      <div class="bg-blue text-white p-2 mb-2 text-center">
+        <h3>Calendar</h3>
+      </div>
+      <div class="contentColumnsHolder">
+        <div class="contentColumnsCol6 w-100">
+          <!-- joiningPost -->
+          <article
+            class="joiningPost d-block align-items-stretch justify-content-start flex-row w-100 bg-white rounded ">
+            <div class="block">
+              <div id='wrap'>
+
+                <div id='calendar'></div>
+
+                <div style='clear:both'></div>
+              </div>
+              <hr>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="sibar-right">
+      <div class="border rounded p-5 mb-3 d-flex flex-column">
+        <p>Alumni Become A Mentor</p>
+        <a class="btn btn-sm btn-success my-auto" href="alumni-mentoring-step2.html"><strong>JOIN</strong></a>
+      </div>
+      <div class="border rounded p-5">Message Box</div>
+    </div>
+
+    <div class="modal fade" id="location" tabindex="-1" role="dialog" aria-labelledby="location" aria-hidden="true"
+      data-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal-body p-0">
+          <div class="bg-white p-2 m-auto border-2 w-100 d-flex flex-column">
+            <label class="text-secondary">
+              <i class="fa fa-map-marker-alt fa-lg mr-2"></i><span class="text-success"><strong>Current
+                  location or add a
+                  city</strong></span>
+            </label>
+
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Address">
+            </div>
+            <div class="form-group">
+              <div class="col p-0 pr-1">
+                <input type="text" class="form-control" placeholder="City">
+              </div>
+            </div>
+            <div id="map"></div>
+
+            <div class="d-flex justify-content-end mt-4">
+              <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- add an api key to the link -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./js/actions.js"></script>
+    <script src="./js/calendar.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(document).on("change", ".gfield_select", function () {
+          $(".select-search-btn").addClass('btn-success').removeClass('btn-secondary')
+        });
+      });
+    </script>
+
+    <script>
+      $('#side-menu').click(function () {
+        $('.overlay').toggleClass('hidden');
+      });
+    </script>
+
+<script>
+
+  $(document).ready(function () {
+    var date = new Date();
+    var d = date.getDate();
+    var m = date.getMonth();
+    var y = date.getFullYear();
+
+    /*  className colors
+
+    className: default(transparent), important(red), chill(pink), success(green), info(blue)
+
+    */
+
+
+    /* initialize the external events
+    -----------------------------------------------------------------*/
+
+    $('#external-events div.external-event').each(function () {
+
+      // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+      // it doesn't need to have a start or end
+      var eventObject = {
+        title: $.trim($(this).text()) // use the element's text as the event title
+      };
+
+      // store the Event Object in the DOM element so we can get to it later
+      $(this).data('eventObject', eventObject);
+
+      // make the event draggable using jQuery UI
+      $(this).draggable({
+        zIndex: 999,
+        revert: true,      // will cause the event to go back to its
+        revertDuration: 0  //  original position after the drag
+      });
+
+    });
+
+
+    /* initialize the calendar
+    -----------------------------------------------------------------*/
+
+    var calendar = $('#calendar').fullCalendar({
+      header: {
+        left: 'title',
+        center: 'agendaDay,agendaWeek,month',
+        right: 'prev,next today'
+      },
+      editable: true,
+      firstDay: 1, //  1(Monday) this can be changed to 0(Sunday) for the USA system
+      selectable: true,
+      defaultView: 'month',
+
+      axisFormat: 'h:mm',
+      columnFormat: {
+        month: 'ddd',    // Mon
+        week: 'ddd d', // Mon 7
+        day: 'dddd M/d',  // Monday 9/7
+        agendaDay: 'dddd d'
+      },
+      titleFormat: {
+        month: 'MMMM yyyy', // September 2009
+        week: "MMMM yyyy", // September 2009
+        day: 'MMMM yyyy'                  // Tuesday, Sep 8, 2009
+      },
+      allDaySlot: false,
+      selectHelper: true,
+      select: function (start, end, allDay) {
+        var title = prompt('Event Title:');
+        if (title) {
+          calendar.fullCalendar('renderEvent',
+            {
+              title: title,
+              start: start,
+              end: end,
+              allDay: allDay
+            },
+            true // make the event "stick"
+          );
+        }
+        calendar.fullCalendar('unselect');
+      },
+      droppable: true, // this allows things to be dropped onto the calendar !!!
+      drop: function (date, allDay) { // this function is called when something is dropped
+
+        // retrieve the dropped element's stored Event Object
+        var originalEventObject = $(this).data('eventObject');
+
+        // we need to copy it, so that multiple events don't have a reference to the same object
+        var copiedEventObject = $.extend({}, originalEventObject);
+
+        // assign it the date that was reported
+        copiedEventObject.start = date;
+        copiedEventObject.allDay = allDay;
+
+        // render the event on the calendar
+        // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+        $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+
+        // is the "remove after drop" checkbox checked?
+        if ($('#drop-remove').is(':checked')) {
+          // if so, remove the element from the "Draggable Events" list
+          $(this).remove();
+        }
+
+      },
+
+      events: [
+        {
+          title: 'All Day Event',
+          start: new Date(y, m, 1)
+        },
+        {
+          id: 999,
+          title: 'Repeating Event',
+          start: new Date(y, m, d - 3, 16, 0),
+          allDay: false,
+          className: 'info'
+        },
+        {
+          id: 999,
+          title: 'Repeating Event',
+          start: new Date(y, m, d + 4, 16, 0),
+          allDay: false,
+          className: 'info'
+        },
+        {
+          title: 'Meeting',
+          start: new Date(y, m, d, 10, 30),
+          allDay: false,
+          className: 'important'
+        },
+        {
+          title: 'Lunch',
+          start: new Date(y, m, d, 12, 0),
+          end: new Date(y, m, d, 14, 0),
+          allDay: false,
+          className: 'important'
+        },
+        {
+          title: 'Birthday Party',
+          start: new Date(y, m, d + 1, 19, 0),
+          end: new Date(y, m, d + 1, 22, 30),
+          allDay: false,
+        },
+        {
+          title: 'Click for Google',
+          start: new Date(y, m, 28),
+          end: new Date(y, m, 29),
+          url: 'https://ccp.cloudaccess.net/aff.php?aff=5188',
+          className: 'success'
+        }
+      ],
+    });
+
+
+  });        
+</script>
+</body>
+
+</html>
