@@ -3,7 +3,8 @@ $(".logo-toggle").click(function () {
 });
 
 $(".menu-toggle").click(function () {
-  $(".sibar-mobi-nav").toggle();
+  console.log('clicked --')
+  $(".sibar-nav").toggle();
 });
 
 function initMap() {

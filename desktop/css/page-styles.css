@@ -314,12 +314,12 @@ select {
 .sibar-left {
   height: 100vh;
   width: 20%;
-  position: fixed;
-  z-index: 1;
+  position: absolute;
+  z-index: 0;
   top: 1;
   left: 0;
   background-color: #ffffff;
-  overflow-x: hidden;
+  overflow-x: auto;
   padding-bottom: 100px;
 }
 
@@ -327,10 +327,10 @@ select {
   display: none;
 }
 
-.sibar-right{
+.sibar-right {
   height: 100%;
   width: 20%;
-  position: fixed;
+  position: absolute;
   top: 1;
   right: 0;
   background-color: #ffffff;
@@ -339,14 +339,30 @@ select {
   /* padding-top: 20px; */
 }
 
+.z-10 {
+  z-index: 10 !important;
+}
+
 .main-content {
-  margin-left: 20%; /* Same as the width of the sidenav */
+  margin: auto;
   padding: 0px 10px;
   width: 60%;
 }
 
-.sibar-mobi-nav {
+.main-content-lg {
+  margin-left: auto;
+  padding: 0px 10px;
+  width: 80%;
+}
+
+.sibar-nav {
   display: none;
+  z-index: 10;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  width: 30%;
 }
 
 .mt-92 {
@@ -418,13 +434,13 @@ select {
     display: block;
   }
 
-  .mobile-bottom{
+  .mobile-bottom {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     background: white;
-    padding: 0px; 
+    padding: 0px;
   }
 
   .main-content {
@@ -447,12 +463,12 @@ select {
     display: none;
   }
 
-  .sibar-mobi-nav {
+  .sibar-nav {
     height: 100%;
     display: none;
     width: 50%;
-    position: fixed;
-    z-index: 1;
+    position: absolute;
+    z-index: 100;
     top: 80px;
     right: 0;
     background-color: #ffffff;
@@ -460,7 +476,7 @@ select {
     padding: 2rem;
   }
 
-  .sibar-right{
+  .sibar-right {
     display: none;
   }
 
@@ -468,7 +484,7 @@ select {
     margin-top: 80px;
   }
 
-  .page-header > h4{
+  .page-header > h4 {
     font-size: 12px;
   }
 }

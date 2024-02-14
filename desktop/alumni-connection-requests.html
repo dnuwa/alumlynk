@@ -42,108 +42,178 @@
 </head>
 
 <body class="bg-light">
-  <div class="fixed bg-white mb-5 bottom-shadow">
-    <div class="d-flex bg-white px-2 py-18 w-100 justify-content-between">
-      <div class="d-flex">
-        <a href="index.html" class="my-auto logo-toggle desk">
-          <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
-        </a>
-        <a href="#" class="my-auto logo-toggle mobi">
-          <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
-        </a>
-      </div>
-      <div class="d-flex col-sm-6 mobile-bottom">
-        <div class="col-sm p-1 tiny-m border">
-          <a href="friends-page.html" class="text-dark font-weight-bold">
-            <div class="text-center">
-              <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
-            </div>
-            <p class="xm-font text-center mb-0">Alumni</p>
-          </a>
-        </div>
-        <div class="col-sm p-1 tiny-m border active-tab border">
-          <a href="index.html" class="text-dark font-weight-bold text-success">
-            <div class="text-center">
-              <img src="./images/svg000-friends-white.svg" width="30" class="my-auto" />
-            </div>
-            <p class="xm-font text-center mb-0 text-center text-white">Network</p>
-          </a>
-        </div>
-        <div class="col-sm p-1 tiny-m border">
-          <a href="posts-page.html" class="text-dark font-weight-bold text-center">
-            <div class="text-center">
-              <img src="./images/svg000-home.svg" width="30" class="my-auto" />
-            </div>
-            <p class="xm-font text-center mb-0">Posts</p>
-          </a>
-        </div>
-        <div class="col-sm p-1 tiny-m border">
-          <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
-            <div class="text-center">
-              <img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
-            </div>
-            <p class="xm-font text-center mb-0">Mentors</p>
-          </a>
-        </div>
-        <div class="col-sm p-1 tiny-m border">
-          <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
-            <div class="text-center">
-              <img src="./images/svg000-message.svg" width="30" class="my-auto" />
-              <div class="icon-value-nav"><small><strong>0</strong></small></div>
-            </div>
-            <p class="xm-font text-center mb-0">Messages</p>
-          </a>
-        </div>
-      </div>
 
-      <div class="d-flex col-lg-2 col-sm-6">
-        <div class="col-sm p-1 tiny-m">
-          <a href="search-page.html" class="text-dark font-weight-bold">
-            <div class="text-center">
-              <i class="fa fa-search fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm p-1 tiny-m">
-          <a href="./calendar.html" class="text-dark font-weight-bold">
-            <div class="text-center">
-              <i class="fa fa-calendar fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm p-1 tiny-m">
-          <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
-            <div class="text-center">
-              <i class="fa fa-bell fa-sm text-center text-dark my-auto  bg-gray-light p-2 rounded-circle"></i>
-              <div class="icon-value-nav-bell"><small><strong>0</strong></small></div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm p-1 tiny-m">
-          <div class="text-center menu-toggle">
+  <div class="bg-white mb-5 bottom-shadow position-fixed z-10 top-0 w-100">
+    <div class="container">
+      <div class="d-flex bg-white py-18 w-100 justify-content-between">
+        <div class="col-sm p-1 tiny-m mobi">
+          <div class="text-center logo-toggle">
             <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+          </div>
+        </div>
+        <div class="d-flex">
+          <a href="index.html" class="my-auto logo-toggle">
+            <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
+          </a>
+          <!-- <a href="#" class="my-auto logo-toggle mobi">
+            <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
+          </a> -->
+        </div>
+
+        <div class="d-flex col-sm-6 mobile-bottom">
+          <div class="col-sm p-1 tiny-m border">
+            <a href="friends-page.html" class="text-dark font-weight-bold">
+              <div class="text-center">
+                <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
+              </div>
+              <p class="xm-font text-center mb-0 text-dark bold">Alumni</p>
+            </a>
+          </div>
+          <div class="col-sm p-1 tiny-m border">
+            <a href="index.html" class="text-dark font-weight-bold text-success">
+              <div class="text-center">
+                <img src="./images/svg000-friends.svg" width="30" class="my-auto" />
+              </div>
+              <p class="xm-font text-center mb-0">Network</p>
+            </a>
+          </div>
+          <div class="col-sm p-1 tiny-m border">
+            <a href="posts-page.html" class="text-dark font-weight-bold text-center">
+              <div class="text-center">
+                <img src="./images/svg000-home.svg" width="30" class="my-auto" />
+              </div>
+              <p class="xm-font text-center mb-0">Posts</p>
+            </a>
+          </div>
+          <div class="col-sm p-1 tiny-m border">
+            <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
+              <div class="text-center">
+                <img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
+              </div>
+              <p class="xm-font text-center mb-0">Mentors</p>
+            </a>
+          </div>
+          <div class="col-sm p-1 tiny-m border">
+            <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
+              <div class="text-center">
+                <img src="./images/svg000-message.svg" width="30" class="my-auto" />
+                <div class="icon-value-nav"><small><strong>0</strong></small></div>
+              </div>
+              <p class="xm-font text-center mb-0">Messages</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="d-flex col-lg-2 col-sm-6">
+          <div class="col-sm p-1 tiny-m">
+            <a href="search-page.html" class="text-dark font-weight-bold">
+              <div class="text-center">
+                <i class="fa fa-search fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm p-1 tiny-m">
+            <a href="./calendar.html" class="text-dark font-weight-bold">
+              <div class="text-center">
+                <i class="fa fa-calendar fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm p-1 tiny-m">
+            <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
+              <div class="text-center">
+                <i class="fa fa-bell fa-sm text-center text-dark my-auto  bg-gray-light p-2 rounded-circle"></i>
+                <div class="icon-value-nav-bell"><small><strong>0</strong></small></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm p-1 tiny-m desk">
+            <div class="text-center menu-toggle">
+              <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="d-flex mt-92">
-    <div class="border-right sibar-left">
-      <div class="d-flex flex-column">
-        <ul class="list-unstyled px-3 gn-menu">
-          <li> <a href="./friends-page.html"><small>Alumni Directory</small></a></li>
-          <li> <a href="./alumni-connection-requests.html"><small> Alumni Connection Requests
-                (xxx)</small></a></li>
-          <li> <a href="./index.html"><small>Alumni Network</small></a></li>
-          <li> <a href="#"><small>Alum Mentoring</small></a></li>
-          <li> <a href="contact-list-all.html"><small>Messages</small></a></li>
-          <li> <a href="#"><small>Notices(xxx)</small></a></li>
-          <li> <a href="#"><small>Profile Page</small></a></li>
-          <li> <a href="./alumni-events.html"><small>Alumni Events</small></a></li>
-          <li> <a href="./class-notes.html"><small>Class Notes</small></a></li>
-          <li> <a href="#"><small>Reunion Information</small></a></li>
-          <li> <a href="#"><small>Shop Online</small></a></li>
-          <li> <a href="#" class="support-"><small>Support (School Name)</small></a></li>
+  <div class="container position-relative px-0 d-flex mt-92">
+
+    <div class="sibar-nav">
+      <ul class="list-unstyled mb-0">
+        <li class="px-3 py-2 border-bottom font-weight-bold">My Profile</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Meeting Invites Received (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Meeting Invites Sent (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">New Messages (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">My Alumni Connections (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Connectiin Requests Received (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Connection Requests Sent (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Following (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Followers (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold d-flex justify-content-between">
+          <span class="my-auto">About Alumlynk</span>
+          <i class="fa fa-angle-down my-auto"></i>
+        </li>
+        <li class="px-3 py-2 border-bottom font-weight-bold d-flex justify-content-between">
+          <span class="my-auto">Account Settings</span>
+          <i class="fa fa-angle-down my-auto"></i>
+        </li>
+        <li class="px-3 py-2 border-bottom font-weight-bold d-flex justify-content-between">
+          <span class="my-auto">Contact Us</span>
+          <i class="fa fa-angle-down my-auto"></i>
+        </li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Sign Out</li>
+      </ul>
+    </div>
+    <div class="sibar-left border-right">
+      <div class="d-flex flex-column px-2">
+        <div class="text-center pt-3">
+          <img src="./images//scott.jpg" alt="" class="rounded-circle" width="60" height="60">
+          <a class="text-dark" href="my-profile.html">
+            <h5><strong>Scott Holley</strong></h5>
+          </a>
+          <p class="mb-0 text-secondary">City, State</p>
+          <p class="text-secondary">Proctor Class of 1998</p>
+        </div>
+        <ul class="list-unstyled px-3 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font"> <a href="./friends-page.html">Alumni Directory</a></li>
+          <li class="lg-font"> <a href="./index.html">Alumni Network</a></li>
+          <li class="lg-font"> <a href="alumni-mentoring.html">Alumni Mentors</a></li>
+        </ul>
+        <ul class="list-unstyled px-3 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font"> <a href="calendar.html">Meeting Calendar</a></li>
+          <li class="lg-font"> <a href="meetings.html" class="d-flex justify-content-between"><span>Meetings
+              </span><span>(xx)</span></a></li>
+          <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Meeting Requests
+              </span><span>(xx)</span></a></li>
+          <li class="lg-font"> <a href="invites-recieved.html" class="d-flex justify-content-between"><span>Invites
+                Recieved
+              </span><span>(xx)</span></a></li>
+          <li class="lg-font"> <a href="invites-sent.html" class="d-flex justify-content-between"><span>Invites Sent
+              </span><span>(xx)</span></a></li>
+          <li class="lg-font"> <a href="alumni-connection-requests.html"
+              class="d-flex justify-content-between"><span>Connection Requests
+              </span><span>(xx)</span></a></li>
+          <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Mentor Requests
+              </span><span>(xx)</span></a></li>
+        </ul>
+
+        <ul class="list-unstyled px-3 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font"> <a href="./class-notes.html">Class Notes</a></li>
+          <li class="lg-font"> <a href="./alumni-events.html">Alumni Events</a></li>
+          <li class="lg-font"> <a href="#">Reunion Information</a></li>
+          <li class="lg-font"> <a href="#">Shop Swag Online</a></li>
+          <li class="lg-font"> <a href="#" class="support-">Support (School Name)</a></li>
+        </ul>
+
+        <ul class="list-unstyled px-3 border w-100 br-5 mb-2 py-2">
+          <!-- <li class="lg-font"> <a href="./alumni-connection-requests.html"> Alumni Connection Requests
+                (xxx)</a></li> -->
+          <!-- <li class="lg-font"> <a href="contact-list-all.html">Messages</a></li> -->
+          <li class="lg-font"> <a href="#">My Profile</a></li>
+          <li class="lg-font"> <a href="#">My Posts</a></li>
+          <li class="lg-font"> <a href="#">Following</a></li>
+          <li class="lg-font"> <a href="#">Followers</a></li>
+          <li class="lg-font"> <a href="#">Bookmarks</a></li>
         </ul>
       </div>
     </div>
@@ -377,23 +447,21 @@
 
       </div>
       <div class="mt-2">
-        <div class="d-flex bg-dark text-white justify-content-between pl-2">
-          <div class="w-75 my-auto"><strong>(School Name) Alumni Requests</strong></div>
-          <div class="d-flex">
+        <div class="d-flex blue-bg text-white py-2">
+          <p class="mb-0 mx-auto">(School Name) Alumni Requests</strong>
+            <!-- <div class="d-flex">
             <button class="btn btn-sm btn-light m-1" data-toggle="modal" data-target="#location">
               <i class="fa fa-map-marker fa-lg text-center"></i>
             </button>
             <button class="btn btn-sm btn-secondary search-btn- border-0 m-1" href="#"><i
                 class="fa fa-search fa-lg text-center text-white my-auto"></i></button>
-          </div>
-        </div>
-
-        <div class="d-flex text-center text-secondary px-3 pt-3">
-          <strong>Found: (Number of results) </strong>
+          </div> -->
         </div>
         <div class="d-flex flex-wrap p-2 ">
-          <div class="w-25 p-1">
+          <div class="w-33 p-1">
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
+              <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
+                style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
               <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
                 <div class="d-flex w-100 mt-3">
                   <div class="d-flex mx-auto position-relative">
@@ -404,27 +472,34 @@
                   </div>
                 </div>
               </div>
-              <div class="position-relative mt-40">
-                <a href="#" class="sm-font">Shahid hussain</a>
+              <div class="position-relative mt-5">
+                <a href="user-profile-2.html" class="sm-font">Shahid hussain</a>
+                <p class="mb-0 sm-font">City, State</p>
                 <p class="mb-0 sm-font ">Proctor Class of 1998</p>
-                <p class="mb-0 sm-font">(Company Name)</p>
-                <p class="mb-0 sm-font"><small>(Title)</small></p>
-                <p class="mb-0 sm-font"><i class="fa fa-users mr-1"></i><small> 3 Alumni
-                    connections</small></p>
-                <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small> 1 Mutual
-                    connections</small>
-                </p>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Company Name) (Title)</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Industry) (Department)</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="mb-0 sm-font mr-3"><i class="fa fa-users mr-1"></i><small>3</small></p>
+                  <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
+                </div>
               </div>
               <div class="d-flex mx-2">
-                <button class="btn btn-success btn-sm mx-auto my-2 font-11 w-50">Accept</button>
+                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
                 <button class="border-0 bg-white"></button>
-                <button class="btn btn-danger btn-sm mx-auto my-2 font-11 w-50">Decline</button>
+                <button
+                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
               </div>
             </div>
           </div>
 
-          <div class="w-25 p-1">
+          <div class="w-33 p-1">
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
+              <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
+                style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
               <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
                 <div class="d-flex w-100 mt-3">
                   <div class="d-flex mx-auto position-relative">
@@ -435,27 +510,34 @@
                   </div>
                 </div>
               </div>
-              <div class="position-relative mt-40">
-                <a href="#" class="sm-font">Shahid hussain</a>
+              <div class="position-relative mt-5">
+                <a href="user-profile-2.html" class="sm-font">Shahid hussain</a>
+                <p class="mb-0 sm-font">City, State</p>
                 <p class="mb-0 sm-font ">Proctor Class of 1998</p>
-                <p class="mb-0 sm-font">(Company Name)</p>
-                <p class="mb-0 sm-font"><small>(Title)</small></p>
-                <p class="mb-0 sm-font"><i class="fa fa-users mr-1"></i><small> 3 Alumni
-                    connections</small></p>
-                <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small> 1 Mutual
-                    connections</small>
-                </p>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Company Name) (Title)</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Industry) (Department)</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="mb-0 sm-font mr-3"><i class="fa fa-users mr-1"></i><small>3</small></p>
+                  <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
+                </div>
               </div>
               <div class="d-flex mx-2">
-                <button class="btn btn-success btn-sm mx-auto my-2 font-11 w-50">Accept</button>
+                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
                 <button class="border-0 bg-white"></button>
-                <button class="btn btn-danger btn-sm mx-auto my-2 font-11 w-50">Decline</button>
+                <button
+                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
               </div>
             </div>
           </div>
 
-          <div class="w-25 p-1">
+          <div class="w-33 p-1">
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
+              <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
+                style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
               <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
                 <div class="d-flex w-100 mt-3">
                   <div class="d-flex mx-auto position-relative">
@@ -466,27 +548,34 @@
                   </div>
                 </div>
               </div>
-              <div class="position-relative mt-40">
-                <a href="#" class="sm-font">Shahid hussain</a>
+              <div class="position-relative mt-5">
+                <a href="user-profile-2.html" class="sm-font">Shahid hussain</a>
+                <p class="mb-0 sm-font">City, State</p>
                 <p class="mb-0 sm-font ">Proctor Class of 1998</p>
-                <p class="mb-0 sm-font">(Company Name)</p>
-                <p class="mb-0 sm-font"><small>(Title)</small></p>
-                <p class="mb-0 sm-font"><i class="fa fa-users mr-1"></i><small> 3 Alumni
-                    connections</small></p>
-                <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small> 1 Mutual
-                    connections</small>
-                </p>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Company Name) (Title)</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Industry) (Department)</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="mb-0 sm-font mr-3"><i class="fa fa-users mr-1"></i><small>3</small></p>
+                  <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
+                </div>
               </div>
               <div class="d-flex mx-2">
-                <button class="btn btn-success btn-sm mx-auto my-2 font-11 w-50">Accept</button>
+                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
                 <button class="border-0 bg-white"></button>
-                <button class="btn btn-danger btn-sm mx-auto my-2 font-11 w-50">Decline</button>
+                <button
+                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
               </div>
             </div>
           </div>
 
-          <div class="w-25 p-1">
+          <div class="w-33 p-1">
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
+              <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
+                style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
               <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
                 <div class="d-flex w-100 mt-3">
                   <div class="d-flex mx-auto position-relative">
@@ -497,27 +586,34 @@
                   </div>
                 </div>
               </div>
-              <div class="position-relative mt-40">
-                <a href="#" class="sm-font">Shahid hussain</a>
+              <div class="position-relative mt-5">
+                <a href="user-profile-2.html" class="sm-font">Shahid hussain</a>
+                <p class="mb-0 sm-font">City, State</p>
                 <p class="mb-0 sm-font ">Proctor Class of 1998</p>
-                <p class="mb-0 sm-font">(Company Name)</p>
-                <p class="mb-0 sm-font"><small>(Title)</small></p>
-                <p class="mb-0 sm-font"><i class="fa fa-users mr-1"></i><small> 3 Alumni
-                    connections</small></p>
-                <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small> 1 Mutual
-                    connections</small>
-                </p>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Company Name) (Title)</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Industry) (Department)</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="mb-0 sm-font mr-3"><i class="fa fa-users mr-1"></i><small>3</small></p>
+                  <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
+                </div>
               </div>
               <div class="d-flex mx-2">
-                <button class="btn btn-success btn-sm mx-auto my-2 font-11 w-50">Accept</button>
+                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
                 <button class="border-0 bg-white"></button>
-                <button class="btn btn-danger btn-sm mx-auto my-2 font-11 w-50">Decline</button>
+                <button
+                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
               </div>
             </div>
           </div>
 
-          <div class="w-25 p-1">
+          <div class="w-33 p-1">
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
+              <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
+                style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
               <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
                 <div class="d-flex w-100 mt-3">
                   <div class="d-flex mx-auto position-relative">
@@ -528,27 +624,34 @@
                   </div>
                 </div>
               </div>
-              <div class="position-relative mt-40">
-                <a href="#" class="sm-font">Shahid hussain</a>
+              <div class="position-relative mt-5">
+                <a href="user-profile-2.html" class="sm-font">Shahid hussain</a>
+                <p class="mb-0 sm-font">City, State</p>
                 <p class="mb-0 sm-font ">Proctor Class of 1998</p>
-                <p class="mb-0 sm-font">(Company Name)</p>
-                <p class="mb-0 sm-font"><small>(Title)</small></p>
-                <p class="mb-0 sm-font"><i class="fa fa-users mr-1"></i><small> 3 Alumni
-                    connections</small></p>
-                <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small> 1 Mutual
-                    connections</small>
-                </p>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Company Name) (Title)</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Industry) (Department)</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="mb-0 sm-font mr-3"><i class="fa fa-users mr-1"></i><small>3</small></p>
+                  <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
+                </div>
               </div>
               <div class="d-flex mx-2">
-                <button class="btn btn-success btn-sm mx-auto my-2 font-11 w-50">Accept</button>
+                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
                 <button class="border-0 bg-white"></button>
-                <button class="btn btn-danger btn-sm mx-auto my-2 font-11 w-50">Decline</button>
+                <button
+                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
               </div>
             </div>
           </div>
 
-          <div class="w-25 p-1">
+          <div class="w-33 p-1">
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
+              <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
+                style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
               <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
                 <div class="d-flex w-100 mt-3">
                   <div class="d-flex mx-auto position-relative">
@@ -559,27 +662,34 @@
                   </div>
                 </div>
               </div>
-              <div class="position-relative mt-40">
-                <a href="#" class="sm-font">Shahid hussain</a>
+              <div class="position-relative mt-5">
+                <a href="user-profile-2.html" class="sm-font">Shahid hussain</a>
+                <p class="mb-0 sm-font">City, State</p>
                 <p class="mb-0 sm-font ">Proctor Class of 1998</p>
-                <p class="mb-0 sm-font">(Company Name)</p>
-                <p class="mb-0 sm-font"><small>(Title)</small></p>
-                <p class="mb-0 sm-font"><i class="fa fa-users mr-1"></i><small> 3 Alumni
-                    connections</small></p>
-                <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small> 1 Mutual
-                    connections</small>
-                </p>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Company Name) (Title)</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Industry) (Department)</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="mb-0 sm-font mr-3"><i class="fa fa-users mr-1"></i><small>3</small></p>
+                  <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
+                </div>
               </div>
               <div class="d-flex mx-2">
-                <button class="btn btn-success btn-sm mx-auto my-2 font-11 w-50">Accept</button>
+                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
                 <button class="border-0 bg-white"></button>
-                <button class="btn btn-danger btn-sm mx-auto my-2 font-11 w-50">Decline</button>
+                <button
+                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
               </div>
             </div>
           </div>
 
-          <div class="w-25 p-1">
+          <div class="w-33 p-1">
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
+              <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
+                style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
               <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
                 <div class="d-flex w-100 mt-3">
                   <div class="d-flex mx-auto position-relative">
@@ -590,27 +700,34 @@
                   </div>
                 </div>
               </div>
-              <div class="position-relative mt-40">
-                <a href="#" class="sm-font">Shahid hussain</a>
+              <div class="position-relative mt-5">
+                <a href="user-profile-2.html" class="sm-font">Shahid hussain</a>
+                <p class="mb-0 sm-font">City, State</p>
                 <p class="mb-0 sm-font ">Proctor Class of 1998</p>
-                <p class="mb-0 sm-font">(Company Name)</p>
-                <p class="mb-0 sm-font"><small>(Title)</small></p>
-                <p class="mb-0 sm-font"><i class="fa fa-users mr-1"></i><small> 3 Alumni
-                    connections</small></p>
-                <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small> 1 Mutual
-                    connections</small>
-                </p>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Company Name) (Title)</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Industry) (Department)</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="mb-0 sm-font mr-3"><i class="fa fa-users mr-1"></i><small>3</small></p>
+                  <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
+                </div>
               </div>
               <div class="d-flex mx-2">
-                <button class="btn btn-success btn-sm mx-auto my-2 font-11 w-50">Accept</button>
+                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
                 <button class="border-0 bg-white"></button>
-                <button class="btn btn-danger btn-sm mx-auto my-2 font-11 w-50">Decline</button>
+                <button
+                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
               </div>
             </div>
           </div>
 
-          <div class="w-25 p-1">
+          <div class="w-33 p-1">
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
+              <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
+                style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
               <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
                 <div class="d-flex w-100 mt-3">
                   <div class="d-flex mx-auto position-relative">
@@ -621,26 +738,33 @@
                   </div>
                 </div>
               </div>
-              <div class="position-relative mt-40">
-                <a href="#" class="sm-font">Shahid hussain</a>
+              <div class="position-relative mt-5">
+                <a href="user-profile-2.html" class="sm-font">Shahid hussain</a>
+                <p class="mb-0 sm-font">City, State</p>
                 <p class="mb-0 sm-font ">Proctor Class of 1998</p>
-                <p class="mb-0 sm-font">(Company Name)</p>
-                <p class="mb-0 sm-font"><small>(Title)</small></p>
-                <p class="mb-0 sm-font"><i class="fa fa-users mr-1"></i><small> 3 Alumni
-                    connections</small></p>
-                <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small> 1 Mutual
-                    connections</small>
-                </p>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Company Name) (Title)</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Industry) (Department)</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="mb-0 sm-font mr-3"><i class="fa fa-users mr-1"></i><small>3</small></p>
+                  <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
+                </div>
               </div>
               <div class="d-flex mx-2">
-                <button class="btn btn-success btn-sm mx-auto my-2 font-11 w-50">Accept</button>
+                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
                 <button class="border-0 bg-white"></button>
-                <button class="btn btn-danger btn-sm mx-auto my-2 font-11 w-50">Decline</button>
+                <button
+                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
               </div>
             </div>
           </div>
-          <div class="w-25 p-1">
+          <div class="w-33 p-1">
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
+              <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
+                style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
               <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
                 <div class="d-flex w-100 mt-3">
                   <div class="d-flex mx-auto position-relative">
@@ -651,58 +775,34 @@
                   </div>
                 </div>
               </div>
-              <div class="position-relative mt-40">
-                <a href="#" class="sm-font">Shahid hussain</a>
+              <div class="position-relative mt-5">
+                <a href="user-profile-2.html" class="sm-font">Shahid hussain</a>
+                <p class="mb-0 sm-font">City, State</p>
                 <p class="mb-0 sm-font ">Proctor Class of 1998</p>
-                <p class="mb-0 sm-font">(Company Name)</p>
-                <p class="mb-0 sm-font"><small>(Title)</small></p>
-                <p class="mb-0 sm-font"><i class="fa fa-users mr-1"></i><small> 3 Alumni
-                    connections</small></p>
-                <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small> 1 Mutual
-                    connections</small>
-                </p>
-              </div>
-              <div class="d-flex mx-2">
-                <button class="btn btn-success btn-sm mx-auto my-2 font-11 w-50">Accept</button>
-                <button class="border-0 bg-white"></button>
-                <button class="btn btn-danger btn-sm mx-auto my-2 font-11 w-50">Decline</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-25 p-1">
-            <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
-              <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
-                <div class="d-flex w-100 mt-3">
-                  <div class="d-flex mx-auto position-relative">
-                    <img src="./images/default-user-image.png" alt="" width="100" height="100"
-                      class="mx-auto rounded-circle">
-                    <img src="./images/vaccinated.svg" alt="" width="100" height="100"
-                      class="border-0 position-absolute m-0">
-                  </div>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Company Name) (Title)</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Industry) (Department)</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="mb-0 sm-font mr-3"><i class="fa fa-users mr-1"></i><small>3</small></p>
+                  <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
                 </div>
               </div>
-              <div class="position-relative mt-40">
-                <a href="#" class="sm-font">Shahid hussain</a>
-                <p class="mb-0 sm-font ">Proctor Class of 1998</p>
-                <p class="mb-0 sm-font">(Company Name)</p>
-                <p class="mb-0 sm-font"><small>(Title)</small></p>
-                <p class="mb-0 sm-font"><i class="fa fa-users mr-1"></i><small> 3 Alumni
-                    connections</small></p>
-                <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small> 1 Mutual
-                    connections</small>
-                </p>
-              </div>
               <div class="d-flex mx-2">
-                <button class="btn btn-success btn-sm mx-auto my-2 font-11 w-50">Accept</button>
+                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
                 <button class="border-0 bg-white"></button>
-                <button class="btn btn-danger btn-sm mx-auto my-2 font-11 w-50">Decline</button>
+                <button
+                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
               </div>
             </div>
           </div>
 
-          <div class="w-25 p-1">
+          <div class="w-33 p-1">
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
+              <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
+                style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
               <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
                 <div class="d-flex w-100 mt-3">
                   <div class="d-flex mx-auto position-relative">
@@ -713,27 +813,34 @@
                   </div>
                 </div>
               </div>
-              <div class="position-relative mt-40">
-                <a href="#" class="sm-font">Shahid hussain</a>
+              <div class="position-relative mt-5">
+                <a href="user-profile-2.html" class="sm-font">Shahid hussain</a>
+                <p class="mb-0 sm-font">City, State</p>
                 <p class="mb-0 sm-font ">Proctor Class of 1998</p>
-                <p class="mb-0 sm-font">(Company Name)</p>
-                <p class="mb-0 sm-font"><small>(Title)</small></p>
-                <p class="mb-0 sm-font"><i class="fa fa-users mr-1"></i><small> 3 Alumni
-                    connections</small></p>
-                <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small> 1 Mutual
-                    connections</small>
-                </p>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Company Name) (Title)</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Industry) (Department)</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="mb-0 sm-font mr-3"><i class="fa fa-users mr-1"></i><small>3</small></p>
+                  <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
+                </div>
               </div>
               <div class="d-flex mx-2">
-                <button class="btn btn-success btn-sm mx-auto my-2 font-11 w-50">Accept</button>
+                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
                 <button class="border-0 bg-white"></button>
-                <button class="btn btn-danger btn-sm mx-auto my-2 font-11 w-50">Decline</button>
+                <button
+                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
               </div>
             </div>
           </div>
 
-          <div class="w-25 p-1">
+          <div class="w-33 p-1">
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
+              <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
+                style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
               <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
                 <div class="d-flex w-100 mt-3">
                   <div class="d-flex mx-auto position-relative">
@@ -744,21 +851,64 @@
                   </div>
                 </div>
               </div>
-              <div class="position-relative mt-40">
-                <a href="#" class="sm-font">Shahid hussain</a>
+              <div class="position-relative mt-5">
+                <a href="user-profile-2.html" class="sm-font">Shahid hussain</a>
+                <p class="mb-0 sm-font">City, State</p>
                 <p class="mb-0 sm-font ">Proctor Class of 1998</p>
-                <p class="mb-0 sm-font">(Company Name)</p>
-                <p class="mb-0 sm-font"><small>(Title)</small></p>
-                <p class="mb-0 sm-font"><i class="fa fa-users mr-1"></i><small> 3 Alumni
-                    connections</small></p>
-                <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small> 1 Mutual
-                    connections</small>
-                </p>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Company Name) (Title)</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Industry) (Department)</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="mb-0 sm-font mr-3"><i class="fa fa-users mr-1"></i><small>3</small></p>
+                  <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
+                </div>
               </div>
               <div class="d-flex mx-2">
-                <button class="btn btn-success btn-sm mx-auto my-2 font-11 w-50">Accept</button>
+                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
                 <button class="border-0 bg-white"></button>
-                <button class="btn btn-danger btn-sm mx-auto my-2 font-11 w-50">Decline</button>
+                <button
+                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-33 p-1">
+            <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
+              <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
+                style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
+              <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
+                <div class="d-flex w-100 mt-3">
+                  <div class="d-flex mx-auto position-relative">
+                    <img src="./images/default-user-image.png" alt="" width="100" height="100"
+                      class="mx-auto rounded-circle">
+                    <img src="./images/vaccinated.svg" alt="" width="100" height="100"
+                      class="border-0 position-absolute m-0">
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative mt-5">
+                <a href="user-profile-2.html" class="sm-font">Shahid hussain</a>
+                <p class="mb-0 sm-font">City, State</p>
+                <p class="mb-0 sm-font ">Proctor Class of 1998</p>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Company Name) (Title)</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <p class="mb-1 sm-font">(Industry) (Department)</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="mb-0 sm-font mr-3"><i class="fa fa-users mr-1"></i><small>3</small></p>
+                  <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
+                </div>
+              </div>
+              <div class="d-flex mx-2">
+                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
+                <button class="border-0 bg-white"></button>
+                <button
+                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
               </div>
             </div>
           </div>

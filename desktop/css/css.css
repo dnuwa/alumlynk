@@ -213,6 +213,93 @@
   line-height: 75px;
 }
 
+.pulbishImg {
+  width: 40px;
+}
+
+.rounded-md {
+  border-radius: 24px;
+}
+
+.br-5 {
+  border-radius: 5px !important;
+}
+.br-10 {
+  border-radius: 10px;
+}
+.br-20 {
+  border-radius: 20px;
+}
+
+.user-dots > div > .dropdown-menu {
+  z-index: 1052;
+}
+
+.mainNavigation .dropdown-menu .heading {
+  color: #979797;
+  margin-bottom: 0;
+  padding: 16px 16px 8px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.text-dark- {
+  color: #000000;
+}
+
+.border-black {
+  border: 1px solid #000000;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.dropdown-item > span {
+  padding: 1px;
+}
+.dropdown-item > span:hover {
+  text-decoration: none !important;
+  font-size: 15px;
+}
+.dropdown-item {
+  padding: 5px;
+  color: #000;
+}
+
+.btn-default{
+	width:70px;
+	border-radius:0px;
+	border:none;
+	background-color:#efefef !important;
+	color:#000;
+}
+
+.mainDisplay{
+  min-height: 100vh;
+}
+
+.bg-dark-green3 {
+  background-color: #245e30;
+}
+
+.border-3 {
+  border: 3px solid grey;
+}
+
+.bg-dark-grey {
+  background-color: #6f7378;
+}
+
+.blue-bg{
+  background-color: #21496d !important;
+}
+
+.lg-font > a{
+  color: #21496d !important;
+  text-decoration: none;
+}
+
 /* icon-only trigger (menu item) */
 
 .gn-menu-main li.gn-trigger {
@@ -1394,9 +1481,6 @@ legend {
   height: 33px;
 }
 
-.write-post {
-  padding: 0px;
-}
 .tabs-left {
   border-bottom: none;
   border-right: 1px solid #ddd;

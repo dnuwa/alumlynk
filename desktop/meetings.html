@@ -42,124 +42,188 @@
 </head>
 
 <body>
-  <div class="fixed bg-white mb-5 bottom-shadow">
-    <div class="d-flex bg-white px-2 py-18 w-100 justify-content-between">
-      <div class="col-sm p-1 tiny-m mobi">
-        <div class="text-center logo-toggle">
-          <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
-        </div>
-      </div>
-      <div class="d-flex">
-        <a href="index.html" class="my-auto logo-toggle">
-          <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
-        </a>
-        <!-- <a href="#" class="my-auto logo-toggle mobi">
-          <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
-        </a> -->
-      </div>
-      <div class="d-flex col-sm-6 mobile-bottom">
-        <div class="col-sm p-1 tiny-m border">
-          <a href="friends-page.html" class="text-dark font-weight-bold">
-            <div class="text-center">
-              <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
-            </div>
-            <p class="xm-font text-center mb-0 text-dark bold">Alumni</p>
-          </a>
-        </div>
-        <div class="col-sm p-1 tiny-m border active-tab border">
-          <a href="index.html" class="text-dark font-weight-bold text-success">
-            <div class="text-center">
-              <img src="./images/svg000-friends-white.svg" width="30" class="my-auto" />
-            </div>
-            <p class="xm-font text-center mb-0 text-center text-white">Network</p>
-          </a>
-        </div>
-        <div class="col-sm p-1 tiny-m border">
-          <a href="posts-page.html" class="text-dark font-weight-bold text-center">
-            <div class="text-center">
-              <img src="./images/svg000-home.svg" width="30" class="my-auto" />
-            </div>
-            <p class="xm-font text-center mb-0">Posts</p>
-          </a>
-        </div>
-        <div class="col-sm p-1 tiny-m border">
-          <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
-            <div class="text-center">
-              <img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
-            </div>
-            <p class="xm-font text-center mb-0">Mentors</p>
-          </a>
-        </div>
-        <div class="col-sm p-1 tiny-m border">
-          <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
-            <div class="text-center">
-              <img src="./images/svg000-message.svg" width="30" class="my-auto" />
-              <div class="icon-value-nav"><small><strong>0</strong></small></div>
-            </div>
-            <p class="xm-font text-center mb-0">Messages</p>
-          </a>
-        </div>
-      </div>
-
-      <div class="d-flex col-lg-2 col-sm-6">
-        <div class="col-sm p-1 tiny-m">
-          <a href="search-page.html" class="text-dark font-weight-bold">
-            <div class="text-center">
-              <i class="fa fa-search fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm p-1 tiny-m">
-          <a href="./calendar.html" class="text-dark font-weight-bold">
-            <div class="text-center">
-              <i class="fa fa-calendar fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm p-1 tiny-m">
-          <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
-            <div class="text-center">
-              <i class="fa fa-bell fa-sm text-center text-dark my-auto  bg-gray-light p-2 rounded-circle"></i>
-              <div class="icon-value-nav-bell"><small><strong>0</strong></small></div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm p-1 tiny-m desk">
-          <div class="text-center menu-toggle">
+  <div class="bg-white mb-5 bottom-shadow position-fixed z-10 top-0 w-100">
+    <div class="container">
+      <div class="d-flex bg-white py-18 w-100 justify-content-between">
+        <div class="col-sm p-1 tiny-m mobi">
+          <div class="text-center logo-toggle">
             <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+          </div>
+        </div>
+        <div class="d-flex">
+          <a href="index.html" class="my-auto logo-toggle">
+            <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
+          </a>
+          <!-- <a href="#" class="my-auto logo-toggle mobi">
+            <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
+          </a> -->
+        </div>
+        <div class="d-flex col-sm-6 mobile-bottom">
+          <div class="col-sm p-1 tiny-m border">
+            <a href="friends-page.html" class="text-dark font-weight-bold">
+              <div class="text-center">
+                <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
+              </div>
+              <p class="xm-font text-center mb-0 text-dark bold">Alumni</p>
+            </a>
+          </div>
+          <div class="col-sm p-1 tiny-m border active-tab border">
+            <a href="index.html" class="text-dark font-weight-bold text-success">
+              <div class="text-center">
+                <img src="./images/svg000-friends-white.svg" width="30" class="my-auto" />
+              </div>
+              <p class="xm-font text-center mb-0 text-center text-white">Network</p>
+            </a>
+          </div>
+          <div class="col-sm p-1 tiny-m border">
+            <a href="posts-page.html" class="text-dark font-weight-bold text-center">
+              <div class="text-center">
+                <img src="./images/svg000-home.svg" width="30" class="my-auto" />
+              </div>
+              <p class="xm-font text-center mb-0">Posts</p>
+            </a>
+          </div>
+          <div class="col-sm p-1 tiny-m border">
+            <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
+              <div class="text-center">
+                <img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
+              </div>
+              <p class="xm-font text-center mb-0">Mentors</p>
+            </a>
+          </div>
+          <div class="col-sm p-1 tiny-m border">
+            <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
+              <div class="text-center">
+                <img src="./images/svg000-message.svg" width="30" class="my-auto" />
+                <div class="icon-value-nav"><small><strong>0</strong></small></div>
+              </div>
+              <p class="xm-font text-center mb-0">Messages</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="d-flex col-lg-2 col-sm-6">
+          <div class="col-sm p-1 tiny-m">
+            <a href="search-page.html" class="text-dark font-weight-bold">
+              <div class="text-center">
+                <i class="fa fa-search fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm p-1 tiny-m">
+            <a href="./calendar.html" class="text-dark font-weight-bold">
+              <div class="text-center">
+                <i class="fa fa-calendar fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm p-1 tiny-m">
+            <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
+              <div class="text-center">
+                <i class="fa fa-bell fa-sm text-center text-dark my-auto  bg-gray-light p-2 rounded-circle"></i>
+                <div class="icon-value-nav-bell"><small><strong>0</strong></small></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm p-1 tiny-m desk">
+            <div class="text-center menu-toggle">
+              <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="d-flex mt-92">
+  <div class="container position-relative px-0 d-flex mt-92">
+
+    <div class="sibar-nav">
+      <ul class="list-unstyled mb-0">
+        <li class="px-3 py-2 border-bottom font-weight-bold">My Profile</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Meeting Invites Received (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Meeting Invites Sent (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">New Messages (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">My Alumni Connections (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Connectiin Requests Received (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Connection Requests Sent (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Following (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Followers (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold d-flex justify-content-between">
+          <span class="my-auto">About Alumlynk</span>
+          <i class="fa fa-angle-down my-auto"></i>
+        </li>
+        <li class="px-3 py-2 border-bottom font-weight-bold d-flex justify-content-between">
+          <span class="my-auto">Account Settings</span>
+          <i class="fa fa-angle-down my-auto"></i>
+        </li>
+        <li class="px-3 py-2 border-bottom font-weight-bold d-flex justify-content-between">
+          <span class="my-auto">Contact Us</span>
+          <i class="fa fa-angle-down my-auto"></i>
+        </li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Sign Out</li>
+      </ul>
+    </div>
+
+    <div class="sibar-nav">
+      <ul class="list-unstyled mb-0">
+        <li class="px-3 py-2 border-bottom font-weight-bold">My Profile</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Meeting Invites Received (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Meeting Invites Sent (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">New Messages (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">My Alumni Connections (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Connectiin Requests Received (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Connection Requests Sent (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Following (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Followers (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold d-flex justify-content-between">
+          <span class="my-auto">About Alumlynk</span>
+          <i class="fa fa-angle-down my-auto"></i>
+        </li>
+        <li class="px-3 py-2 border-bottom font-weight-bold d-flex justify-content-between">
+          <span class="my-auto">Account Settings</span>
+          <i class="fa fa-angle-down my-auto"></i>
+        </li>
+        <li class="px-3 py-2 border-bottom font-weight-bold d-flex justify-content-between">
+          <span class="my-auto">Contact Us</span>
+          <i class="fa fa-angle-down my-auto"></i>
+        </li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Sign Out</li>
+      </ul>
+    </div>
+
     <div class="sibar-left border-right">
-      <div class="d-flex flex-column">
+      <div class="d-flex flex-column px-2">
         <div class="text-center pt-3">
           <img src="./images//scott.jpg" alt="" class="rounded-circle" width="60" height="60">
-          <h5><strong>Scott Holley</strong></h5>
+          <a class="text-dark" href="my-profile.html">
+            <h5><strong>Scott Holley</strong></h5>
+          </a>
           <p class="mb-0 text-secondary">City, State</p>
           <p class="text-secondary">Proctor Class of 1998</p>
         </div>
-        <ul class="list-unstyled px-3 border w-75 mx-auto br-5 mb-2 py-2">
+        <ul class="list-unstyled px-3 border w-100 br-5 mb-2 py-2">
           <li class="lg-font"> <a href="./friends-page.html">Alumni Directory</a></li>
           <li class="lg-font"> <a href="./index.html">Alumni Network</a></li>
           <li class="lg-font"> <a href="alumni-mentoring.html">Alumni Mentors</a></li>
         </ul>
-        <ul class="list-unstyled px-3 border w-75 mx-auto br-5 mb-2 py-2">
+        <ul class="list-unstyled px-3 border w-100 br-5 mb-2 py-2">
           <li class="lg-font"> <a href="calendar.html">Meeting Calendar</a></li>
           <li class="lg-font"> <a href="meetings.html" class="d-flex justify-content-between"><span>Meetings
               </span><span>(xx)</span></a></li>
           <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Meeting Requests
               </span><span>(xx)</span></a></li>
-          <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Connection Requests
+          <li class="lg-font"> <a href="invites-recieved.html" class="d-flex justify-content-between"><span>Invites
+                Recieved
+              </span><span>(xx)</span></a></li>
+          <li class="lg-font"> <a href="invites-sent.html" class="d-flex justify-content-between"><span>Invites Sent
+              </span><span>(xx)</span></a></li>
+          <li class="lg-font"> <a href="alumni-connection-requests.html" class="d-flex justify-content-between"><span>Connection Requests
               </span><span>(xx)</span></a></li>
           <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Mentor Requests
               </span><span>(xx)</span></a></li>
         </ul>
 
-        <ul class="list-unstyled px-3 border w-75 mx-auto br-5 mb-2 py-2">
+        <ul class="list-unstyled px-3 border w-100 br-5 mb-2 py-2">
           <li class="lg-font"> <a href="./class-notes.html">Class Notes</a></li>
           <li class="lg-font"> <a href="./alumni-events.html">Alumni Events</a></li>
           <li class="lg-font"> <a href="#">Reunion Information</a></li>
@@ -167,7 +231,7 @@
           <li class="lg-font"> <a href="#" class="support-">Support (School Name)</a></li>
         </ul>
 
-        <ul class="list-unstyled px-3 border w-75 mx-auto br-5 mb-2 py-2">
+        <ul class="list-unstyled px-3 border w-100 br-5 mb-2 py-2">
           <!-- <li class="lg-font"> <a href="./alumni-connection-requests.html"> Alumni Connection Requests
                 (xxx)</a></li> -->
           <!-- <li class="lg-font"> <a href="contact-list-all.html">Messages</a></li> -->
@@ -179,239 +243,238 @@
         </ul>
       </div>
     </div>
-    <div class="main-content border-right">
-
-      <div class="donation-form d-none">
-        <div class="d-flex p-2 maroon-border-bottom m-2">
-          <button class="btn btn-sm btn-outline-secondary my-auto donationback">Back</button>
-          <label class="mx-auto">Donation</label>
-        </div>
-        <div class="p-3">
-          <label for="">Gift amount: </label>
-          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
-            <p class="mb-0">Lorem ipsum dolor sit amet,</p>
-            <p class="mb-0"><strong>$10,000</strong></p>
-          </button>
-          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
-            <p class="mb-0">accusamus ea placeat.</p>
-            <p class="mb-0"><strong>$10,000</strong></p>
-          </button>
-          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
-            <p class="mb-0">accusamus ea placeat.</p>
-            <p class="mb-0"><strong>$10,000</strong></p>
-          </button>
-          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
-            <p class="mb-0">Lorem ipsum</p>
-            <p class="mb-0"><strong>$10,000</strong></p>
-          </button>
-          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
-            <p class="mb-0 ml-auto"><strong>$10,000</strong></p>
-          </button>
-          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
-            <p class="mb-0 ml-auto"><strong>$10,000</strong></p>
-          </button>
-          <div class="d-flex border rounded">
-            <label for="" class="text-secondary py-2 pl-3">Other</label>
-            <input type="text" name="" id="" class="m-3 w-50 p-2" placeholder="$">
+    <div class="main-content gray-wrapper border-right">
+      <div class="container full-container">
+        <div class="donation-form d-none">
+          <div class="d-flex p-2 maroon-border-bottom m-2">
+            <button class="btn btn-sm btn-outline-secondary my-auto donationback">Back</button>
+            <label class="mx-auto">Donation</label>
           </div>
-        </div>
+          <div class="p-3">
+            <label for="">Gift amount: </label>
+            <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+              <p class="mb-0">Lorem ipsum dolor sit amet,</p>
+              <p class="mb-0"><strong>$10,000</strong></p>
+            </button>
+            <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+              <p class="mb-0">accusamus ea placeat.</p>
+              <p class="mb-0"><strong>$10,000</strong></p>
+            </button>
+            <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+              <p class="mb-0">accusamus ea placeat.</p>
+              <p class="mb-0"><strong>$10,000</strong></p>
+            </button>
+            <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+              <p class="mb-0">Lorem ipsum</p>
+              <p class="mb-0"><strong>$10,000</strong></p>
+            </button>
+            <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+              <p class="mb-0 ml-auto"><strong>$10,000</strong></p>
+            </button>
+            <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+              <p class="mb-0 ml-auto"><strong>$10,000</strong></p>
+            </button>
+            <div class="d-flex border rounded">
+              <label for="" class="text-secondary py-2 pl-3">Other</label>
+              <input type="text" name="" id="" class="m-3 w-50 p-2" placeholder="$">
+            </div>
+          </div>
 
-        <div class="d-flex px-2 maroon-border-bottom m-2">
-          <label>Gift preference</label>
-        </div>
-        <div class="d-flex flex-column px-3">
-          <label for="">Online designition</label>
-          <input class="form-control form-control-sm" type="text" placeholder="">
-        </div>
-        <div class="d-flex flex-column p-3">
-          <label for="">Gift Instructions</label>
-          <input class="form-control form-control-sm" type="text" placeholder="">
-        </div>
+          <div class="d-flex px-2 maroon-border-bottom m-2">
+            <label>Gift preference</label>
+          </div>
+          <div class="d-flex flex-column px-3">
+            <label for="">Online designition</label>
+            <input class="form-control form-control-sm" type="text" placeholder="">
+          </div>
+          <div class="d-flex flex-column p-3">
+            <label for="">Gift Instructions</label>
+            <input class="form-control form-control-sm" type="text" placeholder="">
+          </div>
 
-        <div class="d-flex px-2 maroon-border-bottom m-2">
-          <label>Tribute Gift</label>
-        </div>
-        <div class="form-check mx-3">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label" for="defaultCheck1">
-            the gift is Lorem ipsum dolor sit amet consectetur
-          </label>
-        </div>
+          <div class="d-flex px-2 maroon-border-bottom m-2">
+            <label>Tribute Gift</label>
+          </div>
+          <div class="form-check mx-3">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              the gift is Lorem ipsum dolor sit amet consectetur
+            </label>
+          </div>
 
-        <div class="d-flex px-2 maroon-border-bottom m-2">
-          <label>Recurring Gift</label>
-        </div>
+          <div class="d-flex px-2 maroon-border-bottom m-2">
+            <label>Recurring Gift</label>
+          </div>
 
-        <div class="form-check mx-3">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
-          <label class="form-check-label" for="defaultCheck1">
-            Make this a monthly gift
-          </label>
-        </div>
+          <div class="form-check mx-3">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
+            <label class="form-check-label" for="defaultCheck1">
+              Make this a monthly gift
+            </label>
+          </div>
 
-        <div class="d-flex mx-3">
-          Give <select class="custom-select mr-sm-2 w-25 mx-1" id="inlineFormCustomSelect">
-            <option selected>Choose...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-          to
-          <select class="custom-select mr-sm-2 w-25 mx-1" id="inlineFormCustomSelect">
-            <option selected>Choose...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-
-        <div class="d-flex mx-3">
-          <label for="">your first gift will occur on 12/12/1212</label>
-        </div>
-
-        <div class="d-flex px-2 maroon-border-bottom m-2">
-          <label>Billing Address</label>
-        </div>
-        <div class="form-check mx-3 mb-3">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label" for="defaultCheck1">
-            Make this gift on behalf of an organization
-          </label>
-        </div>
-
-        <div class="mx-3 mb-3">
-          <label class="" for="defaultCheck1">
-            lorem Ipsum
-          </label>
-          <input type="email" class="form-control form-control-sm mb-2" id="colFormLabelSm" placeholder="">
-          <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
-        </div>
-
-        <div class="mx-3 mb-3">
-          <label class="" for="defaultCheck1">
-            Email
-          </label>
-          <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
-        </div>
-
-        <div class="mx-3 mb-3">
-          <label class="" for="defaultCheck1">
-            Phone
-          </label>
-          <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
-        </div>
-
-        <div class="mx-3 mb-3">
-          <label class="" for="defaultCheck1">
-            Country
-          </label>
-          <select class="custom-select" id="inlineFormCustomSelect">
-            <option selected>Choose...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-
-        <div class="mx-3 mb-3">
-          <label class="" for="defaultCheck1">
-            City
-          </label>
-          <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
-        </div>
-
-        <div class="mx-3 mb-3">
-          <label class="" for="defaultCheck1">
-            Lorem ipsum
-          </label>
-          <div class="d-flex">
-            <select class="custom-select m-1" id="inlineFormCustomSelect">
+          <div class="d-flex mx-3">
+            Give <select class="custom-select mr-sm-2 w-25 mx-1" id="inlineFormCustomSelect">
               <option selected>Choose...</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
             </select>
-            <input type="text">
-          </div>
-        </div>
-
-        <div class="form-check mx-3 mb-3">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label" for="defaultCheck1">
-            Lorem, ipsum dolor sit amet consectetur
-          </label>
-        </div>
-
-        <div class="d-flex px-2 maroon-border-bottom m-2">
-          <label>Payment Details</label>
-        </div>
-
-        <div class="d-flex flex-column mx-3">
-          <label for="">Payment methods</label>
-          <div class="d-flex">
-            <button class="btn btn-sm btn-primary w-25 mr-3">Debit card</button> <button
-              class="btn btn-sm btn-outline-secondary w-25">Credit card </button>
-          </div>
-        </div>
-
-        <p class="text-danger mx-3 mt-3">Payment processed by lorem ipsum</p>
-
-
-        <div class="mx-3 mb-3">
-          <label class="" for="defaultCheck1">
-            Credit card name
-          </label>
-          <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
-        </div>
-
-        <div class="mx-3 mb-3">
-          <label class="" for="defaultCheck1">
-            Card number
-          </label>
-          <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
-        </div>
-
-        <div class="d-flex mb-3">
-          <img src="./images/cards.png" alt="" class="w-75 mx-auto">
-        </div>
-
-        <div class="mx-3 mb-3">
-          <label class="" for="defaultCheck1">
-            Expirydate
-          </label>
-          <div class="d-flex">
-            <select class="custom-select m-1" id="inlineFormCustomSelect">
-              <option selected>Month</option>
+            to
+            <select class="custom-select mr-sm-2 w-25 mx-1" id="inlineFormCustomSelect">
+              <option selected>Choose...</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
             </select>
-            <select class="custom-select m-1" id="inlineFormCustomSelect">
-              <option selected>Year</option>
+          </div>
+
+          <div class="d-flex mx-3">
+            <label for="">your first gift will occur on 12/12/1212</label>
+          </div>
+
+          <div class="d-flex px-2 maroon-border-bottom m-2">
+            <label>Billing Address</label>
+          </div>
+          <div class="form-check mx-3 mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Make this gift on behalf of an organization
+            </label>
+          </div>
+
+          <div class="mx-3 mb-3">
+            <label class="" for="defaultCheck1">
+              lorem Ipsum
+            </label>
+            <input type="email" class="form-control form-control-sm mb-2" id="colFormLabelSm" placeholder="">
+            <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+          </div>
+
+          <div class="mx-3 mb-3">
+            <label class="" for="defaultCheck1">
+              Email
+            </label>
+            <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+          </div>
+
+          <div class="mx-3 mb-3">
+            <label class="" for="defaultCheck1">
+              Phone
+            </label>
+            <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+          </div>
+
+          <div class="mx-3 mb-3">
+            <label class="" for="defaultCheck1">
+              Country
+            </label>
+            <select class="custom-select" id="inlineFormCustomSelect">
+              <option selected>Choose...</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
             </select>
-
           </div>
+
+          <div class="mx-3 mb-3">
+            <label class="" for="defaultCheck1">
+              City
+            </label>
+            <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+          </div>
+
+          <div class="mx-3 mb-3">
+            <label class="" for="defaultCheck1">
+              Lorem ipsum
+            </label>
+            <div class="d-flex">
+              <select class="custom-select m-1" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <input type="text">
+            </div>
+          </div>
+
+          <div class="form-check mx-3 mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Lorem, ipsum dolor sit amet consectetur
+            </label>
+          </div>
+
+          <div class="d-flex px-2 maroon-border-bottom m-2">
+            <label>Payment Details</label>
+          </div>
+
+          <div class="d-flex flex-column mx-3">
+            <label for="">Payment methods</label>
+            <div class="d-flex">
+              <button class="btn btn-sm btn-primary w-25 mr-3">Debit card</button> <button
+                class="btn btn-sm btn-outline-secondary w-25">Credit card </button>
+            </div>
+          </div>
+
+          <p class="text-danger mx-3 mt-3">Payment processed by lorem ipsum</p>
+
+
+          <div class="mx-3 mb-3">
+            <label class="" for="defaultCheck1">
+              Credit card name
+            </label>
+            <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+          </div>
+
+          <div class="mx-3 mb-3">
+            <label class="" for="defaultCheck1">
+              Card number
+            </label>
+            <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+          </div>
+
+          <div class="d-flex mb-3">
+            <img src="./images/cards.png" alt="" class="w-75 mx-auto">
+          </div>
+
+          <div class="mx-3 mb-3">
+            <label class="" for="defaultCheck1">
+              Expirydate
+            </label>
+            <div class="d-flex">
+              <select class="custom-select m-1" id="inlineFormCustomSelect">
+                <option selected>Month</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="custom-select m-1" id="inlineFormCustomSelect">
+                <option selected>Year</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+
+            </div>
+          </div>
+
+          <div class="mx-3 mb-3">
+            <label class="" for="defaultCheck1">
+              CC:
+            </label>
+            <input type="tel" class="form-control form-control-sm w-25" id="colFormLabelSm" placeholder="">
+          </div>
+
+          <div class="d-flex mb-3">
+            <button class="btn btn-danger text-white w-75 mx-auto"><strong>Give Now</strong></button>
+          </div>
+
         </div>
-
-        <div class="mx-3 mb-3">
-          <label class="" for="defaultCheck1">
-            CC:
-          </label>
-          <input type="tel" class="form-control form-control-sm w-25" id="colFormLabelSm" placeholder="">
-        </div>
-
-        <div class="d-flex mb-3">
-          <button class="btn btn-danger text-white w-75 mx-auto"><strong>Give Now</strong></button>
-        </div>
-
-      </div>
-
-      <div class="mt-2 main-view">
-        <div class="mx-1 mb-3 bg-white padding-main-4 mainDisplay">
-            <div class="p-2 bg-light mb-2">
+        <div class="mt-2 main-view">
+          <div class="mainDisplay p-2 bg-white">
+            <div class="mb-2">
               <div class="d-flex">
                 <h3 class="p-2 mx-auto"><strong>My Sport Meetings</strong></h3>
               </div>
@@ -419,25 +482,23 @@
               <div class="d-flex flex-column w-75 mx-auto">
                 <div class="d-flex mb-3">
                   <div class="col-sm pl-0">
-                    <button class="btn btn-sm btn-success br-5 w-100 current-meetups"
-                      onclick="currentMeetups()">Current Sport Meet Ups</button>
+                    <button class="btn btn-sm btn-success br-5 w-100 current-meetups" onclick="currentMeetups()">Current Meetings</button>
                   </div>
                   <div class="col-sm px-0">
-                    <button class="btn btn-sm btn-secondary w-100 br-5 past-meetups" onclick="pastMeetups()">Past
-                      Sport Meet Ups</button>
+                    <button class="btn btn-sm btn-secondary w-100 br-5 past-meetups" onclick="pastMeetups()">Past Meeting</button>
                   </div>
-                  
+
                 </div>
-                
+
                 <div class="d-flex mb-3">
                   <div class="quick-search col-sm pl-0">
                     <div class="d-flex">
                       <div class="col-sm d-flex p-0 w-100">
-                        <input name="" id="" class="form-control w-100 rounded-left" placeholder="Quick search" />
-                        
-                      <div class="text-white bg-secondary d-flex px-3 br-5 rounded-right">
-                        <i class="fa fa-search fa-lg my-auto"></i>
-                      </div>
+                        <input name="" id="" class="form-control-sm w-100 rounded-left border" placeholder="Quick search" />
+
+                        <div class="text-white bg-secondary d-flex px-3 br-5 rounded-right">
+                          <i class="fa fa-search my-auto"></i>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -532,99 +593,122 @@
               </div>
             </div>
 
-            <div class="bg-dark text-white p-2">
-              March 2020
-            </div>
-            <div class="mobi">
-              <div class="d-flex">
-                <div class="text-center">
+            <div>
+              <div class="bg-dark text-white p-2">
+                March 2020
+              </div>
+              <div class="mobi">
+                <div class="d-flex bg-secondary p-2">
+                  <div class="d-flex text-center">
+                    <h3 class="m-0 text-dark- mr-3"><strong>MAR</strong></h3>
+                    <h3 class="m-0 text-success "><strong>22</strong></h3>
+                  </div>
+                  <p class="mx-auto text-dark- my-auto"><strong>(Sport Name)</strong></p>
+                  <p class="mx-auto text-dark- my-auto"><strong>(Practice)</strong></p>
+                </div>
+              </div>
+              
+              <div class="d-flex my-1 border">
+                <div class="col-sm bg-light text-center py-2 event-date p-0 border desk">
                   <h3 class="m-0 text-dark-"><strong>MAR</strong></h3>
                   <h1 class="m-0 text-success"><strong>22</strong></h1>
+                  <p class="my-1 text-dark-"><strong>(Sport Name)</strong></p>
+                  <p class="mb-0 text-dark-">(Practice)</p>
                 </div>
-                <p class="mx-auto text-dark- my-auto"><strong>Sport Name</strong></p>
+                <div class="col-sm-9">
+                  <div class="d-flex pt-2">
+                    <div class="col-sm text-center">
+                      <i class="fa fa-user-o fa-2x"></i>
+                    </div>
+                    <div class="col-sm text-center">
+                      <i class="fa fa-clock-o fa-2x"></i>
+                    </div>
+                    <div class="col-sm text-center">
+                      <i class="fa fa-map-marker text-success fa-2x"></i>
+                    </div>
+                    <div class="col-sm text-center d-flex">
+                      <p class="m-auto">Status</p>
+                    </div>
+                  </div>
+                  <hr class="my-2">
+                  <div class="d-flex">
+                    <div class="col-sm py-2 text-center px-0">
+                      <img src="./images/scott.jpg" alt="" width="60" class="rounded-circle mb-2">
+                      <h5 class="mb-0 text-success"><strong>Scott Holley</strong></h4>
+                    </div>
+                    <div class="col-sm py-2 text-center px-0">
+                      <p class="mb-0 text-dark-">3:30pm to <br> 4:30pm</p>
+                    </div>
+                    <div class="col-sm py-2 text-center px-0">
+                      <p class="my-1 text-dark-"><small><strong>Sport Place Name</strong></small></p>
+                      <p class="mb-0 text-dark-"><small>(123 Maint St)</small></p>
+                      <p class="mb-0 text-dark-"><small>(City), (State)</small></p>
+                    </div>
+                    <div class="col-sm py-2 text-center px-0">
+                      <button class="btn btn-sm btn-success br-5 w-75 my-1">Confirmed</button>
+                      <button class="btn btn-sm btn-default br-5 w-75 my-1">Reschedule</button>
+                      <button class="btn btn-sm btn-default text-danger br-5 w-75 my-1">Cancel</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="d-flex justify-content-between my-1">
-              <div class="col-sm bg-light text-center py-2 event-date p-0 desk">
-                <h3 class="m-0 text-dark-"><strong>MAR</strong></h3>
-                <h1 class="m-0 text-success"><strong>22</strong></h1>
-                <p class="my-1 text-dark-"><strong>Sport Name</strong></p>
+              
+              <div class="bg-dark text-white p-2">
+                April 2020
               </div>
-              <div class="col-sm py-2 text-center px-0">
-                <img src="./images/scott.jpg" alt="" width="40" class="rounded-circle">
-                <p class="mb-0 text-primary">Scott Holley</p>
-                <p class="mb-0">(City), (State)</p>
+              <div class="mobi">
+                <div class="d-flex bg-secondary p-2">
+                  <div class="d-flex text-center">
+                    <h3 class="m-0 text-dark- mr-3"><strong>April</strong></h3>
+                    <h3 class="m-0 text-success "><strong>15</strong></h3>
+                  </div>
+                  <p class="mx-auto text-dark- my-auto"><strong>(Sport Name)</strong></p>
+                  <p class="mx-auto text-dark- my-auto"><strong>(Practice)</strong></p>
+                </div>
               </div>
-              <div class="col-sm py-2 text-center px-0">
-                <i class="fa fa-calendar fa-2x"></i>
-                <!-- <p class="my-1 text-dark-"><strong>Sport Name</strong></p> -->
-                <p class="mb-0 text-dark- my-1"><small>Monday, March 22</small></p>
-                <p class="mb-0 text-dark-"><small>3:30 to 4:30pm</small></p>
-              </div>
-              <div class="col-sm py-2 text-center px-0">
-                <i class="fa fa-map-marker fa-2x text-success"></i>
-                <p class="my-1 text-dark-"><strong>Sport Place Name</strong></p>
-                <p class="mb-0 text-dark-"><small>(123 Maint St)</small></p>
-                <p class="mb-0 text-dark-"><small>(City), (State)</small></p>
-              </div>
-              <div class="col-sm py-2 text-center px-0">
-                <img src="./images/open-book.png" alt="" width="35">
-                <p class="mb-0"><small>(Title)</small></p>
-                <p class="mb-0"><small>Description: Lorem ipsum</small></p>
-              </div>
-              <div class="col-sm py-2 text-center px-0">
-                <p class="mb-0">Status</p>
-                <button class="btn btn-sm btn-success br-5 w-100 my-1">Confirmed</button>
-                <button class="btn btn-sm btn-default br-5 w-100 my-1">Reschedule</button>
-                <button class="btn btn-sm btn-default text-danger br-5 w-100 my-1">Cancel</button>
-              </div>
-            </div>
-
-            <div class="bg-dark text-white p-2">
-              April 2020
-            </div>
-            <div class="mobi">
-              <div class="d-flex">
-                <div class="text-center">
-                  <h3 class="m-0 text-dark-"><strong>April</strong></h3>
+              <div class="d-flex my-1 border">
+                <div class="col-sm bg-light text-center py-2 event-date p-0 border desk">
+                  <h3 class="m-0 text-dark-"><strong>APRIL</strong></h3>
                   <h1 class="m-0 text-success"><strong>15</strong></h1>
+                  <p class="my-1 text-dark-"><strong>(Sport Name)</strong></p>
+                  <p class="mb-0 text-dark-">(Practice)</p>
                 </div>
-                <p class="mx-auto text-dark- my-auto"><strong>Sport Name</strong></p>
-              </div>
-            </div>
-            <div class="d-flex justify-content-between my-1">
-              <div class="col-sm bg-light text-center py-2 event-date p-0 desk">
-                <h3 class="m-0 text-dark-"><strong>APRIL</strong></h3>
-                <h1 class="m-0 text-success"><strong>15</strong></h1>
-                <p class="my-1 text-dark-"><strong>Sport Name</strong></p>
-              </div>
-              <div class="col-sm py-2 text-center px-0">
-                <img src="./images/scott.jpg" alt="" width="40" class="rounded-circle">
-                <p class="mb-0 text-primary">Scott Holley</p>
-                <p class="mb-0">(City), (State)</p>
-              </div>
-              <div class="col-sm py-2 text-center px-0">
-                <i class="fa fa-calendar fa-2x"></i>
-                <!-- <p class="my-1 text-dark-"><strong>Sport Name</strong></p> -->
-                <p class="mb-0 text-dark- my-1"><small>Monday, March 22</small></p>
-                <p class="mb-0 text-dark-"><small>3:30 to 4:30pm</small></p>
-              </div>
-              <div class="col-sm py-2 text-center px-0">
-                <i class="fa fa-map-marker fa-2x text-success"></i>
-                <p class="my-1 text-dark-"><strong>Sport Place Name</strong></p>
-                <p class="mb-0 text-dark-"><small>(123 Maint St)</small></p>
-                <p class="mb-0 text-dark-"><small>(City), (State)</small></p>
-              </div>
-              <div class="col-sm py-2 text-center px-0">
-                <img src="./images/open-book.png" alt="" width="35">
-                <p class="mb-0"><small>(Title)</small></p>
-                <p class="mb-0"><small>Description: Lorem ipsum</small></p>
-              </div>
-              <div class="col-sm py-2 text-center px-0">
-                <p class="mb-0">Status</p>
-                <button class="btn btn-sm btn-success br-5 w-100 my-1">Confirmed</button>
-                <button class="btn btn-sm btn-default br-5 w-100 my-1">Reschedule</button>
-                <button class="btn btn-sm btn-default text-danger br-5 w-100 my-1">Cancel</button>
+                <div class="col-sm-9">
+                  <div class="d-flex pt-2">
+                    <div class="col-sm text-center">
+                      <i class="fa fa-user-o fa-2x"></i>
+                    </div>
+                    <div class="col-sm text-center">
+                      <i class="fa fa-clock-o fa-2x"></i>
+                    </div>
+                    <div class="col-sm text-center">
+                      <i class="fa fa-map-marker text-success fa-2x"></i>
+                    </div>
+                    <div class="col-sm text-center d-flex">
+                      <p class="m-auto">Status</p>
+                    </div>
+                  </div>
+                  <hr class="my-2">
+                  <div class="d-flex">
+                    <div class="col-sm py-2 text-center px-0">
+                      <img src="./images/scott.jpg" alt="" width="60" class="rounded-circle mb-2">
+                      <h5 class="mb-0 text-success"><strong>Scott Holley</strong></h4>
+                    </div>
+                    <div class="col-sm py-2 text-center px-0">
+                      <p class="mb-0 text-dark-">3:30pm to <br> 4:30pm</p>
+                    </div>
+                    <div class="col-sm py-2 text-center px-0">
+                      <p class="my-1 text-dark-"><small><strong>Sport Place Name</strong></small></p>
+                      <p class="mb-0 text-dark-"><small>(123 Maint St)</small></p>
+                      <p class="mb-0 text-dark-"><small>(City), (State)</small></p>
+                    </div>
+                    <div class="col-sm py-2 text-center px-0">
+                      <button class="btn btn-sm btn-success br-5 w-75 my-1">Confirmed</button>
+                      <button class="btn btn-sm btn-default br-5 w-75 my-1">Reschedule</button>
+                      <button class="btn btn-sm btn-default text-danger br-5 w-75 my-1">Cancel</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -760,28 +844,24 @@
                                 </button>
                                 <div class="dropdown-menu px-0 left">
                                   <ul class="px-0 connectionsOptions">
-                                    <li class="dropdown-item px-2"
-                                      onclick="setSelectedConnections('Social Members')">
+                                    <li class="dropdown-item px-2" onclick="setSelectedConnections('Social Members')">
                                       <input type="checkbox"> Social Members
                                     </li>
-                                    <li class="dropdown-item px-2"
-                                      onclick="setSelectedConnections('Social Friends')">
+                                    <li class="dropdown-item px-2" onclick="setSelectedConnections('Social Friends')">
                                       <input type="checkbox"> Social Friends
                                     </li>
                                     <li class="dropdown-item px-2"
                                       onclick="setSelectedConnections('Social Mutual Friends')">
                                       <input type="checkbox"> Social Mutual Friends
                                     </li>
-                                    <li class="dropdown-item px-2"
-                                      onclick="setSelectedConnections('(colleges name)')">
+                                    <li class="dropdown-item px-2" onclick="setSelectedConnections('(colleges name)')">
                                       <input type="checkbox"> (colleges name)
                                     </li>
                                     <li class="dropdown-item px-2"
                                       onclick="setSelectedConnections('(high schools name)')">
                                       <input type="checkbox"> (high schools name)
                                     </li>
-                                    <li class="dropdown-item px-2"
-                                      onclick="setSelectedConnections(' (gyms name)')">
+                                    <li class="dropdown-item px-2" onclick="setSelectedConnections(' (gyms name)')">
                                       <input type="checkbox"> (gyms name)
                                     </li>
                                     <li class="dropdown-item px-2"
@@ -1109,8 +1189,7 @@
                       </span>
                       <span class="w-25 px-1">
                         <div class="btn-group rounded w-100 mx-auto" role="group">
-                          <button type="button"
-                            class="btn btn-secondary_ btn-secondary w-33 getListViewButton"
+                          <button type="button" class="btn btn-secondary_ btn-secondary w-33 getListViewButton"
                             onclick="getListView()">
                             <i class="fa fa-list-ul"></i>
                           </button>
@@ -1129,8 +1208,7 @@
 
                   <div class="availability-filter d-none">
                     <div class="d-flex w-100 my-1 py-2 px-3">
-                      <img src="./images/svg/svg000-calendar.svg" width="25" height="25" alt=""
-                        class="mr-2 my-0" />
+                      <img src="./images/svg/svg000-calendar.svg" width="25" height="25" alt="" class="mr-2 my-0" />
                       <span class="w-100 p-1 border rounded d-flex justify-content-between">
                         <span> Rank Results By My Availability </span>
                         <button class="btn btn-success font-weight-bold rounded py-0"
@@ -1153,8 +1231,7 @@
                           class="btn btn-default border-grey text-secondary bg-white w-100 p-0 skillText">
                           Select
                         </button>
-                        <button type="button"
-                          class="btn bg-dark- dropdown-toggle text-white dropdown-toggle-split"
+                        <button type="button" class="btn bg-dark dropdown-toggle text-white dropdown-toggle-split"
                           data-toggle="dropdown">
                           <span class="caret"></span>
                         </button>
@@ -1194,8 +1271,7 @@
                           class="btn btn-default border-grey bg-white text-secondary w-100 p-0 selectedDistance">
                           Select
                         </button>
-                        <button type="button"
-                          class="btn bg-dark- dropdown-toggle text-white dropdown-toggle-split"
+                        <button type="button" class="btn bg-dark dropdown-toggle text-white dropdown-toggle-split"
                           data-toggle="dropdown">
                           <span class="caret"></span>
                         </button>
@@ -1235,15 +1311,13 @@
                           class="btn btn-default border-grey bg-white w-100 text-secondary p-0 selectedConnections">
                           Select
                         </button>
-                        <button type="button"
-                          class="btn bg-dark- dropdown-toggle text-white dropdown-toggle-split"
+                        <button type="button" class="btn bg-dark dropdown-toggle text-white dropdown-toggle-split"
                           data-toggle="dropdown">
                           <span class="caret"></span>
                         </button>
                         <div class="dropdown-menu px-0 left">
                           <ul class="px-0 connectionsOptions">
-                            <li class="dropdown-item px-2"
-                              onclick="setSelectedConnections('Only My Sport Contacts')">
+                            <li class="dropdown-item px-2" onclick="setSelectedConnections('Only My Sport Contacts')">
                               <input type="checkbox"> Only My Sport Contacts
                             </li>
                             <li class="dropdown-item px-2" onclick="setSelectedConnections('My Gym')">
@@ -1252,8 +1326,7 @@
                             <li class="dropdown-item px-2" onclick="setSelectedConnections('My Sport Clubs')">
                               <input type="checkbox"> My Sport Clubs
                             </li>
-                            <li class="dropdown-item px-2"
-                              onclick="setSelectedConnections('My Sport Leagues')">
+                            <li class="dropdown-item px-2" onclick="setSelectedConnections('My Sport Leagues')">
                               <input type="checkbox"> My Sport Leagues
                             </li>
                             <li class="dropdown-item px-2" onclick="setSelectedConnections('My Colleges')">
@@ -1265,8 +1338,7 @@
                             <li class="dropdown-item px-2" onclick="setSelectedConnections('My Work')">
                               <input type="checkbox"> My Work
                             </li>
-                            <li class="dropdown-item px-2"
-                              onclick="setSelectedConnections('Mutual Connections')">
+                            <li class="dropdown-item px-2" onclick="setSelectedConnections('Mutual Connections')">
                               <input type="checkbox"> Mutual Connections
                             </li>
                           </ul>
@@ -1283,8 +1355,7 @@
                           class="btn btn-default border-grey bg-white w-100 text-secondary p-0 preferredAgeRangeText">
                           Select
                         </button>
-                        <button type="button"
-                          class="btn bg-dark- dropdown-toggle text-white dropdown-toggle-split"
+                        <button type="button" class="btn bg-dark dropdown-toggle text-white dropdown-toggle-split"
                           data-toggle="dropdown">
                           <span class="caret"></span>
                         </button>
@@ -1398,8 +1469,7 @@
                           class="btn btn-default border-grey bg-white w-100 text-secondary p-0 selectedGender">
                           Select
                         </button>
-                        <button type="button"
-                          class="btn bg-dark- dropdown-toggle text-white dropdown-toggle-split"
+                        <button type="button" class="btn bg-dark dropdown-toggle text-white dropdown-toggle-split"
                           data-toggle="dropdown">
                           <span class="caret"></span>
                         </button>
@@ -1428,8 +1498,7 @@
                           class="btn btn-default border-grey bg-white w-100 text-secondary p-0 selectedStatus">
                           Select
                         </button>
-                        <button type="button"
-                          class="btn bg-dark- dropdown-toggle text-white dropdown-toggle-split"
+                        <button type="button" class="btn bg-dark dropdown-toggle text-white dropdown-toggle-split"
                           data-toggle="dropdown">
                           <span class="caret"></span>
                         </button>
@@ -1463,6 +1532,7 @@
               </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
     <div class="sibar-right">
