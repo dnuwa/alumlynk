@@ -133,7 +133,7 @@
               </div>
             </a>
           </div>
-          <div class="col-sm p-1 tiny-m desk">
+          <div class="col-sm p-1 tiny-m">
             <div class="text-center menu-toggle">
               <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
             </div>
@@ -143,10 +143,40 @@
     </div>
   </div>
   <div class="container position-relative px-0 d-flex mt-92">
+    <div class="sibar-nav">
+      <ul class="list-unstyled mb-0">
+        <li class="px-3 py-2 border-bottom font-weight-bold">
+          <a href="my-profile.html" class="text-dark">My Profile</a>
+        </li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Meeting Invites Received (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Meeting Invites Sent (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">New Messages (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">My Alumni Connections (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Connectiin Requests Received (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Connection Requests Sent (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Following (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Followers (xx)</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold d-flex justify-content-between">
+          <span class="my-auto">About Alumlynk</span>
+          <i class="fa fa-angle-down my-auto"></i>
+        </li>
+        <li class="px-3 py-2 border-bottom font-weight-bold d-flex justify-content-between">
+          <span class="my-auto">Account Settings</span>
+          <i class="fa fa-angle-down my-auto"></i>
+        </li>
+        <li class="px-3 py-2 border-bottom font-weight-bold d-flex justify-content-between">
+          <span class="my-auto">Contact Us</span>
+          <i class="fa fa-angle-down my-auto"></i>
+        </li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">Sign Out</li>
+      </ul>
+    </div>
 
     <div class="sibar-nav">
       <ul class="list-unstyled mb-0">
-        <li class="px-3 py-2 border-bottom font-weight-bold">My Profile</li>
+        <li class="px-3 py-2 border-bottom font-weight-bold">
+          <a href="my-profile.html" class="text-dark">My Profile</a>
+        </li>
         <li class="px-3 py-2 border-bottom font-weight-bold">Meeting Invites Received (xx)</li>
         <li class="px-3 py-2 border-bottom font-weight-bold">Meeting Invites Sent (xx)</li>
         <li class="px-3 py-2 border-bottom font-weight-bold">New Messages (xx)</li>
@@ -176,8 +206,8 @@
           <img src="./images//scott.jpg" alt="" class="rounded-circle" width="60" height="60">
           <a class="text-dark" href="my-profile.html">
             <a class="text-dark" href="my-profile.html">
-            <h5><strong>Scott Holley</strong></h5>
-          </a>
+              <h5><strong>Scott Holley</strong></h5>
+            </a>
           </a>
           <p class="mb-0 text-secondary">City, State</p>
           <p class="text-secondary">Proctor Class of 1998</p>
@@ -198,7 +228,8 @@
               </span><span>(xx)</span></a></li>
           <li class="lg-font"> <a href="invites-sent.html" class="d-flex justify-content-between"><span>Invites Sent
               </span><span>(xx)</span></a></li>
-          <li class="lg-font"> <a href="alumni-connection-requests.html" class="d-flex justify-content-between"><span>Connection Requests
+          <li class="lg-font"> <a href="alumni-connection-requests.html"
+              class="d-flex justify-content-between"><span>Connection Requests
               </span><span>(xx)</span></a></li>
           <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Mentor Requests
               </span><span>(xx)</span></a></li>
@@ -522,7 +553,7 @@
               </p>
             </div> -->
           </div>
-          <div class="d-flex">
+          <div class="d-flex flex-wrap">
             <div class="col-sm p-0 mt-2">
               <div class="bg-white p-2 mb-2">
                 <div class="d-block">
@@ -749,7 +780,7 @@
               </div>
 
               <!-- All My Sports -->
-              <div class="bg-white p-2 mb-2">
+              <!-- <div class="bg-white p-2 mb-2">
                 <div class="d-block">
                   <div class="d-flex justify-content-between">
                     <span class="py-1 px-3">
@@ -851,7 +882,7 @@
                   </span>
 
                 </div>
-              </div>
+              </div> -->
             </div>
             <div class="col-sm p-0">
               <div class="rounded mb-3">
@@ -7786,10 +7817,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
     integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
-  <script src="./data.js"></script>
-  <script src="./js/main.js"></script>
-
-  <script src="./js/jquery.owlcarousel.js"></script>
+  <script src="./js/actions.js"></script>
   <script type="text/javascript" src="./slick/slick.min.js"></script>
 
   <script>
@@ -8156,44 +8184,6 @@
       showResults(input.value)
 
     }
-
-    // $('#OpenImgUpload').click(function () { $('#imgupload').trigger('click'); console.log('clicked ---') });
-    // $('#OpenImgUploadBtn').click(function () { $('#imgupload').trigger('click'); });
-
-    // $('#OpenCoverUpload').click(function () { $('#coverimgupload').trigger('click'); });
-    // $('#OpenCoverUploadBtn').click(function () { $('#coverimgupload').trigger('click'); });
-
-    // $(document).ready(function () {
-    //   // Handle file input change event
-    //   $('#imgupload').change(function () {
-    //     var file = this.files[0];
-    //     var reader = new FileReader();
-
-    //     // Load selected image file as Data URL
-    //     reader.onload = function (e) {
-    //       $('#OpenImgUpload').attr('src', e.target.result);
-    //     };
-
-    //     // Read the selected file
-    //     reader.readAsDataURL(file);
-    //   });
-    // });
-
-    // $(document).ready(function () {
-    //   // Handle file input change event
-    //   $('#coverimgupload').change(function () {
-    //     var file = this.files[0];
-    //     var reader = new FileReader();
-
-    //     // Load selected image file as Data URL
-    //     reader.onload = function (e) {
-    //       $('#OpenCoverUpload').attr('src', e.target.result);
-    //     };
-
-    //     // Read the selected file
-    //     reader.readAsDataURL(file);
-    //   });
-    // });
 
     $(document).ready(function () {
       // Handle click event on a button or element
