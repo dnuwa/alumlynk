@@ -328,7 +328,7 @@ select {
 }
 
 .sibar-right {
-  height: 100%;
+  height: 100vh;
   width: 20%;
   position: absolute;
   top: 1;
@@ -417,22 +417,22 @@ select {
   background-color: #ededed;
 }
 
-.mobi {
+/* .mobi {
   display: none;
-}
+} */
 
 .active {
   border: solid 2px #507bff;
 }
 
 @media only screen and (max-width: 767px) {
-  .desk {
+  /* .desk {
     display: none !important;
-  }
+  } */
 
-  .mobi {
+  /* .mobi {
     display: block;
-  }
+  } */
   .main-content-lg {
     width: 100%;
   }

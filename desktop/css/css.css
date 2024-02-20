@@ -3109,7 +3109,13 @@ legend {
     left: 80px !important;
   }
 }
-@media screen and (max-width: 767px) {
+
+/* @media only screen and (max-width: 768px) {
+  .w-50 {
+    width: 100% !important;
+  }
+} */
+@media only screen and (max-width: 767px) {
   #demo.in {
     width: 260px;
   }
@@ -3158,4 +3164,58 @@ legend {
 
 .mobi {
   display: none;
+}
+
+.desk {
+  display: block;
+}
+
+.postColumn h3,
+.postColumn .h3 {
+  margin: 0 0 3px;
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1666666667;
+}
+
+.contentColumns .contentColumnsCol6 {
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.contentColumns .contentColumnsCol6 {
+  width: 50%;
+}
+
+.postColumn {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  padding: 10px 10px;
+  margin-bottom: 16px;
+}
+
+.ratingStar {
+	margin-bottom: 8px;
+}
+
+.ratingStar > li {
+	margin-right: 4px;
+	width: 14px;
+}
+
+.ratingStar img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.followContentWrap {
+  display: flex;
+}
+
+.w-80 {
+  width: 80%;
 }
