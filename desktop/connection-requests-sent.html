@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/page-styles.css">
   <link rel="stylesheet" type="text/css" href="css/css.css" />
+
   <title>Alumlynk</title>
 
   <style type="text/css">
@@ -38,11 +39,16 @@
     .rounded-custom {
       border-radius: 10px;
     }
+
+    @media only screen and (max-width: 767px) {
+      .w-50 {
+        width: 100% !important;
+      }
+    }
   </style>
 </head>
 
 <body>
-
   <div class="bg-white mb-5 bottom-shadow position-fixed z-10 top-0 w-100">
     <div class="container">
       <div class="d-flex bg-white py-18 w-100 justify-content-between">
@@ -56,8 +62,8 @@
             <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
           </a>
           <!-- <a href="#" class="my-auto logo-toggle mobi">
-            <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
-          </a> -->
+              <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
+            </a> -->
         </div>
         <div class="d-flex col-sm-6 mobile-bottom">
           <div class="col-sm p-1 tiny-m border">
@@ -65,15 +71,15 @@
               <div class="text-center">
                 <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
               </div>
-              <p class="xm-font text-center mb-0 text-dark bold">Alumni</p>
+              <p class="xm-font text-center mb-0">Alumni</p>
             </a>
           </div>
-          <div class="col-sm p-1 tiny-m border active-tab border">
+          <div class="col-sm p-1 tiny-m border">
             <a href="index.html" class="text-dark font-weight-bold text-success">
               <div class="text-center">
-                <img src="./images/svg000-friends-white.svg" width="30" class="my-auto" />
+                <img src="./images/svg000-friends.svg" width="30" class="my-auto" />
               </div>
-              <p class="xm-font text-center mb-0 text-center text-white">Network</p>
+              <p class="xm-font text-center mb-0">Network</p>
             </a>
           </div>
           <div class="col-sm p-1 tiny-m border">
@@ -84,12 +90,12 @@
               <p class="xm-font text-center mb-0">Posts</p>
             </a>
           </div>
-          <div class="col-sm p-1 tiny-m border">
+          <div class="col-sm p-1 tiny-m border active-tab">
             <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
               <div class="text-center">
-                <img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
+                <img src="./images/svg000-sport-coach-white.svg" width="30" class="my-auto" />
               </div>
-              <p class="xm-font text-center mb-0">Mentors</p>
+              <p class="xm-font text-center mb-0 text-white">Mentors</p>
             </a>
           </div>
           <div class="col-sm p-1 tiny-m border">
@@ -215,7 +221,7 @@
         <li class="px-3 py-2 border-bottom font-weight-bold">Sign Out</li>
       </ul>
     </div>
-    <div class="sibar-left border-right">
+    <div class="sibar-left">
       <div class="d-flex flex-column px-2">
         <div class="text-center pt-3">
           <img src="./images//scott.jpg" alt="" class="rounded-circle" width="60" height="60">
@@ -241,7 +247,8 @@
               </span><span>(xx)</span></a></li>
           <li class="lg-font"> <a href="invites-sent.html" class="d-flex justify-content-between"><span>Invites Sent
               </span><span>(xx)</span></a></li>
-          <li class="lg-font"> <a href="alumni-connection-requests.html" class="d-flex justify-content-between"><span>Connection Requests
+          <li class="lg-font"> <a href="alumni-connection-requests.html"
+              class="d-flex justify-content-between"><span>Connection Requests
               </span><span>(xx)</span></a></li>
           <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Mentor Requests
               </span><span>(xx)</span></a></li>
@@ -267,7 +274,7 @@
         </ul>
       </div>
     </div>
-    <div class="main-content border-right">
+    <div class="main-content">
 
       <div class="donation-form d-none">
         <div class="d-flex p-2 maroon-border-bottom m-2">
@@ -497,152 +504,279 @@
 
       </div>
 
-      <div class="mt-2 main-view">
-        <div class="blue-bg text-white p-2 mb-2">
-          <h3 class="my-0 text-center">Invites Sent</h3>
+      <div class="main-view bg-white">
+        <!-- ----- -->
+        <div class="blue-bg text-white text-center py-1 mb-2">
+          <h3>Connection Requests Sent</h3>
         </div>
-        <div class="d-flex justify-content-between bg-white p-2 my-2">
-          <a class="text-danger" href="invites-sent.html"><img src="./images/svg/svg000-open-book.svg"
-              width="30" height="30" alt="" /> Invites Sent (xxx)</a>
-          <a class="text-dark my-auto" href="invites-recieved.html">Invites Recieved (xxx)</a>
-        </div>
-        <div class="d-flex justify-content-between bg-light p-2 w-100">
-          <div class="my-auto text-primary">Invites needing a reply (xxx)</div>
-          <div class="d-flex">
-            <input type="text" class="form-control">
-            <button class="btn btn-sm btn-secondary br-5 mx-2 px-4">View</button>
+        <div class="requestsArea">
+          <div>
+            <div class="d-flex bg-white rounded my-2 border">
+              <span class="w-20 position-relative">
+                <!-- <div class="btn-group position-absolute right-0">
+                  <button type="button" class="btn btn-success rounded-circle px-1 py-0 mr-2 mt-2"
+                    data-toggle="dropdown" aria-expanded="false">
+                    X
+                  </button>
+                  <ul class="dropdown-menu" role="menu" x-placement="top-start" style="
+                        position: absolute;
+                        transform: translate3d(0px, -138px, 0px);
+                        top: 0px;
+                        left: 0px;
+                        will-change: transform;
+                      ">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio" /><small>Remove from my
+                          Search</small>
+                      </label>
+                    </div>
+                    <hr />
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio" /><small>Block</small>
+                      </label>
+                    </div>
+                  </ul>
+                </div> -->
+                <img src="./images/img03.jpg" class="w-100 rounded" alt="" />
+              </span>
+              <span class="w-100 d-flex p-2 justify-content-between">
+                <span class="w-80">
+                  <a href="other-user-profile.html" class="my-0 font-14">{1st, last name}</a>
+                  <div class="d-flex justify-content-between my-0 font-14">
+                    <span>{City} </span><span data-target="#userSportListModal" data-toggle="modal">(XX)
+                      Sports</span>
+                  </div>
+                  <p class="my-0 font-14">
+                    <i class="fa fa-users"></i>
+                    <small><a href="sport-friends.html" class="text-dark">(XX) Sport Connections</a></small>
+                  </p>
+                  <p class="my-0 font-14">
+                    <img src="./images/svg000-double-circle.svg" class="" width="15" height="15" alt="" />
+                    <small data-target="#userMutualConnectionsModal" data-toggle="modal">(XX) Mutual
+                      Connections</small>
+                  </p>
+                </span>
+                <span class="d-block">
+                  <div class="text-right">
+                    <div><small>Sent (XX)</small></div>
+                    <div><small>days ago</small></div>
+                  </div>
+                  <div class="d-flex">
+                    <button class="btn btn-info py-0 my-1 float-right mr-2">
+                      <small>Pending</small>
+                    </button>
+                    <button class="btn btn-danger py-0 my-1 float-right">
+                      <small>Cancel</small>
+                    </button>
+                  </div>
+                </span>
+              </span>
+            </div>
+
+            <div class="d-flex bg-white rounded my-2 border">
+              <span class="w-20 position-relative">
+                <!-- <div class="btn-group position-absolute right-0">
+                  <button type="button" class="btn btn-success rounded-circle px-1 py-0 mr-2 mt-2"
+                    data-toggle="dropdown" aria-expanded="false">
+                    X
+                  </button>
+                  <ul class="dropdown-menu" role="menu" x-placement="top-start" style="
+                        position: absolute;
+                        transform: translate3d(0px, -138px, 0px);
+                        top: 0px;
+                        left: 0px;
+                        will-change: transform;
+                      ">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio" /><small>Remove from my
+                          Search</small>
+                      </label>
+                    </div>
+                    <hr />
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio" /><small>Block</small>
+                      </label>
+                    </div>
+                  </ul>
+                </div> -->
+                <img src="./images/img03.jpg" class="w-100 rounded" alt="" />
+              </span>
+              <span class="w-100 d-flex p-2 justify-content-between">
+                <span class="w-80">
+                  <a href="other-user-profile.html" class="my-0 font-14">{1st, last name}</a>
+                  <div class="d-flex justify-content-between my-0 font-14">
+                    <span>{City} </span><span data-target="#userSportListModal" data-toggle="modal">(XX)
+                      Sports</span>
+                  </div>
+                  <p class="my-0 font-14">
+                    <i class="fa fa-users"></i>
+                    <small><a href="sport-friends.html" class="text-dark">(XX) Sport Connections</a></small>
+                  </p>
+                  <p class="my-0 font-14">
+                    <img src="./images/svg000-double-circle.svg" class="" width="15" height="15" alt="" />
+                    <small data-target="#userMutualConnectionsModal" data-toggle="modal">(XX) Mutual
+                      Connections</small>
+                  </p>
+                </span>
+                <span class="d-block">
+                  <div class="text-right">
+                    <div><small>Sent (XX)</small></div>
+                    <div><small>days ago</small></div>
+                  </div>
+                  <div class="d-flex">
+                    <button class="btn btn-info py-0 my-1 float-right mr-2">
+                      <small>Pending</small>
+                    </button>
+                    <button class="btn btn-danger py-0 my-1 float-right">
+                      <small>Cancel</small>
+                    </button>
+                  </div>
+                </span>
+              </span>
+            </div>
+
+            <div class="d-flex bg-white rounded my-2 border">
+              <span class="w-20 position-relative">
+                <!-- <div class="btn-group position-absolute right-0">
+                  <button type="button" class="btn btn-success rounded-circle px-1 py-0 mr-2 mt-2"
+                    data-toggle="dropdown" aria-expanded="false">
+                    X
+                  </button>
+                  <ul class="dropdown-menu" role="menu" x-placement="top-start" style="
+                        position: absolute;
+                        transform: translate3d(0px, -138px, 0px);
+                        top: 0px;
+                        left: 0px;
+                        will-change: transform;
+                      ">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio" /><small>Remove from my
+                          Search</small>
+                      </label>
+                    </div>
+                    <hr />
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio" /><small>Block</small>
+                      </label>
+                    </div>
+                  </ul>
+                </div> -->
+                <img src="./images/img03.jpg" class="w-100 rounded" alt="" />
+              </span>
+              <span class="w-100 d-flex p-2 justify-content-between">
+                <span class="w-80">
+                  <a href="other-user-profile.html" class="my-0 font-14">{1st, last name}</a>
+                  <div class="d-flex justify-content-between my-0 font-14">
+                    <span>{City} </span><span data-target="#userSportListModal" data-toggle="modal">(XX)
+                      Sports</span>
+                  </div>
+                  <p class="my-0 font-14">
+                    <i class="fa fa-users"></i>
+                    <small><a href="sport-friends.html" class="text-dark">(XX) Sport Connections</a></small>
+                  </p>
+                  <p class="my-0 font-14">
+                    <img src="./images/svg000-double-circle.svg" class="" width="15" height="15" alt="" />
+                    <small data-target="#userMutualConnectionsModal" data-toggle="modal">(XX) Mutual
+                      Connections</small>
+                  </p>
+                </span>
+                <span class="d-block">
+                  <div class="text-right">
+                    <div><small>Sent (XX)</small></div>
+                    <div><small>days ago</small></div>
+                  </div>
+                  <div class="d-flex">
+                    <button class="btn btn-info py-0 my-1 float-right mr-2">
+                      <small>Pending</small>
+                    </button>
+                    <button class="btn btn-danger py-0 my-1 float-right">
+                      <small>Cancel</small>
+                    </button>
+                  </div>
+                </span>
+              </span>
+            </div>
+
+            <div class="d-flex bg-white rounded my-2 border">
+              <span class="w-20 position-relative">
+                <!-- <div class="btn-group position-absolute right-0">
+                  <button type="button" class="btn btn-success rounded-circle px-1 py-0 mr-2 mt-2"
+                    data-toggle="dropdown" aria-expanded="false">
+                    X
+                  </button>
+                  <ul class="dropdown-menu" role="menu" x-placement="top-start" style="
+                        position: absolute;
+                        transform: translate3d(0px, -138px, 0px);
+                        top: 0px;
+                        left: 0px;
+                        will-change: transform;
+                      ">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio" /><small>Remove from my
+                          Search</small>
+                      </label>
+                    </div>
+                    <hr />
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio" /><small>Block</small>
+                      </label>
+                    </div>
+                  </ul>
+                </div> -->
+                <img src="./images/img03.jpg" class="w-100 rounded" alt="" />
+              </span>
+              <span class="w-100 d-flex p-2 justify-content-between">
+                <span class="w-80">
+                  <a href="other-user-profile.html" class="my-0 font-14">{1st, last name}</a>
+                  <div class="d-flex justify-content-between my-0 font-14">
+                    <span>{City} </span><span data-target="#userSportListModal" data-toggle="modal">(XX)
+                      Sports</span>
+                  </div>
+                  <p class="my-0 font-14">
+                    <i class="fa fa-users"></i>
+                    <small><a href="sport-friends.html" class="text-dark">(XX) Sport Connections</a></small>
+                  </p>
+                  <p class="my-0 font-14">
+                    <img src="./images/svg000-double-circle.svg" class="" width="15" height="15" alt="" />
+                    <small data-target="#userMutualConnectionsModal" data-toggle="modal">(XX) Mutual
+                      Connections</small>
+                  </p>
+                </span>
+                <span class="d-block">
+                  <div class="text-right">
+                    <div><small>Sent (XX)</small></div>
+                    <div><small>days ago</small></div>
+                  </div>
+                  <div class="d-flex">
+                    <button class="btn btn-info py-0 my-1 float-right mr-2">
+                      <small>Pending</small>
+                    </button>
+                    <button class="btn btn-danger py-0 my-1 float-right">
+                      <small>Cancel</small>
+                    </button>
+                  </div>
+                </span>
+              </span>
+            </div>
           </div>
         </div>
-
-        <div class="bg-white w-100 p-2">
-          <div class="mb-4">
-            <div class="px-2 py-1 bg-dark-grey text-white mobi">
-              <div class="col-sm d-flex justify-content-between p-0">
-                <div class="d-flex">
-                  <i class="fa fa-envelope-open-o fa-2x mr-2"></i>
-                  <p class="my-auto"><strong>(Sport) Availability Invite</strong></p>
-                </div>
-                <p class="my-auto">(Practice)</p>
-              </div>
-              <div class="col-sm text-right p-0">
-                <p class="mb-0"><strong>Sent xx/xx/xx</strong></p>
-                <p class="mb-0"><strong>xx days ago</strong></p>
-              </div>
-            </div>
-            <div class="d-flex px-2 py-1 bg-dark-grey text-white desk">
-              <div class="d-flex justify-content-between">
-                <i class="fa fa-envelope-open-o fa-2x my-auto"></i>
-                <p class="my-auto px-2"><strong>(Sport) Availability Invite</strong></p>
-                <p class="my-auto">(Practice)</p>
-              </div>
-              <div class="col-sm text-right">
-                <p class="mb-0"><strong>Sent xx/xx/xx</strong></p>
-                <p class="mb-0"><strong>xx days ago</strong></p>
-              </div>
-            </div>
-            <hr class="m-0">
-            <div class="mb-2 border-3 br-5 p-2 bg-white w-100">
-
-              <div class="my-auto col-sm">
-                <div class="d-flex mb-3">
-                  <i class="fa fa-calendar fa-2x my-auto mx-2"></i>
-                  <p class="my-auto">In the next two weeks</p>
-                </div>
-                <div class="d-flex">
-                  <i class="fa fa-map-marker fa-2x text-success mx-3 mr-2"></i>
-                  <div class="my-auto">
-                    <p class="mb-0">(Location Name)</p>
-                    <p class="mb-0">xxx Main Street City, State</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- <hr> -->
-
-              <div class="my-2 col-sm">
-                <p class="my-1"><strong>Invite Message</strong></p>
-                <div class="border p-3 br-5">
-                  <p class="mb-0"><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</small></p>
-                </div>
-              </div>
-              <div class="d-flex flex-wrap w-100">
-                <div class="d-flex justify-content-between">
-                  <div class="col-sm">
-                    <button class="btn bg-transparent border-0">Status</button>
-                  </div>
-                  <div class="col-sm">
-                    <button class="btn bg-transparent border-0">Reply Message (0)</button>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <div class="col-sm">
-                    <div class="btn-group bg-light drop">
-                      <button type="button"
-                        class="btn bg-white border br-5 dropdown-toggle text-dark dropdown-toggle-split"
-                        data-toggle="dropdown">
-                        <span class="mr-1">Action</span>
-                      </button>
-                      <div class="dropdown-menu px-0 right">
-                        <ul class="px-0 mb-0">
-                          <li class="dropdown-item px-2">
-                            <input type="checkbox">
-                            Hide (will be saved)
-                          </li>
-                          <li class="dropdown-item px-2">
-                            <input type="checkbox">
-                            Remove (will not be saved)
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm">
-                    <button class="btn btn-outline-danger br-5">Cancel Invite</button>
-                  </div>
-                </div>
-              </div>
-              <!-- <div id="on-reply" style="display: none;" class="mt-3">
-                <div class="d-flex">
-                  <div class="col-sm d-flex">
-                    <p class="my-auto mr-2">Status</p><button
-                      class="btn btn-sm btn-success br-5 py-0 px-4"><small>View</small></button>
-                  </div>
-                  <div class="col-sm my-auto">
-                    <p class="mb-0">Replied 05/01/2024</p>
-                  </div>
-                  <div class="col-sm my-auto">
-                    <p class="mb-0">(5) Days ago</p>
-                  </div>
-                  <div class="col-sm">
-                    <div class="btn-group bg-light drop">
-                      <button type="button"
-                        class="btn bg-white border br-5 dropdown-toggle text-dark dropdown-toggle-split"
-                        data-toggle="dropdown">
-                        <span class="mr-1">Action</span>
-                      </button>
-                      <div class="dropdown-menu px-0 right">
-                        <ul class="px-0 mb-0">
-                          <li class="dropdown-item px-2">
-                            <input type="checkbox">
-                            Hide (will be saved)
-                          </li>
-                          <li class="dropdown-item px-2">
-                            <input type="checkbox">
-                            Remove (will not be saved)
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-            </div>
-          </div>
-        </div>
+        <!-- ------ -->
       </div>
+
     </div>
     <div class="sibar-right">
-      <div class="border rounded p-5 mb-3">Message Box</div>
+      <div class="border rounded p-5 mb-3 d-flex flex-column">
+        <p>Alumni Become A Mentor</p>
+        <a class="btn btn-sm btn-success my-auto" href="alumni-mentoring-step2.html"><strong>JOIN</strong></a>
+      </div>
       <div class="border rounded p-5">Message Box</div>
     </div>
   </div>
@@ -676,8 +810,91 @@
     </div>
   </div>
 
+  <div class="modal fade" id="meeting-request" tabindex="-1" role="dialog" aria-labelledby="meeting-request"
+    aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content modal-body">
+
+        <label class="text-success">
+          <strong>Meeting request timeframe</strong>
+        </label>
+        <p>I am requesting to meet with you (select a time frame below)</p>
+        <ul class="list-unstyled">
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">Next week</span>
+          </li>
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">The next 2 weeks</span>
+          </li>
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">Next month</span>
+          </li>
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">The next couple of months</span>
+          </li>
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">Anytime</span>
+          </li>
+        </ul>
+
+        <p class="m-0 text-success">Meeting request message</p>
+
+        <textarea name="" id="" cols="10" rows="5" placeholder="(Indicate a reason for your mentor meeting request)"
+          class="form-control"></textarea>
+
+        <div class="d-flex justify-content-end mt-4">
+          <button type="button" class="btn btn-default btn-sm px-3 mr-2" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success btn-sm px-3 send-request-btn" data-dismiss="modal">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- meeting-confirmed -->
+  <div class="modal fade" id="meeting-confirmed" tabindex="-1" role="dialog" aria-labelledby="meeting-confirmed"
+    aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content modal-body">
+
+        <label class="text-success">
+          <strong>Meeting request timeframe</strong>
+        </label>
+        <p>I am requesting to meet with you (select a time frame below)</p>
+        <ul class="list-unstyled">
+          <li class="d-flex">
+            <input type="radio" checked /><span class="ml-2">Next week</span>
+          </li>
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">The next 2 weeks</span>
+          </li>
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">Next month</span>
+          </li>
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">The next couple of months</span>
+          </li>
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">Anytime</span>
+          </li>
+        </ul>
+
+        <p class="m-0 text-success">Meeting request message</p>
+
+        <textarea name="" id="" cols="10" rows="5" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+        molestiae quas vel sint commodi repudiandae consequuntur" class="form-control" readonly></textarea>
+
+        <div class="d-flex justify-content-end mt-4">
+          <button type="button" class="btn btn-default btn-sm px-3" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
@@ -688,7 +905,6 @@
   <!-- add an api key to the link -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="./js/actions.js"></script>
-
   <script>
     $(document).ready(function () {
       $(document).on("change", ".gfield_select", function () {
@@ -702,23 +918,34 @@
       $('.overlay').toggleClass('hidden');
     });
   </script>
-
   <script>
-    function toggleOpenInviteCard() {
-      $(".open-invite-card").toggle();
-      $(".open-availability-card").hide();
-    }
-    function toggleOpenAvailabilityCard() {
-      $(".open-availability-card").toggle();
-      $(".open-invite-card").hide();
-    }
-    $(".btnConnect").click(function () {
-      $(this).children("small").html("Pending");
-      $(this).removeClass("btn-outline-info").addClass("btn-info");
+    $('.search-btn').click(function () {
+      $('.search-results').removeClass('d-none').addClass('d-block')
+      $('.search-btn').html("Results (xxx)")
+      $('.mentor-desc').removeClass('d-flex').addClass('d-none')
     });
-    function toggleOpenInviteCard() {
-      $(".open-invite-card").toggle();
-    }
+
+    // acc-btn
+    $('.acc-btn').click(function () {
+      $('.search-filters').removeClass('d-none').addClass('d-block')
+      $('.acc-btn').removeClass('bg-dark').addClass('bg-primary')
+    });
+
+    $('.car-btn').click(function () {
+      $('.search-filters').removeClass('d-none').addClass('d-block')
+      $('.car-btn').removeClass('bg-dark').addClass('bg-primary')
+    });
+
+    $('.strtup-btn').click(function () {
+      $('.search-filters').removeClass('d-none').addClass('d-block')
+      $('.strtup-btn').removeClass('bg-dark').addClass('bg-primary')
+    });
+
+    $('.send-request-btn').click(
+      function () {
+        $('.request-btn').removeClass('btn-connect-outline').addClass('btn-secondary')
+        $('.request-btn').html('Meeting Requested')
+      });
   </script>
 </body>
 
