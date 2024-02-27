@@ -3128,7 +3128,7 @@ legend {
   }
 
   .mobi {
-    display: block;
+    display: block !important;
   }
 
   .padding-main-4{
