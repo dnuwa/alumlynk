@@ -53,30 +53,31 @@
         </div>
         <div class="d-flex">
           <a href="index.html" class="my-auto logo-toggle">
-            <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
+            <img src="./images/preview-school-logo-free-vector-design.jpg" />
           </a>
           <!-- <a href="#" class="my-auto logo-toggle mobi">
               <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
             </a> -->
         </div>
+
         <div class="d-flex col-sm-6 mobile-bottom">
-          <div class="col-sm p-1 tiny-m border">
+          <div class="col-sm p-1 mx-2 border br-8">
             <a href="friends-page.html" class="text-dark font-weight-bold">
               <div class="text-center">
                 <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
               </div>
-              <p class="xm-font text-center mb-0 text-dark bold">Alumni</p>
+              <p class="xm-font text-center mb-0">Alumni</p>
             </a>
           </div>
-          <div class="col-sm p-1 tiny-m border">
+          <div class="col-sm p-1 mx-2 border br-8">
             <a href="index.html" class="text-dark font-weight-bold text-success">
               <div class="text-center">
                 <img src="./images/svg000-friends.svg" width="30" class="my-auto" />
               </div>
-              <p class="xm-font text-center mb-0 text-dark bold">Network</p>
+              <p class="xm-font text-center mb-0">Network</p>
             </a>
           </div>
-          <div class="col-sm p-1 tiny-m border">
+          <div class="col-sm p-1 mx-2 border br-8">
             <a href="posts-page.html" class="text-dark font-weight-bold text-center">
               <div class="text-center">
                 <img src="./images/svg000-home.svg" width="30" class="my-auto" />
@@ -84,7 +85,7 @@
               <p class="xm-font text-center mb-0">Posts</p>
             </a>
           </div>
-          <div class="col-sm p-1 tiny-m border">
+          <div class="col-sm p-1 mx-2 border br-8">
             <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
               <div class="text-center">
                 <img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
@@ -92,11 +93,11 @@
               <p class="xm-font text-center mb-0">Mentors</p>
             </a>
           </div>
-          <div class="col-sm p-1 tiny-m border">
-            <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
-              <div class="text-center">
+          <div class="col-sm p-1 mx-2 border br-8">
+            <a href="./chat-list-recent.html" class="text-dark font-weight-bold" style="text-decoration: none;">
+              <div class="text-center position-relative">
                 <img src="./images/svg000-message.svg" width="30" class="my-auto" />
-                <div class="icon-value-nav"><small><strong>0</strong></small></div>
+                <div class="icon-value-nav"><strong>0</strong></div>
               </div>
               <p class="xm-font text-center mb-0">Messages</p>
             </a>
@@ -120,9 +121,9 @@
           </div>
           <div class="col-sm p-1 tiny-m">
             <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
-              <div class="text-center">
+              <div class="text-center position-relative">
                 <i class="fa fa-bell fa-sm text-center text-dark my-auto  bg-gray-light p-2 rounded-circle"></i>
-                <div class="icon-value-nav-bell"><small><strong>0</strong></small></div>
+                <div class="icon-value-nav-bell"><strong>0</strong></div>
               </div>
             </a>
           </div>
@@ -241,7 +242,8 @@
               </span><span>(xx)</span></a></li>
           <li class="lg-font"> <a href="invites-sent.html" class="d-flex justify-content-between"><span>Invites Sent
               </span><span>(xx)</span></a></li>
-          <li class="lg-font"> <a href="alumni-connection-requests.html" class="d-flex justify-content-between"><span>Connection Requests
+          <li class="lg-font"> <a href="alumni-connection-requests.html"
+              class="d-flex justify-content-between"><span>Connection Requests
               </span><span>(xx)</span></a></li>
           <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Mentor Requests
               </span><span>(xx)</span></a></li>
@@ -354,164 +356,164 @@
       });
     </script>
 
-<script>
+    <script>
 
-  $(document).ready(function () {
-    var date = new Date();
-    var d = date.getDate();
-    var m = date.getMonth();
-    var y = date.getFullYear();
+      $(document).ready(function () {
+        var date = new Date();
+        var d = date.getDate();
+        var m = date.getMonth();
+        var y = date.getFullYear();
 
-    /*  className colors
-
-    className: default(transparent), important(red), chill(pink), success(green), info(blue)
-
-    */
-
-
-    /* initialize the external events
-    -----------------------------------------------------------------*/
-
-    $('#external-events div.external-event').each(function () {
-
-      // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
-      // it doesn't need to have a start or end
-      var eventObject = {
-        title: $.trim($(this).text()) // use the element's text as the event title
-      };
-
-      // store the Event Object in the DOM element so we can get to it later
-      $(this).data('eventObject', eventObject);
-
-      // make the event draggable using jQuery UI
-      $(this).draggable({
-        zIndex: 999,
-        revert: true,      // will cause the event to go back to its
-        revertDuration: 0  //  original position after the drag
-      });
-
-    });
+        /*  className colors
+    
+        className: default(transparent), important(red), chill(pink), success(green), info(blue)
+    
+        */
 
 
-    /* initialize the calendar
-    -----------------------------------------------------------------*/
+        /* initialize the external events
+        -----------------------------------------------------------------*/
 
-    var calendar = $('#calendar').fullCalendar({
-      header: {
-        left: 'title',
-        center: 'agendaDay,agendaWeek,month',
-        right: 'prev,next today'
-      },
-      editable: true,
-      firstDay: 1, //  1(Monday) this can be changed to 0(Sunday) for the USA system
-      selectable: true,
-      defaultView: 'month',
+        $('#external-events div.external-event').each(function () {
 
-      axisFormat: 'h:mm',
-      columnFormat: {
-        month: 'ddd',    // Mon
-        week: 'ddd d', // Mon 7
-        day: 'dddd M/d',  // Monday 9/7
-        agendaDay: 'dddd d'
-      },
-      titleFormat: {
-        month: 'MMMM yyyy', // September 2009
-        week: "MMMM yyyy", // September 2009
-        day: 'MMMM yyyy'                  // Tuesday, Sep 8, 2009
-      },
-      allDaySlot: false,
-      selectHelper: true,
-      select: function (start, end, allDay) {
-        var title = prompt('Event Title:');
-        if (title) {
-          calendar.fullCalendar('renderEvent',
+          // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+          // it doesn't need to have a start or end
+          var eventObject = {
+            title: $.trim($(this).text()) // use the element's text as the event title
+          };
+
+          // store the Event Object in the DOM element so we can get to it later
+          $(this).data('eventObject', eventObject);
+
+          // make the event draggable using jQuery UI
+          $(this).draggable({
+            zIndex: 999,
+            revert: true,      // will cause the event to go back to its
+            revertDuration: 0  //  original position after the drag
+          });
+
+        });
+
+
+        /* initialize the calendar
+        -----------------------------------------------------------------*/
+
+        var calendar = $('#calendar').fullCalendar({
+          header: {
+            left: 'title',
+            center: 'agendaDay,agendaWeek,month',
+            right: 'prev,next today'
+          },
+          editable: true,
+          firstDay: 1, //  1(Monday) this can be changed to 0(Sunday) for the USA system
+          selectable: true,
+          defaultView: 'month',
+
+          axisFormat: 'h:mm',
+          columnFormat: {
+            month: 'ddd',    // Mon
+            week: 'ddd d', // Mon 7
+            day: 'dddd M/d',  // Monday 9/7
+            agendaDay: 'dddd d'
+          },
+          titleFormat: {
+            month: 'MMMM yyyy', // September 2009
+            week: "MMMM yyyy", // September 2009
+            day: 'MMMM yyyy'                  // Tuesday, Sep 8, 2009
+          },
+          allDaySlot: false,
+          selectHelper: true,
+          select: function (start, end, allDay) {
+            var title = prompt('Event Title:');
+            if (title) {
+              calendar.fullCalendar('renderEvent',
+                {
+                  title: title,
+                  start: start,
+                  end: end,
+                  allDay: allDay
+                },
+                true // make the event "stick"
+              );
+            }
+            calendar.fullCalendar('unselect');
+          },
+          droppable: true, // this allows things to be dropped onto the calendar !!!
+          drop: function (date, allDay) { // this function is called when something is dropped
+
+            // retrieve the dropped element's stored Event Object
+            var originalEventObject = $(this).data('eventObject');
+
+            // we need to copy it, so that multiple events don't have a reference to the same object
+            var copiedEventObject = $.extend({}, originalEventObject);
+
+            // assign it the date that was reported
+            copiedEventObject.start = date;
+            copiedEventObject.allDay = allDay;
+
+            // render the event on the calendar
+            // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+            $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+
+            // is the "remove after drop" checkbox checked?
+            if ($('#drop-remove').is(':checked')) {
+              // if so, remove the element from the "Draggable Events" list
+              $(this).remove();
+            }
+
+          },
+
+          events: [
             {
-              title: title,
-              start: start,
-              end: end,
-              allDay: allDay
+              title: 'All Day Event',
+              start: new Date(y, m, 1)
             },
-            true // make the event "stick"
-          );
-        }
-        calendar.fullCalendar('unselect');
-      },
-      droppable: true, // this allows things to be dropped onto the calendar !!!
-      drop: function (date, allDay) { // this function is called when something is dropped
-
-        // retrieve the dropped element's stored Event Object
-        var originalEventObject = $(this).data('eventObject');
-
-        // we need to copy it, so that multiple events don't have a reference to the same object
-        var copiedEventObject = $.extend({}, originalEventObject);
-
-        // assign it the date that was reported
-        copiedEventObject.start = date;
-        copiedEventObject.allDay = allDay;
-
-        // render the event on the calendar
-        // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
-        $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
-
-        // is the "remove after drop" checkbox checked?
-        if ($('#drop-remove').is(':checked')) {
-          // if so, remove the element from the "Draggable Events" list
-          $(this).remove();
-        }
-
-      },
-
-      events: [
-        {
-          title: 'All Day Event',
-          start: new Date(y, m, 1)
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: new Date(y, m, d - 3, 16, 0),
-          allDay: false,
-          className: 'info'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: new Date(y, m, d + 4, 16, 0),
-          allDay: false,
-          className: 'info'
-        },
-        {
-          title: 'Meeting',
-          start: new Date(y, m, d, 10, 30),
-          allDay: false,
-          className: 'important'
-        },
-        {
-          title: 'Lunch',
-          start: new Date(y, m, d, 12, 0),
-          end: new Date(y, m, d, 14, 0),
-          allDay: false,
-          className: 'important'
-        },
-        {
-          title: 'Birthday Party',
-          start: new Date(y, m, d + 1, 19, 0),
-          end: new Date(y, m, d + 1, 22, 30),
-          allDay: false,
-        },
-        {
-          title: 'Click for Google',
-          start: new Date(y, m, 28),
-          end: new Date(y, m, 29),
-          url: 'https://ccp.cloudaccess.net/aff.php?aff=5188',
-          className: 'success'
-        }
-      ],
-    });
+            {
+              id: 999,
+              title: 'Repeating Event',
+              start: new Date(y, m, d - 3, 16, 0),
+              allDay: false,
+              className: 'info'
+            },
+            {
+              id: 999,
+              title: 'Repeating Event',
+              start: new Date(y, m, d + 4, 16, 0),
+              allDay: false,
+              className: 'info'
+            },
+            {
+              title: 'Meeting',
+              start: new Date(y, m, d, 10, 30),
+              allDay: false,
+              className: 'important'
+            },
+            {
+              title: 'Lunch',
+              start: new Date(y, m, d, 12, 0),
+              end: new Date(y, m, d, 14, 0),
+              allDay: false,
+              className: 'important'
+            },
+            {
+              title: 'Birthday Party',
+              start: new Date(y, m, d + 1, 19, 0),
+              end: new Date(y, m, d + 1, 22, 30),
+              allDay: false,
+            },
+            {
+              title: 'Click for Google',
+              start: new Date(y, m, 28),
+              end: new Date(y, m, 29),
+              url: 'https://ccp.cloudaccess.net/aff.php?aff=5188',
+              className: 'success'
+            }
+          ],
+        });
 
 
-  });        
-</script>
+      });        
+    </script>
 </body>
 
 </html>
