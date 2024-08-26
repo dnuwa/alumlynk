@@ -84,12 +84,16 @@
   margin-top: 145px;
 }
 
+.pt-145 {
+  padding-top: 145px;
+}
+
 .top-margin-3 {
   margin-top: 9rem;
 }
 
 .active-tab {
-  background-color: grey;
+  background-color: #014d7f;
   color: white;
 }
 
