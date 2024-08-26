@@ -1254,18 +1254,26 @@ table {
 .sub-header a {
   text-decoration: none;
 }
+
+.sub-header-icon{
+  position: relative;
+}
+
 .sub-header-icon .counter {
+  border: solid white 1px;
   color: #fff;
   text-align: center;
-  min-width: 15px;
-  height: 20px;
-  font-size: 11px;
-  line-height: 1;
-  padding: 4px 6px;
-  margin-top: 10px;
-  margin-left: -5px;
-  border-radius: 100%;
-  /* position: absolute; */
+  /* min-width: 15px; */
+  /* height: 20px; */
+  font-size: 10px;
+  /* line-height: 1; */
+  padding: 3px 0;
+  /* margin-top: 10px; */
+  /* margin-left: -5px; */
+  border-radius: 50%;
+  right: 36px;
+  bottom: -1px;
+  position: absolute;
   background-color: #04be5b;
 }
 .gn-menu-wrapper {

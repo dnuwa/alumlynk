@@ -251,7 +251,7 @@ input[type="search"]:focus {
   margin-top: 4rem;
 }
 
-select {
+/* select {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -261,9 +261,9 @@ select {
   border: solid 1px #0069d9;
   border-radius: 20px;
   background-image: none;
-}
+} */
 
-select::-ms-expand {
+/* select::-ms-expand {
   display: none;
 }
 .select {
@@ -293,7 +293,7 @@ select {
   justify-content: center;
   height: 100%;
   border-radius: 0 20px 20px 0;
-}
+} */
 
 .image-icon {
   width: 40px;

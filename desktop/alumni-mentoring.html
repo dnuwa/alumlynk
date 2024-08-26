@@ -535,20 +535,20 @@
               </h4>
             </div>
 
-            <div class="p-2 bg-gray-light">
+            <div class="bg-gray-light">
               <h5>
                 <strong>
                   Select your interests
                 </strong>
               </h5>
               <div class="">
-                <div class="mb-3 d-flex by-light">
+                <div class="mb-3 d-flex p-2 by-light">
                   <div class="col-sm-4 p-0">
                     <div class="bg-white mb-2">
                       <i class="fa fa-graduation-cap fa-2x text-dark my-3"></i>
                     </div>
                     <div class="d-flex flex-column w-100">
-                      <button class="btn text-white bg-dark acc-btn"><strong>Academic <br>
+                      <button class="btn text-white bg-dark acc-btn"><strong>Academic 
                           Pursuits</strong></button>
                     </div>
                   </div>
@@ -557,7 +557,7 @@
                       <img src="./images/business.png" alt="" width="65">
                     </div>
                     <div class="d-flex flex-column w-100">
-                      <button class="btn text-white bg-dark car-btn"><strong>Career <br>
+                      <button class="btn text-white bg-dark car-btn"><strong>Career 
                           Pursuits</strong></button>
                     </div>
                   </div>
@@ -566,18 +566,107 @@
                       <i class="fa fa-rocket fa-2x text-dark my-3"></i>
                     </div>
                     <div class="d-flex flex-column w-100">
-                      <button class="btn text-white bg-dark strtup-btn"><strong>Start Up <br>
+                      <button class="btn text-white bg-dark strtup-btn"><strong>Start Up 
                           Pursuits</strong></button>
                     </div>
                   </div>
                 </div>
 
-                <div class="search-filters d-none">
-                  <h5 class="mx-auto">
+                <div class="search-filters-acc-btn p-2 m-2 d-none" style="background-color: #F8F9FA;">
+                  <h5 class="mx-auto my-3">
                     <strong>Select Your Specific Interests </strong>
                   </h5>
                   <div class="d-flex px-2 py-2">
+                    <select class="form-control p-1 mr-1 gfield_select">
+                      <option value="">Academic area</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 gfield_select">
+                      <option value="">Degree Level</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 gfield_select">
+                      <option value="">Degree Date</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1">
+                      <option value="">Business Type</option>
+                      <option value="">Non Profit</option>
+                      <option value="">For Profit</option>
+                      <option value="">Government</option>
+                    </select>
+                  </div>
+
+                  <div class="d-flex px-2 py-2">
+                    <select class="form-control p-1 mr-1 gfield_select">
+                      <option value="">Country</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 gfield_select">
+                      <option value="">State</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 gfield_select">
+                      <option value="">City</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
                     <select class="form-control p-1 gfield_select">
+                      <option value="">Institution</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                  </div>
+
+                  <div class="d-flex px-2 py-2">
+                    <select class="form-control p-1 mr-1 gfield_select">
+                      <option value="">Industry</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 gfield_select">
+                      <option value="">Department</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 gfield_select">
+                      <option value="">Job title</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 gfield_select">
+                      <option value="">Class year</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                  </div> 
+                  <div class="px-2">
+                    <button class="btn active-tab w-100 mx-auto my-2 search-btn" style="border-radius: 5px;">Search</button>
+                  </div>
+                </div>
+
+                <div class="search-filters-car-btn p-2 m-2 d-none" style="background-color: #F8F9FA;">
+                  <h5 class="mx-auto my-3">
+                    <strong>Select Your Specific Interests </strong>
+                  </h5>
+                  <div class="d-flex px-2 py-2">
+                    <select class="form-control p-1 mr-1">
                       <option value="">Business Type</option>
                       <option value="">Non Profit</option>
                       <option value="">For Profit</option>
@@ -595,8 +684,8 @@
                       <option value="">option 2</option>
                       <option value="">option 3</option>
                     </select>
-                    <select class="form-control p-1 mr-1 gfield_select">
-                      <option value="">Business name</option>
+                    <select class="form-control p-1 gfield_select">
+                      <option value="">Business Name</option>
                       <option value="">option 1</option>
                       <option value="">option 2</option>
                       <option value="">option 3</option>
@@ -644,29 +733,66 @@
                       <option value="">option 3</option>
                     </select>
                     <select class="form-control p-1 mr-1 gfield_select">
-                      <option value="">Degree Type</option>
+                      <option value="">Degree type</option>
                       <option value="">option 1</option>
                       <option value="">option 2</option>
                       <option value="">option 3</option>
                     </select>
                     <select class="form-control p-1 gfield_select">
-                      <option value="">Degree level</option>
+                      <option value="">Degree Level</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                  </div> 
+                  <div class="px-2">
+                    <button class="btn active-tab w-100 mx-auto my-2 search-btn" style="border-radius: 5px;">Search</button>
+                  </div>
+                </div>
+
+                <div class="search-filters-strtup-btn p-2 m-2 d-none" style="background-color: #F8F9FA;">
+                  <h5 class="mx-auto my-3">
+                    <strong>Select Your Specific Interests </strong>
+                  </h5>
+                  <div class="d-flex px-2 py-2">
+                    <select class="form-control p-1 mr-1">
+                      <option value="">Business Type</option>
+                      <option value="">Non Profit</option>
+                      <option value="">For Profit</option>
+                      <option value="">Government</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 gfield_select">
+                      <option value="">Business Sector</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 gfield_select">
+                      <option value="">Business Name</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 gfield_select">
+                      <option value="">Class Year</option>
                       <option value="">option 1</option>
                       <option value="">option 2</option>
                       <option value="">option 3</option>
                     </select>
                   </div>
+
                   <div class="d-flex px-2 py-2">
                     <select class="form-control p-1 mr-1 gfield_select">
-                      <option value=""> Funding Type</option>
-                      <option value="">Angel</option>
-                      <option value="">Friends & Family</option>
-                      <option value="">VC Series A</option>
-                      <option value="">VC Series B</option>
-                      <option value="">VC Series C</option>
-                      <option value="">Self Funded</option>
-                      <option value="">Grant</option>
-                      <option value="">Donations - Non Profits</option>
+                      <option value="">Business Location</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 gfield_select">
+                      <option value="">Department</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
                     </select>
                     <select class="form-control p-1 mr-1 gfield_select">
                       <option value="">Start Up Year</option>
@@ -674,24 +800,47 @@
                       <option value="">option 2</option>
                       <option value="">option 3</option>
                     </select>
-                    <select class="form-control p-1 mr-1 gfield_select">
-                      <option value="">Start Up Position</option>
-                      <option value="">option 1</option>
-                      <option value="">option 2</option>
-                      <option value="">option 3</option>
-                    </select>
                     <select class="form-control p-1 gfield_select">
-                      <option value=""># of Employees</option>
+                      <option value="">Degree Match</option>
                       <option value="">option 1</option>
                       <option value="">option 2</option>
                       <option value="">option 3</option>
                     </select>
                   </div>
-                  <button class="btn btn-sm btn-primary w-75 mx-auto my-2 search-btn">Search</button>
+
+                  <div class="d-flex px-2 py-2">
+                    <select class="form-control p-1 mr-1 gfield_select">
+                      <option value=""># of Employees</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 gfield_select">
+                      <option value="">Job Title</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 gfield_select">
+                      <option value="">Funding type</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 gfield_select">
+                      <option value="">Degree Level</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                  </div> 
+                  <div class="px-2">
+                    <button class="btn active-tab w-100 mx-auto my-2 search-btn" style="border-radius: 5px;">Search</button>
+                  </div>
                 </div>
               </div>
 
-              <div class="mentor-desc">
+              <!-- <div class="mentor-desc">
                 <div class="d-flex">
                   <div class="col-sm bg-light">
                     <p class="text-center my-2">
@@ -699,14 +848,14 @@
                         pursuits advice from alumni in your fields of interest</small>
                     </p>
                   </div>
-                  <!-- <div class="col-sm bg-light py-2">
+                  <div class="col-sm bg-light py-2">
                     <p>
                       <strong>Alumni Become a Mentor</strong>
                     </p>
                     <a href="./alumni-mentoring-step2.html" class="btn btn-sm btn-success w-25">Join</a>
-                  </div> -->
+                  </div>
                 </div>
-              </div>
+              </div> -->
 
             </div>
 
@@ -1079,13 +1228,13 @@
   <!-- add an api key to the link -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="./js/actions.js"></script>
-  <script>
+  <!-- <script>
     $(document).ready(function () {
       $(document).on("change", ".gfield_select", function () {
         $(".select-search-btn").addClass('btn-success').removeClass('btn-secondary')
       });
     });
-  </script>
+  </script> -->
 
   <script>
     $('#side-menu').click(function () {
@@ -1101,18 +1250,30 @@
 
     // acc-btn
     $('.acc-btn').click(function () {
-      $('.search-filters').removeClass('d-none').addClass('d-block')
-      $('.acc-btn').removeClass('bg-dark').addClass('bg-primary')
+      $('.search-filters-acc-btn').removeClass('d-none').addClass('d-block')
+      $('.search-filters-car-btn').addClass('d-none').removeClass('d-block')
+      $('.search-filters-strtup-btn').addClass('d-none').removeClass('d-block')
+      $('.acc-btn').removeClass('bg-dark').addClass('active-tab')
+      $('.car-btn').addClass('bg-dark').removeClass('active-tab')
+      $('.strtup-btn').addClass('bg-dark').removeClass('active-tab')
     });
 
     $('.car-btn').click(function () {
-      $('.search-filters').removeClass('d-none').addClass('d-block')
-      $('.car-btn').removeClass('bg-dark').addClass('bg-primary')
+      $('.search-filters-car-btn').removeClass('d-none').addClass('d-block')
+      $('.search-filters-acc-btn').addClass('d-none').removeClass('d-block')
+      $('.search-filters-strtup-btn').addClass('d-none').removeClass('d-block')
+      $('.car-btn').removeClass('bg-dark').addClass('active-tab')
+      $('.acc-btn').addClass('bg-dark').removeClass('active-tab')
+      $('.strtup-btn').addClass('bg-dark').removeClass('active-tab')
     });
 
     $('.strtup-btn').click(function () {
-      $('.search-filters').removeClass('d-none').addClass('d-block')
-      $('.strtup-btn').removeClass('bg-dark').addClass('bg-primary')
+      $('.search-filters-strtup-btn').removeClass('d-none').addClass('d-block')
+      $('.search-filters-car-btn').addClass('d-none').removeClass('d-block')
+      $('.search-filters-acc-btn').addClass('d-none').removeClass('d-block')
+      $('.strtup-btn').removeClass('bg-dark').addClass('active-tab')
+      $('.acc-btn').addClass('bg-dark').removeClass('active-tab')
+      $('.car-btn').addClass('bg-dark').removeClass('active-tab')
     });
 
     $('.send-request-btn').click(
