@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="css/css.css" />
 
   <title>Alumlynk</title>
+
   <style type="text/css">
     .profileImgBgSmall {
       background-image: url("./images/img04.jpg");
@@ -38,11 +39,20 @@
     .rounded-custom {
       border-radius: 10px;
     }
+
+    @media only screen and (max-width: 767px) {
+      .w-50 {
+        width: 100% !important;
+      }
+
+      .w-33 {
+        width: 50%;
+      }
+    }
   </style>
 </head>
 
-<body class="bg-light">
-
+<body>
   <div class="bg-white mb-5 bottom-shadow position-fixed z-10 top-0 w-100">
     <div class="container">
       <div class="d-flex bg-white py-18 w-100 justify-content-between">
@@ -56,13 +66,12 @@
             <img src="./images/preview-school-logo-free-vector-design.jpg" />
           </a>
           <!-- <a href="#" class="my-auto logo-toggle mobi">
-            <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
-          </a> -->
+              <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
+            </a> -->
         </div>
-
         <div class="d-flex col-sm-6 mobile-bottom">
           <div class="col-sm p-1 mx-2 border br-8">
-            <a href="friends-page.html" class="text-dark font-weight-bold">
+            <a href="friends-page.html" class="text-dark font-weight-bold text-decoration-none">
               <div class="text-center">
                 <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
               </div>
@@ -70,7 +79,7 @@
             </a>
           </div>
           <div class="col-sm p-1 mx-2 border br-8">
-            <a href="index.html" class="text-dark font-weight-bold text-success">
+            <a href="index.html" class="text-dark font-weight-bold text-decoration-none">
               <div class="text-center">
                 <img src="./images/svg000-friends.svg" width="30" class="my-auto" />
               </div>
@@ -78,19 +87,19 @@
             </a>
           </div>
           <div class="col-sm p-1 mx-2 border br-8">
-            <a href="posts-page.html" class="text-dark font-weight-bold text-center">
+            <a href="posts-page.html" class="text-dark font-weight-bold text-center text-decoration-none">
               <div class="text-center">
                 <img src="./images/svg000-home.svg" width="30" class="my-auto" />
               </div>
               <p class="xm-font text-center mb-0">Posts</p>
             </a>
           </div>
-          <div class="col-sm p-1 mx-2 border br-8">
-            <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
+          <div class="col-sm p-1 mx-2 border br-8 active-tab">
+            <a href="./alumni-mentoring.html" class="text-dark font-weight-bold text-decoration-none">
               <div class="text-center">
-                <img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
+                <img src="./images/svg000-sport-coach-white.svg" width="30" class="my-auto" />
               </div>
-              <p class="xm-font text-center mb-0">Mentors</p>
+              <p class="xm-font text-center mb-0 text-white">Mentors</p>
             </a>
           </div>
           <div class="col-sm p-1 mx-2 border br-8">
@@ -106,21 +115,21 @@
 
         <div class="d-flex col-lg-2 col-sm-6">
           <div class="col-sm p-1 tiny-m">
-            <a href="search-page.html" class="text-dark font-weight-bold">
+            <a href="search-page.html" class="text-dark font-weight-bold text-decoration-none">
               <div class="text-center">
                 <i class="fa fa-search fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
               </div>
             </a>
           </div>
           <div class="col-sm p-1 tiny-m">
-            <a href="./calendar.html" class="text-dark font-weight-bold">
+            <a href="./calendar.html" class="text-dark font-weight-bold text-decoration-none">
               <div class="text-center">
                 <i class="fa fa-calendar fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
               </div>
             </a>
           </div>
           <div class="col-sm p-1 tiny-m">
-            <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
+            <a href="./chat-list-recent.html" class="text-dark font-weight-bold text-decoration-none">
               <div class="text-center position-relative">
                 <i class="fa fa-bell fa-sm text-center text-dark my-auto  bg-gray-light p-2 rounded-circle"></i>
                 <div class="icon-value-nav-bell"><strong>0</strong></div>
@@ -136,38 +145,42 @@
       </div>
     </div>
   </div>
+
   <div class="container position-relative px-0 d-flex mt-92">
 
     <div class="sibar-nav">
       <ul class="list-unstyled mb-0">
-        <li class="px-3 py-2 border-bottom font-weight-bold">
-          <a href="my-profile.html" class="text-dark">My Profile</a>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="my-profile.html" class="text-dark text-decoration-none">My Profile</a>
         </li>
-        <li class="px-3 py-2 border-bottom font-weight-bold">
-          <a href="invites-recieved.html" class="text-dark">Meeting Invites Received (xx)</a>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="invites-recieved.html" class="text-dark text-decoration-none">Meeting Invites Received (xx)</a>
         </li>
-        <li class="px-3 py-2 border-bottom font-weight-bold">
-          <a href="invites-sent.html" class="text-dark">Meeting Invites Sent (xx)</a>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="invites-sent.html" class="text-dark text-decoration-none">Meeting Invites Sent (xx)</a>
         </li>
-        <li class="px-3 py-2 border-bottom font-weight-bold">
-          <a href="chat-list-recent.html" class="text-dark">New Messages (xx)</a>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="chat-list-recent.html" class="text-dark text-decoration-none">New Messages (xx)</a>
         </li>
-        <li class="px-3 py-2 border-bottom font-weight-bold">
-          <a href="alumni-connection-requests.html" class="text-dark">My Alumni Connections (xx)</a>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="alumni-connection-requests.html" class="text-dark text-decoration-none">My Alumni Connections
+            (xx)</a>
         </li>
-        <li class="px-3 py-2 border-bottom font-weight-bold">
-          <a href="connection-requests-recieved.html" class="text-dark">Connectiin Requests Received (xx)</a>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="connection-requests-recieved.html" class="text-dark text-decoration-none">Connection Requests
+            Received (xx)</a>
         </li>
-        <li class="px-3 py-2 border-bottom font-weight-bold">
-          <a href="connection-requests-sent.html" class="text-dark">Connectiin Requests Received (xx)</a>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="connection-requests-sent.html" class="text-dark text-decoration-none">Connection Requests Sent
+            (xx)</a>
         </li>
-        <li class="px-3 py-2 border-bottom font-weight-bold">
-          <a href="following.html" class="text-dark">Following (xx)</a>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="following.html" class="text-dark text-decoration-none">Following (xx)</a>
         </li>
-        <li class="px-3 py-2 border-bottom font-weight-bold">
-          <a href="followers.html" class="text-dark">Followers (xx)</a>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="followers.html" class="text-dark text-decoration-none">Followers (xx)</a>
         </li>
-        <li class="px-3 py-2 border-bottom font-weight-bold">
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
           <div class="d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion"
             href="#ssboutusdesk">
             <span class="my-auto">About Alumlynk</span>
@@ -181,7 +194,7 @@
             <div class="px-2 py-0 verifiedusers"><a href="#">Verified User</a></div>
           </div>
         </li>
-        <li class="px-3 py-2 border-bottom font-weight-bold">
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
           <div class="d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion"
             href="#accountsettingsdesk">
             <span class="my-auto">Account Settings</span>
@@ -197,7 +210,7 @@
             <div class="px-2 py-0 privacypolicy"><a href="#">Privacy Policy</a></div>
           </div>
         </li>
-        <li class="px-3 py-2 border-bottom font-weight-bold">
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
           <div class="d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion"
             href="#contactusdeskcollapse">
             <span class="my-auto">Contact Us</span>
@@ -212,7 +225,7 @@
             <div class="px-2 py-0 careeropportunitydesk"><a href="#">Career Oppotunities</a></div>
           </div>
         </li>
-        <li class="px-3 py-2 border-bottom font-weight-bold">Sign Out</li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">Sign Out</li>
       </ul>
     </div>
     <div class="sibar-left border-right">
@@ -225,50 +238,45 @@
           <p class="mb-0 text-secondary">City, State</p>
           <p class="text-secondary">Proctor Class of 1998</p>
         </div>
-        <ul class="list-unstyled px-3 border w-100 br-5 mb-2 py-2">
-          <li class="lg-font"> <a href="./friends-page.html">Alumni Directory</a></li>
-          <li class="lg-font"> <a href="./index.html">Alumni Network</a></li>
-          <li class="lg-font"> <a href="alumni-mentoring.html">Alumni Mentors</a></li>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font">
+            <h6 class="mb-0 text-blue">My Alumni Network</h6>
+          </li>
+          <li class="fs-14"><a href="#" class="text-dark">Connections (xx)</a></li>
+          <li class="fs-14"><a href="#" class="text-dark">Connection Requests (xx)</a></li>
         </ul>
-        <ul class="list-unstyled px-3 border w-100 br-5 mb-2 py-2">
-          <li class="lg-font"> <a href="calendar.html">Meeting Calendar</a></li>
-          <li class="lg-font"> <a href="meetings.html" class="d-flex justify-content-between"><span>Meetings
-              </span><span>(xx)</span></a></li>
-          <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Meeting Requests
-              </span><span>(xx)</span></a></li>
-          <li class="lg-font"> <a href="invites-recieved.html" class="d-flex justify-content-between"><span>Invites
-                Recieved
-              </span><span>(xx)</span></a></li>
-          <li class="lg-font"> <a href="invites-sent.html" class="d-flex justify-content-between"><span>Invites Sent
-              </span><span>(xx)</span></a></li>
-          <li class="lg-font"> <a href="alumni-connection-requests.html"
-              class="d-flex justify-content-between"><span>Connection Requests
-              </span><span>(xx)</span></a></li>
-          <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Mentor Requests
-              </span><span>(xx)</span></a></li>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font">
+            <h6 class="mb-0 text-blue">Meetings</h6>
+          </li>
+          <li class="fs-14"><a href="#" class="text-dark">Meetings Confirmed (xx)</a></li>
+          <li class="fs-14"><a href="#" class="text-dark">Meeting Invites (xx)</a></li>
+          <li class="fs-14"><a href="#" class="text-dark">Meeting Requests (xx)</a></li>
         </ul>
 
-        <ul class="list-unstyled px-3 border w-100 br-5 mb-2 py-2">
-          <li class="lg-font"> <a href="./class-notes.html">Class Notes</a></li>
-          <li class="lg-font"> <a href="./alumni-events.html">Alumni Events</a></li>
-          <li class="lg-font"> <a href="#">Reunion Information</a></li>
-          <li class="lg-font"> <a href="#">Shop Swag Online</a></li>
-          <li class="lg-font"> <a href="#" class="support-">Support (School Name)</a></li>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font">
+            <h6 class="mb-0 text-blue">Alum Center</h6>
+          </li>
+          <li class="fs-14"><a href="alumni-events.html" class="text-dark">Alumni Events (xx)</a></li>
+          <li class="fs-14"><a href="#" class="text-dark">Class Notes (xx)</a></li>
+          <li class="fs-14"><a href="#" class="text-dark">Reunion Information</a></li>
+          <li class="fs-14"><a href="#" class="text-dark">Shop for Swag</a></li>
+          <li class="fs-14"><a href="#" class="text-dark">Support (School Name)</a></li>
         </ul>
 
-        <ul class="list-unstyled px-3 border w-100 br-5 mb-2 py-2">
-          <!-- <li class="lg-font"> <a href="./alumni-connection-requests.html"> Alumni Connection Requests
-                (xxx)</a></li> -->
-          <!-- <li class="lg-font"> <a href="contact-list-all.html">Messages</a></li> -->
-          <li class="lg-font"> <a href="my-profile.html">My Profile</a></li>
-          <li class="lg-font"> <a href="posts-page.html">My Posts</a></li>
-          <li class="lg-font"> <a href="following.html">Following</a></li>
-          <li class="lg-font"> <a href="followers.html">Followers</a></li>
-          <li class="lg-font"> <a href="#">Bookmarks</a></li>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font">
+            <h6 class="mb-0 text-blue">View</h6>
+          </li>
+          <li class="fs-14"><a href="my-profile.html" class="text-dark">My Profile</a></li>
+          <li class="fs-14"><a href="#" class="text-dark">Alum Messages (xx)</a></li>
+          <li class="fs-14"><a href="#" class="text-dark">My Posts (xx)</a></li>
+          <li class="fs-14"><a href="#" class="text-dark">My Bookmarks (xx)</a></li>
         </ul>
       </div>
     </div>
-    <div class="main-content border-right">
+    <div class="main-content">
 
       <div class="donation-form d-none">
         <div class="d-flex p-2 maroon-border-bottom m-2">
@@ -497,17 +505,12 @@
         </div>
 
       </div>
-      <div class="mt-2">
-        <div class="d-flex blue-bg text-white py-2">
-          <p class="mb-0 mx-auto">(School Name) Alumni Requests</strong>
-            <!-- <div class="d-flex">
-            <button class="btn btn-sm btn-light m-1" data-toggle="modal" data-target="#location">
-              <i class="fa fa-map-marker fa-lg text-center"></i>
-            </button>
-            <button class="btn btn-sm btn-secondary search-btn- border-0 m-1" href="#"><i
-                class="fa fa-search fa-lg text-center text-white my-auto"></i></button>
-          </div> -->
+
+      <div class="main-view standard-bg">
+        <div class="blue-bg text-white text-center py-1">
+          <p class="mb-0 mx-auto font-weight-bold">(School Name) Alumni Requests</strong>
         </div>
+
         <div class="d-flex flex-wrap p-2 ">
           <div class="w-33 p-1">
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
@@ -538,16 +541,16 @@
                   <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
                 </div>
               </div>
-              <div class="d-flex mx-2">
-                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
-                <button class="border-0 bg-white"></button>
-                <button
-                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
+              <div class="d-flex m-2">
+                <button class="btn btn-success rounded btn-sm font-11 w-50 mr-2">Accept</button>
+
+                <button class="btn btn-outline-danger rounded btn-sm font-11 w-50">Decline</button>
               </div>
             </div>
           </div>
 
           <div class="w-33 p-1">
+
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
               <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
                 style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
@@ -576,16 +579,16 @@
                   <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
                 </div>
               </div>
-              <div class="d-flex mx-2">
-                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
-                <button class="border-0 bg-white"></button>
-                <button
-                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
+              <div class="d-flex m-2">
+                <button class="btn btn-success rounded btn-sm font-11 w-50 mr-2">Accept</button>
+
+                <button class="btn btn-outline-danger rounded btn-sm font-11 w-50">Decline</button>
               </div>
             </div>
           </div>
 
           <div class="w-33 p-1">
+
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
               <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
                 style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
@@ -614,16 +617,16 @@
                   <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
                 </div>
               </div>
-              <div class="d-flex mx-2">
-                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
-                <button class="border-0 bg-white"></button>
-                <button
-                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
+              <div class="d-flex m-2">
+                <button class="btn btn-success rounded btn-sm font-11 w-50 mr-2">Accept</button>
+
+                <button class="btn btn-outline-danger rounded btn-sm font-11 w-50">Decline</button>
               </div>
             </div>
           </div>
 
           <div class="w-33 p-1">
+
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
               <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
                 style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
@@ -652,16 +655,16 @@
                   <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
                 </div>
               </div>
-              <div class="d-flex mx-2">
-                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
-                <button class="border-0 bg-white"></button>
-                <button
-                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
+              <div class="d-flex m-2">
+                <button class="btn btn-success rounded btn-sm font-11 w-50 mr-2">Accept</button>
+
+                <button class="btn btn-outline-danger rounded btn-sm font-11 w-50">Decline</button>
               </div>
             </div>
           </div>
 
           <div class="w-33 p-1">
+
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
               <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
                 style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
@@ -690,16 +693,16 @@
                   <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
                 </div>
               </div>
-              <div class="d-flex mx-2">
-                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
-                <button class="border-0 bg-white"></button>
-                <button
-                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
+              <div class="d-flex m-2">
+                <button class="btn btn-success rounded btn-sm font-11 w-50 mr-2">Accept</button>
+
+                <button class="btn btn-outline-danger rounded btn-sm font-11 w-50">Decline</button>
               </div>
             </div>
           </div>
 
           <div class="w-33 p-1">
+
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
               <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
                 style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
@@ -728,16 +731,16 @@
                   <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
                 </div>
               </div>
-              <div class="d-flex mx-2">
-                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
-                <button class="border-0 bg-white"></button>
-                <button
-                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
+              <div class="d-flex m-2">
+                <button class="btn btn-success rounded btn-sm font-11 w-50 mr-2">Accept</button>
+
+                <button class="btn btn-outline-danger rounded btn-sm font-11 w-50">Decline</button>
               </div>
             </div>
           </div>
 
           <div class="w-33 p-1">
+
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
               <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
                 style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
@@ -766,16 +769,16 @@
                   <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
                 </div>
               </div>
-              <div class="d-flex mx-2">
-                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
-                <button class="border-0 bg-white"></button>
-                <button
-                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
+              <div class="d-flex m-2">
+                <button class="btn btn-success rounded btn-sm font-11 w-50 mr-2">Accept</button>
+
+                <button class="btn btn-outline-danger rounded btn-sm font-11 w-50">Decline</button>
               </div>
             </div>
           </div>
 
           <div class="w-33 p-1">
+
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
               <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
                 style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
@@ -804,15 +807,15 @@
                   <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
                 </div>
               </div>
-              <div class="d-flex mx-2">
-                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
-                <button class="border-0 bg-white"></button>
-                <button
-                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
+              <div class="d-flex m-2">
+                <button class="btn btn-success rounded btn-sm font-11 w-50 mr-2">Accept</button>
+
+                <button class="btn btn-outline-danger rounded btn-sm font-11 w-50">Decline</button>
               </div>
             </div>
           </div>
           <div class="w-33 p-1">
+
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
               <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
                 style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
@@ -841,16 +844,16 @@
                   <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
                 </div>
               </div>
-              <div class="d-flex mx-2">
-                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
-                <button class="border-0 bg-white"></button>
-                <button
-                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
+              <div class="d-flex m-2">
+                <button class="btn btn-success rounded btn-sm font-11 w-50 mr-2">Accept</button>
+
+                <button class="btn btn-outline-danger rounded btn-sm font-11 w-50">Decline</button>
               </div>
             </div>
           </div>
 
           <div class="w-33 p-1">
+
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
               <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
                 style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
@@ -879,16 +882,16 @@
                   <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
                 </div>
               </div>
-              <div class="d-flex mx-2">
-                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
-                <button class="border-0 bg-white"></button>
-                <button
-                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
+              <div class="d-flex m-2">
+                <button class="btn btn-success rounded btn-sm font-11 w-50 mr-2">Accept</button>
+
+                <button class="btn btn-outline-danger rounded btn-sm font-11 w-50">Decline</button>
               </div>
             </div>
           </div>
 
           <div class="w-33 p-1">
+
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
               <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
                 style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
@@ -917,16 +920,16 @@
                   <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
                 </div>
               </div>
-              <div class="d-flex mx-2">
-                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
-                <button class="border-0 bg-white"></button>
-                <button
-                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
+              <div class="d-flex m-2">
+                <button class="btn btn-success rounded btn-sm font-11 w-50 mr-2">Accept</button>
+
+                <button class="btn btn-outline-danger rounded btn-sm font-11 w-50">Decline</button>
               </div>
             </div>
           </div>
 
           <div class="w-33 p-1">
+
             <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
               <div class="d-flex position-absolute blue-bg rounded-circle text-white top-0 right-0 m-1"
                 style="z-index: 1;"><i class="fa fa-close p-1"></i></div>
@@ -955,19 +958,22 @@
                   <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small>1</small></p>
                 </div>
               </div>
-              <div class="d-flex mx-2">
-                <button class="btn btn-success rounded-custom btn-sm mx-auto my-2 font-11 w-50">Accept</button>
-                <button class="border-0 bg-white"></button>
-                <button
-                  class="btn text-danger bg-transparent btn-sm mx-auto my-2 w-50"><strong>Decline</strong></button>
+              <div class="d-flex m-2">
+                <button class="btn btn-success rounded btn-sm font-11 w-50 mr-2">Accept</button>
+
+                <button class="btn btn-outline-danger rounded btn-sm font-11 w-50">Decline</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
     <div class="sibar-right">
-      <div class="border rounded p-5 mb-3">Message Box</div>
+      <div class="border rounded p-5 mb-3 d-flex flex-column">
+        <p>Alumni Become A Mentor</p>
+        <a class="btn btn-sm btn-success my-auto" href="alumni-mentoring-step2.html"><strong>JOIN</strong></a>
+      </div>
       <div class="border rounded p-5">Message Box</div>
     </div>
   </div>
@@ -1001,19 +1007,142 @@
     </div>
   </div>
 
+  <div class="modal fade" id="meeting-request" tabindex="-1" role="dialog" aria-labelledby="meeting-request"
+    aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content modal-body">
+
+        <label class="text-success">
+          <strong>Meeting request timeframe</strong>
+        </label>
+        <p>I am requesting to meet with you (select a time frame below)</p>
+        <ul class="list-unstyled">
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">Next week</span>
+          </li>
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">The next 2 weeks</span>
+          </li>
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">Next month</span>
+          </li>
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">The next couple of months</span>
+          </li>
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">Anytime</span>
+          </li>
+        </ul>
+
+        <p class="m-0 text-success">Meeting request message</p>
+
+        <textarea name="" id="" cols="10" rows="5" placeholder="(Indicate a reason for your mentor meeting request)"
+          class="form-control"></textarea>
+
+        <div class="d-flex justify-content-end mt-4">
+          <button type="button" class="btn btn-default btn-sm px-3 mr-2" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success btn-sm px-3 send-request-btn" data-dismiss="modal">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- meeting-confirmed -->
+  <div class="modal fade" id="meeting-confirmed" tabindex="-1" role="dialog" aria-labelledby="meeting-confirmed"
+    aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content modal-body">
+
+        <label class="text-success">
+          <strong>Meeting request timeframe</strong>
+        </label>
+        <p>I am requesting to meet with you (select a time frame below)</p>
+        <ul class="list-unstyled">
+          <li class="d-flex">
+            <input type="radio" checked /><span class="ml-2">Next week</span>
+          </li>
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">The next 2 weeks</span>
+          </li>
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">Next month</span>
+          </li>
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">The next couple of months</span>
+          </li>
+          <li class="d-flex">
+            <input type="radio" /><span class="ml-2">Anytime</span>
+          </li>
+        </ul>
+
+        <p class="m-0 text-success">Meeting request message</p>
+
+        <textarea name="" id="" cols="10" rows="5" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+        molestiae quas vel sint commodi repudiandae consequuntur" class="form-control" readonly></textarea>
+
+        <div class="d-flex justify-content-end mt-4">
+          <button type="button" class="btn btn-default btn-sm px-3" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <!-- add an api key to the link -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="./js/actions.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(document).on("change", ".gfield_select", function () {
+        $(".select-search-btn").addClass('btn-success').removeClass('btn-secondary')
+      });
+    });
+  </script>
 
   <script>
     $('#side-menu').click(function () {
       $('.overlay').toggleClass('hidden');
     });
+  </script>
+  <script>
+    $('.search-btn').click(function () {
+      $('.search-results').removeClass('d-none').addClass('d-block')
+      $('.search-btn').html("Results (xxx)")
+      $('.mentor-desc').removeClass('d-flex').addClass('d-none')
+    });
+
+    // acc-btn
+    $('.acc-btn').click(function () {
+      $('.search-filters').removeClass('d-none').addClass('d-block')
+      $('.acc-btn').removeClass('bg-dark').addClass('bg-primary')
+    });
+
+    $('.car-btn').click(function () {
+      $('.search-filters').removeClass('d-none').addClass('d-block')
+      $('.car-btn').removeClass('bg-dark').addClass('bg-primary')
+    });
+
+    $('.strtup-btn').click(function () {
+      $('.search-filters').removeClass('d-none').addClass('d-block')
+      $('.strtup-btn').removeClass('bg-dark').addClass('bg-primary')
+    });
+
+    $('.send-request-btn').click(
+      function () {
+        $('.request-btn').removeClass('btn-connect-outline').addClass('btn-secondary')
+        $('.request-btn').html('Meeting Requested')
+      });
   </script>
 </body>
 

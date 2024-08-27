@@ -247,6 +247,18 @@
   color: #000000;
 }
 
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.standard-bg{
+  background-color: #E1E9EC;
+}
+
 .border-black {
   border: 1px solid #000000;
 }
@@ -267,15 +279,15 @@
   color: #000;
 }
 
-.btn-default{
-	width:70px;
-	border-radius:0px;
-	border:none;
-	background-color:#efefef !important;
-	color:#000;
+.btn-default {
+  width: 70px;
+  border-radius: 0px;
+  border: none;
+  background-color: #efefef !important;
+  color: #000;
 }
 
-.mainDisplay{
+.mainDisplay {
   min-height: 100vh;
 }
 
@@ -291,11 +303,11 @@
   background-color: #6f7378;
 }
 
-.blue-bg{
+.blue-bg {
   background-color: #21496d !important;
 }
 
-.lg-font > a{
+.lg-font > a {
   color: #21496d !important;
   text-decoration: none;
 }
@@ -625,7 +637,7 @@ input.gn-search:focus {
 body {
   /* font-size: 16px;
   min-width: 280px; */
-  background: #f8f9fa!important;
+  background: #f8f9fa !important;
 }
 
 .container > header,
@@ -1255,7 +1267,7 @@ table {
   text-decoration: none;
 }
 
-.sub-header-icon{
+.sub-header-icon {
   position: relative;
 }
 
@@ -3077,7 +3089,7 @@ legend {
   padding: 18px 0;
 }
 
-.padding-main-4{
+.padding-main-4 {
   padding: 24px;
 }
 
@@ -3139,11 +3151,11 @@ legend {
     display: block !important;
   }
 
-  .padding-main-4{
+  .padding-main-4 {
     padding: 0px;
   }
 
-  .w-75{
+  .w-75 {
     width: 100% !important;
   }
 }
@@ -3158,16 +3170,20 @@ legend {
   }
 }
 
-.bg-blue{
-  background-color: #014D7F;
+.bg-blue {
+  background-color: #014d7f;
 }
 
-.rounded-left{
+.text-blue{
+  color: #014d7f;
+}
+
+.rounded-left {
   border-radius: 5px 0 0 5px !important;
 }
 
-.rounded-right{
-  border-radius: 0 5px 5px 0  !important;
+.rounded-right {
+  border-radius: 0 5px 5px 0 !important;
 }
 
 .mobi {
@@ -3206,18 +3222,18 @@ legend {
 }
 
 .ratingStar {
-	margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .ratingStar > li {
-	margin-right: 4px;
-	width: 14px;
+  margin-right: 4px;
+  width: 14px;
 }
 
 .ratingStar img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: top;
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
 }
 
 .followContentWrap {
