@@ -538,14 +538,14 @@
 
       <div class="main-view" style="background-color: #E1E9EC; height: 100vh;">
         <div class="d-flex flex-column mx-auto">
-          <div class="d-flex bg-blue text-white justify-content-between pl-2">
+          <div class="d-flex bg-blue text-white justify-content-between pl-2" style="border-radius: 8px 8px 0 0;">
             <div class="w-75 my-auto"><strong>(School Name) Alumni Mentors</strong></div>
             <div class="d-flex">
-              <button class="btn btn-sm btn-light m-1" data-toggle="modal" data-target="#location">
-                <i class="fa fa-map-marker fa-lg text-center"></i>
+              <button class="btn btn-sm btn-light border-0 m-1" data-toggle="modal" data-target="#location">
+                <i class="fa fa-map-marker fa-2x text-center text-blue"></i>
               </button>
-              <a class="btn btn-secondary" href="#"><i
-                  class="fa fa-search fa-lg text-center text-white my-auto"></i></a>
+              <a class="btn m-1 border-0" style="background-color: #6C757D4A;" href="#">
+                <i class="fa fa-search fa-lg text-center text-white my-auto"></i></a>
             </div>
           </div>
           <div class="text-center">
@@ -563,7 +563,7 @@
               </h4>
             </div>
 
-            <div class="bg-gray-light">
+            <div class="bg-gray-light desk">
               <h5>
                 <strong>
                   Select your interests
@@ -888,6 +888,315 @@
                 </div>
               </div> -->
 
+            </div>
+
+            <div class="bg-gray-light mobi">
+              <h5 class="bg-black text-white py-3">
+                <strong>
+                  Select your interests
+                </strong>
+              </h5>
+              <div class="">
+                <div class="mb-3 py-2 px-4 by-light">
+                  <div class="d-flex p-0 mb-2">
+                    <div class="bg-white br-5 mr-2 w-25 py-2">
+                      <img src="images/grad-cap.svg" alt="">
+                    </div>
+                    <div class="w-75 my-auto">
+                      <button class="btn text-white bg-dark w-100 py-2 acc-btn"><strong>Academic
+                          Pursuits</strong></button>
+                    </div>
+                  </div>
+                  <div class="d-flex p-0 mb-2">
+                    <div class="bg-white br-5 mr-2 w-25 py-2">
+                      <img src="images/walk.svg" alt="">
+                    </div>
+                    <div class="w-75 my-auto">
+                      <button class="btn text-white bg-dark w-100 py-2 car-btn"><strong>Career
+                          Pursuits</strong></button>
+                    </div>
+                  </div>
+                  <div class="d-flex p-0 mb-2">
+                    <div class="bg-white br-5 mr-2 w-25 py-2">
+                      <img src="images/rocket.svg" alt="">
+                    </div>
+                    <div class="w-75 my-auto">
+                      <button class="btn text-white bg-dark w-100 py-2 strtup-btn"><strong>Start Up
+                          Pursuits</strong></button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="search-filters-acc-btn d-none" style="background-color: #F8F9FA;">
+                  <h5 class="mx-auto py-3" style="background-color: #E1E9EC;">
+                    <strong>Select Your Specific Interests </strong>
+                  </h5>
+                  <div class="d-flex px-2 py-2">
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Academic area</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Degree Level</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Degree Date</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 fs-12">
+                      <option value="">Business Type</option>
+                      <option value="">Non Profit</option>
+                      <option value="">For Profit</option>
+                      <option value="">Government</option>
+                    </select>
+                  </div>
+
+                  <div class="d-flex px-2 py-2">
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Country</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">State</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">City</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 fs-12">
+                      <option value="">Institution</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                  </div>
+
+                  <div class="d-flex px-2 py-2">
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Industry</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Department</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Job title</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 fs-12">
+                      <option value="">Class year</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                  </div>
+                  <div class="px-2">
+                    <button class="btn btn-primary w-100 mx-auto my-2 search-btn"
+                      style="border-radius: 5px;">Search</button>
+                  </div>
+                </div>
+
+                <div class="search-filters-car-btn d-none" style="background-color: #F8F9FA;">
+                  <h5 class="mx-auto py-3" style="background-color: #E1E9EC;">
+                    <strong>Select Your Specific Interests </strong>
+                  </h5>
+                  <div class="d-flex px-2 py-2">
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Business Type</option>
+                      <option value="">Non Profit</option>
+                      <option value="">For Profit</option>
+                      <option value="">Government</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Business Sector</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Industry</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 fs-12">
+                      <option value="">Business Name</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                  </div>
+
+                  <div class="d-flex px-2 py-2">
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Country</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">State</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">City</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 fs-12">
+                      <option value="">Class Year</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                  </div>
+
+                  <div class="d-flex px-2 py-2">
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Department</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Job Title</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Degree type</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 fs-12">
+                      <option value="">Degree Level</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                  </div>
+                  <div class="px-2">
+                    <button class="btn btn-primary w-100 mx-auto my-2 search-btn"
+                      style="border-radius: 5px;">Search</button>
+                  </div>
+                </div>
+
+                <div class="search-filters-strtup-btn d-none" style="background-color: #F8F9FA;">
+                  <h5 class="mx-auto py-3" style="background-color: #E1E9EC;">
+                    <strong>Select Your Specific Interests </strong>
+                  </h5>
+                  <div class="d-flex px-2 py-2">
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Business Type</option>
+                      <option value="">Non Profit</option>
+                      <option value="">For Profit</option>
+                      <option value="">Government</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Business Sector</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Business Name</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 fs-12">
+                      <option value="">Class Year</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                  </div>
+
+                  <div class="d-flex px-2 py-2">
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Business Location</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Department</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Start Up Year</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 fs-12">
+                      <option value="">Degree Match</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                  </div>
+
+                  <div class="d-flex px-2 py-2">
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value=""># of Employees</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Job Title</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 mr-1 fs-12">
+                      <option value="">Funding type</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                    <select class="form-control p-1 fs-12">
+                      <option value="">Degree Level</option>
+                      <option value="">option 1</option>
+                      <option value="">option 2</option>
+                      <option value="">option 3</option>
+                    </select>
+                  </div>
+                  <div class="px-2">
+                    <button class="btn btn-primary w-100 mx-auto my-2 search-btn"
+                      style="border-radius: 5px;">Search</button>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="d-none search-results">

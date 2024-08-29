@@ -303,6 +303,10 @@
   background-color: #6f7378;
 }
 
+.bg-black{
+  background-color: #000;
+}
+
 .blue-bg {
   background-color: #21496d !important;
 }
@@ -1048,7 +1052,7 @@ table {
   font-size: 12px;
 }
 .fs-11 {
-  font-size: 11px;
+  font-size: 11px !important;
 }
 .full-span {
   width: 100%;

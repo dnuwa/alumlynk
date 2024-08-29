@@ -49,6 +49,14 @@
   line-height: 1px;
 }
 
+.bg-gray-light {
+  background-color: #e4e6eb;
+}
+
+.bg-gray-light:hover {
+  background-color: #ededed;
+}
+
 #map {
   height: 400px;
   /* The height is 400 pixels */
