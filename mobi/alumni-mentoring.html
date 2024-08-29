@@ -2,578 +2,668 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="intelTelInput/js/intlTelInput.min.js"></script>
-    <link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/page-styles.css">
-    <link rel="stylesheet" type="text/css" href="css/css.css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="intelTelInput/js/intlTelInput.min.js"></script>
+  <link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/page-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/css.css" />
 
 
-    <title>Alumlynk</title>
-    <style type="text/css">
-        .profileImgBgSmall {
-            background-image: url("./images/img04.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            min-height: 78px;
-            display: flex;
-            position: relative;
-        }
+  <title>Alumlynk</title>
+  <style type="text/css">
+    .profileImgBgSmall {
+      background-image: url("./images/img04.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 78px;
+      display: flex;
+      position: relative;
+    }
 
-        .profileImgBgSmall>div {
-            position: absolute;
-            top: 8px;
-            display: flex;
-        }
+    .profileImgBgSmall>div {
+      position: absolute;
+      top: 8px;
+      display: flex;
+    }
 
-        .profileImgBgSmall div img {
-            border: 2px solid #fff;
-        }
+    .profileImgBgSmall div img {
+      border: 2px solid #fff;
+    }
 
-        .rounded-custom {
-            border-radius: 10px;
-        }
-    </style>
+    .rounded-custom {
+      border-radius: 10px;
+    }
+  </style>
 
-    <script>// Initialize and add the map
-        function initMap() {
-            // The location of Uluru
-            const uluru = { lat: -25.344, lng: 131.036 };
-            // The map, centered at Uluru
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 4,
-                center: uluru,
-            });
-            // The marker, positioned at Uluru
-            const marker = new google.maps.Marker({
-                position: uluru,
-                map: map,
-            });
-        }
-    </script>
+  <script>// Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      const uluru = { lat: -25.344, lng: 131.036 };
+      // The map, centered at Uluru
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4,
+        center: uluru,
+      });
+      // The marker, positioned at Uluru
+      const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+      });
+    }
+  </script>
 </head>
 
 <body>
-    <div class="fixed bg-white mb-5 bottom-shadow">
-        <div class="d-flex px-2 py-18 w-100">
-            <div class="d-flex">
-                <a href="#" class="text-success w-50 mr-2">
-                    <img src="./images/preview-school-logo-free-vector-design.jpg" class="w-100" />
-                </a>
-                <a href="search-page.html">
-                    <i class="fa fa-search fa-lg text-center text-dark my-auto"></i>
-                </a>
-            </div>
-            <div class="w-50 d-flex justify-content-between">
-                <a href="calendar.html" class="d-flex">
-                    <i class="fa fa-calendar fa-lg text-center text-dark my-auto"></i>
-                </a>
-                <div class="col-sm text-center d-flex">
-                    <a href="chat-list-recent.html" class="d-flex">
-                        <i class="fa fa-bell fa-lg text-center text-dark my-auto"></i>
+  <div class="fixed bg-white mb-5 bottom-shadow">
+    <div class="d-flex px-2 py-18 w-100">
+      <div class="d-flex">
+        <a href="#" class="text-success w-50 mr-2">
+          <img src="./images/preview-school-logo-free-vector-design.jpg" class="w-100" />
+        </a>
+        <a href="search-page.html">
+          <i class="fa fa-search fa-lg text-center text-dark my-auto"></i>
+        </a>
+      </div>
+      <div class="w-50 d-flex justify-content-between">
+        <a href="calendar.html" class="d-flex">
+          <i class="fa fa-calendar fa-lg text-center text-dark my-auto"></i>
+        </a>
+        <div class="col-sm text-center d-flex">
+          <a href="chat-list-recent.html" class="d-flex">
+            <i class="fa fa-bell fa-lg text-center text-dark my-auto"></i>
 
-                    </a>
-                    <div class="icon-value"><small><strong>0</strong></small></div>
-                </div>
-                <div>
-                    <span class="text-center">
-                        <div id="side-menu">
-                            <i class="fa fa-bars fa-lg text-center text-dark"></i>
-                        </div>
-                    </span>
-                    <div id="overlay" class="overlay hidden" role="navigation">
-                        <div class="mobileNav">
-                            <!--.mobile-menu-->
-                            <div class="d-flex flex-column">
-                                <h5 class="p-3 mb-0">Navigation</h5>
-                                <ul class="list-unstyled px-3 gn-menu">
-                                    <li> <a href="./friends-page.html"><small>Alumni Directory</small></a></li>
-                                    <li> <a href="./alumni-connection-requests.html"><small> Alumni Connection Requests
-                                                (xxx)</small></a></li>
-                                    <li> <a href="./index.html"><small>Alumni Network</small></a></li>
-                                    <li> <a href="#"><small>Alum Mentoring</small></a></li>
-                                    <li> <a href="./chat-list-recent.html"><small>Messages</small></a></li>
-                                    <li> <a href="#"><small>Notices(xxx)</small></a></li>
-                                    <li> <a href="#"><small>Profile Page</small></a></li>
-                                    <li> <a href="./alumni-events.html"><small>Alumni Events</small></a></li>
-                                    <li> <a href="./class-notes.html"><small>Class Notes</small></a></li>
-                                    <li> <a href="#"><small>Reunion Information</small></a></li>
-                                    <li> <a href="#"><small>Shop Online</small></a></li>
-                                    <li> <a href="./support.html"><small>Support (School Name)</small></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </a>
+          <div class="icon-value"><small><strong>0</strong></small></div>
         </div>
-        <div class="d-flex bg-blue text-white justify-content-between pl-2 mx-1" style="border-radius: 8px 8px 0 0;">
-            <div class="w-75 my-auto"><strong>(School Name) Alumni Mentors</strong></div>
-            <div class="d-flex">
-                <button class="btn btn-sm btn-light border-0 m-1" data-toggle="modal" data-target="#location">
-                    <i class="fa fa-map-marker fa-2x text-center text-blue"></i>
-                </button>
-                <a class="btn m-1 border-0" style="background-color: #6C757D4A;" href="search-page.html">
-                    <i class="fa fa-search fa-lg text-center text-white my-auto"></i></a>
+        <div>
+          <span class="text-center">
+            <div id="side-menu">
+              <i class="fa fa-bars fa-lg text-center text-dark"></i>
             </div>
+          </span>
+          <div id="overlay" class="overlay hidden" role="navigation">
+            <div class="mobileNav">
+              <!--.mobile-menu-->
+              <div class="d-flex flex-column">
+                <h5 class="p-3 mb-0">Navigation</h5>
+                <ul class="list-unstyled px-3 gn-menu">
+                  <li> <a href="./friends-page.html"><small>Alumni Directory</small></a></li>
+                  <li> <a href="./alumni-connection-requests.html"><small> Alumni Connection Requests
+                        (xxx)</small></a></li>
+                  <li> <a href="./index.html"><small>Alumni Network</small></a></li>
+                  <li> <a href="#"><small>Alum Mentoring</small></a></li>
+                  <li> <a href="./chat-list-recent.html"><small>Messages</small></a></li>
+                  <li> <a href="#"><small>Notices(xxx)</small></a></li>
+                  <li> <a href="#"><small>Profile Page</small></a></li>
+                  <li> <a href="./alumni-events.html"><small>Alumni Events</small></a></li>
+                  <li> <a href="./class-notes.html"><small>Class Notes</small></a></li>
+                  <li> <a href="#"><small>Reunion Information</small></a></li>
+                  <li> <a href="#"><small>Shop Online</small></a></li>
+                  <li> <a href="./support.html"><small>Support (School Name)</small></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+    <div class="d-flex bg-blue text-white justify-content-between pl-2 mx-1" style="border-radius: 8px 8px 0 0;">
+      <div class="w-75 my-auto"><strong>(School Name) Alumni Mentors</strong></div>
+      <div class="d-flex">
+        <button class="btn btn-sm btn-light border-0 m-1" data-toggle="modal" data-target="#location">
+          <i class="fa fa-map-marker fa-2x text-center text-blue"></i>
+        </button>
+        <a class="btn m-1 border-0" style="background-color: #6C757D4A;" href="search-page.html">
+          <i class="fa fa-search fa-lg text-center text-white my-auto"></i></a>
+      </div>
+    </div>
+  </div>
 
-    <div class="text-center mx-1" style="padding-top: 120px;">
-        <p class="mb-0">
-            <strong>
-                Recent Alumni & (School Name)
-            </strong>
-        </p>
-        <p class="mb-0">
-            <strong>
-                Students Get Free, Experienced Advice
-            </strong>
-        </p>
-        <p class="">
-            <strong>
-                From Alumni in Your Field of Interest
-            </strong>
-        </p>
+  <div class="text-center mx-1" style="padding-top: 120px;">
+    <p class="mb-0">
+      <strong>
+        Recent Alumni & (School Name)
+      </strong>
+    </p>
+    <p class="mb-0">
+      <strong>
+        Students Get Free, Experienced Advice
+      </strong>
+    </p>
+    <p class="">
+      <strong>
+        From Alumni in Your Field of Interest
+      </strong>
+    </p>
 
-        <div class="bg-gray-light">
-            <h5 class="bg-black text-white py-3">
-                <strong>
-                    Select your interests
-                </strong>
-            </h5>
-            <div class="">
-                <div class="mb-3 py-2 px-4 by-light">
-                    <div class="d-flex p-0 mb-2">
-                        <div class="bg-white br-5 mr-2 w-25 py-2">
-                            <img src="images/grad-cap.svg" alt="">
-                        </div>
-                        <div class="w-75 my-auto">
-                            <button class="btn text-white bg-dark w-100 py-2 acc-btn"><strong>Academic
-                                    Pursuits</strong></button>
-                        </div>
-                    </div>
-                    <div class="d-flex p-0 mb-2">
-                        <div class="bg-white br-5 mr-2 w-25 py-2">
-                            <img src="images/walk.svg" alt="">
-                        </div>
-                        <div class="w-75 my-auto">
-                            <button class="btn text-white bg-dark w-100 py-2 car-btn"><strong>Career
-                                    Pursuits</strong></button>
-                        </div>
-                    </div>
-                    <div class="d-flex p-0 mb-2">
-                        <div class="bg-white br-5 mr-2 w-25 py-2">
-                            <img src="images/rocket.svg" alt="">
-                        </div>
-                        <div class="w-75 my-auto">
-                            <button class="btn text-white bg-dark w-100 py-2 strtup-btn"><strong>Start Up
-                                    Pursuits</strong></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="search-filters-acc-btn d-none" style="background-color: #F8F9FA;">
-                    <h5 class="mx-auto py-3" style="background-color: #E1E9EC;">
-                        <strong>Select Your Specific Interests </strong>
-                    </h5>
-                    <div class="d-flex px-2 py-2">
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Academic area</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Degree Level</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Degree Date</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 fs-12">
-                            <option value="">Business Type</option>
-                            <option value="">Non Profit</option>
-                            <option value="">For Profit</option>
-                            <option value="">Government</option>
-                        </select>
-                    </div>
-
-                    <div class="d-flex px-2 py-2">
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Country</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">State</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">City</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 fs-12">
-                            <option value="">Institution</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                    </div>
-
-                    <div class="d-flex px-2 py-2">
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Industry</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Department</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Job title</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 fs-12">
-                            <option value="">Class year</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                    </div>
-                    <div class="px-2">
-                        <button class="btn btn-primary w-100 mx-auto my-2 search-btn"
-                            style="border-radius: 5px;">Search</button>
-                    </div>
-                </div>
-
-                <div class="search-filters-car-btn d-none" style="background-color: #F8F9FA;">
-                    <h5 class="mx-auto py-3" style="background-color: #E1E9EC;">
-                        <strong>Select Your Specific Interests </strong>
-                    </h5>
-                    <div class="d-flex px-2 py-2">
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Business Type</option>
-                            <option value="">Non Profit</option>
-                            <option value="">For Profit</option>
-                            <option value="">Government</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Business Sector</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Industry</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 fs-12">
-                            <option value="">Business Name</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                    </div>
-
-                    <div class="d-flex px-2 py-2">
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Country</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">State</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">City</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 fs-12">
-                            <option value="">Class Year</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                    </div>
-
-                    <div class="d-flex px-2 py-2">
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Department</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Job Title</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Degree type</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 fs-12">
-                            <option value="">Degree Level</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                    </div>
-                    <div class="px-2">
-                        <button class="btn btn-primary w-100 mx-auto my-2 search-btn"
-                            style="border-radius: 5px;">Search</button>
-                    </div>
-                </div>
-
-                <div class="search-filters-strtup-btn d-none" style="background-color: #F8F9FA;">
-                    <h5 class="mx-auto py-3" style="background-color: #E1E9EC;">
-                        <strong>Select Your Specific Interests </strong>
-                    </h5>
-                    <div class="d-flex px-2 py-2">
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Business Type</option>
-                            <option value="">Non Profit</option>
-                            <option value="">For Profit</option>
-                            <option value="">Government</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Business Sector</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Business Name</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 fs-12">
-                            <option value="">Class Year</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                    </div>
-
-                    <div class="d-flex px-2 py-2">
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Business Location</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Department</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Start Up Year</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 fs-12">
-                            <option value="">Degree Match</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                    </div>
-
-                    <div class="d-flex px-2 py-2">
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value=""># of Employees</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Job Title</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 mr-1 fs-12">
-                            <option value="">Funding type</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                        <select class="form-control p-1 fs-12">
-                            <option value="">Degree Level</option>
-                            <option value="">option 1</option>
-                            <option value="">option 2</option>
-                            <option value="">option 3</option>
-                        </select>
-                    </div>
-                    <div class="px-2">
-                        <button class="btn btn-primary w-100 mx-auto my-2 search-btn"
-                            style="border-radius: 5px;">Search</button>
-                    </div>
-                </div>
+    <div class="bg-gray-light mobi">
+      <h5 class="bg-black text-white py-3">
+        <strong>
+          Select your interests
+        </strong>
+      </h5>
+      <div class="">
+        <div class="mb-3 py-2 px-4 by-light">
+          <div class="d-flex p-0 mb-2">
+            <div class="bg-white br-5 mr-2 w-25 py-2">
+              <img src="images/grad-cap.svg" alt="">
             </div>
+            <div class="w-75 my-auto">
+              <button class="btn text-white bg-dark w-100 py-2 acc-btn"><strong>Academic
+                  Pursuits</strong></button>
+            </div>
+          </div>
+          <div class="d-flex p-0 mb-2">
+            <div class="bg-white br-5 mr-2 w-25 py-2">
+              <img src="images/walk.svg" alt="">
+            </div>
+            <div class="w-75 my-auto">
+              <button class="btn text-white bg-dark w-100 py-2 car-btn"><strong>Career
+                  Pursuits</strong></button>
+            </div>
+          </div>
+          <div class="d-flex p-0 mb-2">
+            <div class="bg-white br-5 mr-2 w-25 py-2">
+              <img src="images/rocket.svg" alt="">
+            </div>
+            <div class="w-75 my-auto">
+              <button class="btn text-white bg-dark w-100 py-2 strtup-btn"><strong>Start Up
+                  Pursuits</strong></button>
+            </div>
+          </div>
         </div>
-        <!-- <div class="d-flex justify-content-between mt-3 px-3">
+
+        <div class="search-filters-acc-btn d-none" style="background-color: #F8F9FA;">
+          <h5 class="mx-auto py-3" style="background-color: #E1E9EC;">
+            <strong>Select Your Specific Interests </strong>
+          </h5>
+          <div class="d-flex px-2 py-2">
+            <div class="form-control p-0 mr-1 fs-12 w-25">
+              <div class="drop">
+                <button type="button"
+                  class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between px-2"
+                  data-toggle="dropdown">
+                  <span class="mr-1" id="list-by"><small>Academic</small></span>
+                  <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                </button>
+                <div class="dropdown-menu p-0 right">
+                  <ul class="px-0 inviteTypeOptions mb-0">
+                    <li class="dropdown-item px-2 flex flex-column">
+                      <p class="mb-0 text-primary"><small>Academic</small></p>
+                      <input type="text" class="form-control-sm border" placeholder="Enter Academic">
+                    </li>
+                    <li class="dropdown-item px-2 text-primary bg-light">
+                      <small>Select Academic</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <!-- <input type="checkbox"> -->
+                      <small>Academic 1</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <!-- <input type="checkbox"> -->
+                      <small>Academic 2</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <!-- <input type="checkbox"> -->
+                      <small>Academic 3</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <!-- <input type="checkbox"> -->
+                      <small>Academic 4</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Degree Level</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Degree Date</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 fs-12">
+              <option value="">Business Type</option>
+              <option value="">Non Profit</option>
+              <option value="">For Profit</option>
+              <option value="">Government</option>
+            </select>
+          </div>
+
+          <div class="d-flex px-2 py-2">
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Country</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">State</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">City</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 fs-12">
+              <option value="">Institution</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+          </div>
+
+          <div class="d-flex px-2 py-2">
+            <div class="form-control p-0 mr-1 fs-12 w-25">
+              <div class="drop">
+                <button type="button"
+                  class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between px-2"
+                  data-toggle="dropdown">
+                  <span class="mr-1" id="list-by"><small>Industry</small></span>
+                  <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                </button>
+                <div class="dropdown-menu p-0 right">
+                  <ul class="px-0 inviteTypeOptions mb-0">
+                    <li class="dropdown-item px-2 flex flex-column">
+                      <p class="mb-0 text-primary"><small>Industry</small></p>
+                      <input type="text" class="form-control-sm border" placeholder="Enter Industry">
+                    </li>
+                    <li class="dropdown-item px-2 text-primary bg-light">
+                      <small>Select Industry</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <!-- <input type="checkbox"> -->
+                      <small>Industry 1</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <!-- <input type="checkbox"> -->
+                      <small>Industry 2</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <!-- <input type="checkbox"> -->
+                      <small>Industry 3</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <!-- <input type="checkbox"> -->
+                      <small>Industry 4</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Department</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Job title</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 fs-12">
+              <option value="">Class year</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+          </div>
+          <div class="px-2">
+            <button class="btn btn-primary w-100 mx-auto my-2 search-btn" style="border-radius: 5px;">Search</button>
+          </div>
+        </div>
+
+        <div class="search-filters-car-btn d-none" style="background-color: #F8F9FA;">
+          <h5 class="mx-auto py-3" style="background-color: #E1E9EC;">
+            <strong>Select Your Specific Interests </strong>
+          </h5>
+          <div class="d-flex px-2 py-2">
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Business Type</option>
+              <option value="">Non Profit</option>
+              <option value="">For Profit</option>
+              <option value="">Government</option>
+            </select>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Business Sector</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <div class="form-control p-0 mr-1 fs-12 w-25">
+              <div class="drop">
+                <button type="button"
+                  class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between px-2"
+                  data-toggle="dropdown">
+                  <span class="mr-1" id="list-by"><small>Industry</small></span>
+                  <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                </button>
+                <div class="dropdown-menu p-0 right">
+                  <ul class="px-0 inviteTypeOptions mb-0">
+                    <li class="dropdown-item px-2 flex flex-column">
+                      <p class="mb-0 text-primary"><small>Industry</small></p>
+                      <input type="text" class="form-control-sm border" placeholder="Enter Industry">
+                    </li>
+                    <li class="dropdown-item px-2 text-primary bg-light">
+                      <small>Select Industry</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <!-- <input type="checkbox"> -->
+                      <small>Industry 1</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <!-- <input type="checkbox"> -->
+                      <small>Industry 2</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <!-- <input type="checkbox"> -->
+                      <small>Industry 3</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <!-- <input type="checkbox"> -->
+                      <small>Industry 4</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <select class="form-control p-1 fs-12">
+              <option value="">Business Name</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+          </div>
+
+          <div class="d-flex px-2 py-2">
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Country</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">State</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">City</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 fs-12">
+              <option value="">Class Year</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+          </div>
+
+          <div class="d-flex px-2 py-2">
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Department</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Job Title</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Degree type</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 fs-12">
+              <option value="">Degree Level</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+          </div>
+          <div class="px-2">
+            <button class="btn btn-primary w-100 mx-auto my-2 search-btn" style="border-radius: 5px;">Search</button>
+          </div>
+        </div>
+
+        <div class="search-filters-strtup-btn d-none" style="background-color: #F8F9FA;">
+          <h5 class="mx-auto py-3" style="background-color: #E1E9EC;">
+            <strong>Select Your Specific Interests </strong>
+          </h5>
+          <div class="d-flex px-2 py-2">
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Business Type</option>
+              <option value="">Non Profit</option>
+              <option value="">For Profit</option>
+              <option value="">Government</option>
+            </select>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Business Sector</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Business Name</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 fs-12">
+              <option value="">Class Year</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+          </div>
+
+          <div class="d-flex px-2 py-2">
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Business Location</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Department</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Start Up Year</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 fs-12">
+              <option value="">Degree Match</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+          </div>
+
+          <div class="d-flex px-2 py-2">
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value=""># of Employees</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Job Title</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 mr-1 fs-12 col-sm">
+              <option value="">Funding type</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+            <select class="form-control p-1 fs-12">
+              <option value="">Degree Level</option>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+          </div>
+          <div class="px-2">
+            <button class="btn btn-primary w-100 mx-auto my-2 search-btn" style="border-radius: 5px;">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="d-flex justify-content-between mt-3 px-3">
             <p class="my-auto">
                 <strong>Alumni Become a Mentor</strong>
             </p>
             <a href="./alumni-mentoring-step2.html" class="btn btn-sm btn-success w-25">Join</a>
         </div> -->
+  </div>
+
+  <div class="fixed-bottom border-top">
+    <div class="d-flex bg-white tinypb-1">
+      <div class="col-sm p-1 tiny-m border">
+        <a href="friends-page.html" class="text-dark font-weight-bold">
+          <div class="text-center">
+            <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
+          </div>
+          <p class="xm-font text-center mb-0">Alumni</p>
+        </a>
+      </div>
+      <div class="col-sm p-1 tiny-m border">
+        <a href="index.html" class="text-dark font-weight-bold text-success">
+          <div class="text-center">
+            <img src="./images/svg000-friends.svg" width="30" class="my-auto" />
+          </div>
+          <p class="xm-font text-center mb-0">Network</p>
+        </a>
+      </div>
+      <div class="col-sm p-1 tiny-m">
+        <a href="posts-page.html" class="text-dark font-weight-bold text-center">
+          <div class="text-center">
+            <img src="./images/svg000-home.svg" width="30" class="my-auto" />
+          </div>
+          <p class="xm-font text-center mb-0">Posts</p>
+        </a>
+      </div>
+      <div class="col-sm p-1 tiny-m border active-tab">
+        <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
+          <div class="text-center">
+            <img src="./images/svg000-sport-coach-white.svg" width="30" class="my-auto" />
+          </div>
+          <p class="xm-font text-center mb-0 text-white">Members</p>
+        </a>
+      </div>
+      <div class="col-sm p-1 tiny-m border">
+        <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
+          <div class="text-center">
+            <img src="./images/svg000-message.svg" width="30" class="my-auto" />
+            <div class="icon-value-footer"><small><strong>0</strong></small></div>
+          </div>
+          <p class="xm-font text-center mb-0">Messages</p>
+        </a>
+      </div>
     </div>
-
-    <div class="fixed-bottom border-top">
-        <div class="d-flex bg-white tinypb-1">
-            <div class="col-sm p-1 tiny-m border">
-                <a href="friends-page.html" class="text-dark font-weight-bold">
-                    <div class="text-center">
-                        <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
-                    </div>
-                    <p class="xm-font text-center mb-0">Alumni</p>
-                </a>
-            </div>
-            <div class="col-sm p-1 tiny-m border">
-                <a href="index.html" class="text-dark font-weight-bold text-success">
-                    <div class="text-center">
-                        <img src="./images/svg000-friends.svg" width="30" class="my-auto" />
-                    </div>
-                    <p class="xm-font text-center mb-0">Network</p>
-                </a>
-            </div>
-            <div class="col-sm p-1 tiny-m">
-                <a href="posts-page.html" class="text-dark font-weight-bold text-center">
-                    <div class="text-center">
-                        <img src="./images/svg000-home.svg" width="30" class="my-auto" />
-                    </div>
-                    <p class="xm-font text-center mb-0">Posts</p>
-                </a>
-            </div>
-            <div class="col-sm p-1 tiny-m border active-tab">
-                <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
-                    <div class="text-center">
-                        <img src="./images/svg000-sport-coach-white.svg" width="30" class="my-auto" />
-                    </div>
-                    <p class="xm-font text-center mb-0 text-white">Members</p>
-                </a>
-            </div>
-            <div class="col-sm p-1 tiny-m border">
-                <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
-                    <div class="text-center">
-                        <img src="./images/svg000-message.svg" width="30" class="my-auto" />
-                        <div class="icon-value-footer"><small><strong>0</strong></small></div>
-                    </div>
-                    <p class="xm-font text-center mb-0">Messages</p>
-                </a>
-            </div>
-        </div>
-    </div>
+  </div>
 
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <!-- add an api key to the link -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <!-- add an api key to the link -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $(document).on("change", ".gfield_select", function () {
-                $(".select-search-btn").addClass('btn-success').removeClass('btn-secondary')
-            });
-        });
-    </script>
+  <script>
+    $(document).ready(function () {
+      $(document).on("change", ".gfield_select", function () {
+        $(".select-search-btn").addClass('btn-success').removeClass('btn-secondary')
+      });
+    });
+  </script>
 
-    <script>
-        $('#side-menu').click(function () {
-            $('.overlay').toggleClass('hidden');
-        });
-    </script>
-    <script>
-        $('.search-btn').click(function () {
-            $('.search-results').removeClass('d-none').addClass('d-block')
-            $('.search-btn').html("Results (xxx)")
-            $('.mentor-desc').removeClass('d-flex').addClass('d-none')
-        });
+  <script>
+    $('#side-menu').click(function () {
+      $('.overlay').toggleClass('hidden');
+    });
+  </script>
+  <script>
+    $('.search-btn').click(function () {
+      $('.search-results').removeClass('d-none').addClass('d-block')
+      $('.search-btn').html("Results (xxx)")
+      $('.mentor-desc').removeClass('d-flex').addClass('d-none')
+    });
 
-        // acc-btn
-        $('.acc-btn').click(function () {
-            $('.search-filters-acc-btn').removeClass('d-none').addClass('d-block')
-            $('.search-filters-car-btn').addClass('d-none').removeClass('d-block')
-            $('.search-filters-strtup-btn').addClass('d-none').removeClass('d-block')
-            $('.acc-btn').removeClass('bg-dark').addClass('active-tab')
-            $('.car-btn').addClass('bg-dark').removeClass('active-tab')
-            $('.strtup-btn').addClass('bg-dark').removeClass('active-tab')
-        });
+    // acc-btn
+    $('.acc-btn').click(function () {
+      $('.search-filters-acc-btn').removeClass('d-none').addClass('d-block')
+      $('.search-filters-car-btn').addClass('d-none').removeClass('d-block')
+      $('.search-filters-strtup-btn').addClass('d-none').removeClass('d-block')
+      $('.acc-btn').removeClass('bg-dark').addClass('active-tab')
+      $('.car-btn').addClass('bg-dark').removeClass('active-tab')
+      $('.strtup-btn').addClass('bg-dark').removeClass('active-tab')
+    });
 
-        $('.car-btn').click(function () {
-            $('.search-filters-car-btn').removeClass('d-none').addClass('d-block')
-            $('.search-filters-acc-btn').addClass('d-none').removeClass('d-block')
-            $('.search-filters-strtup-btn').addClass('d-none').removeClass('d-block')
-            $('.car-btn').removeClass('bg-dark').addClass('active-tab')
-            $('.acc-btn').addClass('bg-dark').removeClass('active-tab')
-            $('.strtup-btn').addClass('bg-dark').removeClass('active-tab')
-        });
+    $('.car-btn').click(function () {
+      $('.search-filters-car-btn').removeClass('d-none').addClass('d-block')
+      $('.search-filters-acc-btn').addClass('d-none').removeClass('d-block')
+      $('.search-filters-strtup-btn').addClass('d-none').removeClass('d-block')
+      $('.car-btn').removeClass('bg-dark').addClass('active-tab')
+      $('.acc-btn').addClass('bg-dark').removeClass('active-tab')
+      $('.strtup-btn').addClass('bg-dark').removeClass('active-tab')
+    });
 
-        $('.strtup-btn').click(function () {
-            $('.search-filters-strtup-btn').removeClass('d-none').addClass('d-block')
-            $('.search-filters-car-btn').addClass('d-none').removeClass('d-block')
-            $('.search-filters-acc-btn').addClass('d-none').removeClass('d-block')
-            $('.strtup-btn').removeClass('bg-dark').addClass('active-tab')
-            $('.acc-btn').addClass('bg-dark').removeClass('active-tab')
-            $('.car-btn').addClass('bg-dark').removeClass('active-tab')
-        });
+    $('.strtup-btn').click(function () {
+      $('.search-filters-strtup-btn').removeClass('d-none').addClass('d-block')
+      $('.search-filters-car-btn').addClass('d-none').removeClass('d-block')
+      $('.search-filters-acc-btn').addClass('d-none').removeClass('d-block')
+      $('.strtup-btn').removeClass('bg-dark').addClass('active-tab')
+      $('.acc-btn').addClass('bg-dark').removeClass('active-tab')
+      $('.car-btn').addClass('bg-dark').removeClass('active-tab')
+    });
 
-        $('.send-request-btn').click(
-            function () {
-                $('.request-btn').removeClass('btn-connect-outline').addClass('btn-secondary')
-                $('.request-btn').html('Meeting Requested')
-            });
-    </script>
+    $('.send-request-btn').click(
+      function () {
+        $('.request-btn').removeClass('btn-connect-outline').addClass('btn-secondary')
+        $('.request-btn').html('Meeting Requested')
+      });
+  </script>
 </body>
 
 </html>
