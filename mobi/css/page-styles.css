@@ -57,6 +57,28 @@
   background-color: #ededed;
 }
 
+.sibar-left {
+  width: 75%;
+  display: none;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  top: 65px;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: auto;
+  padding-bottom: 100px;
+}
+
+.logo-toggle img {
+  width: 200px;
+}
+
+.sibar-left::-webkit-scrollbar {
+  display: none;
+}
+
+
 #map {
   height: 400px;
   /* The height is 400 pixels */
