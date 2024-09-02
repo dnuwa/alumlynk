@@ -202,6 +202,7 @@
   height: 100vh;
   background-color: white;
   z-index: 10;
+  width: 75%;
 }
 
 .overlay.hidden {
