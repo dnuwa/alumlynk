@@ -2566,6 +2566,10 @@ legend {
   width: 20%;
 }
 
+.text-blue{
+  color: #014d7f;
+}
+
 .incoming-message {
   width: 100%;
   display: flex;

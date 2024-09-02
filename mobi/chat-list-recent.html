@@ -29,56 +29,137 @@
 
 <body>
   <div class="fixed-top bg-white mb-5 bottom-shadow">
-    <div class="d-flex bg-white px-2 py-18 w-100">
+    <div class="d-flex p-2 w-100 mb-2 justify-content-between">
       <div class="d-flex">
-        <a href="#" class="text-success w-50 mr-2">
-          <img src="./images/preview-school-logo-free-vector-design.jpg" class="w-100" />
-        </a>
-        <a href="search-page.html">
-          <i class="fa fa-search fa-lg text-center text-dark my-auto"></i>
+        <div class="p-1 tiny-m">
+          <div class="text-center logo-toggle">
+            <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+          </div>
+        </div>
+
+        <a href="#" class="text-success my-auto">
+          <img src="./images/preview-school-logo-free-vector-design.jpg" width="150" />
         </a>
       </div>
-      <div class="w-50 d-flex justify-content-between">
-        <a href="calendar.html" class="d-flex">
-          <i class="fa fa-calendar fa-lg text-center text-dark my-auto"></i>
+      <div class="d-flex">
+        <a href="search-page.html" class="my-auto mr-2">
+          <i class="fa fa-search fa-sm text-center text-dark my-auto  bg-gray-light p-2 rounded-circle"></i>
         </a>
-        <div class="col-sm text-center d-flex">
+        <a href="calendar.html" class="my-auto mr-2">
+          <i class="fa fa-calendar fa-sm text-center text-dark bg-gray-light p-2 rounded-circle"></i>
+        </a>
+        <div class="text-center my-auto position-relative bg-gray-light p-2 rounded-circle mr-2">
           <a href="chat-list-recent.html" class="d-flex">
-            <i class="fa fa-bell fa-lg text-center text-dark my-auto"></i>
-
+            <i class="fa fa-bell fa-sm text-center text-dark my-auto"></i>
           </a>
-          <div class="icon-value"><small><strong>0</strong></small></div>
+          <span class="mb-0 icon-value position-absolute" style="left: 20px; top: -2px; font-size: 10px;">0</span>
         </div>
-        <div>
-          <span class="text-center">
-            <div id="side-menu">
-              <i class="fa fa-bars fa-lg text-center text-dark"></i>
-            </div>
-          </span>
-          <div id="overlay" class="overlay hidden" role="navigation">
-            <div class="mobileNav">
-              <!--.mobile-menu-->
-              <div class="d-flex flex-column">
-                <h5 class="p-3 mb-0">Navigation</h5>
-                <ul class="list-unstyled px-3 gn-menu">
-                  <li> <a href="./friends-page.html"><small>Alumni Directory</small></a></li>
-                  <li> <a href="./alumni-connection-requests.html"><small> Alumni Connection Requests (xxx)</small></a></li>
-                  <li> <a href="#"><small>Alum Friends</small></a></li>
-                  <li> <a href="#"><small>Alum Friends Requests(xxx)</small></a></li>
-                  <li> <a href="#"><small>Alum Mentoring</small></a></li>
-                  <li> <a href="./chat-list-recent.html"><small>Messages</small></a></li>
-                  <li> <a href="#"><small>Notices(xxx)</small></a></li>
-                  <li> <a href="#"><small>Profile Page</small></a></li>
-                  <li> <a href="./alumni-events.html"><small>Alumni Events</small></a></li>
-                  <li> <a href="./class-notes.html"><small>Class Notes</small></a></li>
-                  <li> <a href="#"><small>Reunion Information</small></a></li>
-                  <li> <a href="#"><small>Shop Online</small></a></li>
-                  <li> <a href="./support.html"><small>Support (School Name)</small></a></li>
-                </ul>
-              </div>
+
+        <span class="text-center my-auto">
+          <div id="side-menu">
+            <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+          </div>
+        </span>
+        <div id="overlay" class="overlay hidden" role="navigation">
+          <div class="mobileNav">
+            <div class="d-flex flex-column">
+              <h5 class="p-3 mb-0">Navigation</h5>
+              <ul class="list-unstyled px-3 gn-menu">
+                <li> <a href="./friends-page.html"><small>Alumni Directory</small></a></li>
+                <li> <a href="./alumni-connection-requests.html"><small> Alumni Connection Requests
+                      (xxx)</small></a></li>
+                <li> <a href="./index.html"><small>Alumni Network</small></a></li>
+                <li> <a href="#"><small>Alum Mentoring</small></a></li>
+                <li> <a href="./chat-list-recent.html"><small>Messages</small></a></li>
+                <li> <a href="#"><small>Notices(xxx)</small></a></li>
+                <li> <a href="#"><small>Profile Page</small></a></li>
+                <li> <a href="./alumni-events.html"><small>Alumni Events</small></a></li>
+                <li> <a href="./class-notes.html"><small>Class Notes</small></a></li>
+                <li> <a href="#"><small>Reunion Information</small></a></li>
+                <li> <a href="#"><small>Shop Online</small></a></li>
+                <li> <a href="./support.html"><small>Support (School Name)</small></a></li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="sibar-left border-right">
+      <div class="d-flex flex-column px-2">
+        <div class="text-center pt-3">
+          <img src="./images//scott.jpg" alt="" class="rounded-circle" width="60" height="60">
+          <a class="text-dark" href="my-profile.html">
+            <h5><strong>Scott Holley</strong></h5>
+          </a>
+          <p class="mb-0 text-secondary">City, State</p>
+          <p class="text-secondary">Proctor Class of 1998</p>
+        </div>
+        <ul class="list-unstyled px-2 w-100 br-5 mb-1 py-2">
+          <li class="lg-font">
+            <a href="friends-page.html">
+              <h6 class="mb-0 d-flex text-blue"><span>Alumni Directory</span> <span class="ml-auto">(xxx)</span>
+              </h6>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font">
+            <h6 class="mb-0 d-flex"><span class="text-blue">My Alumni Network</span><span class="ml-auto">(xxx)</span>
+            </h6>
+          </li>
+          <li class="fs-14">
+            <a href="#" class="text-decoration-none d-flex text-secondary">
+              <span>Connection Requests</span><span class="ml-auto">(xxx)</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font">
+            <h6 class="mb-0 d-flex justify-content-between">
+              <span class=" text-blue">Meetings</span><span>(xxx)</span>
+            </h6>
+          </li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>Meeting Invites</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>Meeting Requests</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+        </ul>
+
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font">
+            <h6 class="mb-0 d-flex justify-content-between">
+              <span class=" text-blue">Alumni Mentors</span><span>(xxx)</span>
+            </h6>
+          </li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>Meeting Requests</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+        </ul>
+
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font">
+            <h6 class="mb-0 text-blue">Alum Center</h6>
+          </li>
+          <li class="fs-14"><a href="alumni-events.html" class="text-decoration-none text-secondary d-flex"><span>Alumni
+                Events</span> <span class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>Class Notes</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary">Reunion Information</a></li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary">Shop for Swag</a></li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary">Support (School Name)</a></li>
+        </ul>
+
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font">
+            <h6 class="mb-0 text-blue">View</h6>
+          </li>
+          <li class="fs-14"><a href="my-profile.html" class="text-decoration-none text-secondary">My Profile</a></li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>Alum Messages</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>My Posts</span> <span
+                class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>My Bookmarks</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+        </ul>
       </div>
     </div>
   </div>
@@ -248,57 +329,9 @@
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
           </div>
         </div>
-
       </div>
-
     </div>
-
   </div>
-
-
-  <!-- <div>
-    <div class="sub-header bottom-0">
-      <div class="row nmarg ss-bottom-nav d-flex">
-        <div class="d-flex npad text-center">
-          <span class="sub-header-icon w-100">
-            <a href="contact-list-all.html">
-              <img src="./images/000-contact.svg" />
-            </a>
-          </span>
-        </div>
-        <div class="d-flex npad text-center">
-          <span class="sub-header-icon w-100">
-            <a href="chat-list-recent.html">
-              <img src="./images/000-chat.svg" />
-            </a>
-            <span class="counter">0</span>
-          </span>
-        </div>
-        <div class="d-flex npad text-center">
-          <span class="sub-header-icon w-100">
-            <a href="chat-group-list-all.html">
-              <img src="./images/000-group.svg" />
-            </a>
-            <span class="counter">0</span>
-          </span>
-        </div>
-        <div class="d-flex npad text-center">
-          <span class="sub-header-icon w-100">
-            <a href="chat-camera.html">
-              <img src="./images/000-camera.svg" />
-            </a>
-          </span>
-        </div>
-        <div class="d-flex npad text-center">
-          <span class="sub-header-icon w-100">
-            <a href="chat-location.html">
-              <img src="./images/000-location.svg" />
-            </a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div> -->
 
   <div class="fixed-bottom border-top">
     <div class="sub-header">
@@ -388,7 +421,7 @@
     </div>
   </div>
 
-
+  <script src="./js/actions.js"></script>
   <script>
     $('#side-menu').click(function () {
       $('.overlay').toggleClass('hidden');
