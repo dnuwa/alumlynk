@@ -91,7 +91,7 @@
 }
 
 .top-margin {
-  margin-top: 17rem;
+  margin-top: 16rem;
 }
 
 .bottom-shadow {
@@ -202,7 +202,7 @@
   height: 100vh;
   background-color: white;
   z-index: 10;
-  width: 75% !important;
+  width: 65% !important;
 }
 
 .overlay.hidden {
