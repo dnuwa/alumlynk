@@ -351,6 +351,10 @@ select {
   z-index: 10 !important;
 }
 
+.standard-light-gray{
+  background-color: #F4F3ED;
+}
+
 .main-content {
   margin: auto;
   padding: 0px 10px;

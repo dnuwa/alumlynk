@@ -228,159 +228,175 @@
           <div class="row nmarg">
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 npad">
-              <div class="toned-grey-bg px-3 py-1 d-flex">
-                <span class="bg-light rounded-circle px-3 py-2" onclick="window.history.go(-1); return false;">
-                  <i class="fa fa-chevron-left"></i>
-                </span>
-                <span class="w-100 text-center">
-                  <h2 class="my-0">Recent Chats</h2>
-                </span>
-              </div>
-
-              <div class="p-1">
-                <div class="mb-5">
-                  <div class="my-2 d-flex">
-                    <input type="text" class="form-control" placeholder="Search Name" id="filterValue" />
-                    <button class="btn btn-success" onclick="onhandleFilters()">
-                      Search
-                    </button>
+              <div class="mt-2 main-view">
+                <div class="intro">
+      
+                  <div class="standard-light-gray pb-2" style="height: 100vh;">
+      
+                    <div class="w-100 d-flex text-center bg-blue text-white"
+                      style="border-radius: 8px 8px 0 0; font-size: 18px; height: 58px;">
+                      <p class="m-auto">Alumni Chats</p>
+                    </div>
+                    <!-- <div class="d-flex ss-bottom-nav d-flex bg-white py-1">
+                      <div class="d-flex flex-column npad text-center">
+                        <span class="sub-header-icon w-100">
+                          <a href="contact-list-all.html">
+                            <img src="./images/000-contact.svg" />
+                          </a>
+                        </span>
+                        <p class="xm-font text-center mb-0 text-dark bold">A to Z</p>
+                      </div>
+                      <div class="d-flex flex-column npad text-center active-tab">
+                        <span class="sub-header-icon w-100">
+                          <a href="chat-list-recent.html">
+                            <img src="./images/000-chat.svg" />
+                          </a>
+                          <span class="counter">0</span>
+                        </span>
+                        <p class="xm-font text-center mb-0 bold">Recent</p>
+                      </div>
+                      <div class="d-flex flex-column npad text-center">
+                        <span class="sub-header-icon w-100">
+                          <a href="chat-group-list-all.html">
+                            <img src="./images/000-group.svg" />
+                          </a>
+                          <span class="counter">0</span>
+                        </span>
+                        <p class="xm-font text-center mb-0 text-dark bold">Groups</p>
+                      </div>
+                      <div class="d-flex flex-column npad text-center">
+                        <span class="sub-header-icon w-100">
+                          <a href="chat-camera.html">
+                            <img src="./images/000-camera.svg" />
+                          </a>
+                        </span>
+                        <p class="xm-font text-center mb-0 text-dark bold">Camera</p>
+                      </div>
+                      <div class="d-flex flex-column npad text-center">
+                        <span class="sub-header-icon w-100">
+                          <a href="chat-location.html">
+                            <img src="./images/000-location.svg" />
+                          </a>
+                        </span>
+                        <p class="xm-font text-center mb-0 text-dark bold">Location</p>
+                      </div>
+                    </div> -->
+                    <!-- </div> -->
+                    <div class="bg-white d-flex p-2 m-2 br-5">
+                      <button id="btn-recent-chats" class="btn btn-sm active-tab br-5 border-0 px-3 mr-1">Recent Chats (xx)</button>
+                      <button id="btn-my-network" class="btn btn-sm btn-secondary border-0 br-5 px-3">My Network (xx)</button>
+                    </div>
+      
+                    <div class="d-flex justify-content-between bg-white py-2 px-3 m-2 br-5">
+                      <p class="my-auto text-dark"><small><strong>Recent Chats (xx)</strong></small></p>
+                      <div class="d-flex">
+                        <input type="text" class="form-control" placeholder="Quick search" id="filterValue"
+                          style="border-radius: 5px 0 0 5px; font-size: 12px;" />
+                        <button class="btn btn-secondary" onclick="onhandleFilters()" style="border-radius: 0 5px 5px 0;">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </div>
+                    </div>
+      
+                    <div class="mb-5">
+      
+                      <a href="chat-inbox.html" class="d-flex bg-white br-5 mx-2 mb-2 p-3 text-dark text-decoration-none">
+                        <span class="mr-2">
+                          <img class="rounded-circle" width="70" height="70" src="./images/msg-img.svg" />
+                        </span>
+                        <span class="d-flex justify-content-between w-100">
+                          <div class="">
+                            <strong>{1st name, last name}</strong>
+                            <div>
+                              <img src="./images/hugeicons_tick-double-01.svg" width="20" height="20" alt="">
+                              <small>Hey, this is a demo message</small>
+                            </div>                      
+                          </div>
+                          <div class="">
+                            <small class="text-dark mt-1">Thursday</small>
+                            <div class="d-flex py-1">
+                              <small class="text-white bg-success rounded-circle px-2 py-1 mx-auto">xx</small>
+                            </div>
+                          </div>
+                        </span>
+                      </a>
+                      <a href="chat-inbox.html" class="d-flex bg-white br-5 mx-2 mb-2 p-3 text-dark text-decoration-none">
+                        <span class="mr-2">
+                          <img class="rounded-circle" width="70" height="70" src="./images/msg-img.svg" />
+                        </span>
+                        <span class="d-flex justify-content-between w-100">
+                          <div class="">
+                            <strong>{1st name, last name}</strong>
+                            <div>
+                              <img src="./images/hugeicons_tick-double-01.svg" width="20" height="20" alt="">
+                              <small>Hey, this is a demo message</small>
+                            </div>                      
+                          </div>
+                          <div class="">
+                            <small class="text-dark mt-1">Thursday</small>
+                            <div class="d-flex py-1">
+                              <small class="text-white bg-success rounded-circle px-2 py-1 mx-auto">xx</small>
+                            </div>
+                          </div>
+                        </span>
+                      </a>
+                      <a href="chat-inbox.html" class="d-flex bg-white br-5 mx-2 mb-2 p-3 text-dark text-decoration-none">
+                        <span class="mr-2">
+                          <img class="rounded-circle" width="70" height="70" src="./images/msg-img.svg" />
+                        </span>
+                        <span class="d-flex justify-content-between w-100">
+                          <div class="">
+                            <strong>{1st name, last name}</strong>
+                            <div>
+                              <img src="./images/hugeicons_tick-double-01.svg" width="20" height="20" alt="">
+                              <small>Hey, this is a demo message</small>
+                            </div>                      
+                          </div>
+                          <div class="">
+                            <small class="text-dark mt-1">Thursday</small>
+                          </div>
+                        </span>
+                      </a>
+                      <a href="chat-inbox.html" class="d-flex bg-white br-5 mx-2 mb-2 p-3 text-dark text-decoration-none">
+                        <span class="mr-2">
+                          <img class="rounded-circle" width="70" height="70" src="./images/msg-img.svg" />
+                        </span>
+                        <span class="d-flex justify-content-between w-100">
+                          <div class="">
+                            <strong>{1st name, last name}</strong>
+                            <div>
+                              <img src="./images/hugeicons_tick-double-01.svg" width="20" height="20" alt="">
+                              <small>Hey, this is a demo message</small>
+                            </div>                      
+                          </div>
+                          <div class="">
+                            <small class="text-dark mt-1">Thursday</small>
+                          </div>
+                        </span>
+                      </a> 
+                      <a href="chat-inbox.html" class="d-flex bg-white br-5 mx-2 mb-2 p-3 text-dark text-decoration-none">
+                        <span class="mr-2">
+                          <img class="rounded-circle" width="70" height="70" src="./images/msg-img.svg" />
+                        </span>
+                        <span class="d-flex justify-content-between w-100">
+                          <div class="">
+                            <strong>{1st name, last name}</strong>
+                            <div>
+                              <img src="./images/hugeicons_tick-double-01.svg" width="20" height="20" alt="">
+                              <small>Hey, this is a demo message</small>
+                            </div>                      
+                          </div>
+                          <div class="">
+                            <small class="text-dark mt-1">Thursday</small>
+                            <div class="d-flex py-1">
+                              <small class="text-white bg-success rounded-circle px-2 py-1 mx-auto">xx</small>
+                            </div>
+                          </div>
+                        </span>
+                      </a>               
+                      
+                    </div>
                   </div>
-                  <div id="my-friends"></div>
-                  <a href="chat-inbox.html" class="d-flex bg-light border my-1 text-dark">
-                    <span class="p-2">
-                      <img class="rounded-circle" width="60" height="60" src="./images/img23.jpg" />
-                    </span>
-                    <span class="p-2 w-100">
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <strong>{1st name, last name}</strong>
-                        <small class="text-primary mt-1">10:30am</small>
-                      </p>
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <small>{Last Previous message}</small>
-                        <small class="text-white bg-primary p-1 rounded-circle">xx</small>
-                      </p>
-                    </span>
-                  </a>
-                  <a href="chat-inbox.html" class="d-flex bg-light border my-1 text-dark">
-                    <span class="p-2">
-                      <img class="rounded-circle" width="60" height="60" src="./images/img23.jpg" />
-                    </span>
-                    <span class="p-2 w-100">
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <strong>{1st name, last name}</strong>
-                        <small class="text-primary mt-1">10:30am</small>
-                      </p>
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <small>{Last Previous message}</small>
-                        <small class="text-white bg-primary p-1 rounded-circle">xx</small>
-                      </p>
-                    </span>
-                  </a>
-                  <a href="chat-inbox.html" class="d-flex bg-light border my-1 text-dark">
-                    <span class="p-2">
-                      <img class="rounded-circle" width="60" height="60" src="./images/img23.jpg" />
-                    </span>
-                    <span class="p-2 w-100">
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <strong>{1st name, last name}</strong>
-                        <small class="text-primary mt-1">10:30am</small>
-                      </p>
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <small><img src="./images/double tick.svg" width="10" height="20" alt="">You : {Last Previous
-                          message}</small>
-                      </p>
-                    </span>
-                  </a>
-                  <a href="chat-inbox.html" class="d-flex bg-light border my-1 text-dark">
-                    <span class="p-2">
-                      <img class="rounded-circle" width="60" height="60" src="./images/img23.jpg" />
-                    </span>
-                    <span class="p-2 w-100">
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <strong>{1st name, last name}</strong>
-                        <small class="text-primary mt-1">10:30am</small>
-                      </p>
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <small>{Last Previous message}</small>
-                        <small class="text-white bg-primary p-1 rounded-circle">xx</small>
-                      </p>
-                    </span>
-                  </a>
-                  <a href="chat-inbox.html" class="d-flex bg-light border my-1 text-dark">
-                    <span class="p-2">
-                      <img class="rounded-circle" width="60" height="60" src="./images/img23.jpg" />
-                    </span>
-                    <span class="p-2 w-100">
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <strong>{1st name, last name}</strong>
-                        <small class="text-primary mt-1">10:30am</small>
-                      </p>
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <small>{Last Previous message}</small>
-                        <small class="text-white bg-primary p-1 rounded-circle">xx</small>
-                      </p>
-                    </span>
-                  </a>
-                  <a href="chat-inbox.html" class="d-flex bg-light border my-1 text-dark">
-                    <span class="p-2">
-                      <img class="rounded-circle" width="60" height="60" src="./images/img23.jpg" />
-                    </span>
-                    <span class="p-2 w-100">
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <strong>{1st name, last name}</strong>
-                        <small class="text-primary mt-1">10:30am</small>
-                      </p>
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <small><img src="./images/double tick.svg" width="10" height="20" alt="">You : {Last Previous
-                          message}</small>
-                      </p>
-                    </span>
-                  </a>
-                  <a href="chat-inbox.html" class="d-flex bg-light border my-1 text-dark">
-                    <span class="p-2">
-                      <img class="rounded-circle" width="60" height="60" src="./images/img23.jpg" />
-                    </span>
-                    <span class="p-2 w-100">
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <strong>{1st name, last name}</strong>
-                        <small class="text-primary mt-1">10:30am</small>
-                      </p>
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <small>{Last Previous message}</small>
-                        <small class="text-white bg-primary p-1 rounded-circle">xx</small>
-                      </p>
-                    </span>
-                  </a>
-                  <a href="chat-inbox.html" class="d-flex bg-light border my-1 text-dark">
-                    <span class="p-2">
-                      <img class="rounded-circle" width="60" height="60" src="./images/img23.jpg" />
-                    </span>
-                    <span class="p-2 w-100">
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <strong>{1st name, last name}</strong>
-                        <small class="text-primary mt-1">10:30am</small>
-                      </p>
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <small>{Last Previous message}</small>
-                        <small class="text-white bg-primary p-1 rounded-circle">xx</small>
-                      </p>
-                    </span>
-                  </a>
-                  <a href="chat-inbox.html" class="d-flex bg-light border my-1 text-dark">
-                    <span class="p-2">
-                      <img class="rounded-circle" width="60" height="60" src="./images/img23.jpg" />
-                    </span>
-                    <span class="p-2 w-100">
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <strong>{1st name, last name}</strong>
-                        <small class="text-primary mt-1">10:30am</small>
-                      </p>
-                      <p class="my-1 d-flex justify-content-between w-100">
-                        <small><img src="./images/double tick.svg" width="10" height="20" alt="">You : {Last Previous
-                          message}</small>
-                      </p>
-                    </span>
-                  </a>
                 </div>
               </div>
             </div>
@@ -392,7 +408,7 @@
   </div>
 
   <div class="fixed-bottom border-top">
-    <div class="sub-header">
+    <!-- <div class="sub-header">
       <div class="row nmarg ss-bottom-nav d-flex">
         <div class="d-flex npad text-center">
           <span class="sub-header-icon w-100">
@@ -432,7 +448,7 @@
           </span>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="d-flex bg-white tinypb-1">
       <div class="col-sm p-1 tiny-m border">
         <a href="friends-page.html" class="text-dark font-weight-bold">
@@ -469,8 +485,7 @@
       <div class="col-sm p-1 tiny-m border active-tab">
         <a href="#" class="text-dark font-weight-bold">
           <div class="text-center">
-            <img src="./images/svg000-messages-blue.svg
-							" width="30" class="my-auto" />
+            <img src="./images/msg-icon-white.svg" class="my-auto" />
             <div class="icon-value-footer"><small><strong>0</strong></small></div>
           </div>
           <p class="xm-font text-center mb-0 text-white">Messages</p>
