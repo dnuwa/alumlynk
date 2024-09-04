@@ -46,9 +46,26 @@
       margin-top: 24px;
     }
 
+    .user-details {
+      width: 145.81px;
+    }
+
+    .follow-btn {
+      border-radius: 25px 25px 0 0;
+      padding: 5px 54px 2px;
+    }
+
     @media only screen and (max-width: 768px) {
       .w-50 {
         width: 100% !important;
+      }
+
+      .company-details>.d-flex>.px-4 {
+        padding: 0 6px !important;
+      }
+
+      .follow-btn {
+        padding: 4px 32px;
       }
     }
   </style>
@@ -108,7 +125,7 @@
           <div class="col-sm p-1 mx-2 border br-8">
             <a href="./chat-list-recent.html" class="text-dark font-weight-bold" style="text-decoration: none;">
               <div class="text-center position-relative">
-                <img src="./images/svg000-message.svg" width="30" class="my-auto" />
+                <img src="./images/000msg-icon.svg" class="my-auto" />
                 <div class="icon-value-nav"><strong>0</strong></div>
               </div>
               <p class="xm-font text-center mb-0">Messages</p>
@@ -141,7 +158,7 @@
           </div>
           <div class="col-sm p-1 tiny-m">
             <div class="text-center menu-toggle">
-              <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+              <i class="fa fa-gear fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
             </div>
           </div>
         </div>
@@ -310,58 +327,81 @@
         <li class="px-3 py-2 border-bottom fs-12 fw-500">Sign Out</li>
       </ul>
     </div>
-    <div class="sibar-left">
+    <div class="sibar-left border-right">
       <div class="d-flex flex-column px-2">
         <div class="text-center pt-3">
           <img src="./images//scott.jpg" alt="" class="rounded-circle" width="60" height="60">
           <a class="text-dark" href="my-profile.html">
-            <a class="text-dark" href="my-profile.html">
-              <h5><strong>Scott Holley</strong></h5>
-            </a>
+            <h5><strong>Scott Holley</strong></h5>
           </a>
           <p class="mb-0 text-secondary">City, State</p>
           <p class="text-secondary">Proctor Class of 1998</p>
         </div>
-        <ul class="list-unstyled px-3 border w-100 mb-2 py-2">
-          <li class="lg-font"> <a href="./friends-page.html">Alumni Directory</a></li>
-          <li class="lg-font"> <a href="./index.html">Alumni Network</a></li>
-          <li class="lg-font"> <a href="alumni-mentoring.html">Alumni Mentors</a></li>
+        <ul class="list-unstyled px-2 w-100 br-5 mb-1 py-2">
+          <li class="lg-font">
+            <a href="friends-page.html">
+              <h6 class="mb-0 d-flex"><span class="text-blue">Alumni Directory</span> <span class="ml-auto">(xxx)</span>
+              </h6>
+            </a>
+          </li>
         </ul>
-        <ul class="list-unstyled px-3 border w-100 mb-2 py-2">
-          <li class="lg-font"> <a href="calendar.html">Meeting Calendar</a></li>
-          <li class="lg-font"> <a href="meetings.html" class="d-flex justify-content-between"><span>Meetings
-              </span><span>(xx)</span></a></li>
-          <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Meeting Requests
-              </span><span>(xx)</span></a></li>
-          <li class="lg-font"> <a href="invites-recieved.html" class="d-flex justify-content-between"><span>Invites
-                Recieved
-              </span><span>(xx)</span></a></li>
-          <li class="lg-font"> <a href="invites-sent.html" class="d-flex justify-content-between"><span>Invites Sent
-              </span><span>(xx)</span></a></li>
-          <li class="lg-font"> <a href="alumni-connection-requests.html"
-              class="d-flex justify-content-between"><span>Connection Requests
-              </span><span>(xx)</span></a></li>
-          <li class="lg-font"> <a href="#" class="d-flex justify-content-between"><span>Mentor Requests
-              </span><span>(xx)</span></a></li>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font">
+            <h6 class="mb-0 d-flex"><span class="text-blue">My Alumni Network</span><span class="ml-auto">(xxx)</span>
+            </h6>
+          </li>
+          <li class="fs-14">
+            <a href="#" class="text-decoration-none d-flex text-secondary">
+              <span>Connection Requests</span><span class="ml-auto pr-3">(xxx)</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font">
+            <h6 class="mb-0 d-flex justify-content-between">
+              <span class=" text-blue">Meetings</span><span>(xxx)</span>
+            </h6>
+          </li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>Meeting Invites</span>
+              <span class="ml-auto pr-3">(xxx)</span></a></li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>Meeting Requests</span>
+              <span class="ml-auto pr-3">(xxx)</span></a></li>
         </ul>
 
-        <ul class="list-unstyled px-3 border w-100 mb-2 py-2">
-          <li class="lg-font"> <a href="./class-notes.html">Class Notes</a></li>
-          <li class="lg-font"> <a href="./alumni-events.html">Alumni Events</a></li>
-          <li class="lg-font"> <a href="#">Reunion Information</a></li>
-          <li class="lg-font"> <a href="#">Shop Swag Online</a></li>
-          <li class="lg-font"> <a href="#" class="support-">Support (School Name)</a></li>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font">
+            <h6 class="mb-0 d-flex justify-content-between">
+              <span class=" text-blue">Alumni Mentors</span><span>(xxx)</span>
+            </h6>
+          </li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>Meeting Requests</span>
+              <span class="ml-auto pr-3">(xxx)</span></a></li>
         </ul>
 
-        <ul class="list-unstyled px-3 border w-100 mb-2 py-2">
-          <!-- <li class="lg-font"> <a href="./alumni-connection-requests.html"> Alumni Connection Requests
-                (xxx)</a></li> -->
-          <!-- <li class="lg-font"> <a href="contact-list-all.html">Messages</a></li> -->
-          <li class="lg-font"> <a href="my-profile.html">My Profile</a></li>
-          <li class="lg-font"> <a href="posts-page.html">My Posts</a></li>
-          <li class="lg-font"> <a href="following.html">Following</a></li>
-          <li class="lg-font"> <a href="followers.html">Followers</a></li>
-          <li class="lg-font"> <a href="#">Bookmarks</a></li>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font">
+            <h6 class="mb-0 text-blue">Alum Center</h6>
+          </li>
+          <li class="fs-14"><a href="alumni-events.html" class="text-decoration-none text-secondary d-flex"><span>Alumni
+                Events</span> <span class="ml-auto pr-3">(xxx)</span></a></li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>Class Notes</span>
+              <span class="ml-auto pr-3">(xxx)</span></a></li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary">Reunion Information</a></li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary">Shop for Swag</a></li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary">Support (School Name)</a></li>
+        </ul>
+
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font">
+            <h6 class="mb-0 text-blue">View</h6>
+          </li>
+          <li class="fs-14"><a href="my-profile.html" class="text-decoration-none text-secondary">My Profile</a></li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>Alum Messages</span>
+              <span class="ml-auto pr-3">(xxx)</span></a></li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>My Posts</span> <span
+                class="ml-auto pr-3">(xxx)</span></a></li>
+          <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>My Bookmarks</span>
+              <span class="ml-auto pr-3">(xxx)</span></a></li>
         </ul>
       </div>
     </div>
@@ -594,1553 +634,737 @@
         </div>
       </div>
       <div class="main-view">
-        <div class="d-flex w-100 blue-bg py-2">
+        <div class="d-flex w-100 active-tab py-2" style="border-radius: 8px 8px 0 0;">
           <!-- <button class="border-0 bg-transparent text-white my-auto" onclick="window.history.back();"><i
               class="fa fa-chevron-left"></i></button> -->
           <span class="mx-auto text-white">Following (XXX)</span>
         </div>
-        <div class="d-flex justify-content-center bg-white p-3">
+
+        <div class="d-flex px-5 bg-white pt-3">
           <div class="d-flex">
-            <div>
-              <a href="following.html" class="btn btn-sm  btn-success px-4 mr-2">Following</a>
-            </div>
-            <div>
-              <a href="followers.html" class="btn btn-sm btn-secondary px-4">Followers</a>
-            </div>
+            <a href="following.html" class="btn btn-sm active-tab follow-btn">Following</a>
+            <a href="followers.html" class="btn btn-sm btn-secondary follow-btn">Followers</a>
           </div>
         </div>
-        <div class="bg-white mt-1 py-1 mobi">
-          <div class="w-60 mx-auto">
-            <div class="d-flex">
-              <input type="text" class="form-control" placeholder="Name Search" aria-label="Name Search">
-              <button class="btn btn-success">
-                <i class="fa fa-search"></i>
+        <div class="d-flex bg-blue" style="height: 40px;"></div>
+
+
+
+
+        <div style="background-color: #E0E9EC;">
+          <div class="d-flex flex-wrap justify-content-between w-100 px-2 pt-2">
+            <div class="d-flex py-2 w-50 border">
+              <button class="btn btn-sm active-tab w-100 people-view">
+                <small>Alum (XX)</small>
+              </button>
+              <button class="btn btn-sm btn-secondary w-100 text-white business-view ml-2">
+                <small>Alum Network (XX)</small>
               </button>
             </div>
-          </div>
-        </div>
-        <div class="d-flex justify-content-between w-100 my-1 bg-white p-2">
-          <div class="d-flex">
-            <button class="btn btn-sm btn-sm btn-success py-1 px-3 people-view"><span class="mx-auto">Contacts
-                (XX)</span></button>
-
-            <button class="btn btn-sm btn-sm btn-secondary py-1 px-3 text-white business-view mx-2"><span
-                class="mx-auto">
-                Businesses
-                (XX)</span></button>
-            <button class="btn btn-sm btn-sm btn-secondary py-1 px-3 text-white all-view"><span class="mx-auto">
-                All
-                (XX)</span></button>
-          </div>
-          <div class="col-sm-4 desk">
-            <div class="d-flex">
-              <input type="text" class="form-control" placeholder="Name Search" aria-label="Name Search">
-              <button class="btn btn-success">
-                <i class="fa fa-search"></i>
-              </button>
+            <div class="col-sm-4 px-0 border">
+              <div class="d-flex">
+                <input type="text" class="form-control fs-11 py-2" placeholder="Name Search" aria-label="Name Search">
+                <button class="btn btn-success ml-1 py-0">
+                  <img src="images/search-icon.svg" alt="">
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="peopleWrapper">
-          <div class="d-flex text-center p-2 w-100 bg-white justify-content-center">
-            <h4 class="mb-0"><strong>Following</strong></h4>
-          </div>
-        </div>
 
-        <div class="contentColumnsHolder px-2 pt-1 peopleWrapper">
-          <div class="bg-white p-2 w-100">
-            <div class="followContentWrap">
-              <span class="d-flex flex-wrap w-100">
-                <!-- Persons -->
-                <div class="contentColumnsCol6 w-50">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100 d-flex">
-                        <div class="description w-100 mb-1 d-flex flex-column">
-                          <div class="d-flex justify-content-between w-100">
-                            <div>
-                              <h3>
-                                <a href="sportInstructorProfileEmployee.html">{first , last name}</a>
-                              </h3>
-                              <!-- <div class="d-flex">
-                                <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                                  <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                                <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                                  <small><i class="fa fa-users"></i></small>
-                                  <small>XXX</small>
-                                </a>
-                                <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                                  <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                    alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                              </div> -->
-                              <p class="mb-0">{City}</p>
+          <div class="contentColumnsHolder pt-1 peopleWrapper">
+            <div class="px-2 pb-2 w-100">
+              <div class="followContentWrap">
+                <span class="d-flex flex-wrap w-100">
+                  <!-- Persons -->
+                  <div class="w-50 p-2">
+                    <article class="w-100 d-flex bg-white charcoal-border border-radius-11">
+                      <a href="sportInstructorProfileEmployee.html" class="text-decoration-none">
+                        <div class="border br-5 m-1 user-details">
+                          <div class="d-flex flex-column position-relative">
+                            <img src="images/timeline-picture.svg" alt="" class="w-100 br-5">
+                            <div class="position-absolute rounded-circle p-2 bg-white" style="right: 25%; top: 25%;">
+                              <img src="images/ooui_user-avatar.svg" alt="">
                             </div>
-                            <!-- <div class="w-40">
-                              <div class="text-center font-weight-bold">
-                                <span class="text-success">Category</small>
-                              </div>
-                              <div class="text-center">
-                                <ul
-                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <p class="mb-0">(##)</p>
-                                </ul>
-                              </div>
-                            </div> -->
+                            <div class="d-flex position-absolute" style="right: 31%; top: 60%;">
+                              <img src="images/Ellipse2.svg" alt="">
+                            </div>
                           </div>
-                          <!-- <hr class="my-1" /> -->
-                          <div class="d-flex my-auto justify-content-center">
-                            <buttton class="btn btn-sm btn-success px-3 mr-2">Following</buttton>
-                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                          </div>
-                          <div class="d-flex justify-content-center">
-                            <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                              <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
-                            <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                              <small><i class="fa fa-users"></i></small>
-                              <small>XXX</small>
-                            </a>
-                            <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                              <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
+                          <div class="mt-4 text-center text-dark">
+                            <p class="text-blue fs-12 mb-0">Shahid Hussain</p>
+                            <p class="fs-11 mb-0">City, State</p>
+                            <p class="fs-11 mb-2">Proctor Class of 19998</p>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </article>
-                </div>
+                      </a>
 
-                <!-- Persons -->
-                <div class="contentColumnsCol6 w-50">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100 d-flex">
-                        <div class="description w-100 mb-1 d-flex flex-column">
-                          <div class="d-flex justify-content-between w-100">
-                            <div>
-                              <h3>
-                                <a href="sportInstructorProfileEmployee.html">{first , last name}</a>
-                              </h3>
-                              <!-- <div class="d-flex">
-                                <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                                  <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                                <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                                  <small><i class="fa fa-users"></i></small>
-                                  <small>XXX</small>
-                                </a>
-                                <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                                  <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                    alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                              </div> -->
-                              <p class="mb-0">{City}</p>
-                            </div>
-                            <!-- <div class="w-40">
-                              <div class="text-center font-weight-bold">
-                                <span class="text-success">Category</small>
-                              </div>
-                              <div class="text-center">
-                                <ul
-                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <p class="mb-0">(##)</p>
-                                </ul>
-                              </div>
-                            </div> -->
+                      <div class="d-flex flex-column mx-auto company-details text-center">
+                        <p class="fs-11 mb-1">(Company Name) (Title)</p>
+                        <p class="fs-11">(Industry) (Department)</p>
+                        <div class="d-flex px-2 mb-3 justify-content-between w-50 mx-auto">
+                          <div class="d-flex">
+                            <img src="images/fa-solid_users.svg" alt="" width="20">
+                            <span class="fs-11">xxx</span>
                           </div>
-                          <!-- <hr class="my-1" /> -->
-                          <div class="d-flex my-auto justify-content-center">
-                            <buttton class="btn btn-sm btn-success px-3 mr-2">Following</buttton>
-                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                          </div>
-                          <div class="d-flex justify-content-center">
-                            <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                              <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
-                            <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                              <small><i class="fa fa-users"></i></small>
-                              <small>XXX</small>
-                            </a>
-                            <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                              <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
+                          <div class="d-flex">
+                            <img src="images/Union.svg" alt="" width="20">
+                            <span class="fs-11">xxx</span>
                           </div>
                         </div>
+                        <div class="d-flex w-100 justify-content-between">
+                          <button
+                            class="btn btn-sm btn-success text-white py-0 px-4 mr-3"><small><strong>Following</strong></small></button>
+                          <button
+                            class="btn btn-sm light-grey-border light-grey-text bg-transparent py-0 px-4"><small><strong>Unfollow</strong></small></button>
+                        </div>
                       </div>
-                    </div>
-                  </article>
-                </div>
+                    </article>
+                  </div>
+                  <div class="w-50 p-2">
+                    <article class="w-100 d-flex bg-white charcoal-border border-radius-11">
+                      <a href="sportInstructorProfileEmployee.html" class="text-decoration-none">
+                        <div class="border br-5 m-1 user-details">
+                          <div class="d-flex flex-column position-relative">
+                            <img src="images/timeline-picture.svg" alt="" class="w-100 br-5">
+                            <div class="position-absolute rounded-circle p-2 bg-white" style="right: 25%; top: 25%;">
+                              <img src="images/ooui_user-avatar.svg" alt="">
+                            </div>
+                            <div class="d-flex position-absolute" style="right: 31%; top: 60%;">
+                              <img src="images/Ellipse2.svg" alt="">
+                            </div>
+                          </div>
+                          <div class="mt-4 text-center text-dark">
+                            <p class="text-blue fs-12 mb-0">Shahid Hussain</p>
+                            <p class="fs-11 mb-0">City, State</p>
+                            <p class="fs-11 mb-2">Proctor Class of 19998</p>
+                          </div>
+                        </div>
+                      </a>
 
-                <!-- Persons -->
-                <div class="contentColumnsCol6 w-50">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100 d-flex">
-                        <div class="description w-100 mb-1 d-flex flex-column">
-                          <div class="d-flex justify-content-between w-100">
-                            <div>
-                              <h3>
-                                <a href="sportInstructorProfileEmployee.html">{first , last name}</a>
-                              </h3>
-                              <!-- <div class="d-flex">
-                                <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                                  <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                                <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                                  <small><i class="fa fa-users"></i></small>
-                                  <small>XXX</small>
-                                </a>
-                                <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                                  <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                    alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                              </div> -->
-                              <p class="mb-0">{City}</p>
-                            </div>
-                            <!-- <div class="w-40">
-                              <div class="text-center font-weight-bold">
-                                <span class="text-success">Category</small>
-                              </div>
-                              <div class="text-center">
-                                <ul
-                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <p class="mb-0">(##)</p>
-                                </ul>
-                              </div>
-                            </div> -->
+                      <div class="d-flex flex-column mx-auto company-details text-center">
+                        <p class="fs-11 mb-1">(Company Name) (Title)</p>
+                        <p class="fs-11">(Industry) (Department)</p>
+                        <div class="d-flex px-2 mb-3 justify-content-between w-50 mx-auto">
+                          <div class="d-flex">
+                            <img src="images/fa-solid_users.svg" alt="" width="20">
+                            <span class="fs-11">xxx</span>
                           </div>
-                          <!-- <hr class="my-1" /> -->
-                          <div class="d-flex my-auto justify-content-center">
-                            <buttton class="btn btn-sm btn-success px-3 mr-2">Following</buttton>
-                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                          </div>
-                          <div class="d-flex justify-content-center">
-                            <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                              <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
-                            <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                              <small><i class="fa fa-users"></i></small>
-                              <small>XXX</small>
-                            </a>
-                            <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                              <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
+                          <div class="d-flex">
+                            <img src="images/Union.svg" alt="" width="20">
+                            <span class="fs-11">xxx</span>
                           </div>
                         </div>
+                        <div class="d-flex w-100 justify-content-between">
+                          <button
+                            class="btn btn-sm btn-success text-white py-0 px-4 mr-3"><small><strong>Following</strong></small></button>
+                          <button
+                            class="btn btn-sm light-grey-border light-grey-text bg-transparent py-0 px-4"><small><strong>Unfollow</strong></small></button>
+                        </div>
                       </div>
-                    </div>
-                  </article>
-                </div>
+                    </article>
+                  </div>
+                  <div class="w-50 p-2">
+                    <article class="w-100 d-flex bg-white charcoal-border border-radius-11">
+                      <a href="sportInstructorProfileEmployee.html" class="text-decoration-none">
+                        <div class="border br-5 m-1 user-details">
+                          <div class="d-flex flex-column position-relative">
+                            <img src="images/timeline-picture.svg" alt="" class="w-100 br-5">
+                            <div class="position-absolute rounded-circle p-2 bg-white" style="right: 25%; top: 25%;">
+                              <img src="images/ooui_user-avatar.svg" alt="">
+                            </div>
+                            <div class="d-flex position-absolute" style="right: 31%; top: 60%;">
+                              <img src="images/Ellipse2.svg" alt="">
+                            </div>
+                          </div>
+                          <div class="mt-4 text-center text-dark">
+                            <p class="text-blue fs-12 mb-0">Shahid Hussain</p>
+                            <p class="fs-11 mb-0">City, State</p>
+                            <p class="fs-11 mb-2">Proctor Class of 19998</p>
+                          </div>
+                        </div>
+                      </a>
 
-                <!-- Persons -->
-                <div class="contentColumnsCol6 w-50">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100 d-flex">
-                        <div class="description w-100 mb-1 d-flex flex-column">
-                          <div class="d-flex justify-content-between w-100">
-                            <div>
-                              <h3>
-                                <a href="sportInstructorProfileEmployee.html">{first , last name}</a>
-                              </h3>
-                              <!-- <div class="d-flex">
-                                <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                                  <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                                <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                                  <small><i class="fa fa-users"></i></small>
-                                  <small>XXX</small>
-                                </a>
-                                <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                                  <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                    alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                              </div> -->
-                              <p class="mb-0">{City}</p>
-                            </div>
-                            <!-- <div class="w-40">
-                              <div class="text-center font-weight-bold">
-                                <span class="text-success">Category</small>
-                              </div>
-                              <div class="text-center">
-                                <ul
-                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <p class="mb-0">(##)</p>
-                                </ul>
-                              </div>
-                            </div> -->
+                      <div class="d-flex flex-column mx-auto company-details text-center">
+                        <p class="fs-11 mb-1">(Company Name) (Title)</p>
+                        <p class="fs-11">(Industry) (Department)</p>
+                        <div class="d-flex px-2 mb-3 justify-content-between w-50 mx-auto">
+                          <div class="d-flex">
+                            <img src="images/fa-solid_users.svg" alt="" width="20">
+                            <span class="fs-11">xxx</span>
                           </div>
-                          <!-- <hr class="my-1" /> -->
-                          <div class="d-flex my-auto justify-content-center">
-                            <buttton class="btn btn-sm btn-success px-3 mr-2">Following</buttton>
-                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                          </div>
-                          <div class="d-flex justify-content-center">
-                            <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                              <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
-                            <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                              <small><i class="fa fa-users"></i></small>
-                              <small>XXX</small>
-                            </a>
-                            <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                              <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
+                          <div class="d-flex">
+                            <img src="images/Union.svg" alt="" width="20">
+                            <span class="fs-11">xxx</span>
                           </div>
                         </div>
+                        <div class="d-flex w-100 justify-content-between">
+                          <button
+                            class="btn btn-sm btn-success text-white py-0 px-4 mr-3"><small><strong>Following</strong></small></button>
+                          <button
+                            class="btn btn-sm light-grey-border light-grey-text bg-transparent py-0 px-4"><small><strong>Unfollow</strong></small></button>
+                        </div>
                       </div>
-                    </div>
-                  </article>
-                </div>
+                    </article>
+                  </div>
+                  <div class="w-50 p-2">
+                    <article class="w-100 d-flex bg-white charcoal-border border-radius-11">
+                      <a href="sportInstructorProfileEmployee.html" class="text-decoration-none">
+                        <div class="border br-5 m-1 user-details">
+                          <div class="d-flex flex-column position-relative">
+                            <img src="images/timeline-picture.svg" alt="" class="w-100 br-5">
+                            <div class="position-absolute rounded-circle p-2 bg-white" style="right: 25%; top: 25%;">
+                              <img src="images/ooui_user-avatar.svg" alt="">
+                            </div>
+                            <div class="d-flex position-absolute" style="right: 31%; top: 60%;">
+                              <img src="images/Ellipse2.svg" alt="">
+                            </div>
+                          </div>
+                          <div class="mt-4 text-center text-dark">
+                            <p class="text-blue fs-12 mb-0">Shahid Hussain</p>
+                            <p class="fs-11 mb-0">City, State</p>
+                            <p class="fs-11 mb-2">Proctor Class of 19998</p>
+                          </div>
+                        </div>
+                      </a>
 
-                <!-- Persons -->
-                <div class="contentColumnsCol6 w-50">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100 d-flex">
-                        <div class="description w-100 mb-1 d-flex flex-column">
-                          <div class="d-flex justify-content-between w-100">
-                            <div>
-                              <h3>
-                                <a href="sportInstructorProfileEmployee.html">{first , last name}</a>
-                              </h3>
-                              <!-- <div class="d-flex">
-                                <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                                  <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                                <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                                  <small><i class="fa fa-users"></i></small>
-                                  <small>XXX</small>
-                                </a>
-                                <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                                  <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                    alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                              </div> -->
-                              <p class="mb-0">{City}</p>
-                            </div>
-                            <!-- <div class="w-40">
-                              <div class="text-center font-weight-bold">
-                                <span class="text-success">Category</small>
-                              </div>
-                              <div class="text-center">
-                                <ul
-                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <p class="mb-0">(##)</p>
-                                </ul>
-                              </div>
-                            </div> -->
+                      <div class="d-flex flex-column mx-auto company-details text-center">
+                        <p class="fs-11 mb-1">(Company Name) (Title)</p>
+                        <p class="fs-11">(Industry) (Department)</p>
+                        <div class="d-flex px-2 mb-3 justify-content-between w-50 mx-auto">
+                          <div class="d-flex">
+                            <img src="images/fa-solid_users.svg" alt="" width="20">
+                            <span class="fs-11">xxx</span>
                           </div>
-                          <!-- <hr class="my-1" /> -->
-                          <div class="d-flex my-auto justify-content-center">
-                            <buttton class="btn btn-sm btn-success px-3 mr-2">Following</buttton>
-                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                          </div>
-                          <div class="d-flex justify-content-center">
-                            <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                              <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
-                            <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                              <small><i class="fa fa-users"></i></small>
-                              <small>XXX</small>
-                            </a>
-                            <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                              <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
+                          <div class="d-flex">
+                            <img src="images/Union.svg" alt="" width="20">
+                            <span class="fs-11">xxx</span>
                           </div>
                         </div>
+                        <div class="d-flex w-100 justify-content-between">
+                          <button
+                            class="btn btn-sm btn-success text-white py-0 px-4 mr-3"><small><strong>Following</strong></small></button>
+                          <button
+                            class="btn btn-sm light-grey-border light-grey-text bg-transparent py-0 px-4"><small><strong>Unfollow</strong></small></button>
+                        </div>
                       </div>
-                    </div>
-                  </article>
-                </div>
+                    </article>
+                  </div>
+                  <div class="w-50 p-2">
+                    <article class="w-100 d-flex bg-white charcoal-border border-radius-11">
+                      <a href="sportInstructorProfileEmployee.html" class="text-decoration-none">
+                        <div class="border br-5 m-1 user-details">
+                          <div class="d-flex flex-column position-relative">
+                            <img src="images/timeline-picture.svg" alt="" class="w-100 br-5">
+                            <div class="position-absolute rounded-circle p-2 bg-white" style="right: 25%; top: 25%;">
+                              <img src="images/ooui_user-avatar.svg" alt="">
+                            </div>
+                            <div class="d-flex position-absolute" style="right: 31%; top: 60%;">
+                              <img src="images/Ellipse2.svg" alt="">
+                            </div>
+                          </div>
+                          <div class="mt-4 text-center text-dark">
+                            <p class="text-blue fs-12 mb-0">Shahid Hussain</p>
+                            <p class="fs-11 mb-0">City, State</p>
+                            <p class="fs-11 mb-2">Proctor Class of 19998</p>
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="d-flex flex-column mx-auto company-details text-center">
+                        <p class="fs-11 mb-1">(Company Name) (Title)</p>
+                        <p class="fs-11">(Industry) (Department)</p>
+                        <div class="d-flex px-2 mb-3 justify-content-between w-50 mx-auto">
+                          <div class="d-flex">
+                            <img src="images/fa-solid_users.svg" alt="" width="20">
+                            <span class="fs-11">xxx</span>
+                          </div>
+                          <div class="d-flex">
+                            <img src="images/Union.svg" alt="" width="20">
+                            <span class="fs-11">xxx</span>
+                          </div>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between">
+                          <button
+                            class="btn btn-sm btn-success text-white py-0 px-4 mr-3"><small><strong>Following</strong></small></button>
+                          <button
+                            class="btn btn-sm light-grey-border light-grey-text bg-transparent py-0 px-4"><small><strong>Unfollow</strong></small></button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
 
 
-              </span>
+
+                </span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="businessWrapper d-none">
-          <div class="d-flex p-2 w-100 bg-white">
-            <button class="btn btn-sm btn-sm btn-success px-3 py-1" onclick="toggleClass(this)">All (xxx)</button>
-            <button class="btn btn-sm btn-sm btn-secondary px-3 py-1 mx-2" onclick="toggleClass(this)"><span
-                class="desk">Sport</span> Places (xx)</button>
-            <button class="btn btn-sm btn-sm btn-secondary px-3 py-1" onclick="toggleClass(this)"><span
-                class="desk">Sport</span> Stores (xx)</button>
-            <button class="btn btn-sm btn-sm btn-secondary px-3 py-1 ml-2" onclick="toggleClass(this)">Brands
-              (xx)</button>
+          <div class="businessWrapper d-none">
+            <div class="d-flex p-2 w-100 bg-white">
+              <button class="btn btn-sm btn-sm btn-success px-3 py-1" onclick="toggleClass(this)">All (xxx)</button>
+              <button class="btn btn-sm btn-sm btn-secondary px-3 py-1 mx-2" onclick="toggleClass(this)"><span
+                  class="desk">Sport</span> Places (xx)</button>
+              <button class="btn btn-sm btn-sm btn-secondary px-3 py-1" onclick="toggleClass(this)"><span
+                  class="desk">Sport</span> Stores (xx)</button>
+              <button class="btn btn-sm btn-sm btn-secondary px-3 py-1 ml-2" onclick="toggleClass(this)">Brands
+                (xx)</button>
+            </div>
           </div>
-        </div>
 
-        <div class="contentColumnsHolder px-2 pt-1 businessWrapper d-none">
-          <div class="bg-white p-2 w-100">
-            <div class="followContentWrap">
+          <div class="contentColumnsHolder px-2 pt-1 businessWrapper d-none">
+            <div class="bg-white p-2 w-100">
+              <div class="followContentWrap">
 
-              <span class="d-flex flex-wrap w-100">
-                <!-- Company Employee Instructor -->
-                <div class="contentColumnsCol6 w-50">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100">
-                        <div class="d-flex w-100">
-                          <div class="description w-60 mb-1">
-                            <h3>
-                              <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
-                            </h3>
-                            <div>{xxx Street Address} </div>
-                            <p class="mb-0">{City}</p>
-                          </div>
-                          <div class="w-40">
-                            <div class="text-center font-weight-bold">
-                              <span class="text-success">Category</small>
-                            </div>
-                            <div class="text-center">
-                              <ul
-                                class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <p class="mb-0">(##)</p>
-                              </ul>
-                            </div>
+                <span class="d-flex flex-wrap w-100">
+                  <!-- Company Employee Instructor -->
+                  <div class="contentColumnsCol6 w-50">
+                    <!-- postColumn -->
+                    <article
+                      class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
+                      <div class="d-flex">
+                        <div class="alignLeft d-flex flex-column justify-content-between bizImg">
+                          <div class="imgHolder">
+                            <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
+                                class="w-100" /></a>
                           </div>
                         </div>
-                        <div class="d-flex mt-2 w-100 justify-content-center">
-                          <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
-                          <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
+                        <div class="w-100">
+                          <div class="d-flex w-100">
+                            <div class="description w-60 mb-1">
+                              <h3>
+                                <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
+                              </h3>
+                              <div>{xxx Street Address} </div>
+                              <p class="mb-0">{City}</p>
+                            </div>
+                            <div class="w-40">
+                              <div class="text-center font-weight-bold">
+                                <span class="text-success">Category</small>
+                              </div>
+                              <div class="text-center">
+                                <ul
+                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <p class="mb-0">(##)</p>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex mt-2 w-100 justify-content-center">
+                            <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
+                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </article>
-                </div>
+                    </article>
+                  </div>
 
-                <div class="contentColumnsCol6 w-50">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100">
-                        <div class="d-flex w-100">
-                          <div class="description w-60 mb-1">
-                            <h3>
-                              <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
-                            </h3>
-                            <div>{xxx Street Address} </div>
-                            <p class="mb-0">{City}</p>
-                          </div>
-                          <div class="w-40">
-                            <div class="text-center font-weight-bold">
-                              <span class="text-success">Category</small>
-                            </div>
-                            <div class="text-center">
-                              <ul
-                                class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <p class="mb-0">(##)</p>
-                              </ul>
-                            </div>
+                  <div class="contentColumnsCol6 w-50">
+                    <!-- postColumn -->
+                    <article
+                      class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
+                      <div class="d-flex">
+                        <div class="alignLeft d-flex flex-column justify-content-between bizImg">
+                          <div class="imgHolder">
+                            <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
+                                class="w-100" /></a>
                           </div>
                         </div>
-                        <div class="d-flex mt-2 w-100 justify-content-center">
-                          <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
-                          <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
+                        <div class="w-100">
+                          <div class="d-flex w-100">
+                            <div class="description w-60 mb-1">
+                              <h3>
+                                <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
+                              </h3>
+                              <div>{xxx Street Address} </div>
+                              <p class="mb-0">{City}</p>
+                            </div>
+                            <div class="w-40">
+                              <div class="text-center font-weight-bold">
+                                <span class="text-success">Category</small>
+                              </div>
+                              <div class="text-center">
+                                <ul
+                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <p class="mb-0">(##)</p>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex mt-2 w-100 justify-content-center">
+                            <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
+                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </article>
-                </div>
+                    </article>
+                  </div>
 
-                <div class="contentColumnsCol6 w-50">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100">
-                        <div class="d-flex w-100">
-                          <div class="description w-60 mb-1">
-                            <h3>
-                              <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
-                            </h3>
-                            <div>{xxx Street Address} </div>
-                            <p class="mb-0">{City}</p>
-                          </div>
-                          <div class="w-40">
-                            <div class="text-center font-weight-bold">
-                              <span class="text-success">Category</small>
-                            </div>
-                            <div class="text-center">
-                              <ul
-                                class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <p class="mb-0">(##)</p>
-                              </ul>
-                            </div>
+                  <div class="contentColumnsCol6 w-50">
+                    <!-- postColumn -->
+                    <article
+                      class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
+                      <div class="d-flex">
+                        <div class="alignLeft d-flex flex-column justify-content-between bizImg">
+                          <div class="imgHolder">
+                            <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
+                                class="w-100" /></a>
                           </div>
                         </div>
-                        <div class="d-flex mt-2 w-100 justify-content-center">
-                          <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
-                          <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
+                        <div class="w-100">
+                          <div class="d-flex w-100">
+                            <div class="description w-60 mb-1">
+                              <h3>
+                                <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
+                              </h3>
+                              <div>{xxx Street Address} </div>
+                              <p class="mb-0">{City}</p>
+                            </div>
+                            <div class="w-40">
+                              <div class="text-center font-weight-bold">
+                                <span class="text-success">Category</small>
+                              </div>
+                              <div class="text-center">
+                                <ul
+                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <p class="mb-0">(##)</p>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex mt-2 w-100 justify-content-center">
+                            <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
+                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </article>
-                </div>
+                    </article>
+                  </div>
 
-                <div class="contentColumnsCol6 w-50">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100">
-                        <div class="d-flex w-100">
-                          <div class="description w-60 mb-1">
-                            <h3>
-                              <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
-                            </h3>
-                            <div>{xxx Street Address} </div>
-                            <p class="mb-0">{City}</p>
-                          </div>
-                          <div class="w-40">
-                            <div class="text-center font-weight-bold">
-                              <span class="text-success">Category</small>
-                            </div>
-                            <div class="text-center">
-                              <ul
-                                class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <p class="mb-0">(##)</p>
-                              </ul>
-                            </div>
+                  <div class="contentColumnsCol6 w-50">
+                    <!-- postColumn -->
+                    <article
+                      class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
+                      <div class="d-flex">
+                        <div class="alignLeft d-flex flex-column justify-content-between bizImg">
+                          <div class="imgHolder">
+                            <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
+                                class="w-100" /></a>
                           </div>
                         </div>
-                        <div class="d-flex mt-2 w-100 justify-content-center">
-                          <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
-                          <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                <div class="contentColumnsCol6 w-50">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100">
-                        <div class="d-flex w-100">
-                          <div class="description w-60 mb-1">
-                            <h3>
-                              <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
-                            </h3>
-                            <div>{xxx Street Address} </div>
-                            <p class="mb-0">{City}</p>
-                          </div>
-                          <div class="w-40">
-                            <div class="text-center font-weight-bold">
-                              <span class="text-success">Category</small>
+                        <div class="w-100">
+                          <div class="d-flex w-100">
+                            <div class="description w-60 mb-1">
+                              <h3>
+                                <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
+                              </h3>
+                              <div>{xxx Street Address} </div>
+                              <p class="mb-0">{City}</p>
                             </div>
-                            <div class="text-center">
-                              <ul
-                                class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <p class="mb-0">(##)</p>
-                              </ul>
+                            <div class="w-40">
+                              <div class="text-center font-weight-bold">
+                                <span class="text-success">Category</small>
+                              </div>
+                              <div class="text-center">
+                                <ul
+                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <p class="mb-0">(##)</p>
+                                </ul>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="d-flex mt-2 w-100 justify-content-center">
-                          <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
-                          <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                <div class="contentColumnsCol6 w-50">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100">
-                        <div class="d-flex w-100">
-                          <div class="description w-60 mb-1">
-                            <h3>
-                              <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
-                            </h3>
-                            <div>{xxx Street Address} </div>
-                            <p class="mb-0">{City}</p>
-                          </div>
-                          <div class="w-40">
-                            <div class="text-center font-weight-bold">
-                              <span class="text-success">Category</small>
-                            </div>
-                            <div class="text-center">
-                              <ul
-                                class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <p class="mb-0">(##)</p>
-                              </ul>
-                            </div>
+                          <div class="d-flex mt-2 w-100 justify-content-center">
+                            <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
+                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
                           </div>
                         </div>
-                        <div class="d-flex mt-2 w-100 justify-content-center">
-                          <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
-                          <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                        </div>
                       </div>
-                    </div>
-                  </article>
-                </div>
-                <div class="contentColumnsCol6 w-50">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100">
-                        <div class="d-flex w-100">
-                          <div class="description w-60 mb-1">
-                            <h3>
-                              <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
-                            </h3>
-                            <div>{xxx Street Address} </div>
-                            <p class="mb-0">{City}</p>
-                          </div>
-                          <div class="w-40">
-                            <div class="text-center font-weight-bold">
-                              <span class="text-success">Category</small>
-                            </div>
-                            <div class="text-center">
-                              <ul
-                                class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <p class="mb-0">(##)</p>
-                              </ul>
-                            </div>
+                    </article>
+                  </div>
+                  <div class="contentColumnsCol6 w-50">
+                    <!-- postColumn -->
+                    <article
+                      class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
+                      <div class="d-flex">
+                        <div class="alignLeft d-flex flex-column justify-content-between bizImg">
+                          <div class="imgHolder">
+                            <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
+                                class="w-100" /></a>
                           </div>
                         </div>
-                        <div class="d-flex mt-2 w-100 justify-content-center">
-                          <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
-                          <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                <div class="contentColumnsCol6 w-50">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100">
-                        <div class="d-flex w-100">
-                          <div class="description w-60 mb-1">
-                            <h3>
-                              <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
-                            </h3>
-                            <div>{xxx Street Address} </div>
-                            <p class="mb-0">{City}</p>
-                          </div>
-                          <div class="w-40">
-                            <div class="text-center font-weight-bold">
-                              <span class="text-success">Category</small>
+                        <div class="w-100">
+                          <div class="d-flex w-100">
+                            <div class="description w-60 mb-1">
+                              <h3>
+                                <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
+                              </h3>
+                              <div>{xxx Street Address} </div>
+                              <p class="mb-0">{City}</p>
                             </div>
-                            <div class="text-center">
-                              <ul
-                                class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <p class="mb-0">(##)</p>
-                              </ul>
+                            <div class="w-40">
+                              <div class="text-center font-weight-bold">
+                                <span class="text-success">Category</small>
+                              </div>
+                              <div class="text-center">
+                                <ul
+                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <p class="mb-0">(##)</p>
+                                </ul>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="d-flex mt-2 w-100 justify-content-center">
-                          <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
-                          <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
+                          <div class="d-flex mt-2 w-100 justify-content-center">
+                            <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
+                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </article>
-                </div>
-              </span>
+                    </article>
+                  </div>
+                  <div class="contentColumnsCol6 w-50">
+                    <!-- postColumn -->
+                    <article
+                      class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
+                      <div class="d-flex">
+                        <div class="alignLeft d-flex flex-column justify-content-between bizImg">
+                          <div class="imgHolder">
+                            <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
+                                class="w-100" /></a>
+                          </div>
+                        </div>
+                        <div class="w-100">
+                          <div class="d-flex w-100">
+                            <div class="description w-60 mb-1">
+                              <h3>
+                                <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
+                              </h3>
+                              <div>{xxx Street Address} </div>
+                              <p class="mb-0">{City}</p>
+                            </div>
+                            <div class="w-40">
+                              <div class="text-center font-weight-bold">
+                                <span class="text-success">Category</small>
+                              </div>
+                              <div class="text-center">
+                                <ul
+                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <p class="mb-0">(##)</p>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex mt-2 w-100 justify-content-center">
+                            <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
+                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="contentColumnsCol6 w-50">
+                    <!-- postColumn -->
+                    <article
+                      class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
+                      <div class="d-flex">
+                        <div class="alignLeft d-flex flex-column justify-content-between bizImg">
+                          <div class="imgHolder">
+                            <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
+                                class="w-100" /></a>
+                          </div>
+                        </div>
+                        <div class="w-100">
+                          <div class="d-flex w-100">
+                            <div class="description w-60 mb-1">
+                              <h3>
+                                <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
+                              </h3>
+                              <div>{xxx Street Address} </div>
+                              <p class="mb-0">{City}</p>
+                            </div>
+                            <div class="w-40">
+                              <div class="text-center font-weight-bold">
+                                <span class="text-success">Category</small>
+                              </div>
+                              <div class="text-center">
+                                <ul
+                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <p class="mb-0">(##)</p>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex mt-2 w-100 justify-content-center">
+                            <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
+                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="contentColumnsCol6 w-50">
+                    <!-- postColumn -->
+                    <article
+                      class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
+                      <div class="d-flex">
+                        <div class="alignLeft d-flex flex-column justify-content-between bizImg">
+                          <div class="imgHolder">
+                            <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
+                                class="w-100" /></a>
+                          </div>
+                        </div>
+                        <div class="w-100">
+                          <div class="d-flex w-100">
+                            <div class="description w-60 mb-1">
+                              <h3>
+                                <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
+                              </h3>
+                              <div>{xxx Street Address} </div>
+                              <p class="mb-0">{City}</p>
+                            </div>
+                            <div class="w-40">
+                              <div class="text-center font-weight-bold">
+                                <span class="text-success">Category</small>
+                              </div>
+                              <div class="text-center">
+                                <ul
+                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
+                                  </li>
+                                  <p class="mb-0">(##)</p>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex mt-2 w-100 justify-content-center">
+                            <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
+                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </span>
+              </div>
+
             </div>
 
-          </div>
-
-        </div>
-
-        <div class="allWrapper d-none">
-          <div class="w-100 d-flex justify-content-between p-2 bg-white">
-            <h4 class="mb-0 mx-auto"><strong>Contacts Following</strong></h4>
-            <h4 class="mb-0 mx-auto"><strong>Business Following</strong></h4>
-          </div>
-        </div>
-
-        <div class="contentColumnsHolder px-2 pt-1 allWrapper d-none">
-          <div class="bg-white p-2 w-100">
-            <div class="followContentWrap">
-              <span class="w-50 border-right">
-                <!-- Persons -->
-                <div class="contentColumnsCol6 w-100">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100 d-flex">
-                        <div class="description w-100 mb-1 d-flex flex-column">
-                          <div class="d-flex justify-content-between w-100">
-                            <div>
-                              <h3>
-                                <a href="sportInstructorProfileEmployee.html">{first , last name}</a>
-                              </h3>
-                              <!-- <div class="d-flex">
-                                <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                                  <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                                <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                                  <small><i class="fa fa-users"></i></small>
-                                  <small>XXX</small>
-                                </a>
-                                <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                                  <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                    alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                              </div> -->
-                              <p class="mb-0">{City}</p>
-                            </div>
-                            <!-- <div class="w-40">
-                              <div class="text-center font-weight-bold">
-                                <span class="text-success">Category</small>
-                              </div>
-                              <div class="text-center">
-                                <ul
-                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <p class="mb-0">(##)</p>
-                                </ul>
-                              </div>
-                            </div> -->
-                          </div>
-                          <!-- <hr class="my-1" /> -->
-                          <div class="d-flex my-auto justify-content-center">
-                            <buttton class="btn btn-sm btn-success px-3 mr-2">Following</buttton>
-                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                          </div>
-                          <div class="d-flex justify-content-center">
-                            <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                              <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
-                            <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                              <small><i class="fa fa-users"></i></small>
-                              <small>XXX</small>
-                            </a>
-                            <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                              <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-
-                <!-- Persons -->
-                <div class="contentColumnsCol6 w-100">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100 d-flex">
-                        <div class="description w-100 mb-1 d-flex flex-column">
-                          <div class="d-flex justify-content-between w-100">
-                            <div>
-                              <h3>
-                                <a href="sportInstructorProfileEmployee.html">{first , last name}</a>
-                              </h3>
-                              <!-- <div class="d-flex">
-                                <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                                  <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                                <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                                  <small><i class="fa fa-users"></i></small>
-                                  <small>XXX</small>
-                                </a>
-                                <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                                  <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                    alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                              </div> -->
-                              <p class="mb-0">{City}</p>
-                            </div>
-                            <!-- <div class="w-40">
-                              <div class="text-center font-weight-bold">
-                                <span class="text-success">Category</small>
-                              </div>
-                              <div class="text-center">
-                                <ul
-                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <p class="mb-0">(##)</p>
-                                </ul>
-                              </div>
-                            </div> -->
-                          </div>
-                          <!-- <hr class="my-1" /> -->
-                          <div class="d-flex my-auto justify-content-center">
-                            <buttton class="btn btn-sm btn-success px-3 mr-2">Following</buttton>
-                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                          </div>
-                          <div class="d-flex justify-content-center">
-                            <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                              <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
-                            <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                              <small><i class="fa fa-users"></i></small>
-                              <small>XXX</small>
-                            </a>
-                            <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                              <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-
-                <!-- Persons -->
-                <div class="contentColumnsCol6 w-100">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100 d-flex">
-                        <div class="description w-100 mb-1 d-flex flex-column">
-                          <div class="d-flex justify-content-between w-100">
-                            <div>
-                              <h3>
-                                <a href="sportInstructorProfileEmployee.html">{first , last name}</a>
-                              </h3>
-                              <!-- <div class="d-flex">
-                                <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                                  <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                                <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                                  <small><i class="fa fa-users"></i></small>
-                                  <small>XXX</small>
-                                </a>
-                                <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                                  <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                    alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                              </div> -->
-                              <p class="mb-0">{City}</p>
-                            </div>
-                            <!-- <div class="w-40">
-                              <div class="text-center font-weight-bold">
-                                <span class="text-success">Category</small>
-                              </div>
-                              <div class="text-center">
-                                <ul
-                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <p class="mb-0">(##)</p>
-                                </ul>
-                              </div>
-                            </div> -->
-                          </div>
-                          <!-- <hr class="my-1" /> -->
-                          <div class="d-flex my-auto justify-content-center">
-                            <buttton class="btn btn-sm btn-success px-3 mr-2">Following</buttton>
-                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                          </div>
-                          <div class="d-flex justify-content-center">
-                            <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                              <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
-                            <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                              <small><i class="fa fa-users"></i></small>
-                              <small>XXX</small>
-                            </a>
-                            <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                              <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-
-                <!-- Persons -->
-                <div class="contentColumnsCol6 w-100">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100 d-flex">
-                        <div class="description w-100 mb-1 d-flex flex-column">
-                          <div class="d-flex justify-content-between w-100">
-                            <div>
-                              <h3>
-                                <a href="sportInstructorProfileEmployee.html">{first , last name}</a>
-                              </h3>
-                              <!-- <div class="d-flex">
-                                <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                                  <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                                <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                                  <small><i class="fa fa-users"></i></small>
-                                  <small>XXX</small>
-                                </a>
-                                <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                                  <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                    alt="" />
-                                  <small class="my-0">XX</small>
-                                </div>
-                              </div> -->
-                              <p class="mb-0">{City}</p>
-                            </div>
-                            <!-- <div class="w-40">
-                              <div class="text-center font-weight-bold">
-                                <span class="text-success">Category</small>
-                              </div>
-                              <div class="text-center">
-                                <ul
-                                  class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <li>
-                                    <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                  </li>
-                                  <p class="mb-0">(##)</p>
-                                </ul>
-                              </div>
-                            </div> -->
-                          </div>
-                          <!-- <hr class="my-1" /> -->
-                          <div class="d-flex my-auto justify-content-center">
-                            <buttton class="btn btn-sm btn-success px-3 mr-2">Following</buttton>
-                            <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                          </div>
-                          <div class="d-flex justify-content-center">
-                            <div class="d-flex px-2" data-target="#userSportListModal" data-toggle="modal">
-                              <img src="./images/svg/App Logo-01.svg" class="mr-1" width="15" height="15" alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
-                            <a href="homeSportUserProfile.html#friends-container" class="text-dark mx-3">
-                              <small><i class="fa fa-users"></i></small>
-                              <small>XXX</small>
-                            </a>
-                            <div class="d-flex px-2" data-target="#userMutualConnectionsModal" data-toggle="modal">
-                              <img src="./images/svg/svg000-double-circle.svg" class="mr-1" width="15" height="15"
-                                alt="" />
-                              <small class="my-0">XX</small>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-
-
-              </span>
-              <span class="w-50">
-                <div class="contentColumnsCol6 w-100">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100">
-                        <div class="d-flex w-100">
-                          <div class="description w-60 mb-1">
-                            <h3>
-                              <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
-                            </h3>
-                            <div>{xxx Street Address} </div>
-                            <p class="mb-0">{City}</p>
-                          </div>
-                          <div class="w-40">
-                            <div class="text-center font-weight-bold">
-                              <span class="text-success">Category</small>
-                            </div>
-                            <div class="text-center">
-                              <ul
-                                class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <p class="mb-0">(##)</p>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-flex mt-2 w-100 justify-content-center">
-                          <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
-                          <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                <div class="contentColumnsCol6 w-100">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100">
-                        <div class="d-flex w-100">
-                          <div class="description w-60 mb-1">
-                            <h3>
-                              <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
-                            </h3>
-                            <div>{xxx Street Address} </div>
-                            <p class="mb-0">{City}</p>
-                          </div>
-                          <div class="w-40">
-                            <div class="text-center font-weight-bold">
-                              <span class="text-success">Category</small>
-                            </div>
-                            <div class="text-center">
-                              <ul
-                                class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <p class="mb-0">(##)</p>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-flex mt-2 w-100 justify-content-center">
-                          <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
-                          <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                <div class="contentColumnsCol6 w-100">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100">
-                        <div class="d-flex w-100">
-                          <div class="description w-60 mb-1">
-                            <h3>
-                              <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
-                            </h3>
-                            <div>{xxx Street Address} </div>
-                            <p class="mb-0">{City}</p>
-                          </div>
-                          <div class="w-40">
-                            <div class="text-center font-weight-bold">
-                              <span class="text-success">Category</small>
-                            </div>
-                            <div class="text-center">
-                              <ul
-                                class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <p class="mb-0">(##)</p>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-flex mt-2 w-100 justify-content-center">
-                          <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
-                          <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                <div class="contentColumnsCol6 w-100">
-                  <!-- postColumn -->
-                  <article class="postColumn align-items-stretch justify-content-start flex-row w-100 bg-white rounded">
-                    <div class="d-flex">
-                      <div class="alignLeft d-flex flex-column justify-content-between bizImg">
-                        <div class="imgHolder">
-                          <a href="sportInstructorProfileEmployee.html"><img src="images/img03.jpg" alt="pistons"
-                              class="w-100" /></a>
-                        </div>
-                      </div>
-                      <div class="w-100">
-                        <div class="d-flex w-100">
-                          <div class="description w-60 mb-1">
-                            <h3>
-                              <a href="sportInstructorProfileEmployee.html">{Place Name}</a>
-                            </h3>
-                            <div>{xxx Street Address} </div>
-                            <p class="mb-0">{City}</p>
-                          </div>
-                          <div class="w-40">
-                            <div class="text-center font-weight-bold">
-                              <span class="text-success">Category</small>
-                            </div>
-                            <div class="text-center">
-                              <ul
-                                class="list-unstyled ratingStar d-flex justify-content-center flex-row flex-nowrap mb-0">
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <li>
-                                  <a href="#"><img src="images/rating-start-active.png" alt="rating" /></a>
-                                </li>
-                                <p class="mb-0">(##)</p>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-flex mt-2 w-100 justify-content-center">
-                          <buttton class="btn btn-sm btn-success px-3 mr-1">Following</buttton>
-                          <buttton class="btn btn-sm btn-secondary px-3">Unfollow</buttton>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-              </span>
-            </div>
           </div>
         </div>
       </div>

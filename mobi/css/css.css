@@ -2570,6 +2570,26 @@ legend {
   color: #014d7f;
 }
 
+.charcoal-border{
+  border: solid 1px #343A40;
+}
+
+.border-radius-11{
+  border-radius: 11px;
+}
+
+.light-grey-border{
+  border: solid 1px #D0D0D0;
+}
+
+.light-grey-text{
+  color: #D0D0D0;
+}
+
+.main-view{
+  background-color: #E0E9EC;
+}
+
 .incoming-message {
   width: 100%;
   display: flex;
