@@ -119,11 +119,50 @@
 
         <div class="d-flex col-lg-2 col-sm-6">
           <div class="col-sm p-1 tiny-m">
-            <a href="search-page.html" class="text-dark font-weight-bold text-decoration-none">
-              <div class="text-center">
+            <div class="text-dark font-weight-bold">
+              <div class="text-center" data-toggle="dropdown">
                 <i class="fa fa-search fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
               </div>
-            </a>
+              <div class="dropdown-menu search-view-section px-2">
+                <input class="nosubmit" type="search" placeholder="Search...">
+                <div class="bg-light">
+                  <a href="homeSportMyProfile-connected.html" class="text-dark text-decoration-none">
+                    <div class="d-flex justify-content-between m-1 py-1">
+                      <div class="d-flex">
+                        <i class="fa fa-search mx-2"></i>
+                        <div class="">
+                          <p class="mb-0"><small>Mark <strong>Cuban</strong> .(City), (State)</small></p>
+                          <small>Connected</small>
+                        </div>
+                      </div>
+                      <img src="images/ss2.PNG" alt="" width="25" height="25" class="rounded-circle m-1">
+                    </div>
+                  </a>
+                  <a href="homeSportMyProfile-notconnected.html" class="text-dark text-decoration-none">
+                    <div class="d-flex justify-content-between m-1 py-1">
+                      <div class="d-flex">
+                        <i class="fa fa-search mx-2"></i>
+                        <div class="">
+                          <p class="mb-0"><small>Mark<strong>holley</strong> .(Business Name) (Title) (City),
+                              (State)</small></p>
+                          <small>Not Connected</small>
+                        </div>
+                      </div>
+                      <img src="images/ss6.PNG" alt="" width="25" height="25" class="rounded-circle m-1">
+                    </div>
+                  </a>
+                  <a href="homeSportMyProfile-notconnected.html" class="text-dark text-decoration-none">
+                    <div class="d-flex m-1 py-1">
+                      <i class="fa fa-search mx-2"></i>
+                      <div class="">
+                        <p class="mb-0"><small>Mark<strong>eting director</strong></small></p>
+                        <small>Not Connected</small>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-sm p-1 tiny-m">
             <a href="./calendar.html" class="text-dark font-weight-bold text-decoration-none">
@@ -234,26 +273,25 @@
     </div>
     <div class="sibar-left border-right">
       <div class="d-flex flex-column px-2">
-        <div class="text-center pt-3">
-          <img src="./images//scott.jpg" alt="" class="rounded-circle" width="60" height="60">
+        <div class="text-center d-flex flex-column pt-3">
+          <img src="./images//scott.jpg" alt="" class="rounded-circle mx-auto desk" width="60" height="60">
           <a class="text-dark" href="my-profile.html">
             <h5><strong>Scott Holley</strong></h5>
           </a>
           <p class="mb-0 text-secondary">City, State</p>
           <p class="text-secondary">Proctor Class of 1998</p>
         </div>
-        <ul class="list-unstyled px-2 w-100 br-5 mb-1 py-2">
+        <ul class="list-unstyled px-2 w-100 br-5 mb-1 py-1">
           <li class="lg-font">
-            <a href="friends-page.html">
-              <h6 class="mb-0 d-flex"><span class="text-blue">Alumni Directory</span> <span class="ml-auto">(xxx)</span>
-              </h6>
+            <a href="friends-page.html" class="mb-0 d-flex fw-500 fs-14">
+              <span class="text-blue fw-500">Alumni Directory</span> <span class="ml-auto">(xxx)</span>
             </a>
           </li>
         </ul>
         <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
-          <li class="lg-font">
-            <h6 class="mb-0 d-flex"><span class="text-blue">My Alumni Network</span><span class="ml-auto">(xxx)</span>
-            </h6>
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14">
+            <span class="text-blue">My Alumni Network</span><span class="ml-auto">(xxx)</span>
+
           </li>
           <li class="fs-14">
             <a href="#" class="text-decoration-none d-flex text-secondary">
@@ -262,10 +300,8 @@
           </li>
         </ul>
         <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
-          <li class="lg-font">
-            <h6 class="mb-0 d-flex justify-content-between">
-              <span class=" text-blue">Meetings</span><span>(xxx)</span>
-            </h6>
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14">
+            <span class=" text-blue">Meetings</span><span>(xxx)</span>
           </li>
           <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>Meeting Invites</span>
               <span class="ml-auto pr-3">(xxx)</span></a></li>
@@ -274,18 +310,16 @@
         </ul>
 
         <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
-          <li class="lg-font">
-            <h6 class="mb-0 d-flex justify-content-between">
-              <span class=" text-blue">Alumni Mentors</span><span>(xxx)</span>
-            </h6>
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14">
+            <span class=" text-blue">Alumni Mentors</span><span>(xxx)</span>
           </li>
           <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>Meeting Requests</span>
               <span class="ml-auto pr-3">(xxx)</span></a></li>
         </ul>
 
         <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
-          <li class="lg-font">
-            <h6 class="mb-0 text-blue">Alum Center</h6>
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14">
+            Alum Center
           </li>
           <li class="fs-14"><a href="alumni-events.html" class="text-decoration-none text-secondary d-flex"><span>Alumni
                 Events</span> <span class="ml-auto pr-3">(xxx)</span></a></li>
@@ -297,9 +331,7 @@
         </ul>
 
         <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
-          <li class="lg-font">
-            <h6 class="mb-0 text-blue">View</h6>
-          </li>
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14">View</li>
           <li class="fs-14"><a href="my-profile.html" class="text-decoration-none text-secondary">My Profile</a></li>
           <li class="fs-14"><a href="#" class="text-decoration-none text-secondary d-flex"><span>Alum Messages</span>
               <span class="ml-auto pr-3">(xxx)</span></a></li>
