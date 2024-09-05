@@ -352,10 +352,11 @@ select {
 }
 
 .standard-light-gray{
-  background-color: #F4F3ED;
+  background-color: #f4f3ede8;
 }
 
 .main-content {
+  background-color: rgba(255, 255, 255, 0.458);
   margin: auto;
   padding: 0px 10px;
   width: 60%;
