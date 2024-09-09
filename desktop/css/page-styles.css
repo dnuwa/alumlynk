@@ -483,14 +483,14 @@ select {
   .sibar-nav {
     height: 100vh;
     display: none;
-    width: 85% !important;
+    width: 65% !important;
     position: absolute;
     z-index: 100;
     top: 0;
     right: 0;
     background-color: #ffffff;
     width: 50%;
-    padding: 1rem;
+    padding: 4px;
   }
 
   .sibar-right {

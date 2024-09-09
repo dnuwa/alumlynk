@@ -994,6 +994,35 @@ table {
 
 /* custom css */
 
+.center-pop-parent {
+  background-color: #fff;
+  z-index: 2;
+  position: relative;
+  right: auto;
+  top: 2px;
+}
+
+.center-pop-child {
+  width: 98%;
+  position: absolute;
+  z-index: 50;
+  background-color: white;
+  min-height: 100%;
+}
+
+.drop-nav-link {
+  border-bottom: 2px #17a2b8 solid;
+  background-color: white;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background-color: #e5e5e5;
+  margin-bottom: 4px;
+}
+
+.drop-nav-link-l1 > a {
+  color: #4a4a4a !important;
+}
+
 .w-33 {
   width: 33.333%;
 }

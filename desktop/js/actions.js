@@ -206,7 +206,7 @@ $(".list-my-sport-business-back").click(function () {
 // scheduledemo
 $(".scheduledemo").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav").removeClass("d-none");
     // our-mission-desk
@@ -245,7 +245,7 @@ $(".scheduledemoback").click(function () {
 // signupyoursport
 $(".signupyoursport").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav").removeClass("d-none");
     $(".mobile-nav-main").toggle();
@@ -283,7 +283,7 @@ $(".signupyoursportback").click(function () {
 // claimlisting
 $(".claimlisting").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav").removeClass("d-none");
     $(".mobile-nav-main").toggle();
@@ -321,7 +321,7 @@ $(".claimlistingback").click(function () {
 // businessownerguidelines
 $(".businessownerguidelines").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav").removeClass("d-none");
     $(".mobile-nav-main").toggle();
@@ -359,7 +359,7 @@ $(".businessownerguidelinesback").click(function () {
 // white-label
 $(".whitelabel").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav").removeClass("d-none");
     $(".mobile-nav-main").toggle();
@@ -397,7 +397,7 @@ $(".whitelabelback").click(function () {
 // atheleticlubs
 $(".atheleticlubs").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav").removeClass("d-none");
     $(".mobile-nav-main").toggle();
@@ -435,7 +435,7 @@ $(".atheleticlubsback").click(function () {
 // fitnessplaces
 $(".fitnessplaces").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav").removeClass("d-none");
     $(".mobile-nav-main").toggle();
@@ -481,7 +481,7 @@ $(".sport-social-us-back").click(function () {
   $(".contactus-desk").removeClass("d-block");
   $(".contactus-desk").addClass(`d-none`);
   // if ($(window).width() < 576) {
-  //   $(".mobile-nav").addClass(`d-none`);
+  //   $(".sibar-nav").toggle();
   // } else {
   //   $(".mobile-nav").removeClass("d-none");
   // }
@@ -651,7 +651,7 @@ $(".deskeditprofileback").click(function () {
 // deskaccountaccess
 $(".deskaccountaccess").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav").removeClass("d-none");
     $(".mobile-nav-main").toggle();
@@ -688,7 +688,7 @@ $(".deskaccountaccessback").click(function () {
 // deskaccountpass
 $(".deskaccountpass").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav-main").toggle();
     $(".profile-update-desk").removeClass("d-block");
@@ -723,7 +723,7 @@ $(".deskaccountpassback").click(function () {
 // notificationsdesk
 $(".notificationsdesk").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav-main").toggle();
     $(".profile-update-desk").removeClass("d-block");
@@ -757,7 +757,7 @@ $(".notificationsdeskback").click(function () {
 
 $(".languagedesk").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav-main").toggle();
     $(".profile-update-desk").removeClass("d-block");
@@ -791,7 +791,7 @@ $(".languagedeskback").click(function () {
 
 $(".locationdesk").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav-main").toggle();
     $(".profile-update-desk").removeClass("d-block");
@@ -825,7 +825,7 @@ $(".locationdeskback").click(function () {
 
 $(".dsktermsandconditions").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav-main").toggle();
     $(".profile-update-desk").removeClass("d-block");
@@ -859,7 +859,7 @@ $(".dsktermsandconditionsback").click(function () {
 
 $(".privacypolicy").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav-main").toggle();
     $(".profile-update-desk").removeClass("d-block");
@@ -893,7 +893,7 @@ $(".privacypolicyback").click(function () {
 
 $(".feedbackdesk").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav-main").toggle();
     $(".feature-problem-desk").removeClass("d-block");
@@ -926,7 +926,7 @@ $(".feedbackdeskback").click(function () {
 // reportproblemdesk
 $(".reportproblemdesk").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav-main").toggle();
     $(".give-us-feedback-desk").removeClass("d-block");
@@ -959,7 +959,7 @@ $(".reportproblemdeskback").click(function () {
 // reportspamdesk
 $(".reportspamdesk").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav-main").toggle();
     $(".give-us-feedback-desk").removeClass("d-block");
@@ -992,7 +992,7 @@ $(".reportspamdeskback").click(function () {
 // businesspartnershipsdesk
 $(".businesspartnershipsdesk").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav-main").toggle();
     $(".give-us-feedback-desk").removeClass("d-block");
@@ -1025,7 +1025,7 @@ $(".businesspartnershipsdeskback").click(function () {
 // emailusdesk
 $(".emailusdesk").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav-main").toggle();
     $(".give-us-feedback-desk").removeClass("d-block");
@@ -1057,7 +1057,7 @@ $(".emailusdeskback").click(function () {
 
 $(".careeropportunitydesk").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav-main").toggle();
     $(".give-us-feedback-desk").removeClass("d-block");
@@ -1198,7 +1198,7 @@ $(".contactusdeskback").click(function () {
 // sportSocailaboutusdesk
 $(".sportSocailaboutusdesk").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav").removeClass("d-none");
   }
@@ -1251,7 +1251,7 @@ $(".codeofconductdeskback").click(function () {
 // communitydesk
 $(".communitydesk").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav").removeClass("d-none");
     $(".mobile-nav-main").toggle();
@@ -1285,7 +1285,7 @@ $(".communitydeskback").click(function () {
 // ourteamdesk
 $(".ourteamdesk").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav").removeClass("d-none");
     $(".mobile-nav-main").toggle();
@@ -1317,7 +1317,7 @@ $(".ourteamdeskback").click(function () {
 // verifiedusers
 $(".verifiedusers").click(function () {
   if ($(window).width() < 576) {
-    $(".mobile-nav").addClass(`d-none`);
+    $(".sibar-nav").toggle();
   } else {
     $(".mobile-nav").removeClass("d-none");
     $(".mobile-nav").removeClass("d-none");
