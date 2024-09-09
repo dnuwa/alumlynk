@@ -2,161 +2,255 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="intelTelInput/js/intlTelInput.min.js"></script>
-    <link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/page-styles.css">
-    <link rel="stylesheet" type="text/css" href="css/css.css" />
-    <title>Alumlynk</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="intelTelInput/js/intlTelInput.min.js"></script>
+  <link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/page-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/css.css" />
+  <title>Alumlynk</title>
 
-    <style type="text/css">
-        .profileImgBgSmall {
-            background-image: url("./images/img04.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            min-height: 78px;
-            display: flex;
-            position: relative;
-        }
+  <style type="text/css">
+    .profileImgBgSmall {
+      background-image: url("./images/img04.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 78px;
+      display: flex;
+      position: relative;
+    }
 
-        .profileImgBgSmall>div {
-            position: absolute;
-            top: 8px;
-            display: flex;
-        }
+    .profileImgBgSmall>div {
+      position: absolute;
+      top: 8px;
+      display: flex;
+    }
 
-        .profileImgBgSmall div img {
-            border: 2px solid #fff;
-        }
+    .profileImgBgSmall div img {
+      border: 2px solid #fff;
+    }
 
-        .rounded-custom {
-            border-radius: 10px;
-        }
-    </style>
+    .rounded-custom {
+      border-radius: 10px;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="fixed bg-white mb-5 bottom-shadow">
-        <div class="d-flex bg-white px-2 py-18 w-100 justify-content-between">
-            <div class="width-15 d-flex">
-                <a href="./index.html" class="text-success">
-                    <img src="./images/preview-school-logo-free-vector-design.jpg" class="w-100" />
-                </a>
-            </div>
-            <div class="d-flex width-60">
-                <div class="col-sm p-1 tiny-m border">
-                    <a href="posts-page.html" class="text-dark font-weight-bold text-center text-decoration-none">
-                        <div class="text-center">
-                            <img src="./images/svg000-home.svg" width="30" class="my-auto" />
-                        </div>
-                        <p class="xm-font text-center mb-0">Posts</p>
-                    </a>
-                </div>
-                <div class="col-sm p-1 tiny-m border active-tab border">
-                    <a href="index.html" class="text-dark font-weight-bold text-decoration-none">
-                        <div class="text-center">
-                            <img src="./images/svg000-friends-white.svg" width="30" class="my-auto" />
-                        </div>
-                        <p class="xm-font text-center mb-0 text-center text-white">Network</p>
-                    </a>
-                </div>
-                <div class="col-sm p-1 tiny-m border">
-                    <a href="friends-page.html" class="text-dark font-weight-bold text-decoration-none">
-                        <div class="text-center">
-                            <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
-                        </div>
-                        <p class="xm-font text-center mb-0">Alumni</p>
-                    </a>
-                </div>
-                <div class="col-sm p-1 tiny-m border">
-                    <a href="./alumni-mentoring.html" class="text-dark font-weight-bold text-decoration-none">
-                        <div class="text-center">
-                            <img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
-                        </div>
-                        <p class="xm-font text-center mb-0">Mentors</p>
-                    </a>
-                </div>
-                <div class="col-sm p-1 tiny-m border">
-                    <a href="./chat-list-recent.html" class="text-dark font-weight-bold text-decoration-none">
-                        <div class="text-center">
-                            <img src="./images/000msg-icon.svg" class="my-auto" />
-                            <div class="icon-value-nav"><small><strong>0</strong></small></div>
-                        </div>
-                        <p class="xm-font text-center mb-0">Messages</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="d-flex width-15">
-                <div class="col-sm p-1 tiny-m">
-                    <a href="search-page.html" class="text-dark font-weight-bold text-decoration-none">
-                        <div class="text-center">
-                            <i
-                                class="fa fa-search fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
-                        </div>
-                        <!-- <p class="xm-font text-center mb-0">Search</p> -->
-                    </a>
-                </div>
-                <div class="col-sm p-1 tiny-m">
-                    <a href="./calendar.html" class="text-dark font-weight-bold text-decoration-none">
-                        <div class="text-center">
-                            <i
-                                class="fa fa-calendar fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
-                        </div>
-                        <!-- <p class="xm-font text-center mb-0">Calendar</p> -->
-                    </a>
-                </div>
-                <div class="col-sm p-1 tiny-m">
-                    <a href="./chat-list-recent.html" class="text-dark font-weight-bold text-decoration-none">
-                        <div class="text-center">
-                            <i
-                                class="fa fa-bell fa-sm text-center text-dark my-auto  bg-gray-light p-2 rounded-circle"></i>
-                            <div class="icon-value-nav-bell"><small><strong>0</strong></small></div>
-                        </div>
-                        <!-- <p class="xm-font text-center mb-0">Notifications</p> -->
-                    </a>
-                </div>
-                <div class="col-sm p-1 tiny-m">
-                    <a href="./chat-list-recent.html" class="text-dark font-weight-bold text-decoration-none">
-                        <div class="text-center">
-                            <i
-                                class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
-                        </div>
-                        <!-- <p class="xm-font text-center mb-0">Notifications</p> -->
-                    </a>
-                </div>
-            </div>
+  <div class="bg-white mb-5 bottom-shadow position-fixed z-10 top-0 w-100">
+    <div class="container">
+      <div class="d-flex bg-white py-18 w-100 justify-content-between">
+        <div class="col-sm p-1 tiny-m mobi">
+          <div class="text-center logo-toggle">
+            <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+          </div>
         </div>
-    </div>
-    <div class="border-right sibar-left">
-        <div class="d-flex flex-column">
-            <!-- <h5 class="p-3 mb-0">Navigation</h5> -->
-            <ul class="list-unstyled px-3 gn-menu">
-                <li> <a href="./friends-page.html"><small>Alumni Directory</small></a></li>
-                <li> <a href="./alumni-connection-requests.html"><small> Alumni Connection Requests
-                            (xxx)</small></a></li>
-                <li> <a href="./index.html"><small>Alumni Network</small></a></li>
-                <li> <a href="#"><small>Alum Mentoring</small></a></li>
-                <li> <a href="contact-list-all.html"><small>Messages</small></a></li>
-                <li> <a href="#"><small>Notices(xxx)</small></a></li>
-                <li> <a href="#"><small>Profile Page</small></a></li>
-                <li> <a href="./alumni-events.html"><small>Alumni Events</small></a></li>
-                <li> <a href="./class-notes.html"><small>Class Notes</small></a></li>
-                <li> <a href="#"><small>Reunion Information</small></a></li>
-                <li> <a href="#"><small>Shop Online</small></a></li>
-                <li> <a href="#" class="support-"><small>Support (School Name)</small></a></li>
-            </ul>
+        <div class="d-flex">
+          <a href="index.html" class="my-auto logo-toggle">
+            <img src="./images/preview-school-logo-free-vector-design.jpg" />
+          </a>
+          <!-- <a href="#" class="my-auto logo-toggle mobi">
+            <img src="./images/preview-school-logo-free-vector-design.jpg" width="200" />
+          </a> -->
         </div>
-    </div>
-    <div class="d-flex mt-92">
-        <div class="main-content">
+        <div class="d-flex col-sm-6 mobile-bottom">
+          <div class="col-sm p-1 mr-2 tiny-m border active-tab br-8">
+            <a href="friends-page.html" class="text-dark font-weight-bold text-decoration-none">
+              <div class="text-center">
+                <img src="./images/svg000-connect-white.svg" width="30" class="my-auto" />
+              </div>
+              <p class="xm-font text-center mb-0 text-white">Alumni</p>
+            </a>
+          </div>
+          <div class="col-sm p-1 mx-2 border br-8">
+            <a href="index.html" class="text-dark font-weight-bold text-decoration-none">
+              <div class="text-center">
+                <img src="./images/svg000-friends.svg" width="30" class="my-auto" />
+              </div>
+              <p class="xm-font text-center mb-0">Network</p>
+            </a>
+          </div>
+          <div class="col-sm p-1 mx-2 border br-8">
+            <a href="posts-page.html" class="text-dark font-weight-bold text-center text-decoration-none">
+              <div class="text-center">
+                <img src="./images/svg000-home.svg" width="30" class="my-auto" />
+              </div>
+              <p class="xm-font text-center mb-0">Posts</p>
+            </a>
+          </div>
+          <div class="col-sm p-1 mx-2 border br-8">
+            <a href="./alumni-mentoring.html" class="text-dark font-weight-bold text-decoration-none">
+              <div class="text-center">
+                <img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
+              </div>
+              <p class="xm-font text-center mb-0">Mentors</p>
+            </a>
+          </div>
+          <div class="col-sm p-1 mx-2 border br-8">
+            <a href="./chat-list-recent.html" class="text-dark font-weight-bold" style="text-decoration: none;">
+              <div class="text-center position-relative">
+                <img src="./images/000msg-icon.svg" class="my-auto" />
+                <div class="icon-value-nav"><strong>0</strong></div>
+              </div>
+              <p class="xm-font text-center mb-0">Messages</p>
+            </a>
+          </div>
+        </div>
 
+        <div class="d-flex col-lg-2 col-sm-6">
+          <div class="col-sm p-1 tiny-m">
+            <div class="text-dark font-weight-bold">
+              <div class="text-center" data-toggle="dropdown">
+                <i class="fa fa-search fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+              </div>
+              <div class="dropdown-menu search-view-section px-2">
+                <input class="nosubmit" type="search" placeholder="Search...">
+                <div class="bg-light">
+                  <a href="homeSportMyProfile-connected.html" class="text-dark text-decoration-none">
+                    <div class="d-flex justify-content-between m-1 py-1">
+                      <div class="d-flex">
+                        <i class="fa fa-search mx-2"></i>
+                        <div class="">
+                          <p class="mb-0"><small>Mark <strong>Cuban</strong> .(City), (State)</small></p>
+                          <small>Connected</small>
+                        </div>
+                      </div>
+                      <img src="images/ss2.PNG" alt="" width="25" height="25" class="rounded-circle m-1">
+                    </div>
+                  </a>
+                  <a href="homeSportMyProfile-notconnected.html" class="text-dark text-decoration-none">
+                    <div class="d-flex justify-content-between m-1 py-1">
+                      <div class="d-flex">
+                        <i class="fa fa-search mx-2"></i>
+                        <div class="">
+                          <p class="mb-0"><small>Mark<strong>holley</strong> .(Business Name) (Title) (City),
+                              (State)</small></p>
+                          <small>Not Connected</small>
+                        </div>
+                      </div>
+                      <img src="images/ss6.PNG" alt="" width="25" height="25" class="rounded-circle m-1">
+                    </div>
+                  </a>
+                  <a href="homeSportMyProfile-notconnected.html" class="text-dark text-decoration-none">
+                    <div class="d-flex m-1 py-1">
+                      <i class="fa fa-search mx-2"></i>
+                      <div class="">
+                        <p class="mb-0"><small>Mark<strong>eting director</strong></small></p>
+                        <small>Not Connected</small>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm p-1 tiny-m">
+            <a href="./calendar.html" class="text-dark font-weight-bold text-decoration-none">
+              <div class="text-center">
+                <i class="fa fa-calendar fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm p-1 tiny-m">
+            <a href="./chat-list-recent.html" class="text-dark font-weight-bold text-decoration-none">
+              <div class="text-center position-relative">
+                <i class="fa fa-bell fa-sm text-center text-dark my-auto  bg-gray-light p-2 rounded-circle"></i>
+                <div class="icon-value-nav-bell"><strong>0</strong></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm p-1 tiny-m">
+            <div class="text-center menu-toggle">
+              <i class="fa fa-gear fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container position-relative px-0 d-flex mt-92">
+    <div class="sibar-left">
+      <div class="d-flex flex-column px-2">
+        <div class="text-center pt-3 desk">
+          <img src="./images//scott.jpg" alt="" class="rounded-circle mx-auto" width="60" height="60">
+          <a class="text-dark" href="my-profile.html">
+            <h5><strong>Scott Holley</strong></h5>
+          </a>
+          <p class="mb-0 text-secondary">City, State</p>
+          <p class="text-secondary">Proctor Class of 1998</p>
+        </div>
+        <ul class="list-unstyled px-2 w-100 br-5 mb-1 py-1">
+          <li class="lg-font">
+            <a href="friends-page.html" class="mb-0 d-flex fw-500 fs-14">
+              <span class="text-blue fw-500">Alumni Directory</span> <span class="ml-auto">(xxx)</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14">
+            <span class="text-blue">My Alumni Network</span><span class="ml-auto">(xxx)</span>
+
+          </li>
+          <li class="fs-14">
+            <a href="connection-requests-recieved.html" class="text-decoration-none d-flex text-secondary">
+              <span>Connection Requests</span><span class="ml-auto pr-3">(xxx)</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14">
+            <span class=" text-blue">Meetings</span><span>(xxx)</span>
+          </li>
+          <li class="fs-14"><a href="meetings.html" class="text-decoration-none text-secondary d-flex"><span>Meeting Invites</span>
+              <span class="ml-auto pr-3">(xxx)</span></a></li>
+          <li class="fs-14"><a href="meeting-requests.html" class="text-decoration-none text-secondary d-flex"><span>Meeting Requests</span>
+              <span class="ml-auto pr-3">(xxx)</span></a></li>
+        </ul>
+
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14">
+            <span class=" text-blue">Alumni Mentors</span><span>(xxx)</span>
+          </li>
+          <li class="fs-14"><a href="meeting-requests.html" class="text-decoration-none text-secondary d-flex"><span>Meeting Requests</span>
+              <span class="ml-auto pr-3">(xxx)</span></a></li>
+        </ul>
+
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14">
+            Alum Center
+          </li>
+          <li class="fs-14"><a href="alumni-events.html" class="text-decoration-none text-secondary d-flex"><span>Alumni
+                Events</span> <span class="ml-auto pr-3">(xxx)</span></a></li>
+          <li class="fs-14"><a href="class-notes.html" class="text-decoration-none text-secondary d-flex"><span>Class
+                Notes</span>
+              <span class="ml-auto pr-3">(xxx)</span></a></li>
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14">
+            Reunion Information
+          </li>
+          <li class="fs-14"><a href="shop-swag.html" class="text-decoration-none text-secondary">Shop for Swag</a></li>
+          <li class="fs-14"><a href="support.html" class="text-decoration-none text-secondary">Support (School Name)</a>
+          </li>
+        </ul>
+
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14">View</li>
+          <li class="fs-14"><a href="my-profile.html" class="text-decoration-none text-secondary">My Profile</a></li>
+          <li class="fs-14"><a href="chat-list-recent.html" class="text-decoration-none text-secondary d-flex"><span>Alum Messages</span>
+              <span class="ml-auto pr-3">(xxx)</span></a></li>
+          <li class="fs-14"><a href="posts-page.html" class="text-decoration-none text-secondary d-flex"><span>My Posts</span> <span
+                class="ml-auto pr-3">(xxx)</span></a></li>
+          <li class="fs-14"><a href="bookmarks.html" class="text-decoration-none text-secondary d-flex"><span>My Bookmarks</span>
+              <span class="ml-auto pr-3">(xxx)</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
       <div class="donation-form d-none">
         <div class="d-flex p-2 maroon-border-bottom m-2">
           <button class="btn btn-sm btn-outline-secondary my-auto donationback">Back</button>
@@ -384,270 +478,265 @@
         </div>
 
       </div>
-            <div class="">
-                <div class="d-flex px-2 maroon-border-bottom m-2">
-                    <label>Donation</label>
-                </div>
-                <div class="p-3">
-                    <label for="">Gift amount: </label>
-                    <button
-                        class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
-                        <p class="mb-0">Lorem ipsum dolor sit amet,</p>
-                        <p class="mb-0"><strong>$10,000</strong></p>
-                    </button>
-                    <button
-                        class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
-                        <p class="mb-0">accusamus ea placeat.</p>
-                        <p class="mb-0"><strong>$10,000</strong></p>
-                    </button>
-                    <button
-                        class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
-                        <p class="mb-0">accusamus ea placeat.</p>
-                        <p class="mb-0"><strong>$10,000</strong></p>
-                    </button>
-                    <button
-                        class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
-                        <p class="mb-0">Lorem ipsum</p>
-                        <p class="mb-0"><strong>$10,000</strong></p>
-                    </button>
-                    <button
-                        class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
-                        <p class="mb-0 ml-auto"><strong>$10,000</strong></p>
-                    </button>
-                    <button
-                        class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
-                        <p class="mb-0 ml-auto"><strong>$10,000</strong></p>
-                    </button>
-                    <div class="d-flex border rounded">
-                        <label for="" class="text-secondary py-2 pl-3">Other</label>
-                        <input type="text" name="" id="" class="m-3 w-50 p-2" placeholder="$">
-                    </div>
-                </div>
-
-                <div class="d-flex px-2 maroon-border-bottom m-2">
-                    <label>Gift preference</label>
-                </div>
-                <div class="d-flex flex-column px-3">
-                    <label for="">Online designition</label>
-                    <input class="form-control form-control-sm" type="text" placeholder="">
-                </div>
-                <div class="d-flex flex-column p-3">
-                    <label for="">Gift Instructions</label>
-                    <input class="form-control form-control-sm" type="text" placeholder="">
-                </div>
-
-                <div class="d-flex px-2 maroon-border-bottom m-2">
-                    <label>Tribute Gift</label>
-                </div>
-                <div class="form-check mx-3">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                        the gift is Lorem ipsum dolor sit amet consectetur
-                    </label>
-                </div>
-
-                <div class="d-flex px-2 maroon-border-bottom m-2">
-                    <label>Recurring Gift</label>
-                </div>
-
-                <div class="form-check mx-3">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
-                    <label class="form-check-label" for="defaultCheck1">
-                        Make this a monthly gift
-                    </label>
-                </div>
-
-                <div class="d-flex mx-3">
-                    Give <select class="custom-select mr-sm-2 w-25 mx-1" id="inlineFormCustomSelect">
-                        <option selected>Choose...</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                    to
-                    <select class="custom-select mr-sm-2 w-25 mx-1" id="inlineFormCustomSelect">
-                        <option selected>Choose...</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-
-                <div class="d-flex mx-3">
-                    <label for="">your first gift will occur on 12/12/1212</label>
-                </div>
-
-                <div class="d-flex px-2 maroon-border-bottom m-2">
-                    <label>Billing Address</label>
-                </div>
-                <div class="form-check mx-3 mb-3">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                        Make this gift on behalf of an organization
-                    </label>
-                </div>
-
-                <div class="mx-3 mb-3">
-                    <label class="" for="defaultCheck1">
-                        lorem Ipsum
-                    </label>
-                    <input type="email" class="form-control form-control-sm mb-2" id="colFormLabelSm" placeholder="">
-                    <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
-                </div>
-
-                <div class="mx-3 mb-3">
-                    <label class="" for="defaultCheck1">
-                        Email
-                    </label>
-                    <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
-                </div>
-
-                <div class="mx-3 mb-3">
-                    <label class="" for="defaultCheck1">
-                        Phone
-                    </label>
-                    <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
-                </div>
-
-                <div class="mx-3 mb-3">
-                    <label class="" for="defaultCheck1">
-                        Country
-                    </label>
-                    <select class="custom-select" id="inlineFormCustomSelect">
-                        <option selected>Choose...</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-
-                <div class="mx-3 mb-3">
-                    <label class="" for="defaultCheck1">
-                        City
-                    </label>
-                    <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
-                </div>
-
-                <div class="mx-3 mb-3">
-                    <label class="" for="defaultCheck1">
-                        Lorem ipsum
-                    </label>
-                    <div class="d-flex">
-                        <select class="custom-select m-1" id="inlineFormCustomSelect">
-                            <option selected>Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <input type="text">
-                    </div>
-                </div>
-
-                <div class="form-check mx-3 mb-3">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                        Lorem, ipsum dolor sit amet consectetur
-                    </label>
-                </div>
-
-                <div class="d-flex px-2 maroon-border-bottom m-2">
-                    <label>Payment Details</label>
-                </div>
-
-                <div class="d-flex flex-column mx-3">
-                    <label for="">Payment methods</label>
-                    <div class="d-flex">
-                        <button class="btn btn-sm btn-primary w-25 mr-3">Debit card</button> <button
-                            class="btn btn-sm btn-outline-secondary w-25">Credit card </button>
-                    </div>
-                </div>
-
-                <p class="text-danger mx-3 mt-3">Payment processed by lorem ipsum</p>
-
-
-                <div class="mx-3 mb-3">
-                    <label class="" for="defaultCheck1">
-                        Credit card name
-                    </label>
-                    <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
-                </div>
-
-                <div class="mx-3 mb-3">
-                    <label class="" for="defaultCheck1">
-                        Card number
-                    </label>
-                    <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
-                </div>
-
-                <div class="d-flex mb-3">
-                    <img src="./images/cards.png" alt="" class="w-75 mx-auto">
-                </div>
-
-                <div class="mx-3 mb-3">
-                    <label class="" for="defaultCheck1">
-                        Expirydate
-                    </label>
-                    <div class="d-flex">
-                        <select class="custom-select m-1" id="inlineFormCustomSelect">
-                            <option selected>Month</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <select class="custom-select m-1" id="inlineFormCustomSelect">
-                            <option selected>Year</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-
-                    </div>
-                </div>
-
-                <div class="mx-3 mb-3">
-                    <label class="" for="defaultCheck1">
-                        CC:
-                    </label>
-                    <input type="tel" class="form-control form-control-sm w-25" id="colFormLabelSm" placeholder="">
-                </div>
-
-                <div class="d-flex mb-3">
-                    <button class="btn btn-danger text-white w-75 mx-auto"><strong>Give Now</strong></button>
-                </div>
-
-            </div>
+      <div class="">
+        <div class="d-flex px-2 maroon-border-bottom m-2">
+          <label>Donation</label>
         </div>
+        <div class="p-3">
+          <label for="">Gift amount: </label>
+          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+            <p class="mb-0">Lorem ipsum dolor sit amet,</p>
+            <p class="mb-0"><strong>$10,000</strong></p>
+          </button>
+          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+            <p class="mb-0">accusamus ea placeat.</p>
+            <p class="mb-0"><strong>$10,000</strong></p>
+          </button>
+          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+            <p class="mb-0">accusamus ea placeat.</p>
+            <p class="mb-0"><strong>$10,000</strong></p>
+          </button>
+          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+            <p class="mb-0">Lorem ipsum</p>
+            <p class="mb-0"><strong>$10,000</strong></p>
+          </button>
+          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+            <p class="mb-0 ml-auto"><strong>$10,000</strong></p>
+          </button>
+          <button class="btn btn-outline-secondary d-flex justify-content-between w-100 mb-3 p-2 gfield_select">
+            <p class="mb-0 ml-auto"><strong>$10,000</strong></p>
+          </button>
+          <div class="d-flex border rounded">
+            <label for="" class="text-secondary py-2 pl-3">Other</label>
+            <input type="text" name="" id="" class="m-3 w-50 p-2" placeholder="$">
+          </div>
+        </div>
+
+        <div class="d-flex px-2 maroon-border-bottom m-2">
+          <label>Gift preference</label>
+        </div>
+        <div class="d-flex flex-column px-3">
+          <label for="">Online designition</label>
+          <input class="form-control form-control-sm" type="text" placeholder="">
+        </div>
+        <div class="d-flex flex-column p-3">
+          <label for="">Gift Instructions</label>
+          <input class="form-control form-control-sm" type="text" placeholder="">
+        </div>
+
+        <div class="d-flex px-2 maroon-border-bottom m-2">
+          <label>Tribute Gift</label>
+        </div>
+        <div class="form-check mx-3">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            the gift is Lorem ipsum dolor sit amet consectetur
+          </label>
+        </div>
+
+        <div class="d-flex px-2 maroon-border-bottom m-2">
+          <label>Recurring Gift</label>
+        </div>
+
+        <div class="form-check mx-3">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
+          <label class="form-check-label" for="defaultCheck1">
+            Make this a monthly gift
+          </label>
+        </div>
+
+        <div class="d-flex mx-3">
+          Give <select class="custom-select mr-sm-2 w-25 mx-1" id="inlineFormCustomSelect">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          to
+          <select class="custom-select mr-sm-2 w-25 mx-1" id="inlineFormCustomSelect">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="d-flex mx-3">
+          <label for="">your first gift will occur on 12/12/1212</label>
+        </div>
+
+        <div class="d-flex px-2 maroon-border-bottom m-2">
+          <label>Billing Address</label>
+        </div>
+        <div class="form-check mx-3 mb-3">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Make this gift on behalf of an organization
+          </label>
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            lorem Ipsum
+          </label>
+          <input type="email" class="form-control form-control-sm mb-2" id="colFormLabelSm" placeholder="">
+          <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            Email
+          </label>
+          <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            Phone
+          </label>
+          <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            Country
+          </label>
+          <select class="custom-select" id="inlineFormCustomSelect">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            City
+          </label>
+          <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            Lorem ipsum
+          </label>
+          <div class="d-flex">
+            <select class="custom-select m-1" id="inlineFormCustomSelect">
+              <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <input type="text">
+          </div>
+        </div>
+
+        <div class="form-check mx-3 mb-3">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Lorem, ipsum dolor sit amet consectetur
+          </label>
+        </div>
+
+        <div class="d-flex px-2 maroon-border-bottom m-2">
+          <label>Payment Details</label>
+        </div>
+
+        <div class="d-flex flex-column mx-3">
+          <label for="">Payment methods</label>
+          <div class="d-flex">
+            <button class="btn btn-sm btn-primary w-25 mr-3">Debit card</button> <button
+              class="btn btn-sm btn-outline-secondary w-25">Credit card </button>
+          </div>
+        </div>
+
+        <p class="text-danger mx-3 mt-3">Payment processed by lorem ipsum</p>
+
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            Credit card name
+          </label>
+          <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            Card number
+          </label>
+          <input type="tel" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+        </div>
+
+        <div class="d-flex mb-3">
+          <img src="./images/cards.png" alt="" class="w-75 mx-auto">
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            Expirydate
+          </label>
+          <div class="d-flex">
+            <select class="custom-select m-1" id="inlineFormCustomSelect">
+              <option selected>Month</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <select class="custom-select m-1" id="inlineFormCustomSelect">
+              <option selected>Year</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+
+          </div>
+        </div>
+
+        <div class="mx-3 mb-3">
+          <label class="" for="defaultCheck1">
+            CC:
+          </label>
+          <input type="tel" class="form-control form-control-sm w-25" id="colFormLabelSm" placeholder="">
+        </div>
+
+        <div class="d-flex mb-3">
+          <button class="btn btn-danger text-white w-75 mx-auto"><strong>Give Now</strong></button>
+        </div>
+
+      </div>
     </div>
 
+  </div>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <!-- add an api key to the link -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="./js/actions.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $(document).on("change", ".gfield_select", function () {
-                $(".gfield_select").addClass('btn-danger').removeClass('btn-outline-secondary')
-            });
-        });
-    </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <!-- add an api key to the link -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="./js/actions.js"></script>
 
-    <script>
-        $('#side-menu').click(function () {
-            $('.overlay').toggleClass('hidden');
-        });
-    </script>
+  <script>
+    $(document).ready(function () {
+      $(document).on("change", ".gfield_select", function () {
+        $(".gfield_select").addClass('btn-danger').removeClass('btn-outline-secondary')
+      });
+    });
+  </script>
+
+  <script>
+    $('#side-menu').click(function () {
+      $('.overlay').toggleClass('hidden');
+    });
+  </script>
 </body>
 
 </html>
