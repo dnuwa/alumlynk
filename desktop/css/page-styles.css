@@ -342,7 +342,7 @@ select {
   top: 1;
   right: 0;
   background-color: #ffffff;
-  padding: 2rem;
+  padding: 12px;
   overflow-x: hidden;
   /* padding-top: 20px; */
 }
