@@ -2603,6 +2603,14 @@ input.nosubmit {
     no-repeat 13px center;
 }
 
+.grayE6-bg{
+  background-color: #E6E6E6;
+}
+
+.blue1B-bg{
+  background-color: #1B75BB;
+}
+
 .incoming-message {
   width: 100%;
   display: flex;
