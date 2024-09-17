@@ -2574,6 +2574,14 @@ legend {
   border: solid 1px #343A40;
 }
 
+.pulbishImg {
+  width: 40px;
+}
+
+.border-black {
+  border: 1px solid #000000;
+}
+
 .border-radius-11{
   border-radius: 11px;
 }
