@@ -1060,6 +1060,11 @@ table {
 .gray-text {
   color: #9a9a9a;
 }
+
+.gray-text01{
+  color: #555555;
+}
+
 .bg-white {
   background-color: #ffffff;
 }
