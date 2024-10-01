@@ -41,9 +41,9 @@
 
 <body>
   <div class="container d-flex" style="height: 100vh;">
-    <div class="d-flex flex-wrap my-auto border bg-white">
+    <div class="d-flex flex-wrap m-auto border bg-white w-75">
       <div class="col-lg-5 col-sm-12 text-white" style="background-color: #385898;">
-        <div class="p-5 text-center">
+        <div class="py-5 px-2 text-center">
           <h4 class="pb-4">Alumlynk</h4>
           <div class="border-bottom border-top text-center">
             <h4 class="pt-3">Sign-up your</h4>
@@ -59,61 +59,66 @@
       </div>
       <div class="col-lg-7 col-sm-12 d-flex flex-column">
         <div id="step1">
-          <div class="p-5 text-center">
-            <h5 class="mb-5" style="color: #555555;">
-              <strong> Sign Up</strong>
-            </h5>
-            <div class="d-flex">
-              <label for="" class="w-25 mb-4">Enter State:</label>
-              <input type="text" class="form-control-sm border w-75 mb-4" placeholder="Select State">
-            </div>
-            <div class="d-flex">
-              <label for="" class="w-25 mb-4">School Name:</label>
-              <input type="text" class="form-control-sm border w-75 mb-4" placeholder="Enter School Name">
-            </div>
-            <div class="d-flex">
-              <label for="" class="w-25 mb-4">School Type:</label>
-              <input type="email" class="form-control-sm border w-75 mb-4" placeholder="Enter Email">
-            </div>
+          <div class="d-flex flex-column justify-content-center w-100 mx-0">
+            <div class="mx-auto w-100">
+              <div class="py-5">
+                <h5 class="my-5 text-center" style="color: #555555;">
+                  <strong> Sign Up</strong>
+                </h5>
+                <div class="d-flex flex-wrap justify-content-center mb-3">
+                  <label for="" class="w-25">Enter State:</label>
+                  <input type="text" class="form-control-sm border w-50 mb-4" placeholder="Select State">
+                </div>
+                <div class="d-flex flex-wrap justify-content-center mb-3">
+                  <label for="" class="w-25">School Name:</label>
+                  <input type="text" class="form-control-sm border w-50 mb-4" placeholder="Enter School Name">
+                </div>
+                <div class="d-flex flex-wrap justify-content-center mb-3">
+                  <label for="" class="w-25">School Type:</label>
+                  <input type="email" class="form-control-sm border w-50 mb-4" placeholder="Enter Email">
+                </div>
 
-            <div class="d-flex w-50 mx-auto justify-content-between">
-              <button class="btn btn-sm border-0 bg-transparent w-100 mr-3">Cancel</button>
-              <button class="btn btn-sm btn-success w-100" style="border-radius: 16px;" id="continueTo2">Next</button>
+                <div class="d-flex w-50 mx-auto justify-content-between">
+                  <button class="btn btn-sm border-0 bg-transparent w-100 mr-3">Cancel</button>
+                  <button class="btn btn-sm btn-success w-100" style="border-radius: 16px;"
+                    id="continueTo2">Next</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div id="step2" style="display: none;">
-          <div class="p-5 text-center">
+          <div class="py-5 px-3 text-center">
             <h5 class="mb-5" style="color: #555555;">
               <strong>Authorized School Contact</strong>
             </h5>
-            <div class="d-flex justify-content-between">
-              <label for="" class="w-25 mb-4">Full Name:</label>
+            <div class="d-flex flex-wrap mb-3 justify-content-between">
+              <label for="" class="">Full Name:</label>
               <div class="d-flex w-60">
-                <input type="text" class="form-control-sm border mb-4 w-50 mr-2" placeholder="1st Name">
-                <input type="text" class="form-control-sm border mb-4 w-50" placeholder="2nd Name">
+                <input type="text" class="form-control-sm border w-50 mr-2" placeholder="1st Name">
+                <input type="text" class="form-control-sm border w-50" placeholder="2nd Name">
               </div>
             </div>
-            <div class="d-flex justify-content-between">
-              <label for="" class="w-25 mb-4">Position at School:</label>
+            <div class="d-flex flex-wrap mb-3 justify-content-between">
+              <label for="" class="">Position at School:</label>
               <select name="" id="" class="form-control-sm w-60 border">
                 <option value=""></option>
               </select>
             </div>
-            <div class="d-flex justify-content-between">
-              <label for="" class="w-25 mb-4">Your School Email:</label>
-              <input type="email" class="form-control-sm border w-60 mb-4" placeholder="Enter Email">
+            <div class="d-flex flex-wrap mb-3 justify-content-between">
+              <label for="" class="">Your School Email:</label>
+              <input type="email" class="form-control-sm border w-60" placeholder="Enter Email">
             </div>
 
-            <div class="d-flex justify-content-between">
-              <label for="" class="w-25 mb-4">Work Phone #:</label>
-              <input type="email" class="form-control-sm border w-60 mb-4" placeholder="Enter Email">
+            <div class="d-flex flex-wrap mb-3 justify-content-between">
+              <label for="" class="">Work Phone #:</label>
+              <input type="email" class="form-control-sm border w-60" placeholder="Enter Email">
             </div>
 
-            <div class="d-flex justify-content-between">
-              <label for="" class="w-25 mb-4">Cell Phone #:</label>
-              <div class=" mb-4 w-60">
-                <input type="tel" id="phone" class="form-control" placeholder="+1 738 029 9388">
+            <div class="d-flex flex-wrap mb-3 justify-content-between">
+              <label for="" class="">Cell Phone #:</label>
+              <div class="mb-4 w-60">
+                <input type="tel" id="phone" class="form-control py-1" placeholder="+1 738 029 9388">
               </div>
             </div>
 
@@ -125,7 +130,7 @@
           </div>
         </div>
         <div id="step3" style="display: none;">
-          <div class="p-5">
+          <div class="py-5 px-2">
             <h5 class="mb-5 text-center" style="color: #555555;">
               <strong>Create a login and Password</strong>
             </h5>
@@ -164,54 +169,176 @@
             <h5 class="mb-3" style="color: #555555;">
               <strong>(School Name)</strong>
             </h5>
-            <div class="d-flex justify-content-between">
-              <label for="" class="w-25 mb-4">Address:</label>
-              <input type="email" class="form-control-sm border w-75 mb-4" placeholder="">
+            <div class="d-flex flex-wrap justify-content-between mb-3">
+              <label for="" class="">Address:</label>
+              <input type="email" class="form-control-sm border w-60" placeholder="">
             </div>
 
-            <div class="d-flex w-100">
-              <label for="" class="w-25 mb-4">City:</label>
-              <select type="text" class="form-control-sm border mb-4 w-50 mr-2">
-                <option value="">Select</option>
-                <option value="">option 1</option>
-                <option value="">option 2</option>
-              </select>
-              <label for="" class="w-25 mb-4">State:</label>
-              <select type="text" class="form-control-sm border mb-4 w-50">
-                <option value="">Select</option>
-                <option value="">option 1</option>
-                <option value="">option 2</option>
-              </select>
+            <div class="d-flex w-100 mb-3">
+              <label for="" class="w-25 my-auto">City:</label>
+              <div class="drop w-50">
+                <button type="button"
+                  class="btn bg-white border text-secondary w-100 text-left d-flex justify-content-between text-dark"
+                  style="padding: 4px 8px;" data-toggle="dropdown">
+                  <span class="mr-1" id="list-by"><small>Select</small></span>
+                  <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                </button>
+                <div class="dropdown-menu p-0 right">
+                  <ul class="px-0 inviteTypeOptions mb-0">
+                    <li class="dropdown-item px-2 flex flex-column">
+                      <p class="mb-0 text-primary"><small>Filter</small></p>
+                      <input type="text" class="form-control-sm border" placeholder="Enter City">
+                    </li>
+                    <li class="dropdown-item px-2 text-primary bg-light">
+                      <small>Select City</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>City 1</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>City 2</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>City 3</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>City 4</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <label for="" class="w-25 my-auto">State:</label>
+              <div class="drop w-50">
+                <button type="button"
+                  class="btn bg-white border text-secondary w-100 text-left d-flex justify-content-between text-dark"
+                  style="padding: 4px 8px;" data-toggle="dropdown">
+                  <span class="mr-1" id="list-by"><small>Select</small></span>
+                  <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                </button>
+                <div class="dropdown-menu p-0 right">
+                  <ul class="px-0 inviteTypeOptions mb-0">
+                    <li class="dropdown-item px-2 flex flex-column">
+                      <p class="mb-0 text-primary"><small>Filter</small></p>
+                      <input type="text" class="form-control-sm border" placeholder="Enter State">
+                    </li>
+                    <li class="dropdown-item px-2 text-primary bg-light">
+                      <small>Select State</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>State 1</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>State 2</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>State 3</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>State 4</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            <div class="d-flex w-100">
-              <label for="" class="w-25 mb-4">Zip Code:</label>
-              <select type="text" class="form-control-sm border mb-4 w-50 mr-2">
-                <option value="">Select</option>
-                <option value="">option 1</option>
-                <option value="">option 2</option>
-              </select>
-              <label for="" class="w-25 mb-4">Country:</label>
-              <select type="text" class="form-control-sm border mb-4 w-50">
-                <option value="">Select</option>
-                <option value="">option 1</option>
-                <option value="">option 2</option>
-              </select>
+            <div class="d-flex w-100 mb-3">
+              <label for="" class="w-25 my-auto">Zip Code:</label>
+              <div class="drop w-50">
+                <button type="button"
+                  class="btn bg-white border text-secondary w-100 text-left d-flex justify-content-between text-dark"
+                  style="padding: 4px 8px;" data-toggle="dropdown">
+                  <span class="mr-1" id="list-by"><small>Select</small></span>
+                  <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                </button>
+                <div class="dropdown-menu p-0 right">
+                  <ul class="px-0 inviteTypeOptions mb-0">
+                    <li class="dropdown-item px-2 flex flex-column">
+                      <p class="mb-0 text-primary"><small>Filter</small></p>
+                      <input type="text" class="form-control-sm border" placeholder="">
+                    </li>
+                    <li class="dropdown-item px-2 text-primary bg-light">
+                      <small>Select</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>000</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>000</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>000</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>000</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <label for="" class="w-25 my-auto">Country:</label>
+              <div class="drop w-50">
+                <button type="button"
+                  class="btn bg-white border text-secondary w-100 text-left d-flex justify-content-between text-dark"
+                  style="padding: 4px 8px;" data-toggle="dropdown">
+                  <span class="mr-1" id="list-by"><small>Select</small></span>
+                  <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                </button>
+                <div class="dropdown-menu p-0 right">
+                  <ul class="px-0 inviteTypeOptions mb-0">
+                    <li class="dropdown-item px-2 flex flex-column">
+                      <p class="mb-0 text-primary"><small>Filter</small></p>
+                      <input type="text" class="form-control-sm border" placeholder="Enter Country">
+                    </li>
+                    <li class="dropdown-item px-2 text-primary bg-light">
+                      <small>Select Country</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>Country 1</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>Country 2</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>Country 3</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>Country 4</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            <div class="d-flex justify-content-between">
-              <label for="" class="w-25 mb-4">Business Phone:</label>
-              <input type="text" class="form-control-sm border w-75 mb-4" placeholder="">
+            <div class="d-flex flex-wrap mb-2 justify-content-between">
+              <label for="" class="">Business Phone:</label>
+              <div class="w-60">
+                <input type="tel" id="phone1" class="form-control py-1" placeholder="+1 738 029 9388">
+              </div>
             </div>
 
-            <div class="d-flex justify-content-between">
-              <label for="" class="w-25 mb-4">Business Email:</label>
-              <input type="email" class="form-control-sm border w-75 mb-4" placeholder="">
+            <div class="d-flex flex-wrap mb-2 justify-content-between">
+              <label for="" class="">Business Email:</label>
+              <input type="email" class="form-control-sm border w-60" placeholder="">
             </div>
 
-            <div class="d-flex justify-content-between">
-              <label for="" class="w-25 mb-4">Website:</label>
-              <input type="email" class="form-control-sm border w-75 mb-4" placeholder="">
+            <div class="d-flex flex-wrap mb-4 justify-content-between">
+              <label for="" class="">Website:</label>
+              <input type="email" class="form-control-sm border w-60" placeholder="">
             </div>
 
             <div class="d-flex w-50 mx-auto justify-content-between">
@@ -236,7 +363,27 @@
             <div class="d-flex w-50 mx-auto justify-content-between">
               <button class="btn btn-sm border-0 bg-transparent w-100 mr-3" style="color: #343A40;"
                 id="backTo4"><strong>Back</strong></button>
-              <button class="btn btn-sm btn-success w-100" style="border-radius: 16px;">Next</button>
+              <button class="btn btn-sm btn-success w-100" style="border-radius: 16px;" id="continueTo6">Next</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="step6" class="my-auto" style="display: none;">
+          <div class="p-5 text-center">
+            <h5 class="mb-4" style="color: #555555;">
+              <strong>Welcome to Alumlynk</strong>
+            </h5>
+
+            <div class="d-flex flex-column mx-auto mb-3">
+              <h5 class="mb-2 text-secondary">Click below to access your free account and select the specific features
+                you want your alumni network to have</h5>
+            </div>
+
+            <div class="mx-auto">
+              <a class="btn btn-success br-5 mb-4 px-3" style="border-radius: 16px;" href="friends-page.html">View My
+                Free Alumni Account</a>
+              <button class="btn btn-sm border-0 bg-transparent w-100 mr-3" style="color: #343A40;"
+                id="backTo5"><strong>Back</strong></button>
             </div>
           </div>
         </div>
@@ -292,6 +439,11 @@
   <script>
     var input = document.querySelector("#phone");
     window.intlTelInput(input, {
+      // any initialisation options go here
+    });
+
+    var input1 = document.querySelector("#phone1");
+    window.intlTelInput(input1, {
       // any initialisation options go here
     });
   </script>
