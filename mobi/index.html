@@ -37,6 +37,51 @@
     .rounded-custom {
       border-radius: 10px;
     }
+
+    .chat-input-container {
+      position: relative;
+      width: 300px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 10px 40px 10px 15px;
+      border: none;
+      border-radius: 30px;
+      background-color: #222;
+      color: white;
+      font-size: 16px;
+    }
+
+    .form-control:focus {
+      outline: none;
+    }
+
+    .emoji-btn {
+      position: absolute;
+      right: 10px;
+      bottom: 7px;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .send-btn {
+      display: none;
+      margin-top: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+
+    .send-btn i {
+      font-size: 18px;
+    }
   </style>
 
   <script>// Initialize and add the map
@@ -188,7 +233,8 @@
                 <div class="px-2 py-0 notificationsdesk"><a href="#" class="text-secondary">Notification</a></div>
                 <div class="px-2 py-0 languagedesk"><a href="#" class="text-secondary">Language and Format</a></div>
                 <div class="px-2 py-0 locationdesk"><a href="#" class="text-secondary">Location</a></div>
-                <div class="px-2 py-0 dsktermsandconditions"><a href="#" class="text-secondary">User Terms and Conditions</a></div>
+                <div class="px-2 py-0 dsktermsandconditions"><a href="#" class="text-secondary">User Terms and
+                    Conditions</a></div>
                 <div class="px-2 py-0 privacypolicy"><a href="#" class="text-secondary">Privacy Policy</a></div>
               </div>
             </li>
@@ -200,11 +246,14 @@
               </div>
               <div id="contactusdeskcollapse" class="panel-collapse collapse mt-2">
                 <div class="px-2 py-0 feedbackdesk"><a href="#" class="text-secondary">Give Us Your Feedback</a></div>
-                <div class="px-2 py-0 reportproblemdesk"><a href="#" class="text-secondary">Report a Feature Problem</a></div>
+                <div class="px-2 py-0 reportproblemdesk"><a href="#" class="text-secondary">Report a Feature Problem</a>
+                </div>
                 <div class="px-2 py-0 reportspamdesk"><a href="#" class="text-secondary">Report Spam & Abuse</a></div>
-                <div class="px-2 py-0 businesspartnershipsdesk"><a href="#" class="text-secondary">Business Partnerships</a></div>
+                <div class="px-2 py-0 businesspartnershipsdesk"><a href="#" class="text-secondary">Business
+                    Partnerships</a></div>
                 <div class="px-2 py-0 emailusdesk"><a href="#" class="text-secondary">Email Us</a></div>
-                <div class="px-2 py-0 careeropportunitydesk"><a href="#" class="text-secondary">Career Oppotunities</a></div>
+                <div class="px-2 py-0 careeropportunitydesk"><a href="#" class="text-secondary">Career Oppotunities</a>
+                </div>
               </div>
             </li>
             <li class="px-3 py-2 border-bottom fs-12 fw-500">Sign Out</li>
@@ -238,16 +287,16 @@
           <li class="fs-14"><a href="meetings.html" class="text-decoration-none text-dark d-flex"><span>Meeting
                 Invites</span>
               <span class="ml-auto">(xxx)</span></a></li>
-          <li class="fs-14"><a href="meeting-requests.html"
-              class="text-decoration-none text-dark d-flex"><span>Meeting Requests</span>
+          <li class="fs-14"><a href="meeting-requests.html" class="text-decoration-none text-dark d-flex"><span>Meeting
+                Requests</span>
               <span class="ml-auto">(xxx)</span></a></li>
         </ul>
         <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
           <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
             <span class="text-blue">Alumni Mentors</span><span>(xxx)</span>
           </li>
-          <li class="fs-14"><a href="meeting-requests.html"
-              class="text-decoration-none text-dark d-flex"><span>Meeting Requests</span>
+          <li class="fs-14"><a href="meeting-requests.html" class="text-decoration-none text-dark d-flex"><span>Meeting
+                Requests</span>
               <span class="ml-auto">(xxx)</span></a></li>
         </ul>
         <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
@@ -271,8 +320,8 @@
             View
           </li>
           <li class="fs-14"><a href="my-profile.html" class="text-decoration-none text-dark">My Profile</a></li>
-          <li class="fs-14"><a href="chat-list-recent.html"
-              class="text-decoration-none text-dark d-flex"><span>Alum Messages</span>
+          <li class="fs-14"><a href="chat-list-recent.html" class="text-decoration-none text-dark d-flex"><span>Alum
+                Messages</span>
               <span class="ml-auto">(xxx)</span></a></li>
           <li class="fs-14"><a href="posts-page.html" class="text-decoration-none text-dark d-flex"><span>My
                 Posts</span> <span class="ml-auto">(xxx)</span></a></li>
@@ -634,8 +683,8 @@
             </p>
           </div>
           <div class="d-flex">
-            <button class="btn btn-connect-outline mx-auto my-2 font-11"><i
-                class="fa fa-comment mr-1"></i>Message</button>
+            <button class="btn btn-connect-outline mx-auto my-2 font-11" data-target="#message-modal"
+              data-toggle="modal"><i class="fa fa-comment mr-1"></i>Message</button>
             <button class="btn btn-connect-outline mx-auto my-2 font-11"><i class="fa fa-rss mr-1"></i>Follow</button>
           </div>
         </div>
@@ -665,8 +714,8 @@
             </p>
           </div>
           <div class="d-flex">
-            <button class="btn btn-connect-outline mx-auto my-2 font-11"><i
-                class="fa fa-comment mr-1"></i>Message</button>
+            <button class="btn btn-connect-outline mx-auto my-2 font-11" data-target="#message-modal"
+              data-toggle="modal"><i class="fa fa-comment mr-1"></i>Message</button>
             <button class="btn btn-connect-outline mx-auto my-2 font-11"><i class="fa fa-rss mr-1"></i>Follow</button>
           </div>
         </div>
@@ -696,8 +745,8 @@
             </p>
           </div>
           <div class="d-flex">
-            <button class="btn btn-connect-outline mx-auto my-2 font-11"><i
-                class="fa fa-comment mr-1"></i>Message</button>
+            <button class="btn btn-connect-outline mx-auto my-2 font-11" data-target="#message-modal"
+              data-toggle="modal"><i class="fa fa-comment mr-1"></i>Message</button>
             <button class="btn btn-connect-outline mx-auto my-2 font-11"><i class="fa fa-rss mr-1"></i>Follow</button>
           </div>
         </div>
@@ -727,8 +776,8 @@
             </p>
           </div>
           <div class="d-flex">
-            <button class="btn btn-connect-outline mx-auto my-2 font-11"><i
-                class="fa fa-comment mr-1"></i>Message</button>
+            <button class="btn btn-connect-outline mx-auto my-2 font-11" data-target="#message-modal"
+              data-toggle="modal"><i class="fa fa-comment mr-1"></i>Message</button>
             <button class="btn btn-connect-outline mx-auto my-2 font-11"><i class="fa fa-rss mr-1"></i>Follow</button>
           </div>
         </div>
@@ -812,6 +861,44 @@
     </div>
   </div>
 
+  <div class="modal fade" id="message-modal" tabindex="-1" role="dialog" aria-labelledby="message-modal"
+    aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content modal-body p-0">
+        <div class="border-2 w-100 d-flex flex-column" style="background-color: #E0E9EC !important;">
+          <div class="bg-secondary d-flex p-2">
+            <div>
+              <i class="fa fa-angle-left border rounded-circle px-2 py-1 bg-white" data-dismiss="modal"></i>
+            </div>
+            <div class="text-white mx-auto">
+              {1st, last name}
+            </div>
+          </div>
+          <div class="d-flex flex-column">
+            <h3 class="mx-auto text-secondary my-2">Today</h3>
+            <p class="mx-auto mb-5 text-center"><small>Message are end-to end ecrypted. No one outside this chat can
+                read it</small></p>
+          </div>
+
+          <div class="d-flex bg-dark p-2">
+            <div class="mt-auto">
+              <i class="fa fa-plus fa-2x text-secondary mr-2"></i>
+            </div>
+            <div class="chat-input-container w-100">
+              <textarea id="show-when-user-is-typing" class="form-control w-100"
+                style="display: none; background-color: #222;" placeholder="Type a message..."></textarea>
+              <input type="text" id="hide-on-focus" class="form-control w-100" placeholder="Type a message...">
+              <button type="button" class="emoji-btn" onclick="toggleEmojiPicker()">😊</button>
+            </div>
+            <button type="button" class="send-btn mt-auto ml-2" id="show-when-user-is-typing-btn">
+              <i class="fa fa-paper-plane" style="transform: rotate(45deg);"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
   <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -826,7 +913,7 @@
   <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
   <!-- add an api key to the link -->
   <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./js/actions.js"></script>
 
   <script>
@@ -841,6 +928,40 @@
     $('#side-menu').click(function () {
       $('.overlay').toggleClass('hidden');
     });
+  </script>
+  <script>
+    $(document).ready(function () {
+      const input = $('#hide-on-focus');
+      const textarea = $('#show-when-user-is-typing');
+      const sendBtn = $('#show-when-user-is-typing-btn');
+
+      input.on('focus', function () {
+        input.hide();
+        textarea.show().focus();
+        sendBtn.show();
+      });
+
+      textarea.on('blur', function () {
+        if (textarea.val().trim() === '') {
+          textarea.hide();
+          input.show();
+          sendBtn.hide();
+        }
+      });
+
+      textarea.on('input', function () {
+        if (textarea.val().trim() !== '') {
+          sendBtn.show();
+        } else {
+          sendBtn.hide();
+        }
+      });
+    });
+
+    function toggleEmojiPicker() {
+      // Implement emoji picker functionality here
+      alert('Emoji picker functionality not implemented.');
+    }
   </script>
 </body>
 

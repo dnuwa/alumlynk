@@ -41,7 +41,51 @@
 
     .filters-margin {
       margin: .5rem !important;
-      ;
+    }
+
+    .chat-input-container {
+      position: relative;
+      width: 300px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 10px 40px 10px 15px;
+      border: none;
+      border-radius: 30px;
+      background-color: #222;
+      color: white;
+      font-size: 16px;
+    }
+
+    .form-control:focus {
+      outline: none;
+    }
+
+    .emoji-btn {
+      position: absolute;
+      right: 10px;
+      bottom: 7px;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .send-btn {
+      display: none;
+      margin-top: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+
+    .send-btn i {
+      font-size: 18px;
     }
 
     @media only screen and (max-width: 767px) {
@@ -4593,17 +4637,20 @@
                 read it</small></p>
           </div>
 
-          <div class="d-flex bg-dark p-3">
+          <div class="d-flex bg-dark p-2">
             <div class="mt-auto">
               <i class="fa fa-plus fa-2x text-secondary mr-2"></i>
             </div>
-            <textarea name="" id="" class="form-control" role="1" style="border-radius: 30px; background-color: #222;"
-              placeholder=""></textarea>
-            <div class="mt-auto ml-2">
-              <i class="fa fa-paper-plane rounded-circle p-2 bg-success text-white"></i>
+            <div class="chat-input-container w-100">
+              <textarea id="show-when-user-is-typing" class="form-control w-100"
+                style="display: none; background-color: #222;" placeholder="Type a message..."></textarea>
+              <input type="text" id="hide-on-focus" class="form-control w-100" placeholder="Type a message...">
+              <button type="button" class="emoji-btn" onclick="toggleEmojiPicker()">😊</button>
             </div>
+            <button type="button" class="send-btn mt-auto ml-2" id="show-when-user-is-typing-btn">
+              <i class="fa fa-paper-plane" style="transform: rotate(45deg);"></i>
+            </button>
           </div>
-
         </div>
       </div>
     </div>
@@ -4619,21 +4666,47 @@
     crossorigin="anonymous"></script>
   <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
   <!-- add an api key to the link -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./js/actions.js"></script>
-
-  <!-- <script>
-    $(document).ready(function () {
-      $(document).on("change", ".gfield_select", function () {
-        $(".select-search-btn").addClass('btn-success').removeClass('btn-secondary')
-      });
-    });
-  </script> -->
 
   <script>
     $('#side-menu').click(function () {
       $('.overlay').toggleClass('hidden');
     });
+  </script>
+  <script>
+    $(document).ready(function () {
+      const input = $('#hide-on-focus');
+      const textarea = $('#show-when-user-is-typing');
+      const sendBtn = $('#show-when-user-is-typing-btn');
+
+      input.on('focus', function () {
+        input.hide();
+        textarea.show().focus();
+        sendBtn.show();
+      });
+
+      textarea.on('blur', function () {
+        if (textarea.val().trim() === '') {
+          textarea.hide();
+          input.show();
+          sendBtn.hide();
+        }
+      });
+
+      textarea.on('input', function () {
+        if (textarea.val().trim() !== '') {
+          sendBtn.show();
+        } else {
+          sendBtn.hide();
+        }
+      });
+    });
+
+    function toggleEmojiPicker() {
+      // Implement emoji picker functionality here
+      alert('Emoji picker functionality not implemented.');
+    }
   </script>
 </body>
 
